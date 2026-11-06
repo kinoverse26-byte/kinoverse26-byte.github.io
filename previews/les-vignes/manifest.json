@@ -1,0 +1,25 @@
+{
+  "name": "Les Vignes - Restaurant Montpellier",
+  "short_name": "Les Vignes",
+  "description": "Restaurant bistronomique au cœur de l'Écusson, Montpellier.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#2b1a14",
+  "theme_color": "#5a1f2b",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
