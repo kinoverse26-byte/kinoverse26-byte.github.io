@@ -1,0 +1,20 @@
+{
+  "name": "Victorio - Coiffeur Lyon",
+  "short_name": "Victorio",
+  "description": "Salon de coiffure mixte à Lyon. Horaires, contact et accès.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
