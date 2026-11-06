@@ -1,0 +1,19 @@
+{
+  "name": "Voyageur Nissart",
+  "short_name": "Voyageur",
+  "description": "Bistro niçois traditionnel, 19 Rue d'Alsace Lorraine, Nice",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6efe3",
+  "theme_color": "#8a2f1d",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
