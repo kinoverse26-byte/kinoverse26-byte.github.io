@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le petit salon · Coiffeur mixte dans le Vieux Lyon</title>
+<meta name="description" content="Le petit salon, salon de coiffure mixte hommes et femmes dans le Vieux Lyon. Ouvert du lundi au vendredi de 9h à 19h. Rendez-vous au 09 81 87 13 71.">
+<meta name="theme-color" content="#1c1714">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c1714'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23c9a46a'%3EPS%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Le petit salon · Coiffeur mixte dans le Vieux Lyon">
+<meta property="og:description" content="Coiffure hommes et femmes, du lundi au vendredi de 9h à 19h. Rendez-vous au 09 81 87 13 71.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--ink:#1c1714;--ink2:#2a221d;--cream:#f7f2ea;--paper:#fffdf9;--gold:#c9a46a;--gold-d:#8a6a36;--wine:#7b2d2b;--mut:#6b6058;--line:#e7ddd0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:16px}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.005em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+.ribbon{background:#000;color:#e2d4b8;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em;line-height:1.4}
+
+.bar{position:sticky;top:0;z-index:50;background:rgba(28,23,20,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(201,164,106,.25)}
+.bar-in{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 5vw}
+.logo{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.55rem;font-weight:600;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+.menu{display:none;gap:28px;list-style:none;font-size:.88rem}
+.menu a{text-decoration:none;color:#eadfce}
+.menu a:hover{color:var(--gold)}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:6px;min-height:42px;padding:9px 16px;border-radius:40px;font:600 .88rem 'Inter',sans-serif;text-decoration:none;border:1px solid var(--gold);background:var(--gold);color:var(--ink);cursor:pointer;white-space:nowrap}
+.pill.line{background:transparent;color:#f3e9da}
+#install{display:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:14px 30px;border-radius:50px;font:600 1rem 'Inter',sans-serif;text-decoration:none;background:var(--gold);color:var(--ink);border:1px solid var(--gold);transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.28)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn.dark{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+
+.hero{position:relative;min-height:calc(100svh - 100px);display:flex;align-items:flex-end;color:#fff;background:#1c1714 url(img/hero.jpg?v=1) center/cover no-repeat;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(28,23,20,.45) 0%,rgba(28,23,20,.55) 45%,rgba(28,23,20,.93) 100%)}
+.hero-in{max-width:1180px;width:100%;margin:auto;padding:110px 5vw 70px}
+.eyebrow{display:inline-block;color:var(--gold);text-transform:uppercase;letter-spacing:.24em;font-size:.74rem;font-weight:600;margin-bottom:18px}
+.hero h1{font-size:clamp(2.6rem,9vw,5.6rem);max-width:15ch;margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p.lead{font-weight:300;font-size:clamp(1.05rem,2.6vw,1.25rem);max-width:40ch;margin-bottom:34px;color:#f1e9dd}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:44px;padding-top:24px;border-top:1px solid rgba(255,255,255,.18);font-size:.9rem;color:#e6dccd}
+.facts b{color:#fff;font-weight:600}
+
+section{padding:96px 5vw}
+.wrap{max-width:1180px;margin:auto}
+.head{max-width:640px;margin-bottom:52px}
+.head.c{text-align:center;margin-left:auto;margin-right:auto}
+.head h2{font-size:clamp(2.1rem,5vw,3.4rem)}
+.head p{color:var(--mut);margin-top:14px}
+.dark{background:var(--ink);color:var(--cream)}
+.dark .head p,.dark .soft{color:#cfc3b2}
+
+.about{display:grid;gap:44px;align-items:center}
+.about figure{position:relative}
+.about img{width:100%;height:360px;object-fit:cover;border-radius:4px}
+.about figure::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold);border-radius:4px;z-index:-1}
+.about figure{z-index:0}
+.about h2{font-size:clamp(2.1rem,5vw,3.2rem);margin-bottom:20px}
+.about p+p{margin-top:16px}
+.list{list-style:none;margin-top:28px;display:grid;gap:12px}
+.list li{display:flex;gap:12px;align-items:baseline}
+.list li::before{content:"";flex:0 0 18px;height:1px;background:var(--gold);transform:translateY(-4px)}
+
+.cards{display:grid;gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:34px 28px;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(28,23,20,.08)}
+.num{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold-d);font-style:italic}
+.card h3{font-size:1.75rem;margin:6px 0 10px}
+.card p{color:var(--mut);font-size:.96rem}
+.price{display:block;margin-top:20px;padding-top:16px;border-top:1px solid var(--line);color:var(--wine);font-weight:600;font-size:.88rem;letter-spacing:.02em}
+.note{text-align:center;color:var(--mut);margin-top:30px;font-size:.92rem}
+
+.gal{display:grid;gap:16px}
+.gal figure{position:relative;overflow:hidden;border-radius:4px;background:#2a221d}
+.gal img{width:100%;height:100%;min-height:300px;object-fit:cover;transition:transform .8s}
+.gal figure:hover img{transform:scale(1.04)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;font-size:.82rem;color:#f3ebdf;background:linear-gradient(transparent,rgba(0,0,0,.7))}
+.quote{background:var(--ink2);color:var(--cream);border-radius:4px;padding:40px 30px;display:flex;flex-direction:column;justify-content:center}
+.quote p.q{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,4vw,2.3rem);line-height:1.2}
+.quote p.q em{color:var(--gold)}
+.quote .soft{margin-top:16px;font-size:.92rem}
+
+.hours{display:grid;gap:24px}
+.box{background:var(--paper);color:var(--ink);border-radius:6px;padding:34px 28px}
+.box h3{font-size:1.9rem;margin-bottom:6px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;margin-bottom:18px;color:var(--mut);min-height:1.5em}
+.status i{width:9px;height:9px;border-radius:50%;background:#b9ada0}
+.status.open{color:#2f6b3a}.status.open i{background:#3c8a4a}
+.status.closed{color:var(--wine)}.status.closed i{background:var(--wine)}
+table{width:100%;border-collapse:collapse;font-size:.97rem}
+td{padding:11px 0;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;font-weight:600}
+tr.today td{color:var(--wine)}
+.small{font-size:.84rem;color:var(--mut);margin-top:16px}
+.map{display:flex;flex-direction:column;gap:12px}
+.map iframe{width:100%;flex:1;min-height:340px;border:0;border-radius:6px;background:#2a221d}
+.map .row{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;font-size:.9rem;color:#cfc3b2}
+.map a{color:var(--gold)}
+
+.contact{text-align:center}
+.contact h2{font-size:clamp(2.2rem,6vw,3.8rem)}
+.tel{display:inline-block;font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,8vw,4rem);color:var(--wine);text-decoration:none;margin:18px 0 6px;letter-spacing:.02em}
+.contact .mail{color:var(--mut)}
+.contact .mail a{color:var(--ink);font-weight:500;word-break:break-all}
+.contact .cta{justify-content:center;margin-top:34px}
+
+footer{background:#0f0c0a;color:#a99d8f;padding:52px 5vw 120px;font-size:.84rem}
+footer .wrap{display:grid;gap:22px}
+footer strong{color:#fff;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600}
+footer a{color:var(--gold)}
+footer p+p{margin-top:6px}
+
+.dock{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:70;display:flex;gap:8px;padding:8px;background:rgba(28,23,20,.96);border-radius:60px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.dock a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:50px;font-weight:600;font-size:.95rem;text-decoration:none;color:#f3e9da}
+.dock a.main{background:var(--gold);color:var(--ink);flex:1.4}
+
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.gal img,.card,.btn{transition:none}}
+
+@media (min-width:640px){
+.cards{grid-template-columns:repeat(3,1fr)}
+.gal{grid-template-columns:1.3fr 1fr}
+.gal .tall{grid-row:span 2}
+.gal .tall img{min-height:520px}
+}
+@media (min-width:900px){
+.menu{display:flex}
+.about{grid-template-columns:1.05fr 1fr;gap:80px}
+.about img{height:520px}
+.hours{grid-template-columns:1fr 1.25fr}
+footer .wrap{grid-template-columns:1fr 1.6fr}
+.dock{display:none}
+footer{padding-bottom:52px}
+section{padding:120px 5vw}
+}
+@media (max-width:899px){body{padding-bottom:84px}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Aperçu réalisé pour Le petit salon par Kinoverse – pas encore en ligne</div>
+
+<header class="bar">
+  <div class="bar-in">
+    <a class="logo" href="#top">Le petit salon</a>
+    <ul class="menu">
+      <li><a href="#salon">Le salon</a></li>
+      <li><a href="#prestations">Prestations</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#horaires">Horaires</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="acts">
+      <a class="pill" href="tel:+33981871371" aria-label="Appeler Le petit salon au 09 81 87 13 71">📞 Appeler</a>
+      <button class="pill line" id="install" type="button">Installer l'app</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-label="Accueil" style="padding:0">
+  <div class="hero-in">
+    <span class="eyebrow">Coiffure mixte · Vieux Lyon</span>
+    <h1>Le petit salon du Vieux Lyon, <em>pour elles et pour eux.</em></h1>
+    <p class="lead">Un salon de coiffure à taille humaine au pied de Fourvière, qui accueille hommes et femmes du lundi au vendredi.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+33981871371">Réserver au 09 81 87 13 71</a>
+      <a class="btn ghost" href="#horaires">Horaires &amp; accès</a>
+    </div>
+    <div class="facts">
+      <span><b>Lun – Ven</b> · 9h – 19h</span>
+      <span><b>Hommes &amp; femmes</b></span>
+      <span><b>Plain-pied</b> · rez-de-chaussée</span>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="salon">
+  <div class="wrap about">
+    <figure class="reveal">
+      <img src="img/g1.jpg?v=1" alt="Photo d'illustration : un barbier au travail dans un salon de quartier, le soir" loading="lazy" width="1200" height="800">
+    </figure>
+    <div class="reveal">
+      <span class="eyebrow">Le salon</span>
+      <h2>Petit par la taille, attentif par nature.</h2>
+      <p class="soft">Le petit salon, c'est une adresse de quartier dans le Vieux Lyon : un lieu simple où l'on vient se faire coiffer sans chichis, que l'on soit un homme ou une femme.</p>
+      <p class="soft">Le salon est de plain-pied, au rez-de-chaussée. Pour venir, le plus simple est d'appeler : on vous trouve un créneau entre 9h et 19h, du lundi au vendredi.</p>
+      <ul class="list soft">
+        <li>Salon mixte : hommes et femmes</li>
+        <li>Rendez-vous par téléphone ou par e-mail</li>
+        <li>Fermé le week-end et les jours fériés</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="prestations">
+  <div class="wrap">
+    <div class="head c reveal">
+      <span class="eyebrow" style="color:var(--gold-d)">Prestations</span>
+      <h2>Coiffure homme &amp; femme</h2>
+      <p>La carte complète et les tarifs vous sont donnés directement par le salon.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="num">01</span>
+        <h3>Homme</h3>
+        <p>Coupe et finitions, selon votre style et la nature de vos cheveux.</p>
+        <span class="price">Tarif sur demande</span>
+      </article>
+      <article class="card reveal">
+        <span class="num">02</span>
+        <h3>Femme</h3>
+        <p>Coupe et mise en forme, pensées avec vous en début de rendez-vous.</p>
+        <span class="price">Tarif sur demande</span>
+      </article>
+      <article class="card reveal">
+        <span class="num">03</span>
+        <h3>Sur rendez-vous</h3>
+        <p>Un coup de fil suffit pour réserver votre créneau en semaine.</p>
+        <span class="price"><a href="tel:+33981871371" style="text-decoration:none">09 81 87 13 71</a></span>
+      </article>
+    </div>
+    <p class="note reveal">Détail des prestations à confirmer avec le salon.</p>
+  </div>
+</section>
+
+<section class="dark" id="galerie">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Galerie</span>
+      <h2>L'esprit du salon</h2>
+      <p>Photos d'illustration, en attendant les photos du salon.</p>
+    </div>
+    <div class="gal">
+      <figure class="tall reveal">
+        <img src="img/hero.jpg?v=1" alt="Photo d'illustration : fauteuils de barbier rouges vintage dans une boutique en bois" loading="lazy">
+        <figcaption>Fauteuils de barbier · illustration</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="img/g1.jpg?v=1" alt="Photo d'illustration : barbier au travail parmi miroirs et fauteuils dans un salon de quartier" loading="lazy">
+        <figcaption>Un salon de quartier · illustration</figcaption>
+      </figure>
+      <div class="quote reveal">
+        <p class="q">Hommes et femmes, <em>une seule adresse</em> dans le Vieux Lyon.</p>
+        <p class="soft">Du lundi au vendredi, de 9h à 19h.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="horaires">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow" style="color:var(--gold-d)">Horaires &amp; accès</span>
+      <h2>Quand passer nous voir</h2>
+      <p>Vieux Lyon, Lyon 5e · adresse exacte à confirmer avec le salon.</p>
+    </div>
+    <div class="hours">
+      <div class="box reveal" style="border:1px solid var(--line)">
+        <h3>Horaires</h3>
+        <p class="status" id="status" aria-live="polite"></p>
+        <table>
+          <tr data-d="1"><td>Lundi</td><td>9h – 19h</td></tr>
+          <tr data-d="2"><td>Mardi</td><td>9h – 19h</td></tr>
+          <tr data-d="3"><td>Mercredi</td><td>9h – 19h</td></tr>
+          <tr data-d="4"><td>Jeudi</td><td>9h – 19h</td></tr>
+          <tr data-d="5"><td>Vendredi</td><td>9h – 19h</td></tr>
+          <tr data-d="6"><td>Samedi</td><td>Fermé</td></tr>
+          <tr data-d="0"><td>Dimanche</td><td>Fermé</td></tr>
+          <tr><td>Jours fériés</td><td>Fermé</td></tr>
+        </table>
+        <p class="small">Mieux vaut appeler avant de passer pour réserver votre créneau.</p>
+      </div>
+      <div class="map reveal">
+        <iframe title="Carte : emplacement du Petit salon dans le Vieux Lyon" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=4.8222%2C45.7591%2C4.8302%2C45.7632&amp;layer=mapnik&amp;marker=45.7611716%2C4.8262260"></iframe>
+        <div class="row" style="color:var(--mut)">
+          <span>Position : 45.76117, 4.82623</span>
+          <a style="color:var(--wine);font-weight:600" href="https://www.openstreetmap.org/directions?to=45.7611716%2C4.8262260" target="_blank" rel="noopener">Itinéraire →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact dark" id="contact">
+  <div class="wrap reveal">
+    <span class="eyebrow">Rendez-vous</span>
+    <h2>Un créneau cette semaine ?</h2>
+    <a class="tel" href="tel:+33981871371" style="color:var(--gold)">09 81 87 13 71</a>
+    <p class="mail soft">ou par e-mail : <a style="color:#fff" href="mailto:lepetitsalonsarl@gmail.com">lepetitsalonsarl@gmail.com</a></p>
+    <div class="cta">
+      <a class="btn" href="tel:+33981871371">Appeler le salon</a>
+      <a class="btn ghost" href="mailto:lepetitsalonsarl@gmail.com?subject=Demande%20de%20rendez-vous">Écrire un e-mail</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Le petit salon</strong>
+      <p>Salon de coiffure mixte · Vieux Lyon, Lyon</p>
+      <p><a href="tel:+33981871371">+33 9 81 87 13 71</a> · <a href="mailto:lepetitsalonsarl@gmail.com">lepetitsalonsarl@gmail.com</a></p>
+      <p>SIRET 813 687 688 00016</p>
+    </div>
+    <div>
+      <p>Photos d'illustration (Wikimedia Commons, licence CC BY-SA) : « Vintage red barber chairs in a rustic wooden shop » et « A cozy well-worn neighborhood barbershop » par PattayaPatrol — <a href="https://commons.wikimedia.org/wiki/File:DSCF1083_Vintage_red_barber_chairs_in_a_rustic_wooden_shop_waiting_for_the_next_customer.jpg" target="_blank" rel="noopener">source 1</a> · <a href="https://commons.wikimedia.org/wiki/File:DFC_2472_A_cozy_well-worn_neighborhood_barbershop_open_late_with_a_barber_at_work_among_mismatched_chairs_mirrors_and_hanging_portraits.jpg" target="_blank" rel="noopener">source 2</a>.</p>
+      <p>Carte et données : © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">contributeurs OpenStreetMap</a>.</p>
+      <p>Aperçu réalisé pour Le petit salon par Kinoverse – ce site n'est pas encore en ligne.</p>
+    </div>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Actions rapides">
+  <a class="main" href="tel:+33981871371">📞 Appeler</a>
+  <a href="https://www.openstreetmap.org/directions?to=45.7611716%2C4.8262260" target="_blank" rel="noopener">Itinéraire</a>
+</nav>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},4000);
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  try{
+    var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+    var g=function(t){return (p.find(function(x){return x.type===t})||{}).value};
+    var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday'));
+    var m=parseInt(g('hour'),10)%24*60+parseInt(g('minute'),10);
+    var row=document.querySelector('tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+    var s=document.getElementById('status');
+    var open=d>=1&&d<=5&&m>=540&&m<1140;
+    s.className='status '+(open?'open':'closed');
+    s.innerHTML='<i></i>'+(open?'Ouvert en ce moment (hors jours fériés)':'Fermé en ce moment');
+  }catch(e){}
+
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp=null;b.style.display='none'}});
+  window.addEventListener('appinstalled',function(){b.style.display='none'});
+})();
+</script>
+</body>
+</html>
