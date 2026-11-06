@@ -1,0 +1,19 @@
+{
+  "name": "L'EntrePôte",
+  "short_name": "EntrePôte",
+  "description": "Restaurant français et ribs - 53 Rue du Mirail, Bordeaux",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1a1210",
+  "theme_color": "#1a1210",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
