@@ -1,0 +1,19 @@
+{
+  "name": "Le petit salon",
+  "short_name": "Le petit salon",
+  "description": "Salon de coiffure à Lyon - horaires, contact et rendez-vous",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14110f",
+  "theme_color": "#14110f",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
