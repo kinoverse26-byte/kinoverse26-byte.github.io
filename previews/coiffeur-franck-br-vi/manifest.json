@@ -1,0 +1,19 @@
+{
+  "name": "Coiffeur Franck Brévi",
+  "short_name": "Franck Brévi",
+  "description": "Salon de coiffure mixte, 266 avenue Jean Jaurès, Lyon 7e",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14110f",
+  "theme_color": "#14110f",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
