@@ -46,7 +46,7 @@ nav .lk:hover{color:var(--gold2)}
 .btn.ghost:hover{border-color:var(--gold2);color:var(--gold2)}
 .btn.sm{padding:.6rem 1rem;font-size:.74rem}
 #inst{display:none}
-@media(max-width:640px){.bar{flex-wrap:wrap;row-gap:.5rem}nav{flex-wrap:wrap;justify-content:flex-end}#inst{order:9;width:100%;justify-content:center}}
+@media(max-width:640px){.bar{flex-wrap:nowrap;gap:.6rem}nav{flex-wrap:nowrap;gap:.5rem}nav a.btn[href^="tel:"]{display:none}#inst{width:auto;padding:.45rem .85rem;font-size:.7rem;white-space:nowrap}}
 
 .hero{position:relative;min-height:92vh;min-height:92svh;display:flex;align-items:flex-end;padding:7rem 6vw 4.5rem;overflow:hidden;isolation:isolate}
 .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2;transform:scale(1.04);animation:zoom 14s ease-out forwards}
