@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Victorio – Coiffeur mixte à Lyon · ouvert dès 7h30 le samedi</title>
+<meta name="description" content="Victorio, salon de coiffure mixte à Lyon. Ouvert du mardi au vendredi de 8h à 19h et le samedi de 7h30 à 17h. Rendez-vous au 04 78 72 05 67.">
+<meta name="theme-color" content="#16120f">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Victorio">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Victorio">
+<meta property="og:title" content="Victorio – Coiffeur mixte à Lyon">
+<meta property="og:description" content="Hommes et femmes, du mardi au samedi. Dès 8h en semaine, dès 7h30 le samedi. 04 78 72 05 67.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HairSalon",
+  "name":"Victorio",
+  "telephone":"+33478720567",
+  "email":"saroli.victor@neuf.fr",
+  "address":{"@type":"PostalAddress","addressLocality":"Lyon","addressCountry":"FR"},
+  "geo":{"@type":"GeoCoordinates","latitude":45.7318999,"longitude":4.8593571},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"19:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"07:30","closes":"17:00"}
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#16120f;--bg2:#1f1915;--line:#33291f;
+  --gold:#cfa862;--gold2:#e2c48b;--cream:#f5eee2;--mut:#c2b6a3;
+  --r:16px;--pad:clamp(1.25rem,5vw,4rem);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--cream);line-height:1.65;font-size:1rem;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.005em}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--bg);padding:.6rem 1rem;z-index:99}
+.skip:focus{left:.5rem;top:.5rem}
+
+/* ribbon */
+.ribbon{background:#0d0b09;color:var(--mut);text-align:center;font-size:.72rem;letter-spacing:.04em;padding:.4rem .75rem;border-bottom:1px solid var(--line)}
+.ribbon b{color:var(--gold2);font-weight:600}
+
+/* header – wraps on small phones so every button stays visible */
+.top{position:sticky;top:0;z-index:40;background:rgba(22,18,15,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding:.7rem var(--pad)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);line-height:1}
+.links{display:none;list-style:none;gap:1.8rem;font-size:.9rem}
+.links a{color:var(--mut);transition:color .2s}
+.links a:hover{color:var(--cream)}
+.acts{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--gold);color:#16120f;padding:.9rem 1.6rem;border-radius:999px;font-weight:600;font-size:.98rem;border:1px solid var(--gold);cursor:pointer;font-family:inherit;transition:transform .25s,box-shadow .25s,background .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(207,168,98,.28);background:var(--gold2)}
+.btn.o{background:transparent;color:var(--cream);border-color:rgba(207,168,98,.7)}
+.btn.o:hover{background:rgba(207,168,98,.12)}
+.btn.sm{padding:.55rem 1.05rem;font-size:.88rem}
+.btn svg{width:18px;height:18px;flex:none}
+#inst{display:none}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 90px);display:flex;align-items:flex-end;padding:6rem var(--pad) 4rem;background:#0d0b09 url("img/hero.jpg?v=1") center/cover no-repeat;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(13,11,9,.55) 0%,rgba(13,11,9,.72) 45%,rgba(13,11,9,.96) 100%)}
+.hero-in{max-width:1200px;width:100%;margin:auto}
+.eyebrow{display:inline-block;color:var(--gold2);letter-spacing:.24em;text-transform:uppercase;font-size:.74rem;font-weight:600}
+.hero h1{font-size:clamp(2.6rem,9vw,5.6rem);margin:1rem 0 1.2rem;max-width:15ch}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero p.lead{color:#ddd2c1;font-size:clamp(1.02rem,2.4vw,1.2rem);max-width:36rem;margin-bottom:2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem}
+.status{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.8rem;font-size:.9rem;color:var(--mut)}
+.dot{width:9px;height:9px;border-radius:50%;background:#8a7f70;flex:none}
+.dot.on{background:#6fcf8a;box-shadow:0 0 0 4px rgba(111,207,138,.18)}
+
+/* sections */
+section{padding:clamp(4.5rem,10vw,7.5rem) var(--pad)}
+.alt{background:var(--bg2)}
+.wrap{max-width:1200px;margin:auto}
+.head{max-width:42rem;margin-bottom:3rem}
+.head.c{text-align:center;margin-left:auto;margin-right:auto}
+.head h2{font-size:clamp(2.1rem,5.5vw,3.3rem);margin-top:.7rem}
+.head p{color:var(--mut);margin-top:1rem}
+.rule{width:56px;height:1px;background:var(--gold);margin:1.4rem 0}
+.head.c .rule{margin-left:auto;margin-right:auto}
+
+/* about */
+.about{display:grid;gap:3rem;align-items:center}
+.about figure{position:relative}
+.about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+.about figure::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid rgba(207,168,98,.45);border-radius:var(--r);z-index:-1}
+.about p{color:var(--mut);margin-top:1rem;max-width:34rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-top:2.2rem}
+.fact{border-top:1px solid var(--line);padding-top:1rem}
+.fact strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--gold2);line-height:1.1}
+.fact span{font-size:.88rem;color:var(--mut)}
+
+/* services */
+.cards{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:2.1rem 1.8rem;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-5px);border-color:rgba(207,168,98,.6)}
+.card .n{font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:1rem;letter-spacing:.2em}
+.card h3{font-size:1.75rem;margin:.6rem 0 .6rem}
+.card p{color:var(--mut);font-size:.96rem}
+.card .price{display:block;margin-top:1.3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.86rem;color:var(--cream);letter-spacing:.02em}
+.note{text-align:center;color:var(--mut);margin-top:2.2rem;font-size:.95rem}
+.note a{color:var(--gold2);border-bottom:1px solid currentColor}
+
+/* gallery */
+.gal{display:grid;gap:1rem;grid-template-columns:1fr}
+.gal figure{overflow:hidden;border-radius:var(--r);background:#0d0b09}
+.gal img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .6s ease}
+.gal figure:hover img{transform:scale(1.04)}
+.cap{color:var(--mut);font-size:.82rem;text-align:center;margin-top:1.4rem}
+
+/* hours */
+.hrs{display:grid;gap:2.5rem}
+.hrs ul{list-style:none;margin-top:.5rem}
+.hrs li{display:flex;justify-content:space-between;gap:1rem;padding:.95rem .2rem;border-bottom:1px solid var(--line)}
+.hrs li span:last-child{color:var(--mut);font-variant-numeric:tabular-nums;text-align:right}
+.hrs li.today{color:var(--gold2)}
+.hrs li.today span:last-child{color:var(--gold2)}
+.hrs li.today span:first-child::after{content:" · aujourd'hui";font-size:.8rem;color:var(--mut)}
+.addr{margin-top:1.8rem;color:var(--mut)}
+.addr strong{color:var(--cream);font-weight:500}
+.addr .cta{margin-top:1.2rem}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:340px;background:#0d0b09}
+.map iframe{display:block;width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.3) contrast(1.05)}
+
+/* contact */
+.contact{text-align:center}
+.phone{display:inline-block;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(2.4rem,9vw,4.4rem);color:var(--gold2);margin:.4rem 0 1rem;line-height:1.1}
+.contact .cta{justify-content:center;margin-top:1.8rem}
+.lines{color:var(--mut);display:grid;gap:.35rem}
+.lines a{color:var(--cream);border-bottom:1px solid rgba(207,168,98,.5)}
+
+/* footer */
+footer{padding:3rem var(--pad) 7.5rem;border-top:1px solid var(--line);color:var(--mut);font-size:.84rem;text-align:center}
+footer .logo{display:inline-block;margin-bottom:1rem}
+footer p+p{margin-top:.4rem}
+
+/* sticky mobile bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:1.3fr 1fr 1fr;background:rgba(13,11,9,.97);border-top:1px solid rgba(207,168,98,.5);padding-bottom:env(safe-area-inset-bottom)}
+.sticky a{display:flex;align-items:center;justify-content:center;gap:.4rem;padding:1rem .4rem;font-weight:600;font-size:.92rem}
+.sticky a:first-child{background:var(--gold);color:#16120f}
+.sticky a+a{border-left:1px solid var(--line)}
+.sticky svg{width:18px;height:18px}
+
+/* reveal – content is only hidden once JS has confirmed it runs */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .btn,.card,.gal img{transition:none}
+}
+
+@media (min-width:640px){
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .gal figure:first-child{grid-row:span 2}
+  .gal figure:first-child img{aspect-ratio:auto}
+}
+@media (min-width:900px){
+  .links{display:flex}
+  .about{grid-template-columns:.9fr 1.1fr;gap:5rem}
+  .hrs{grid-template-columns:1fr 1.25fr;gap:4rem}
+  .hero{align-items:center}
+  .sticky{display:none}
+  footer{padding-bottom:3rem}
+}
+@media (max-width:380px){
+  .logo{font-size:1.45rem;letter-spacing:.1em}
+  .btn{padding:.85rem 1.25rem}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="ribbon">Aperçu réalisé pour <b>Victorio</b> par Kinoverse – pas encore en ligne</div>
+
+<header class="top">
+  <div class="bar">
+    <a href="#top" class="logo" aria-label="Victorio – accueil">Victorio</a>
+    <ul class="links">
+      <li><a href="#apropos">Le salon</a></li>
+      <li><a href="#prestations">Prestations</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#horaires">Horaires</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="acts">
+      <button class="btn o sm" id="inst" type="button">Installer l'app</button>
+      <a class="btn sm" href="tel:+33478720567" aria-label="Appeler Victorio au 04 78 72 05 67">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Appeler
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-label="Victorio, coiffeur à Lyon">
+  <div class="hero-in">
+    <span class="eyebrow">Coiffeur mixte · Lyon</span>
+    <h1>À Lyon, Victorio vous coiffe dès 8 h, <em>et dès 7 h 30 le samedi.</em></h1>
+    <p class="lead">Hommes et femmes, du mardi au samedi. Une coupe soignée avant le travail ou pour bien commencer le week-end : un appel suffit pour réserver votre place.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+33478720567">Prendre rendez-vous</a>
+      <a class="btn o" href="https://wa.me/33601723647">WhatsApp</a>
+    </div>
+    <p class="status" id="status" aria-live="polite"><span class="dot" id="dot"></span><span id="statusTxt">Mar.–ven. 8h–19h · sam. 7h30–17h</span></p>
+  </div>
+</section>
+
+<section id="apropos">
+  <div class="wrap about">
+    <figure class="rv">
+      <img src="img/salon.jpg?v=1" alt="Photo d'illustration : un coiffeur coupe les cheveux d'un client" loading="lazy" width="1024" height="683">
+    </figure>
+    <div class="rv">
+      <div class="head" style="margin-bottom:0">
+        <span class="eyebrow">Le salon</span>
+        <h2>Un coiffeur de quartier, ouvert tôt et toute la journée</h2>
+        <div class="rule"></div>
+      </div>
+      <p>Victorio est un salon de coiffure mixte à Lyon : on y coiffe les hommes comme les femmes, avec le soin d'un salon où l'on aime revenir.</p>
+      <p>Les horaires sont pensés pour la vraie vie : ouverture à 8 h du mardi au vendredi, sans fermer avant 19 h, et dès 7 h 30 le samedi. Pour réserver ou poser une question, appelez le salon ou écrivez directement.</p>
+      <div class="facts">
+        <div class="fact"><strong>Mixte</strong><span>Hommes &amp; femmes</span></div>
+        <div class="fact"><strong>8h – 19h</strong><span>Du mardi au vendredi</span></div>
+        <div class="fact"><strong>7h30</strong><span>Ouverture le samedi</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prestations" class="alt">
+  <div class="wrap">
+    <div class="head c rv">
+      <span class="eyebrow">Prestations</span>
+      <h2>Ce que l'on vous propose</h2>
+      <div class="rule"></div>
+      <p>La liste détaillée des prestations et les tarifs sont communiqués sur demande, par téléphone ou au salon.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <span class="n">01</span>
+        <h3>Coupe homme</h3>
+        <p>Une coupe nette et adaptée à vos cheveux, du classique au plus actuel. Dites ce que vous voulez, on en parle avant de commencer.</p>
+        <span class="price">Tarif : sur demande</span>
+      </article>
+      <article class="card rv">
+        <span class="n">02</span>
+        <h3>Coupe femme</h3>
+        <p>Coupe et mise en forme selon votre nature de cheveux et votre façon de vous coiffer au quotidien.</p>
+        <span class="price">Tarif : sur demande</span>
+      </article>
+      <article class="card rv">
+        <span class="n">03</span>
+        <h3>Autres prestations</h3>
+        <p>Une envie particulière ? Appelez le salon pour savoir ce qui est proposé et réserver le bon créneau.</p>
+        <span class="price">Détails : à confirmer par téléphone</span>
+      </article>
+    </div>
+    <p class="note rv">Réservation au <a href="tel:+33478720567">04 78 72 05 67</a></p>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <div class="head c rv">
+      <span class="eyebrow">Galerie</span>
+      <h2>Le geste, les outils, le fauteuil</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="gal rv">
+      <figure><img src="img/cut.jpg?v=1" alt="Photo d'illustration : un coiffeur en train de couper les cheveux d'un client" loading="lazy" width="960" height="1200"></figure>
+      <figure><img src="img/chair.jpg?v=1" alt="Photo d'illustration : un fauteuil de coiffeur rétro" loading="lazy" width="1024" height="680"></figure>
+      <figure><img src="img/comb.jpg?v=1" alt="Photo d'illustration : une paire de ciseaux et un peigne" loading="lazy" width="960" height="894"></figure>
+    </div>
+    <p class="cap">Photos d'illustration – bientôt remplacées par les photos du salon Victorio.</p>
+  </div>
+</section>
+
+<section id="horaires" class="alt">
+  <div class="wrap hrs">
+    <div class="rv">
+      <div class="head" style="margin-bottom:1rem">
+        <span class="eyebrow">Horaires &amp; accès</span>
+        <h2>Quand passer au salon</h2>
+        <div class="rule"></div>
+      </div>
+      <ul id="hours">
+        <li data-d="1"><span>Lundi</span><span>Fermé</span></li>
+        <li data-d="2"><span>Mardi</span><span>08h00 – 19h00</span></li>
+        <li data-d="3"><span>Mercredi</span><span>08h00 – 19h00</span></li>
+        <li data-d="4"><span>Jeudi</span><span>08h00 – 19h00</span></li>
+        <li data-d="5"><span>Vendredi</span><span>08h00 – 19h00</span></li>
+        <li data-d="6"><span>Samedi</span><span>07h30 – 17h00</span></li>
+        <li data-d="0"><span>Dimanche</span><span>Fermé</span></li>
+      </ul>
+      <div class="addr">
+        <p><strong>Victorio</strong> · Lyon<br>Adresse postale exacte à confirmer – l'emplacement du salon est indiqué sur la carte.</p>
+        <div class="cta">
+          <a class="btn o sm" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.7318999,4.8593571" target="_blank" rel="noopener">Itinéraire</a>
+          <a class="btn o sm" href="https://www.openstreetmap.org/node/409269458" target="_blank" rel="noopener">Voir sur OpenStreetMap</a>
+        </div>
+      </div>
+    </div>
+    <div class="map rv">
+      <iframe title="Carte de l'emplacement du salon Victorio à Lyon" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=4.8543%2C45.7293%2C4.8643%2C45.7345&amp;layer=mapnik&amp;marker=45.7318999%2C4.8593571"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap rv">
+    <div class="head c" style="margin-bottom:1rem">
+      <span class="eyebrow">Contact</span>
+      <h2>Réservez votre coupe</h2>
+      <div class="rule"></div>
+    </div>
+    <a class="phone" href="tel:+33478720567">04 78 72 05 67</a>
+    <div class="lines">
+      <p>Mobile : <a href="tel:+33601723647">06 01 72 36 47</a></p>
+      <p>E-mail : <a href="mailto:saroli.victor@neuf.fr">saroli.victor@neuf.fr</a></p>
+    </div>
+    <div class="cta">
+      <a class="btn" href="tel:+33478720567">Appeler le salon</a>
+      <a class="btn o" href="https://wa.me/33601723647">WhatsApp</a>
+      <a class="btn o" href="mailto:saroli.victor@neuf.fr?subject=Rendez-vous%20chez%20Victorio">Écrire un e-mail</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span class="logo">Victorio</span>
+  <p>Salon de coiffure mixte · Lyon · SIRET 313 260 671 00018</p>
+  <p>Mar.–ven. 08h00–19h00 · sam. 07h30–17h00 · 04 78 72 05 67</p>
+  <p>Photos d'illustration sous licence CC0 (StockSnap, Rawpixel). Carte © contributeurs OpenStreetMap.</p>
+  <p>Aperçu réalisé pour Victorio par Kinoverse – pas encore en ligne.</p>
+</footer>
+
+<nav class="sticky" aria-label="Contact rapide">
+  <a href="tel:+33478720567"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Appeler</a>
+  <a href="https://wa.me/33601723647">WhatsApp</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=45.7318999,4.8593571" target="_blank" rel="noopener">Itinéraire</a>
+</nav>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  root.classList.add('js');
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el);});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},4000);
+  }else{els.forEach(function(el){el.classList.add('in');});}
+
+  // Today's hours & open/closed status (Lyon time)
+  try{
+    var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+    var get=function(t){var p=parts.find(function(x){return x.type===t});return p?p.value:'';};
+    var map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+    var d=map[get('weekday')],m=parseInt(get('hour'),10)%24*60+parseInt(get('minute'),10);
+    var sched={2:[480,1140],3:[480,1140],4:[480,1140],5:[480,1140],6:[450,1020]};
+    var li=document.querySelector('#hours li[data-d="'+d+'"]');if(li)li.classList.add('today');
+    var s=sched[d],open=s&&m>=s[0]&&m<s[1];
+    var fmt=function(x){var h=Math.floor(x/60),mn=x%60;return h+'h'+(mn?('0'+mn).slice(-2):'');};
+    var txt;
+    if(open){txt='Ouvert maintenant · jusqu\u2019à '+fmt(s[1]);document.getElementById('dot').classList.add('on');}
+    else if(s&&m<s[0]){txt='Fermé · ouvre aujourd\u2019hui à '+fmt(s[0]);}
+    else{
+      var nd=d,k=0;do{nd=(nd+1)%7;k++;}while(!sched[nd]&&k<7);
+      var names=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+      txt='Fermé · ouvre '+(k===1?'demain':names[nd])+' à '+fmt(sched[nd][0]);
+    }
+    document.getElementById('statusTxt').textContent=txt;
+  }catch(e){}
+
+  // "Install the app" – only shown where the browser offers it (Android/Chrome)
+  var dp,b=document.getElementById('inst');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex';});
+  b.addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none';});});
+  window.addEventListener('appinstalled',function(){b.style.display='none';});
+  if('serviceWorker' in navigator && location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(function(){});}
+})();
+</script>
+</body>
+</html>
