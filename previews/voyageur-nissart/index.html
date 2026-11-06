@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Voyageur Nissart · Bistrot niçois, 19 rue d'Alsace-Lorraine, Nice</title>
+<meta name="description" content="Voyageur Nissart, bistrot traditionnel niçois au 19 rue d'Alsace-Lorraine à Nice, entre la gare et l'avenue Jean-Médecin. Cuisine niçoise de saison, produits locaux. Du mardi au dimanche. Réservations : 04 93 82 19 60.">
+<meta name="theme-color" content="#8f2a1c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238f2a1c'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23faf4e8'%3EVN%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Voyageur Nissart">
+<meta property="og:title" content="Voyageur Nissart · Le bistrot niçois de la rue d'Alsace-Lorraine">
+<meta property="og:description" content="Cuisine niçoise de saison et produits locaux, entre la gare et l'avenue Jean-Médecin. Réservations : 04 93 82 19 60.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Voyageur Nissart","servesCuisine":"Cuisine niçoise","telephone":"+33 4 93 82 19 60","image":"img/hero.jpg?v=1",
+"address":{"@type":"PostalAddress","streetAddress":"19 rue d'Alsace-Lorraine","postalCode":"06000","addressLocality":"Nice","addressCountry":"FR"},
+"openingHoursSpecification":[
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Sunday"],"opens":"12:00","closes":"14:30"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"19:00","closes":"22:30"}]}
+</script>
+<style>
+:root{
+  --red:#8f2a1c;--red-d:#6e1f14;--ink:#231a15;--cream:#faf5ea;--sand:#f0e5cf;
+  --olive:#4d5a2e;--gold:#d4a24c;--muted:#5f5246;--line:#e4d6b9;
+  --radius:18px;--shadow:0 22px 50px -18px rgba(35,26,21,.35)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.12;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1160px;margin:0 auto}
+
+/* Ribbon */
+.ribbon{background:var(--ink);color:#eadfc8;font-size:12.5px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(250,245,234,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 14px;padding:10px 18px}
+.logo{font-family:Fraunces,Georgia,serif;font-size:1.3rem;font-weight:700;color:var(--red);text-decoration:none;line-height:1.1}
+.logo small{display:block;font:600 .6rem/1.4 Inter,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--olive);margin-top:3px}
+.menu-links{display:flex;gap:24px;list-style:none}
+.menu-links a{text-decoration:none;font-weight:500;font-size:.94rem;padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s,color .2s}
+.menu-links a:hover{color:var(--red);border-color:var(--gold)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:600;border:2px solid var(--red);cursor:pointer;font:600 1rem Inter,sans-serif;transition:background .25s,transform .25s,box-shadow .25s,color .25s;white-space:nowrap}
+.btn:hover{background:var(--red-d);border-color:var(--red-d);transform:translateY(-2px);box-shadow:0 12px 26px -8px rgba(143,42,28,.55)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.sm{padding:9px 16px;font-size:.9rem}
+.btn.olive{background:var(--olive);border-color:var(--olive)}
+.btn.olive:hover{background:#3b4523;border-color:#3b4523}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.85);color:#fff}
+.btn.ghost:hover{background:#fff;color:var(--ink)}
+.btn.light{background:#fff;border-color:#fff;color:var(--red)}
+.btn.light:hover{background:var(--cream)}
+#install{display:none}
+
+/* Hero */
+.hero{position:relative;min-height:min(88vh,820px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ink)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:zoom 14s ease-out forwards}
+@keyframes zoom{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,8,.25) 0%,rgba(20,12,8,.45) 40%,rgba(20,12,8,.9) 100%),linear-gradient(90deg,rgba(20,12,8,.6),rgba(20,12,8,0) 70%)}
+.hero .in{position:relative;z-index:1;width:100%;max-width:1160px;margin:0 auto;padding:120px 20px 72px}
+.eyebrow{text-transform:uppercase;letter-spacing:.26em;font-size:.76rem;font-weight:700;color:var(--olive);margin-bottom:14px}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(2.3rem,6.4vw,4.9rem);max-width:820px;margin-bottom:20px}
+.hero h1 em{font-style:italic;font-weight:500;color:#f3d9a6}
+.hero p.lead{max-width:560px;font-size:1.12rem;margin-bottom:32px;color:#f3eadb}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:38px;font-size:.92rem;color:#eadfc8}
+.hero-facts span{display:flex;align-items:center;gap:8px}
+.hero-facts span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+/* Sections */
+section{padding:100px 20px}
+.title{text-align:center;max-width:640px;margin:0 auto 52px}
+.title h2{font-size:clamp(2rem,4.2vw,3rem);color:var(--red)}
+.title p{color:var(--muted);margin-top:10px}
+
+/* About */
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.about figure{position:relative}
+.about figure img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/5;object-fit:cover}
+.about figure figcaption{position:absolute;right:-14px;bottom:28px;background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:14px 18px;font-size:.88rem;box-shadow:var(--shadow);max-width:230px}
+.about figure figcaption strong{display:block;font-family:Fraunces,serif;color:var(--red);font-size:1.05rem}
+.about h2{font-size:clamp(2rem,4vw,2.7rem);color:var(--red);margin-bottom:20px}
+.about p{margin-bottom:16px;color:#3a2f27}
+.about .sign{font-family:Fraunces,serif;font-style:italic;font-size:1.25rem;color:var(--olive);margin:22px 0 26px}
+
+/* Press */
+.press{background:var(--sand)}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.q{background:#fff;padding:30px 28px;border-radius:var(--radius);position:relative;transition:transform .3s,box-shadow .3s}
+.q::before{content:"“";position:absolute;top:-8px;left:22px;font:700 4.4rem/1 Fraunces,serif;color:var(--gold)}
+.q:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.q p{font-family:Fraunces,serif;font-style:italic;font-size:1.14rem;line-height:1.45;margin:22px 0 16px}
+.q span{font-size:.8rem;color:var(--olive);font-weight:700;text-transform:uppercase;letter-spacing:.12em}
+.press .note{text-align:center;margin-top:26px;color:var(--muted);font-size:.9rem}
+
+/* Cuisine */
+.cuisine{background:#fff}
+.dishes{list-style:none;max-width:820px;margin:0 auto;border-top:1px solid var(--line)}
+.dishes li{display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:baseline;padding:24px 4px;border-bottom:1px solid var(--line);transition:background .25s,padding .25s}
+.dishes li:hover{background:var(--cream);padding-left:14px}
+.dishes .n{font:500 1rem Fraunces,serif;color:var(--gold)}
+.dishes h3{font-size:1.4rem;margin-bottom:4px}
+.dishes p{color:var(--muted)}
+.cuisine .note{text-align:center;margin:34px auto 0;color:var(--muted);max-width:560px}
+.cuisine .note a{color:var(--red);font-weight:600}
+.produce{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:820px;margin:48px auto 0}
+.produce img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:14px}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:14px}
+.gallery a{position:relative;overflow:hidden;border-radius:14px;display:block;background:var(--sand)}
+.gallery a:first-child{grid-column:span 2;grid-row:span 2}
+.gallery a:nth-child(2){grid-column:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery a:hover img{transform:scale(1.06)}
+.gallery span{position:absolute;left:12px;bottom:12px;background:rgba(35,26,21,.75);color:#fff;font-size:.8rem;padding:5px 12px;border-radius:999px}
+
+/* Info */
+.info{background:var(--ink);color:#efe4d0}
+.info .title h2{color:var(--gold)}
+.info .title p{color:#cbbda6}
+.grid2{display:grid;grid-template-columns:1fr 1.25fr;gap:44px;align-items:stretch}
+.info h3{color:var(--gold);margin:0 0 10px;font-size:1.3rem}
+.block{margin-bottom:30px}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed rgba(239,228,208,.22)}
+.hours li span:last-child{text-align:right;color:#fff}
+.closed{margin-top:12px;color:#f3d9a6;font-size:.95rem}
+.info a{color:#fff}
+.map{border-radius:var(--radius);overflow:hidden;min-height:400px;background:#3a2f27}
+.map iframe{width:100%;height:100%;min-height:400px;border:0;display:block}
+
+/* Booking */
+.book{text-align:center;color:#fff;position:relative;overflow:hidden;background:var(--red)}
+.book>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.18}
+.book .wrap{position:relative;max-width:700px}
+.book h2{font-size:clamp(2rem,4.4vw,3rem);margin-bottom:14px}
+.book p{margin-bottom:30px;color:#fbeee0}
+.book .cta{justify-content:center}
+
+/* Footer */
+footer{background:#160f0b;color:#c9b89c;padding:48px 20px 110px;font-size:.9rem}
+.foot{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer strong{font-family:Fraunces,serif;font-size:1.3rem;color:#fff;font-weight:700}
+footer a{color:#f3d9a6}
+.credits{max-width:1160px;margin:28px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);font-size:.82rem;color:#a8977c}
+
+/* Sticky mobile bar */
+.sticky{display:none}
+
+/* Reveal: only hidden when JS is running */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  .hero>img{animation:none;transform:none}
+  html{scroll-behavior:auto}
+}
+
+@media (max-width:900px){
+  .menu-links{display:none}
+  .about,.grid2{grid-template-columns:1fr;gap:40px}
+  .about figure figcaption{right:12px}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+  .gallery a:first-child{grid-column:span 2;grid-row:span 2}
+  .gallery a:nth-child(2){grid-column:span 1}
+  section{padding:70px 18px}
+  .sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70;background:var(--red);box-shadow:0 -6px 20px rgba(0,0,0,.25);padding-bottom:env(safe-area-inset-bottom)}
+  .sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;color:#fff;text-decoration:none;font-weight:600;padding:15px 6px;font-size:.95rem}
+  .sticky a+a{border-left:1px solid rgba(255,255,255,.2)}
+  .sticky svg{width:18px;height:18px}
+}
+@media (max-width:420px){
+  .nav{padding:9px 14px}
+  .logo{font-size:1.15rem}
+  .btn.sm{padding:8px 13px;font-size:.85rem}
+  .hero .in{padding:100px 18px 56px}
+  .cta .btn{flex:1 1 100%}
+  .produce{grid-template-columns:1fr}
+  .dishes li{grid-template-columns:38px 1fr;gap:12px}
+  .hours li{flex-direction:column;gap:2px}
+  .hours li span:last-child{text-align:left}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Aperçu réalisé pour Voyageur Nissart par Kinoverse – pas encore en ligne</div>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#top">Voyageur Nissart<small>Bistrot niçois · Nice</small></a>
+    <nav aria-label="Navigation principale">
+      <ul class="menu-links">
+        <li><a href="#bistrot">Le bistrot</a></li>
+        <li><a href="#cuisine">Cuisine</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#infos">Horaires &amp; accès</a></li>
+        <li><a href="#reserver">Réserver</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <a class="btn sm" href="tel:+33493821960" aria-label="Appeler le Voyageur Nissart au 04 93 82 19 60">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Appeler
+      </a>
+      <button class="btn sm olive" id="install" type="button">Installer l'appli</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Accueil" style="padding:0">
+    <img src="img/hero.jpg?v=1" alt="La façade du restaurant Voyageur Nissart" fetchpriority="high">
+    <div class="in">
+      <p class="eyebrow">19 rue d'Alsace-Lorraine · Nice</p>
+      <h1>Le bistrot niçois <em>entre la gare et Jean-Médecin</em></h1>
+      <p class="lead">Max et son équipe servent une cuisine niçoise de saison, simple et toujours bonne, avec des produits d'ici. Du mardi au dimanche.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+33493821960">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Réserver : 04 93 82 19 60
+        </a>
+        <a class="btn ghost" href="#cuisine">Découvrir la cuisine</a>
+      </div>
+      <div class="hero-facts">
+        <span>Cuisine niçoise de saison</span>
+        <span>Produits locaux</span>
+        <span>Mardi – dimanche</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="bistrot">
+    <div class="wrap about">
+      <figure class="rv">
+        <img src="img/terrasse.jpg?v=1" alt="La terrasse du Voyageur Nissart" loading="lazy">
+        <figcaption><strong>Au cœur de Nice</strong>Entre la gare et l'avenue Jean-Médecin</figcaption>
+      </figure>
+      <div class="rv">
+        <p class="eyebrow">Bienvenue</p>
+        <h2>Un bistrot à l'ancienne, une seule philosophie</h2>
+        <p>Max et son équipe vous accueillent dans ce bistrot traditionnel, au cœur de Nice, avec une idée simple : servir une cuisine simple, constamment bonne.</p>
+        <p>Au Voyageur Nissart, la cuisine niçoise suit les saisons. Un excellent rapport qualité-prix, sans jamais transiger sur la qualité des produits, choisis localement.</p>
+        <p class="sign">« Simple, bon, de saison. »</p>
+        <a class="btn" href="#reserver">Réserver une table</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="press" aria-labelledby="press-title">
+    <div class="wrap">
+      <div class="title rv">
+        <p class="eyebrow">La presse</p>
+        <h2 id="press-title">Ce qu'on en dit</h2>
+        <p>Citations publiées sur le site du restaurant, dans leur langue d'origine.</p>
+      </div>
+      <div class="quotes rv">
+        <figure class="q"><p lang="en">The set menu is a bargain, even for Nice!</p><span>The Sun</span></figure>
+        <figure class="q"><p lang="en">Breezily Provençal</p><span>Time Out</span></figure>
+        <figure class="q"><p lang="en">Unfashionable, unshowy and off-centre, so please don't go. (I want to keep it for myself)</p><span>simonseeks.com</span></figure>
+        <figure class="q"><p lang="en">Receiving rave reviews from the Rough Guide, MTV Guide, Le Figaro and Le Monde, also much spoken about by locals too</p><span>toptable.com</span></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="cuisine" class="cuisine">
+    <div class="wrap">
+      <div class="title rv">
+        <p class="eyebrow">À table</p>
+        <h2>La cuisine niçoise, de saison</h2>
+        <p>Des plats traditionnels et généreux, par exemple :</p>
+      </div>
+      <ul class="dishes rv">
+        <li><span class="n">01</span><div><h3>Petits farcis niçois</h3><p>Les légumes farcis, grand classique de la table niçoise.</p></div></li>
+        <li><span class="n">02</span><div><h3>Caponata d'aubergines</h3><p>Les aubergines à l'honneur, saveurs du Sud.</p></div></li>
+        <li><span class="n">03</span><div><h3>Gnocchis niçois</h3><p>Une recette de tradition.</p></div></li>
+        <li><span class="n">04</span><div><h3>Osso bucco</h3><p>Le plat mijoté du bistrot.</p></div></li>
+        <li><span class="n">05</span><div><h3>Tarte citron de Menton</h3><p>Le citron de la Riviera en dessert.</p></div></li>
+      </ul>
+      <div class="produce rv">
+        <img src="img/tomato.jpg?v=1" alt="Tomates" loading="lazy">
+        <img src="img/basil.jpg?v=1" alt="Basilic frais" loading="lazy">
+      </div>
+      <p class="note rv">La carte change avec les saisons ; menus et prix sur demande. <a href="tel:+33493821960">Appelez le 04 93 82 19 60</a>.</p>
+    </div>
+  </section>
+
+  <section id="galerie">
+    <div class="wrap">
+      <div class="title rv">
+        <p class="eyebrow">Galerie</p>
+        <h2>Le bistrot en images</h2>
+        <p>La façade, la terrasse, la table et les produits.</p>
+      </div>
+      <div class="gallery rv">
+        <a href="img/hero.jpg?v=1"><img src="img/hero.jpg?v=1" alt="La façade du Voyageur Nissart" loading="lazy"><span>La façade</span></a>
+        <a href="img/terrasse.jpg?v=1"><img src="img/terrasse.jpg?v=1" alt="La terrasse du Voyageur Nissart" loading="lazy"><span>La terrasse</span></a>
+        <a href="img/charcuterie.jpg?v=1"><img src="img/charcuterie.jpg?v=1" alt="Charcuterie" loading="lazy"><span>Charcuterie</span></a>
+        <a href="img/basil.jpg?v=1"><img src="img/basil.jpg?v=1" alt="Basilic frais" loading="lazy"><span>Basilic</span></a>
+        <a href="img/tomato.jpg?v=1"><img src="img/tomato.jpg?v=1" alt="Tomates" loading="lazy"><span>Tomates</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" class="info">
+    <div class="wrap">
+      <div class="title rv">
+        <p class="eyebrow" style="color:var(--gold)">Nous trouver</p>
+        <h2>Horaires &amp; accès</h2>
+        <p>Entre la gare de Nice et l'avenue Jean-Médecin.</p>
+      </div>
+      <div class="grid2 rv">
+        <div>
+          <div class="block">
+            <h3>Horaires</h3>
+            <ul class="hours">
+              <li><span>Déjeuner</span><span>mar., mer., jeu., ven., dim. · 12h – 14h30</span></li>
+              <li><span>Dîner</span><span>du mardi au dimanche · 19h – 22h30</span></li>
+            </ul>
+            <p class="closed">Fermé le lundi et le samedi midi.</p>
+          </div>
+          <div class="block">
+            <h3>Adresse</h3>
+            <p>Voyageur Nissart<br>19 rue d'Alsace-Lorraine<br>06000 Nice</p>
+            <p style="margin-top:10px"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=19+Rue+d'Alsace+Lorraine,+06000+Nice" target="_blank" rel="noopener">Itinéraire →</a></p>
+          </div>
+          <div class="block">
+            <h3>Téléphone</h3>
+            <p><a href="tel:+33493821960">04 93 82 19 60</a></p>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="Plan : Voyageur Nissart, 19 rue d'Alsace-Lorraine, Nice" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=19+Rue+d'Alsace+Lorraine,+06000+Nice,+France&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserver" class="book">
+    <img src="img/charcuterie.jpg?v=1" alt="" loading="lazy">
+    <div class="wrap rv">
+      <p class="eyebrow" style="color:#f3d9a6">Contact &amp; réservations</p>
+      <h2>Réservez votre table</h2>
+      <p>Appelez directement le restaurant, du mardi au dimanche, pour le déjeuner ou le dîner.</p>
+      <div class="cta">
+        <a class="btn light" href="tel:+33493821960">Appeler le 04 93 82 19 60</a>
+        <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=19+Rue+d'Alsace+Lorraine,+06000+Nice" target="_blank" rel="noopener">Itinéraire</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot">
+    <div>
+      <strong>Voyageur Nissart</strong>
+      <p>Bistrot niçois traditionnel</p>
+    </div>
+    <div>
+      <p>19 rue d'Alsace-Lorraine, 06000 Nice</p>
+      <p><a href="tel:+33493821960">04 93 82 19 60</a></p>
+    </div>
+    <div>
+      <p>Déjeuner 12h – 14h30 · Dîner 19h – 22h30</p>
+      <p>Fermé le lundi et le samedi midi</p>
+    </div>
+  </div>
+  <p class="credits">Photos : Voyageur Nissart. · Aperçu réalisé pour Voyageur Nissart par Kinoverse – pas encore en ligne.</p>
+</footer>
+
+<nav class="sticky" aria-label="Actions rapides">
+  <a href="tel:+33493821960"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Appeler</a>
+  <a href="#reserver">Réserver</a>
+  <a href="#infos">Accès</a>
+</nav>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}});
+    },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el);});
+    // Safety net: never leave content hidden
+    setTimeout(function(){els.forEach(function(el){el.classList.add('on');});},3500);
+  }
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex';});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none';});}});
+  window.addEventListener('appinstalled',function(){b.style.display='none';});
+})();
+</script>
+</body>
+</html>
