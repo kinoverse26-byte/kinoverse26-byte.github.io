@@ -1,140 +1,334 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Atlas Barber Shop | Monte Vista, Cape Town</title>
-<meta name="description" content="Atlas Barber Shop, 98 Monte Vista, Cape Town. The place where you get a fresh haircut. Call or WhatsApp to book.">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Atlas Barber Shop | 98 Monte Vista, Cape Town</title>
+<meta name="description" content="Atlas Barber Shop at 98 Monte Vista, Cape Town. Fresh haircuts. Call or WhatsApp +27 74 665 6908 to book your chair.">
 <meta name="theme-color" content="#0e0d0b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atlas Barber Shop, 98 Monte Vista, Cape Town">
+<meta property="og:description" content="Fresh haircuts at 98 Monte Vista, Cape Town. Call or WhatsApp +27 74 665 6908 to book.">
+<meta property="og:image" content="img/hero2.jpg">
+<meta property="og:locale" content="en_ZA">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="img/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/icon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0e0d0b;--bg2:#171510;--gold:#c9a24b;--cream:#f3ece0;--mute:#a79f90}
+:root{
+  --bg:#0e0d0b;--bg2:#15130f;--bg3:#1c1914;--line:#2e2a21;
+  --gold:#c9a24b;--gold2:#e0bd6a;--cream:#f3ece0;--soft:#d9d0c0;--mute:#ada594;
+  --r:6px;--max:1120px;
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--cream);line-height:1.6;padding-bottom:64px}
-h1,h2,h3{font-family:'Playfair Display',Georgia,serif;margin:0}
-a{color:var(--gold)}
-.ribbon{background:#1d1a13;color:var(--mute);font-size:.72rem;text-align:center;padding:6px 10px;letter-spacing:.04em}
-nav{position:absolute;top:30px;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw}
-.logo{font-family:'Playfair Display',serif;font-weight:800;letter-spacing:.18em;color:var(--gold);text-decoration:none;font-size:1.05rem}
-nav .links{display:none;gap:26px}
-nav .links a{color:var(--cream);text-decoration:none;font-size:.9rem}
-@media(min-width:760px){nav .links{display:flex}}
-.hero{position:relative;min-height:92vh;display:flex;align-items:center;background:linear-gradient(90deg,rgba(14,13,11,.88),rgba(14,13,11,.35)),url(img/hero.jpg) center/cover}
-.hero .in{padding:120px 6vw 70px;max-width:760px}
-.eyebrow{letter-spacing:.3em;color:var(--gold);font-size:.78rem;font-weight:600}
-.hero h1{font-size:clamp(2.6rem,10vw,5.2rem);line-height:1.02;margin:.25em 0 .3em}
-.hero p{font-size:1.15rem;max-width:480px;color:#e4dccd}
-.btn{display:inline-block;margin:8px 10px 0 0;padding:15px 28px;border-radius:4px;text-decoration:none;font-weight:600;border:0;font-size:1rem;font-family:inherit;cursor:pointer;transition:transform .2s,background .2s}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--cream);line-height:1.65;font-size:1rem;padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;margin:0;font-weight:800;letter-spacing:-.01em}
+a{color:var(--gold2)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:#14110b;padding:10px 16px;z-index:50}
+.skip:focus{left:10px;top:10px}
+
+/* ribbon */
+.ribbon{background:#1d1a13;color:var(--mute);font-size:.72rem;text-align:center;padding:7px 12px;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+
+/* nav */
+nav{position:absolute;top:31px;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:16px 6vw}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Playfair Display',serif;font-weight:800;letter-spacing:.22em;color:var(--cream);text-decoration:none;font-size:1.05rem}
+.logo img{width:30px;height:30px}
+.logo span{color:var(--gold)}
+nav .links{display:none;gap:30px;align-items:center}
+nav .links a{color:var(--cream);text-decoration:none;font-size:.88rem;letter-spacing:.04em;opacity:.88}
+nav .links a:hover{opacity:1;color:var(--gold2)}
+nav .links .navcta{border:1px solid var(--gold);padding:8px 16px;border-radius:var(--r);color:var(--gold2);opacity:1}
+nav .phone{color:var(--cream);text-decoration:none;font-size:.85rem;font-weight:600;border:1px solid rgba(243,236,224,.35);padding:7px 12px;border-radius:var(--r);background:rgba(14,13,11,.4)}
+@media(min-width:860px){nav .links{display:flex}nav .phone{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:92vh;min-height:92svh;display:flex;align-items:flex-end;background:var(--bg) url(img/hero2.jpg) 62% center/cover no-repeat;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(180deg,rgba(14,13,11,.55) 0%,rgba(14,13,11,.25) 30%,rgba(14,13,11,.88) 78%,var(--bg) 100%)}
+@media(min-width:860px){
+  .hero{align-items:center}
+  .hero:before{background:linear-gradient(90deg,rgba(14,13,11,.92) 0%,rgba(14,13,11,.7) 42%,rgba(14,13,11,.15) 100%),linear-gradient(180deg,transparent 75%,var(--bg) 100%)}
+}
+.hero .in{width:100%;max-width:var(--max);margin:0 auto;padding:140px 6vw 64px}
+.eyebrow{display:inline-block;letter-spacing:.28em;color:var(--gold2);font-size:.74rem;font-weight:600;text-transform:uppercase}
+.hero h1{font-size:clamp(2.5rem,9.5vw,5.4rem);line-height:1.02;margin:.35em 0 .35em;max-width:12ch}
+.hero h1 em{font-style:italic;font-weight:600;color:var(--gold2)}
+.hero p{font-size:clamp(1.02rem,2.6vw,1.2rem);max-width:30em;color:var(--soft);margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:14px 26px;border-radius:var(--r);text-decoration:none;font-weight:600;border:0;font-size:1rem;font-family:inherit;cursor:pointer;transition:transform .2s,background .2s,color .2s,border-color .2s}
 .btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
 .gold{background:var(--gold);color:#14110b}
-.line{border:1.5px solid var(--gold);color:var(--gold);background:transparent}
-section{padding:84px 6vw}
-.wrap{max-width:1080px;margin:0 auto}
-h2{font-size:clamp(1.8rem,5vw,2.6rem);color:var(--cream);margin-bottom:10px}
-h2:after{content:"";display:block;width:56px;height:3px;background:var(--gold);margin-top:14px}
-.lead{color:var(--mute);max-width:560px;margin:18px 0 34px}
-.about{display:grid;gap:34px;align-items:center}
-@media(min-width:800px){.about{grid-template-columns:1fr 1fr}}
-.about img{width:100%;height:380px;object-fit:cover;border-radius:6px}
-.alt{background:var(--bg2)}
-.cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.card{background:var(--bg);border:1px solid #2c2820;border-radius:8px;padding:26px;transition:transform .25s,border-color .25s}
-.card:hover{transform:translateY(-6px);border-color:var(--gold)}
-.card h3{color:var(--gold);font-size:1.25rem;margin-bottom:8px}
-.price{margin-top:14px;font-size:.85rem;color:var(--mute)}
-.note{font-size:.8rem;color:var(--mute);margin-top:20px}
-.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:800px){.gal{grid-template-columns:repeat(3,1fr)}}
-.gal img{width:100%;height:230px;object-fit:cover;border-radius:6px;transition:transform .4s,filter .4s;filter:saturate(.9)}
-.gal img:hover{transform:scale(1.03);filter:saturate(1.1)}
-.gal div{overflow:hidden;border-radius:6px}
-.two{display:grid;gap:30px}
-@media(min-width:800px){.two{grid-template-columns:1fr 1.2fr}}
-.hours li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #2c2820;list-style:none}
-ul{padding:0;margin:0}
-iframe{width:100%;height:340px;border:0;border-radius:8px;filter:grayscale(.4) contrast(1.05)}
-.contact p{margin:6px 0}
-footer{padding:34px 6vw;text-align:center;color:var(--mute);font-size:.78rem;border-top:1px solid #2c2820}
-.sticky{position:fixed;bottom:0;left:0;right:0;display:flex;z-index:20;box-shadow:0 -4px 20px rgba(0,0,0,.5)}
-.sticky a{flex:1;text-align:center;padding:16px;font-weight:600;text-decoration:none;color:#14110b;background:var(--gold)}
-.sticky a+a{background:#e1bf6d}
-@media(min-width:800px){.sticky{display:none}body{padding-bottom:0}}
-.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
-.rv.on{opacity:1;transform:none}
-#inst{display:none}
-</style></head><body>
-<div class="ribbon">Preview made for Atlas Barber Shop by Kinoverse - not live yet</div>
-<nav><a class="logo" href="#top">ATLAS</a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a><a href="#book">Book</a></div></nav>
-<header class="hero" id="top"><div class="in">
-<div class="eyebrow">BARBER SHOP &middot; CAPE TOWN</div>
-<h1>Atlas Barber Shop</h1>
-<p>The place where you get a fresh haircut. 98 Monte Vista, Cape Town.</p>
-<a class="btn gold" href="https://wa.me/27746656908">Book on WhatsApp</a>
-<a class="btn line" href="tel:+27746656908">Call +27 74 665 6908</a>
-<button class="btn line" id="inst">Install the app</button>
-</div></header>
+.gold:hover{background:var(--gold2)}
+.line{border:1.5px solid var(--gold);color:var(--gold2);background:rgba(14,13,11,.35)}
+.line:hover{background:var(--gold);color:#14110b}
+@media(max-width:520px){.ctas .btn{flex:1 1 100%}}
+#install{display:none}
+.hero .addr{margin-top:28px;font-size:.85rem;color:var(--mute);letter-spacing:.04em}
+.hero .addr a{color:var(--soft);text-decoration:none;border-bottom:1px solid var(--line)}
 
-<section id="about"><div class="wrap about rv">
-<div><h2>Fresh cuts, clean finish</h2>
-<p class="lead">Atlas Barber Shop is a neighbourhood barber on Monte Vista in Cape Town. Walk in looking tired, walk out sharp. Call or message us to book your chair.</p>
-<a class="btn gold" href="#book">Book a cut</a></div>
-<img src="img/cut.jpg" alt="Man getting a haircut at the barber" loading="lazy">
-</div></section>
+/* sections */
+section{padding:clamp(72px,11vw,120px) 6vw}
+.wrap{max-width:var(--max);margin:0 auto}
+.kicker{display:block;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold2);font-weight:600;margin-bottom:14px}
+h2{font-size:clamp(1.9rem,5.5vw,3rem);line-height:1.1}
+h2:after{content:"";display:block;width:56px;height:2px;background:var(--gold);margin-top:18px}
+.center h2:after{margin-left:auto;margin-right:auto}
+.lead{color:var(--soft);max-width:36em;margin:22px 0 34px;font-size:1.05rem}
+.alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 
-<section id="services" class="alt"><div class="wrap">
-<h2 class="rv">Services</h2>
-<p class="lead rv">Prices are given when you call to book.</p>
-<div class="cards">
-<div class="card rv"><h3>Haircuts</h3>Fresh cuts, fades and clean lines.<div class="price">Price: call to book</div></div>
-<div class="card rv"><h3>Beard care</h3>Shape and trim to suit your face.<div class="price">Price: call to book</div></div>
-<div class="card rv"><h3>Shaves</h3>A classic, close shave.<div class="price">Price: call to book</div></div>
+/* about */
+.about{display:grid;gap:44px;align-items:center}
+@media(min-width:860px){.about{grid-template-columns:1.05fr 1fr;gap:70px}}
+.about figure{margin:0;position:relative}
+.about figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+.about figure:after{content:"";position:absolute;inset:16px -16px -16px 16px;border:1px solid var(--gold);border-radius:var(--r);z-index:-1;opacity:.6}
+.about .pic{position:relative;z-index:0;margin-right:16px}
+.facts{list-style:none;padding:0;margin:0 0 30px;display:grid;gap:14px}
+.facts li{display:flex;gap:14px;align-items:flex-start;color:var(--soft)}
+.facts li:before{content:"";flex:none;width:8px;height:8px;margin-top:.6em;transform:rotate(45deg);background:var(--gold)}
+
+/* services */
+.cards{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:700px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:30px 26px;transition:transform .25s,border-color .25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.card .no{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);font-size:1.05rem}
+.card h3{font-size:1.4rem;margin:10px 0 10px}
+.card p{margin:0 0 22px;color:var(--soft);font-size:.96rem}
+.price{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-size:.85rem;color:var(--mute);display:flex;justify-content:space-between;gap:10px}
+.price b{color:var(--gold2);font-weight:600}
+.note{font-size:.84rem;color:var(--mute);margin-top:24px}
+
+/* gallery */
+.gal{display:grid;gap:10px;grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+.gal figure{margin:0;overflow:hidden;border-radius:var(--r);background:var(--bg3)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s,filter .6s;filter:saturate(.92)}
+.gal figure:hover img{transform:scale(1.05);filter:saturate(1.08)}
+.gal .big{grid-column:span 2;grid-row:span 2}
+@media(min-width:760px){
+  .gal{grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px}
+  .gal .big{grid-column:span 2;grid-row:span 2}
+  .gal .tall{grid-row:span 2}
+}
+
+/* visit */
+.two{display:grid;gap:40px}
+@media(min-width:860px){.two{grid-template-columns:1fr 1.25fr;gap:60px;align-items:stretch}}
+.info dl{margin:30px 0 0;display:grid;gap:0}
+.info .row{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.info .row:first-child{border-top:1px solid var(--line)}
+.info dt{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);padding-top:3px}
+.info dd{margin:0;color:var(--cream);word-break:break-word}
+.info dd a{text-decoration:none;border-bottom:1px solid rgba(201,162,75,.4)}
+.info small{display:block;color:var(--mute);font-size:.84rem;margin-top:2px}
+.mapbox{border-radius:8px;overflow:hidden;border:1px solid var(--line);min-height:340px;background:var(--bg3)}
+.mapbox iframe{display:block;width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.55) contrast(1.05) brightness(.95)}
+.dir{margin-top:22px}
+
+/* book */
+.book{position:relative;text-align:center;isolation:isolate;background:var(--bg) url(img/chair.jpg) center/cover no-repeat}
+.book:before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(14,13,11,.86)}
+.book .lead{margin-left:auto;margin-right:auto}
+.book .ctas{justify-content:center}
+.book .mail{margin-top:22px;color:var(--mute);font-size:.92rem}
+
+/* footer */
+footer{padding:48px 6vw 40px;background:#090908;color:var(--mute);font-size:.82rem;border-top:1px solid var(--line)}
+footer .wrap{display:grid;gap:18px}
+footer .brand{font-family:'Playfair Display',serif;letter-spacing:.22em;color:var(--cream);font-weight:800;font-size:1rem}
+footer .brand span{color:var(--gold)}
+footer a{color:var(--soft)}
+footer p{margin:0}
+
+/* sticky mobile bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;background:var(--bg);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+.sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:60px;font-weight:600;text-decoration:none;color:var(--cream);font-size:1rem}
+.sticky a svg{width:18px;height:18px}
+.sticky .c{background:var(--gold);color:#14110b}
+.sticky .w{background:var(--bg3)}
+@media(min-width:860px){.sticky{display:none}body{padding-bottom:0}}
+
+/* reveal: only hides content when JS is running */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  .btn,.card,.gal img{transition:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ribbon" role="note">Preview made for Atlas Barber Shop by Kinoverse - not live yet</div>
+
+<nav aria-label="Main">
+  <a class="logo" href="#top" aria-label="Atlas Barber Shop, back to top"><img src="img/icon.svg" alt="" width="30" height="30">AT<span>L</span>AS</a>
+  <div class="links">
+    <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a>
+    <a class="navcta" href="#book">Book a chair</a>
+  </div>
+  <a class="phone" href="tel:+27746656908">Call</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="in">
+    <span class="eyebrow">Barber Shop · Monte Vista · Cape Town</span>
+    <h1>Fresh cuts at <em>98 Monte Vista.</em></h1>
+    <p>Atlas Barber Shop is where Cape Town comes for a fresh haircut. Call or WhatsApp to book your chair.</p>
+    <div class="ctas">
+      <a class="btn gold" href="https://wa.me/27746656908?text=Hi%20Atlas%20Barber%20Shop%2C%20I%27d%20like%20to%20book%20a%20cut." rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>
+        Book on WhatsApp</a>
+      <a class="btn line" href="tel:+27746656908">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        +27 74 665 6908</a>
+      <button class="btn line" id="install" type="button">Install the app</button>
+    </div>
+    <p class="addr">98 Monte Vista, Cape Town · <a href="#visit">Find us</a></p>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="about" aria-labelledby="about-h">
+  <div class="wrap about">
+    <div class="rv">
+      <span class="kicker">The shop</span>
+      <h2 id="about-h">Your barber on Monte Vista</h2>
+      <p class="lead">Atlas Barber Shop is a barber shop at 98 Monte Vista, Cape Town. Come in, take the chair and leave with a fresh, clean haircut. Booking is simple: a call or a WhatsApp message is all it takes.</p>
+      <ul class="facts">
+        <li>98 Monte Vista, Cape Town</li>
+        <li>Book by phone or WhatsApp on +27 74 665 6908</li>
+        <li>Questions by email: atlasbarbercpt@gmail.com</li>
+      </ul>
+      <a class="btn gold" href="#book">Book a cut</a>
+    </div>
+    <div class="pic rv">
+      <figure><img src="img/shop.jpg" alt="Inside a barber shop: chairs, mirrors and workstations" loading="lazy" width="800" height="1000"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt" aria-labelledby="services-h">
+  <div class="wrap">
+    <span class="kicker rv">What we do</span>
+    <h2 id="services-h" class="rv">Services</h2>
+    <p class="lead rv">Tell us what you're after when you book. The full list and prices are confirmed directly with the shop.</p>
+    <div class="cards">
+      <article class="card rv">
+        <span class="no">01</span>
+        <h3>Haircuts</h3>
+        <p>A fresh, clean cut, finished properly.</p>
+        <div class="price"><span>Price</span><b>Call to book</b></div>
+      </article>
+      <article class="card rv">
+        <span class="no">02</span>
+        <h3>Fades &amp; styling</h3>
+        <p>Detail work and shape, cut to suit you.</p>
+        <div class="price"><span>Price</span><b>Call to book</b></div>
+      </article>
+      <article class="card rv">
+        <span class="no">03</span>
+        <h3>Beard &amp; grooming</h3>
+        <p>Tidy edges and a neat finish. Ask when you book.</p>
+        <div class="price"><span>Price</span><b>Call to book</b></div>
+      </article>
+    </div>
+    <p class="note rv">Service list and prices to be confirmed with the shop: <a href="tel:+27746656908">+27 74 665 6908</a>.</p>
+  </div>
+</section>
+
+<section id="gallery" aria-labelledby="gallery-h">
+  <div class="wrap">
+    <span class="kicker rv">In the chair</span>
+    <h2 id="gallery-h" class="rv">Gallery</h2>
+    <p class="lead rv">The chair, the tools, the craft.</p>
+    <div class="gal rv">
+      <figure class="big"><img src="img/barber.jpg" alt="A barber at work" loading="lazy"></figure>
+      <figure><img src="img/cut.jpg" alt="A haircut in progress" loading="lazy"></figure>
+      <figure class="tall"><img src="img/chair.jpg" alt="A classic barber chair" loading="lazy"></figure>
+      <figure><img src="img/daily.jpg" alt="An everyday moment in a barber shop" loading="lazy"></figure>
+      <figure class="big"><img src="img/hero2.jpg" alt="A barber cutting a client's hair in Cape Town" loading="lazy"></figure>
+      <figure class="big"><img src="img/shop.jpg" alt="Barber shop interior with mirrors and chairs" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="alt" aria-labelledby="visit-h">
+  <div class="wrap two">
+    <div class="info rv">
+      <span class="kicker">Find us</span>
+      <h2 id="visit-h">Visit &amp; hours</h2>
+      <dl>
+        <div class="row"><dt>Address</dt><dd><strong>Atlas Barber Shop</strong><br>98 Monte Vista, Cape Town</dd></div>
+        <div class="row"><dt>Hours</dt><dd>Call to book<small>Opening hours to be confirmed with the shop.</small></dd></div>
+        <div class="row"><dt>Phone</dt><dd><a href="tel:+27746656908">+27 74 665 6908</a><small>Calls &amp; WhatsApp</small></dd></div>
+        <div class="row"><dt>Email</dt><dd><a href="mailto:atlasbarbercpt@gmail.com">atlasbarbercpt@gmail.com</a></dd></div>
+      </dl>
+      <a class="btn line dir" href="https://www.google.com/maps/search/?api=1&query=98+Monte+Vista%2C+Cape+Town" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <div class="mapbox rv">
+      <iframe title="Map showing Atlas Barber Shop at 98 Monte Vista, Cape Town" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=98+Monte+Vista,+Cape+Town&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="book" aria-labelledby="book-h">
+  <div class="wrap center">
+    <span class="kicker rv">Bookings</span>
+    <h2 id="book-h" class="rv">Book your chair</h2>
+    <p class="lead rv">Send a WhatsApp or give us a call on +27 74 665 6908 and we'll find you a time.</p>
+    <div class="ctas rv">
+      <a class="btn gold" href="https://wa.me/27746656908?text=Hi%20Atlas%20Barber%20Shop%2C%20I%27d%20like%20to%20book%20a%20cut." rel="noopener">WhatsApp us</a>
+      <a class="btn line" href="tel:+27746656908">Call now</a>
+    </div>
+    <p class="mail rv">Prefer email? <a href="mailto:atlasbarbercpt@gmail.com">atlasbarbercpt@gmail.com</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">AT<span>L</span>AS BARBER SHOP</div>
+    <p>98 Monte Vista, Cape Town · <a href="tel:+27746656908">+27 74 665 6908</a> · <a href="mailto:atlasbarbercpt@gmail.com">atlasbarbercpt@gmail.com</a></p>
+    <p>© <span id="yr">2026</span> Atlas Barber Shop.</p>
+    <p>Photo credit: "African Barber - Cape Town - 2012 - Photo 10" by Pierre F. Lombard, via <a href="https://commons.wikimedia.org/wiki/File:African_Barber_-_Cape_Town_-_2012_-_Photo_10.jpg" rel="noopener">Wikimedia Commons</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener">CC BY-SA</a>.</p>
+    <p>Preview made for Atlas Barber Shop by Kinoverse - not live yet.</p>
+  </div>
+</footer>
+
+<div class="sticky" aria-label="Quick contact">
+  <a class="c" href="tel:+27746656908"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a class="w" href="https://wa.me/27746656908?text=Hi%20Atlas%20Barber%20Shop%2C%20I%27d%20like%20to%20book%20a%20cut." rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>WhatsApp</a>
 </div>
-<p class="note">Service list shown as an example until the owner confirms what to list.</p>
-</div></section>
 
-<section id="gallery"><div class="wrap">
-<h2 class="rv">Gallery</h2>
-<p class="lead rv">Atmosphere shots (stock photos for this preview, to be replaced with Atlas's own).</p>
-<div class="gal rv">
-<div><img src="img/chair.jpg" alt="Retro barbershop chair" loading="lazy"></div>
-<div><img src="img/shop.jpg" alt="Barber giving a haircut in a shop" loading="lazy"></div>
-<div><img src="img/daily.jpg" alt="A daily haircut" loading="lazy"></div>
-<div><img src="img/barber.jpg" alt="Barber at work" loading="lazy"></div>
-<div><img src="img/hero.jpg" alt="Barber scissors" loading="lazy"></div>
-<div><img src="img/cut.jpg" alt="Haircut in progress" loading="lazy"></div>
-</div></div></section>
-
-<section id="visit" class="alt"><div class="wrap two">
-<div class="rv"><h2>Opening hours</h2>
-<ul class="hours"><li><span>Monday - Sunday</span><span>On request</span></li></ul>
-<p class="note">Call or WhatsApp to confirm today's hours.</p>
-<h2 style="margin-top:36px">Find us</h2>
-<p class="lead" style="margin-bottom:0">Atlas Barber Shop<br>98 Monte Vista<br>Cape Town, South Africa</p></div>
-<div class="rv"><iframe title="Map to Atlas Barber Shop" loading="lazy" src="https://www.google.com/maps?q=Atlas+Barber+Shop+98+Monte+Vista+Cape+Town&output=embed"></iframe></div>
-</div></section>
-
-<section id="book"><div class="wrap contact rv">
-<h2>Book your chair</h2>
-<p class="lead">The quickest way is a message or a call.</p>
-<p>Phone / WhatsApp: <a href="tel:+27746656908">+27 74 665 6908</a></p>
-<p>Email: <a href="mailto:atlasbarbercpt@gmail.com">atlasbarbercpt@gmail.com</a></p>
-<a class="btn gold" href="https://wa.me/27746656908">WhatsApp us</a>
-<a class="btn line" href="https://www.google.com/maps/search/?api=1&query=Atlas+Barber+Shop+98+Monte+Vista+Cape+Town">Get directions</a>
-</div></section>
-
-<footer>&copy; Atlas Barber Shop, 98 Monte Vista, Cape Town. Preview made by Kinoverse - not live yet.<br>
-Photos: Nick Demou (StockSnap, CC0), Rawpixel (CC0), "The Daily Haircut" by Makia Minich (CC BY-SA, Wikimedia Commons), "Barber in Cameroon" by James Emery (CC BY, Wikimedia Commons).</footer>
-
-<div class="sticky"><a href="tel:+27746656908">Call</a><a href="https://wa.me/27746656908">WhatsApp</a></div>
 <script>
-const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-let dp;const b=document.getElementById('inst');
-addEventListener('beforeinstallprompt',e=>{e.preventDefault();dp=e;b.style.display='inline-block'});
-b.onclick=()=>{if(dp){dp.prompt();dp=null;b.style.display='none'}};
+(function(){
+  var y=document.getElementById('yr');if(y)y.textContent=new Date().getFullYear();
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});}
+  else{
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e)});
+    setTimeout(function(){els.forEach(function(e){e.classList.add('on')})},4000);
+  }
+  var dp,b=document.getElementById('install');
+  addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp=null;b.style.display='none'}});
+  if('serviceWorker' in navigator && location.protocol==='https:'){navigator.serviceWorker.getRegistrations&&0;}
+})();
 </script>
-</body></html>
+</body>
+</html>
