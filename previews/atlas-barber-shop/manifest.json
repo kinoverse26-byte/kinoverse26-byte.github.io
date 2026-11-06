@@ -1,0 +1,13 @@
+{
+  "name": "Atlas Barber Shop",
+  "short_name": "Atlas",
+  "description": "Atlas Barber Shop, 98 Monte Vista, Cape Town. Call or WhatsApp to book.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#c9a24b",
+  "icons": [
+    {"src": "img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
