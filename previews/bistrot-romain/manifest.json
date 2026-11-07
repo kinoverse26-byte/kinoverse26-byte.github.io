@@ -1,0 +1,20 @@
+{
+  "name": "Bistrot Romain - Montpellier",
+  "short_name": "Bistrot Romain",
+  "description": "Restaurant Bistrot Romain, Esplanade de l'Europe, Montpellier",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1b1210",
+  "theme_color": "#7a1f1f",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
