@@ -1,0 +1,19 @@
+{
+  "name": "Chez P'tit Louis",
+  "short_name": "P'tit Louis",
+  "description": "Bistro de quartier à Rennes - 9 Rue Saint-Louis",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1f1612",
+  "theme_color": "#8a2b1d",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
