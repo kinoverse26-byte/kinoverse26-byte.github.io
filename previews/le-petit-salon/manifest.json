@@ -1,11 +1,11 @@
 {
   "name": "Le Petit Salon - Coiffeur Lyon 5e",
   "short_name": "Le Petit Salon",
-  "description": "Salon de coiffure, 6 place Saint-Jean, Lyon 5e",
+  "description": "Salon de coiffure, 6 place Saint-Jean, 69005 Lyon",
+  "lang": "fr",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "lang": "fr",
   "background_color": "#faf6f1",
   "theme_color": "#2b2220",
   "icons": [
