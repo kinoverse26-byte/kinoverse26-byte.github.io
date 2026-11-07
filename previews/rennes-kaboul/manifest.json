@@ -1,0 +1,13 @@
+{
+  "name": "Rennes-Kaboul - Restaurant afghan",
+  "short_name": "Kaboul",
+  "description": "Restaurant afghan au 54 rue d'Antrain, Rennes",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1b1210",
+  "theme_color": "#8a2a1a",
+  "lang": "fr",
+  "icons": [
+    {"src": "img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
