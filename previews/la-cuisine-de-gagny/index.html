@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La Cuisine de Gagny · Restaurant, 153 boulevard Chave, Marseille</title>
+<meta name="description" content="La Cuisine de Gagny, restaurant au 153 boulevard Chave à Marseille. Réservation et renseignements par téléphone au 06 59 05 86 19.">
+<meta name="theme-color" content="#7a1f2b">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237a1f2b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23f3e6cf'%3EG%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="La Cuisine de Gagny">
+<meta property="og:title" content="La Cuisine de Gagny · Restaurant boulevard Chave, Marseille">
+<meta property="og:description" content="Votre table au 153 boulevard Chave, Marseille. Réservation par téléphone au 06 59 05 86 19.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"La Cuisine de Gagny","telephone":"+33659058619","address":{"@type":"PostalAddress","streetAddress":"153 Boulevard Chave","addressLocality":"Marseille","addressCountry":"FR"},"sameAs":["https://fr-fr.facebook.com/LaCuisinedeGagny/"]}
+</script>
+<style>
+:root{
+  --wine:#7a1f2b;--wine-2:#952738;--ink:#1b1512;--ink-2:#261d19;
+  --cream:#faf5ee;--sand:#f1e7da;--gold:#d2ad68;--muted:#665b53;--line:#e2d6c6;
+  --wa:#1d7a4c;
+  --r:16px;
+}
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:1rem;padding-bottom:64px}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:700;line-height:1.12;letter-spacing:-.01em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 14px;z-index:100}
+.skip:focus{left:10px;top:10px}
+
+/* Ribbon */
+.ribbon{background:#0f0b09;color:#e6dccd;font-size:.75rem;text-align:center;padding:7px 12px;letter-spacing:.02em}
+
+/* Header: sticky, wraps on small phones so every button stays visible */
+header{position:sticky;top:0;z-index:40;background:rgba(27,21,18,.94);backdrop-filter:saturate(140%) blur(8px);-webkit-backdrop-filter:saturate(140%) blur(8px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 14px;padding:10px 5vw;max-width:1240px;margin:auto}
+.logo{font-family:"Playfair Display",Georgia,serif;font-size:1.2rem;font-weight:700;text-decoration:none;white-space:nowrap;color:#fff}
+nav{display:none;gap:26px}
+nav a{text-decoration:none;font-size:.9rem;color:#e9dfd2;transition:color .2s}
+nav a:hover{color:var(--gold)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.hbtn{display:inline-flex;align-items:center;gap:6px;background:var(--wine);color:#fff;text-decoration:none;font-weight:600;font-size:.88rem;padding:9px 16px;border-radius:999px;border:0;cursor:pointer;font-family:inherit;white-space:nowrap}
+.hbtn:hover{background:var(--wine-2)}
+.hbtn.alt{background:transparent;border:1px solid rgba(255,255,255,.45)}
+#install{display:none}
+@media(min-width:900px){nav{display:flex}.logo{font-size:1.35rem}}
+
+/* Hero */
+.hero{position:relative;min-height:calc(100svh - 90px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,11,9,.35) 0%,rgba(15,11,9,.55) 45%,rgba(15,11,9,.92) 100%)}
+.hero-in{width:100%;max-width:1240px;margin:auto;padding:110px 5vw 70px}
+.kicker{display:inline-block;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:18px}
+.hero h1{font-size:clamp(2.3rem,8vw,5rem);max-width:13ch;margin-bottom:20px}
+.hero h1 em{font-style:italic;font-weight:500;color:#f3e6cf}
+.hero p{font-size:clamp(1.02rem,2.4vw,1.2rem);max-width:540px;color:#efe6da;margin-bottom:30px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--wine);color:#fff;padding:15px 26px;border-radius:999px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:1rem;font-family:inherit;transition:background .25s,transform .25s}
+.btn:hover{background:var(--wine-2);transform:translateY(-2px)}
+.btn.wa{background:var(--wa)}
+.btn.wa:hover{background:#238f5a}
+.btn.line{background:transparent;border:1px solid rgba(255,255,255,.6)}
+.btn.line:hover{background:rgba(255,255,255,.1)}
+.hero-note{margin-top:26px;font-size:.82rem;color:#cfc3b4}
+
+/* Sections */
+section{padding:clamp(70px,11vw,120px) 5vw}
+.wrap{max-width:1160px;margin:auto}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--wine);font-weight:600;margin-bottom:12px;display:block}
+h2{font-size:clamp(1.9rem,5vw,3rem);margin-bottom:18px}
+.lead{color:var(--muted);max-width:620px;font-size:1.05rem}
+.dark{background:var(--ink);color:#f2e9dc}
+.dark .eyebrow{color:var(--gold)}
+.dark .lead{color:#c4b8a9}
+
+/* About */
+.about{display:grid;gap:48px;align-items:center}
+.about p+p{margin-top:16px}
+.about .lead{margin-bottom:0}
+.about figure{position:relative}
+.about figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:0 30px 60px -20px rgba(27,21,18,.45)}
+.about figure::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);border-radius:var(--r);z-index:-1}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.fact{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+.fact b{display:block;font-family:"Playfair Display",Georgia,serif;font-size:1.05rem}
+.fact span{font-size:.88rem;color:var(--muted)}
+@media(min-width:860px){.about{grid-template-columns:1.05fr .95fr;gap:80px}}
+
+/* Services */
+.svc{display:grid;gap:18px;margin-top:46px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.s{background:var(--ink-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:28px 24px;transition:transform .3s,border-color .3s}
+.s:hover{transform:translateY(-4px);border-color:rgba(210,173,104,.5)}
+.s .n{font-family:"Playfair Display",Georgia,serif;color:var(--gold);font-size:1.6rem;display:block;margin-bottom:12px}
+.s h3{font-size:1.3rem;margin-bottom:8px}
+.s p{color:#c4b8a9;font-size:.95rem}
+.s a{color:var(--gold);font-weight:600;text-decoration:none;display:inline-block;margin-top:12px;font-size:.92rem}
+.s a:hover{text-decoration:underline}
+
+/* Gallery */
+.gal{display:grid;gap:12px;margin-top:40px;grid-template-columns:1fr 1fr}
+.gal figure{overflow:hidden;border-radius:12px;background:var(--sand)}
+.gal img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal .big{grid-column:1/-1}
+.gal .big img{aspect-ratio:16/10}
+@media(min-width:860px){
+  .gal{grid-template-columns:repeat(4,1fr);grid-auto-rows:240px}
+  .gal img,.gal .big img{aspect-ratio:auto}
+  .gal .big{grid-column:span 2;grid-row:span 2}
+  .gal .wide{grid-column:span 2}
+}
+.small-note{font-size:.82rem;color:var(--muted);margin-top:16px}
+
+/* Infos */
+.info{display:grid;gap:34px;margin-top:40px}
+.info ul{list-style:none;display:grid;gap:22px}
+.info li{border-left:2px solid var(--gold);padding-left:16px}
+.info b{display:block;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.info li a{text-decoration:underline;text-underline-offset:3px}
+.map{border-radius:var(--r);overflow:hidden;min-height:340px;background:var(--ink-2)}
+.map iframe{display:block;width:100%;height:100%;min-height:340px;border:0;filter:saturate(.85)}
+@media(min-width:860px){.info{grid-template-columns:.9fr 1.3fr;gap:50px}}
+
+/* Contact */
+.contact{display:grid;gap:40px}
+@media(min-width:860px){.contact{grid-template-columns:1fr 1fr;gap:70px}}
+.quick{display:grid;gap:12px;margin-top:28px}
+.quick .btn{width:100%}
+form{display:grid;gap:14px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(22px,4vw,34px)}
+label{font-size:.85rem;font-weight:600;display:grid;gap:6px}
+input,textarea,select{padding:13px 14px;border:1px solid #d6c9b7;border-radius:10px;font:inherit;font-weight:400;background:var(--cream);color:var(--ink);width:100%}
+input:focus,textarea:focus{outline:2px solid var(--wine);border-color:transparent}
+.row{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.form-note{font-size:.8rem;color:var(--muted)}
+
+/* Footer */
+footer{background:#0f0b09;color:#b3a698;padding:50px 5vw 40px;font-size:.88rem}
+.foot{max-width:1160px;margin:auto;display:grid;gap:22px}
+footer .logo{font-size:1.3rem}
+footer a{color:var(--gold)}
+.credits{font-size:.78rem;color:#93877a;border-top:1px solid rgba(255,255,255,.08);padding-top:18px}
+
+/* Sticky mobile bar */
+.sticky{position:fixed;bottom:0;left:0;right:0;z-index:50;display:flex;padding-bottom:env(safe-area-inset-bottom);background:var(--ink)}
+.sticky a{flex:1;text-align:center;padding:17px 8px;color:#fff;text-decoration:none;font-weight:600;background:var(--wine);font-size:.98rem}
+.sticky a+a{background:var(--wa)}
+@media(min-width:900px){.sticky{display:none}body{padding-bottom:0}}
+
+/* Reveal: content is only hidden when JS is running */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.hero>img{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="ribbon">Aperçu réalisé pour La Cuisine de Gagny par Kinoverse – pas encore en ligne</div>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">La Cuisine de Gagny</a>
+    <nav aria-label="Navigation principale">
+      <a href="#apropos">Le restaurant</a>
+      <a href="#services">Venir</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#infos">Infos</a>
+      <a href="#contact">Réserver</a>
+    </nav>
+    <div class="actions">
+      <a class="hbtn" href="tel:+33659058619" aria-label="Appeler La Cuisine de Gagny">📞 Appeler</a>
+      <button class="hbtn alt" id="install" type="button">Installer l'appli</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <img src="img/hero.jpg?v=1" alt="Pièce de viande servie à l'assiette (photo d'illustration)" fetchpriority="high">
+  <div class="hero-in">
+    <span class="kicker">Restaurant · Boulevard Chave · Marseille</span>
+    <h1>Votre table au <em>153, boulevard Chave</em></h1>
+    <p>La Cuisine de Gagny vous reçoit à Marseille. Un coup de fil suffit pour réserver ou connaître les plats du moment.</p>
+    <div class="ctas">
+      <a class="btn" href="tel:+33659058619">Appeler pour réserver</a>
+      <a class="btn wa" href="https://wa.me/33659058619" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn line" href="#infos">Plan d'accès</a>
+    </div>
+    <p class="hero-note">06 59 05 86 19 · Horaires à confirmer par téléphone</p>
+  </div>
+</div>
+
+<section id="apropos">
+  <div class="wrap about">
+    <div class="rv">
+      <span class="eyebrow">Le restaurant</span>
+      <h2>Une adresse du boulevard Chave</h2>
+      <p class="lead">La Cuisine de Gagny est un restaurant marseillais installé au 153 boulevard Chave. On y vient pour s'attabler, le temps d'un repas, dans le quartier.</p>
+      <p>La carte, les plats du jour et les nouvelles du restaurant sont partagés sur la page <a href="https://fr-fr.facebook.com/LaCuisinedeGagny/" target="_blank" rel="noopener">Facebook de La Cuisine de Gagny</a>. Pour une réservation ou une question, le plus simple reste d'appeler.</p>
+      <div class="facts">
+        <div class="fact"><b>153 bd Chave</b><span>Marseille</span></div>
+        <div class="fact"><b>Sur réservation</b><span>par téléphone</span></div>
+      </div>
+    </div>
+    <figure class="rv">
+      <img src="img/vin.jpg?v=1" alt="Verre de vin rouge sur une table de restaurant (photo d'illustration)" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section id="services" class="dark">
+  <div class="wrap">
+    <span class="eyebrow rv">Venir chez nous</span>
+    <h2 class="rv">Comment profiter de la table</h2>
+    <p class="lead rv">Carte, prix et horaires sont communiqués directement par le restaurant&nbsp;: un appel et vous savez tout.</p>
+    <div class="svc">
+      <div class="s rv">
+        <span class="n">01</span>
+        <h3>Réserver une table</h3>
+        <p>Indiquez le jour, l'heure et le nombre de couverts&nbsp;: l'équipe vous confirme la disponibilité.</p>
+        <a href="tel:+33659058619">Appeler le 06 59 05 86 19 →</a>
+      </div>
+      <div class="s rv">
+        <span class="n">02</span>
+        <h3>Découvrir la carte</h3>
+        <p>Les plats et les prix vous sont donnés sur demande, au téléphone ou sur la page Facebook.</p>
+        <a href="https://fr-fr.facebook.com/LaCuisinedeGagny/" target="_blank" rel="noopener">Voir la page Facebook →</a>
+      </div>
+      <div class="s rv">
+        <span class="n">03</span>
+        <h3>Venir à plusieurs</h3>
+        <p>Une tablée entre amis, en famille ou entre collègues&nbsp;? Appelez à l'avance pour en parler.</p>
+        <a href="#contact">Préparer ma demande →</a>
+      </div>
+      <div class="s rv">
+        <span class="n">04</span>
+        <h3>Écrire sur WhatsApp</h3>
+        <p>Envoyez votre demande par message au même numéro, on vous répond dès que possible.</p>
+        <a href="https://wa.me/33659058619" target="_blank" rel="noopener">Ouvrir WhatsApp →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <span class="eyebrow rv">Galerie</span>
+    <h2 class="rv">À table</h2>
+    <p class="lead rv">Un avant-goût en images, en attendant les photos de la maison.</p>
+    <div class="gal rv">
+      <figure class="big"><img src="img/hero.jpg?v=1" alt="Viande grillée servie à l'assiette" loading="lazy"></figure>
+      <figure><img src="img/boeuf.jpg?v=1" alt="Assiette de bœuf et ses accompagnements" loading="lazy"></figure>
+      <figure><img src="img/vin.jpg?v=1" alt="Vin rouge servi à table" loading="lazy"></figure>
+      <figure><img src="img/burger.jpg?v=1" alt="Burger et frites" loading="lazy"></figure>
+      <figure><img src="img/assiette.jpg?v=1" alt="Assiette de sandwichs" loading="lazy"></figure>
+    </div>
+    <p class="small-note">Photos d'illustration, ne représentant pas les plats du restaurant.</p>
+  </div>
+</section>
+
+<section id="infos" class="dark">
+  <div class="wrap">
+    <span class="eyebrow rv">Infos pratiques</span>
+    <h2 class="rv">Nous trouver</h2>
+    <div class="info">
+      <ul class="rv">
+        <li><b>Adresse</b>153 Boulevard Chave<br>Marseille</li>
+        <li><b>Téléphone</b><a href="tel:+33659058619">+33 6 59 05 86 19</a></li>
+        <li><b>Horaires</b>À confirmer – appelez avant de venir</li>
+        <li><b>Facebook</b><a href="https://fr-fr.facebook.com/LaCuisinedeGagny/" target="_blank" rel="noopener">La Cuisine de Gagny</a></li>
+        <li><b>Itinéraire</b><a href="https://www.google.com/maps/dir/?api=1&amp;destination=153+Boulevard+Chave+Marseille" target="_blank" rel="noopener">Ouvrir dans Maps</a></li>
+      </ul>
+      <div class="map rv">
+        <iframe title="Plan : La Cuisine de Gagny, 153 Boulevard Chave, Marseille" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=153%20Boulevard%20Chave%2C%20Marseille&amp;z=16&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div class="rv">
+      <span class="eyebrow">Réserver</span>
+      <h2>Une table pour quand&nbsp;?</h2>
+      <p class="lead">Le plus rapide&nbsp;: un appel. Vous pouvez aussi préparer votre demande ici, elle s'ouvre directement dans WhatsApp.</p>
+      <div class="quick">
+        <a class="btn" href="tel:+33659058619">📞 06 59 05 86 19</a>
+        <a class="btn wa" href="https://wa.me/33659058619" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+      </div>
+    </div>
+    <form class="rv" id="resa">
+      <label>Votre nom<input name="nom" autocomplete="name" required></label>
+      <div class="row">
+        <label>Date<input name="date" type="date" required></label>
+        <label>Heure<input name="heure" type="time"></label>
+      </div>
+      <label>Nombre de personnes<input name="pers" type="number" min="1" inputmode="numeric" required></label>
+      <label>Message (facultatif)<textarea name="msg" rows="3"></textarea></label>
+      <button class="btn" type="submit">Envoyer ma demande</button>
+      <p class="form-note">Votre demande est envoyée par WhatsApp au restaurant, qui vous confirme la réservation.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot">
+    <a class="logo" href="#top">La Cuisine de Gagny</a>
+    <p>Restaurant · 153 Boulevard Chave, Marseille · <a href="tel:+33659058619">+33 6 59 05 86 19</a> · <a href="https://fr-fr.facebook.com/LaCuisinedeGagny/" target="_blank" rel="noopener">Facebook</a></p>
+    <p class="credits">© La Cuisine de Gagny. Photos d'illustration libres de droits (CC0, Rawpixel), aucune attribution requise. Aperçu réalisé par Kinoverse – pas encore en ligne.</p>
+  </div>
+</footer>
+
+<div class="sticky" role="navigation" aria-label="Contact rapide">
+  <a href="tel:+33659058619">📞 Appeler</a>
+  <a href="https://wa.me/33659058619" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var d=document.documentElement;d.classList.add('js');
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},4000);
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none'})}});
+  window.addEventListener('appinstalled',function(){b.style.display='none'});
+  if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(function(){})}
+
+  var f=document.getElementById('resa');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(n){return (f.elements[n].value||'').trim()};
+    var t='Bonjour La Cuisine de Gagny, je souhaite réserver une table.\nNom : '+v('nom')+'\nDate : '+v('date')+(v('heure')?' à '+v('heure'):'')+'\nPersonnes : '+v('pers')+(v('msg')?'\nMessage : '+v('msg'):'');
+    window.open('https://wa.me/33659058619?text='+encodeURIComponent(t),'_blank','noopener');
+  });
+})();
+</script>
+</body>
+</html>
