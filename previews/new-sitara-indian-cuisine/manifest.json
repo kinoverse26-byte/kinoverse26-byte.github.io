@@ -1,0 +1,17 @@
+{
+  "name": "New Sitara Indian Cuisine",
+  "short_name": "New Sitara",
+  "description": "Indian cuisine in Austin, TX - call or order online.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1b0f0a",
+  "theme_color": "#b8431f",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
