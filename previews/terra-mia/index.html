@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Terra Mia · Restaurant italien &amp; pizzeria, Quai Antoine Riboud, Lyon Confluence</title>
+<meta name="description" content="Terra Mia, restaurant italien et pizzeria au 5 Quai Antoine Riboud, 69002 Lyon Confluence. Pizzas et cuisine italienne, en terrasse ou à emporter. Réservation par téléphone au 04 69 16 09 54.">
+<meta name="theme-color" content="#8c2f1b">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238c2f1b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23f8f1e5' text-anchor='middle'%3ETM%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Terra Mia · Pizzeria italienne à Lyon Confluence">
+<meta property="og:description" content="Pizzas et cuisine italienne au 5 Quai Antoine Riboud, Lyon 2e. Terrasse et vente à emporter.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --red:#8c2f1b;--red-2:#a53a22;--dark:#1c1411;--dark-2:#2a1f1a;--ink:#2b211c;
+  --cream:#f8f1e5;--cream-2:#efe4d1;--gold:#c9a15a;--gold-soft:#f0d9a8;--olive:#4a5d3a;
+  --radius:18px;--pad:clamp(20px,6vw,72px)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:16px}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* Ribbon */
+.ribbon{background:#120d0b;color:#d9c9a8;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.03em}
+
+/* Header - wraps on small phones so every button stays visible */
+header{position:sticky;top:0;z-index:50;background:rgba(28,20,17,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,161,90,.18)}
+.bar{max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px var(--pad)}
+.logo{font-family:'Cormorant Garamond',Georgia,serif;color:var(--cream);font-size:28px;font-weight:600;text-decoration:none;letter-spacing:.02em;white-space:nowrap}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px}
+nav .links{display:flex;gap:22px}
+nav .links a{color:var(--cream);text-decoration:none;font-size:14px;opacity:.85;transition:color .2s,opacity .2s}
+nav .links a:hover{opacity:1;color:var(--gold)}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;border:0;cursor:pointer;font-family:inherit;transition:transform .25s,background .25s,box-shadow .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);background:var(--red-2);box-shadow:0 10px 24px rgba(140,47,27,.35)}
+.btn.sm{padding:9px 16px;font-size:14px}
+.btn.gold{background:var(--gold);color:var(--dark)}
+.btn.gold:hover{background:#d8b273}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.7)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.light{background:#fff;color:var(--red)}
+.btn.light:hover{background:var(--cream)}
+#install{display:none}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* Hero */
+.hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04);animation:zoom 14s ease-out forwards}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(18,11,8,.35) 0%,rgba(18,11,8,.55) 45%,rgba(18,11,8,.9) 100%)}
+@keyframes zoom{to{transform:scale(1)}}
+.hero .inner{max-width:1200px;width:100%;margin:auto;padding:120px var(--pad) clamp(56px,9vh,96px)}
+.kicker{display:inline-block;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-soft);font-size:12px;font-weight:500}
+.hero h1{font-size:clamp(42px,8vw,92px);margin:16px 0 20px;max-width:900px;font-weight:600}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{font-size:clamp(16px,2vw,19px);font-weight:300;max-width:560px;margin-bottom:30px;color:#f3ead9}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:38px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);font-size:14px;color:#eadfca}
+.facts span::before{content:"·";color:var(--gold);margin-right:8px}
+.facts span:first-child::before{content:none}
+
+/* Sections */
+section{padding:clamp(70px,11vw,120px) var(--pad)}
+.wrap{max-width:1200px;margin:auto}
+.eyebrow{display:inline-block;color:var(--red);text-transform:uppercase;letter-spacing:.24em;font-size:12px;font-weight:600}
+h2{font-size:clamp(34px,5vw,56px);margin:12px 0 22px}
+.lead{font-size:18px;max-width:620px}
+.muted{opacity:.78}
+
+/* About */
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,6vw,80px);align-items:center}
+.about figure{position:relative}
+.about figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius);box-shadow:0 30px 60px rgba(28,20,17,.22)}
+.about figure::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--gold);border-radius:calc(var(--radius) + 4px);z-index:-1}
+.about p+p{margin-top:14px}
+.quote{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:24px;color:var(--red);margin:22px 0 6px}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.tags span{border:1px solid rgba(140,47,27,.35);color:var(--ink);padding:7px 16px;border-radius:999px;font-size:13px;background:#fffaf1}
+
+/* Services */
+.dark{background:var(--dark);color:var(--cream)}
+.dark .eyebrow{color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:40px}
+.card{background:var(--dark-2);border-radius:var(--radius);overflow:hidden;border:1px solid rgba(201,161,90,.14);transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(0,0,0,.45)}
+.card img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.card .body{padding:24px 24px 28px}
+.card .num{font-family:'Cormorant Garamond',Georgia,serif;color:var(--gold);font-size:18px;font-style:italic}
+.card h3{font-size:28px;margin:4px 0 10px}
+.card p{font-size:15px;color:#e2d6c2}
+.card .note{display:block;margin-top:16px;color:var(--gold-soft);font-size:13px}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px;margin-top:40px}
+.gallery figure{overflow:hidden;border-radius:14px;background:var(--cream-2)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.gallery figure:hover img{transform:scale(1.05)}
+.g1{grid-column:span 2;grid-row:span 2}
+.g4{grid-column:span 2}
+
+/* Hours + map */
+.info{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(32px,5vw,64px);align-items:stretch}
+table{width:100%;border-collapse:collapse;margin-top:8px}
+td{padding:14px 0;border-bottom:1px solid rgba(248,241,229,.14);font-size:15px;vertical-align:top}
+td:last-child{text-align:right;font-weight:500}
+tr.today td{color:var(--gold-soft)}
+tr.today td:first-child::after{content:" · aujourd'hui";font-size:12px;opacity:.8}
+.addr{margin-top:26px;font-size:17px;line-height:1.5}
+.addr strong{font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:600;display:block}
+.small{font-size:12.5px;opacity:.65;margin-top:12px}
+.map{border-radius:var(--radius);overflow:hidden;min-height:360px;border:1px solid rgba(201,161,90,.2);display:flex;flex-direction:column}
+.map iframe{flex:1;width:100%;min-height:360px;border:0;display:block}
+.map a{display:block;text-align:center;padding:12px;font-size:14px;background:var(--dark-2);color:var(--gold-soft);text-decoration:none}
+
+/* Contact */
+.contact{background:var(--red);color:#fff;text-align:center;position:relative;overflow:hidden}
+.contact .eyebrow{color:var(--gold-soft)}
+.contact p{max-width:560px;margin:0 auto;color:#fbefe6}
+.contact .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.contact .tel{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(36px,6vw,58px);color:#fff;text-decoration:none;margin:18px 0 6px;font-weight:600}
+
+/* Footer */
+footer{background:#120d0b;color:#bfae92;padding:48px var(--pad) 40px;font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer .logo{font-size:26px}
+footer a{color:var(--gold-soft)}
+footer p+p{margin-top:6px}
+
+/* Sticky mobile call bar */
+.sticky{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;gap:8px;padding:10px 10px calc(10px + env(safe-area-inset-bottom));background:rgba(28,20,17,.97);border-top:1px solid rgba(201,161,90,.25)}
+.sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:13px 8px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;background:var(--red);color:#fff}
+.sticky a.alt{background:var(--gold);color:var(--dark)}
+.sticky svg{width:18px;height:18px}
+
+/* Reveal - only when JS runs */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
+
+@media(max-width:900px){
+  nav .links{display:none}
+  .about,.info{grid-template-columns:1fr}
+  .about figure img{aspect-ratio:4/3}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+  .g1{grid-column:span 2;grid-row:span 2}
+  .g4{grid-column:span 2}
+  .sticky{display:flex}
+  body{padding-bottom:76px}
+}
+@media(max-width:420px){
+  .bar{padding:10px 16px}
+  .logo{font-size:24px}
+  .btn.sm{padding:8px 13px;font-size:13.5px}
+  .hero .ctas .btn{flex:1 1 100%}
+  td{font-size:14px}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Aperçu réalisé pour Terra Mia par Kinoverse – pas encore en ligne</div>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">Terra Mia</a>
+    <nav aria-label="Navigation principale">
+      <div class="links">
+        <a href="#restaurant">Le restaurant</a>
+        <a href="#carte">La carte</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#infos">Horaires</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="actions">
+        <button class="btn sm gold" id="install" type="button">Installer l'app</button>
+        <a class="btn sm" href="tel:+33469160954">Appeler</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="Accueil" style="padding:0">
+  <img src="img/hero.jpg?v=1" alt="Pizza italienne sortie du four" fetchpriority="high">
+  <div class="inner">
+    <span class="kicker">Lyon Confluence · 69002</span>
+    <h1>La pizza italienne du <em>Quai Antoine Riboud</em>.</h1>
+    <p>Terra Mia, restaurant italien et pizzeria au cœur de Confluence : à table, en terrasse ou à emporter.</p>
+    <div class="ctas">
+      <a class="btn" href="tel:+33469160954">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Réserver par téléphone
+      </a>
+      <a class="btn ghost" href="#carte">Découvrir la carte</a>
+    </div>
+    <div class="facts">
+      <span>Cuisine italienne &amp; pizzas</span>
+      <span>Terrasse</span>
+      <span>Vente à emporter</span>
+    </div>
+  </div>
+</section>
+
+<section id="restaurant">
+  <div class="wrap about">
+    <figure class="reveal">
+      <img src="img/oven.jpg?v=1" alt="Pizza devant un four à pizza" loading="lazy">
+    </figure>
+    <div class="reveal">
+      <span class="eyebrow">Bienvenue chez Terra Mia</span>
+      <h2>Une table italienne à Confluence</h2>
+      <p class="quote">« Terra mia » — ma terre.</p>
+      <p>Au 5 Quai Antoine Riboud, dans le 2<sup>e</sup> arrondissement de Lyon, Terra Mia sert une cuisine italienne et des pizzas, pour un déjeuner en semaine comme pour un dîner en fin de semaine.</p>
+      <p>Installez-vous en salle ou en terrasse, ou emportez votre commande pour la savourer chez vous ou au bureau.</p>
+      <div class="tags"><span>Cuisine italienne</span><span>Pizzas</span><span>Terrasse</span><span>À emporter</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="carte">
+  <div class="wrap">
+    <span class="eyebrow">La carte</span>
+    <h2 class="reveal">Ce qui vous attend</h2>
+    <p class="lead muted">La carte du moment et les tarifs sont communiqués sur demande : un simple appel au restaurant suffit.</p>
+    <div class="cards">
+      <article class="card reveal">
+        <img src="img/pizza2.jpg?v=1" alt="Pizza" loading="lazy">
+        <div class="body"><span class="num">01</span><h3>Les pizzas</h3><p>Le cœur de la maison : des pizzas à l'italienne, à partager ou à savourer seul.</p><span class="note">Carte &amp; prix : sur demande</span></div>
+      </article>
+      <article class="card reveal">
+        <img src="img/ricotta.jpg?v=1" alt="Pizza à la ricotta, en gros plan" loading="lazy">
+        <div class="body"><span class="num">02</span><h3>La cuisine italienne</h3><p>Des recettes italiennes à découvrir à table, en salle ou en terrasse.</p><span class="note">Carte &amp; prix : sur demande</span></div>
+      </article>
+      <article class="card reveal">
+        <img src="img/italian.jpg?v=1" alt="Pizza" loading="lazy">
+        <div class="body"><span class="num">03</span><h3>À emporter</h3><p>Commandez par téléphone et récupérez vos plats au Quai Antoine Riboud.</p><span class="note">Commande : au 04 69 16 09 54</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <span class="eyebrow">Galerie</span>
+    <h2 class="reveal">À table</h2>
+    <div class="gallery reveal">
+      <figure class="g1"><img src="img/pizza4.jpg?v=1" alt="Pizza" loading="lazy"></figure>
+      <figure><img src="img/ricotta.jpg?v=1" alt="Pizza à la ricotta" loading="lazy"></figure>
+      <figure><img src="img/oven.jpg?v=1" alt="Pizza et four à pizza" loading="lazy"></figure>
+      <figure class="g4"><img src="img/hero.jpg?v=1" alt="Pizza" loading="lazy"></figure>
+      <figure><img src="img/pizza2.jpg?v=1" alt="Pizza" loading="lazy"></figure>
+      <figure><img src="img/italian.jpg?v=1" alt="Pizza" loading="lazy"></figure>
+    </div>
+    <p class="small" style="color:var(--ink)">Photos d'illustration.</p>
+  </div>
+</section>
+
+<section class="dark" id="infos">
+  <div class="wrap info">
+    <div class="reveal">
+      <span class="eyebrow">Horaires &amp; accès</span>
+      <h2>Venez nous voir</h2>
+      <table aria-label="Horaires d'ouverture">
+        <tr data-d="1"><td>Lundi</td><td>12h – 14h</td></tr>
+        <tr data-d="2"><td>Mardi</td><td>12h – 14h</td></tr>
+        <tr data-d="3"><td>Mercredi</td><td>12h – 14h · 19h – 22h</td></tr>
+        <tr data-d="4"><td>Jeudi</td><td>12h – 14h · 19h – 22h</td></tr>
+        <tr data-d="5"><td>Vendredi</td><td>12h – 14h · 19h – 22h</td></tr>
+        <tr data-d="6"><td>Samedi</td><td>12h – 14h · 19h – 22h</td></tr>
+        <tr data-d="0"><td>Dimanche</td><td>Fermé</td></tr>
+      </table>
+      <p class="small">Horaires indicatifs, à confirmer par téléphone.</p>
+      <p class="addr"><strong>Terra Mia</strong>5 Quai Antoine Riboud<br>69002 Lyon · Confluence</p>
+      <div class="contact-mini" style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px">
+        <a class="btn" href="tel:+33469160954">04 69 16 09 54</a>
+        <a class="btn gold" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.7428556,4.8166684" target="_blank" rel="noopener">Itinéraire</a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe title="Carte : Terra Mia, 5 Quai Antoine Riboud, Lyon" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=4.8126%2C45.7408%2C4.8206%2C45.7448&amp;layer=mapnik&amp;marker=45.7428556%2C4.8166684"></iframe>
+      <a href="https://www.openstreetmap.org/?mlat=45.7428556&amp;mlon=4.8166684#map=18/45.7428556/4.8166684" target="_blank" rel="noopener">Voir la carte en grand ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <span class="eyebrow">Réservation &amp; commandes</span>
+    <h2>Une table ? Un appel suffit.</h2>
+    <p>Réservez votre table ou passez votre commande à emporter directement auprès de l'équipe de Terra Mia.</p>
+    <a class="tel" href="tel:+33469160954">04 69 16 09 54</a>
+    <div class="row">
+      <a class="btn gold" href="tel:+33469160954">Appeler</a>
+      <a class="btn light" href="mailto:terramia.lyon@gmail.com">terramia.lyon@gmail.com</a>
+      <a class="btn ghost" href="https://www.instagram.com/terramia_confluence" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#top">Terra Mia</a>
+      <p style="margin-top:8px">Restaurant italien &amp; pizzeria · Lyon Confluence</p>
+    </div>
+    <div>
+      <p>5 Quai Antoine Riboud, 69002 Lyon</p>
+      <p><a href="tel:+33469160954">+33 4 69 16 09 54</a> · <a href="mailto:terramia.lyon@gmail.com">terramia.lyon@gmail.com</a></p>
+      <p><a href="https://www.instagram.com/terramia_confluence" target="_blank" rel="noopener">@terramia_confluence</a></p>
+    </div>
+    <div>
+      <p>Photos : rawpixel, domaine public (CC0).</p>
+      <p>Carte : © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">contributeurs OpenStreetMap</a></p>
+      <p>Aperçu réalisé par Kinoverse – pas encore en ligne.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky" aria-label="Actions rapides">
+  <a href="tel:+33469160954"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Appeler</a>
+  <a class="alt" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.7428556,4.8166684" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Itinéraire</a>
+</div>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+    },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},4000);
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  var row=document.querySelector('tr[data-d="'+new Date().getDay()+'"]');
+  if(row)row.classList.add('today');
+
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none'})}});
+  window.addEventListener('appinstalled',function(){b.style.display='none'});
+
+  if('serviceWorker' in navigator){
+    window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})});
+  }
+})();
+</script>
+</body>
+</html>
