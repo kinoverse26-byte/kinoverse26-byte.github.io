@@ -4,321 +4,331 @@
 <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Le Petit Salon – Coiffeur au 6 place Saint-Jean, Lyon 5e</title>
-<meta name="description" content="Le Petit Salon, salon de coiffure au 6 place Saint-Jean, dans le Vieux Lyon (69005). Coupe, couleur, soins. Rendez-vous par téléphone au 06 67 29 33 29.">
-<meta name="theme-color" content="#2b1f1c">
+<title>Le Petit Salon · Coiffeur place Saint-Jean, Vieux Lyon (Lyon 5e)</title>
+<meta name="description" content="Le Petit Salon, salon de coiffure au 6 place Saint-Jean, 69005 Lyon, dans le Vieux Lyon. Coupe, couleur, soins. Rendez-vous par téléphone au 09 81 87 13 71.">
+<meta name="theme-color" content="#2b2420">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="icon.svg">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:title" content="Le Petit Salon – Coiffeur place Saint-Jean, Lyon 5e">
-<meta property="og:description" content="Votre salon de coiffure au cœur du Vieux Lyon, 6 place Saint-Jean. Rendez-vous au 06 67 29 33 29.">
-<meta property="og:image" content="img/salon-red-seats.jpg?v=1">
+<meta property="og:title" content="Le Petit Salon · Coiffeur place Saint-Jean, Lyon 5e">
+<meta property="og:description" content="Coupe, couleur et soins au 6 place Saint-Jean, au cœur du Vieux Lyon. Rendez-vous au 09 81 87 13 71.">
+<meta property="og:image" content="img/hero.jpg?v=1">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#2b1f1c;--ink2:#1d1412;--cream:#f8f2ea;--sand:#efe3d2;--rose:#9a5546;--rose-l:#d9a28f;--gold:#d4b07a;--mut:#6b5a53;--line:#e3d6c3}
+:root{
+  --ink:#2b2420;--ink-2:#3a302a;--cream:#f7f1ea;--sand:#e8dccd;--paper:#fffdfa;
+  --accent:#a84a31;--accent-d:#8c3b25;--gold:#d2ad72;--muted:#6b5d53;
+  --r:20px;--shadow:0 10px 30px rgba(43,36,32,.08);
+}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'Jost',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-weight:300;font-size:1.0625rem}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:1rem;padding-bottom:64px}
+@media(min-width:900px){body{padding-bottom:0}}
 img{display:block;max-width:100%}
-h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.08;letter-spacing:.005em}
-a{color:inherit;text-decoration:none}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.ribbon{background:var(--ink2);color:#e9dccb;text-align:center;font-size:.76rem;padding:.45rem 1rem;letter-spacing:.04em}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.005em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
 
-/* header */
-header{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.6rem 1rem;padding:.75rem 5vw;background:rgba(248,242,234,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.logo{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:600;letter-spacing:.02em;white-space:nowrap}
-nav{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;align-items:center;justify-content:flex-end;font-size:.93rem}
-nav .lk{position:relative}
-nav .lk::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:1px;background:var(--rose);transition:right .3s}
-nav .lk:hover::after{right:0}
-.actions{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:flex-end}
+/* Ribbon */
+.ribbon{background:#1d1714;color:var(--sand);font-size:.74rem;text-align:center;padding:7px 12px;letter-spacing:.03em}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--rose);color:#fff;padding:.85rem 1.7rem;border-radius:99px;font-weight:500;transition:background .3s,transform .3s,color .3s;border:1px solid transparent;cursor:pointer;font-family:inherit;font-size:1rem;line-height:1.2;white-space:nowrap}
-.btn:hover{background:var(--ink);transform:translateY(-2px)}
-.btn.sm{padding:.55rem 1.1rem;font-size:.9rem}
-.btn.ghost{background:transparent;border-color:rgba(255,255,255,.75);color:#fff}
-.btn.ghost:hover{background:#fff;color:var(--ink)}
-.btn.dark{background:var(--ink)}
-.btn.dark:hover{background:var(--rose)}
-.btn.line{background:transparent;border-color:var(--ink);color:var(--ink)}
+/* Hero + header */
+.hero{position:relative;min-height:92vh;min-height:92svh;display:flex;flex-direction:column;color:#fff;
+  background:#2b2420 url("img/hero.jpg?v=1") center/cover no-repeat;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(29,23,20,.55) 0%,rgba(29,23,20,.35) 35%,rgba(29,23,20,.88) 100%)}
+@media(min-width:900px){.hero::before{background:linear-gradient(90deg,rgba(29,23,20,.88) 0%,rgba(29,23,20,.55) 50%,rgba(29,23,20,.2) 100%)}}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 14px;padding:16px 5vw}
+.logo{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.55rem;font-weight:700;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+.head-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+nav{display:none}
+nav a{text-decoration:none;font-size:.88rem;margin-right:22px;opacity:.9}
+nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+@media(min-width:900px){nav{display:block}}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:40px;font-size:.88rem;font-weight:600;text-decoration:none;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.45);color:#fff;cursor:pointer;font-family:inherit;white-space:nowrap;
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.pill.solid{background:var(--accent);border-color:var(--accent)}
+.pill:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.install{display:none}
+.install.show{display:inline-flex}
+
+.hero-body{flex:1;display:flex;align-items:flex-end;padding:40px 6vw 64px}
+@media(min-width:900px){.hero-body{align-items:center}}
+.hero-inner{max-width:720px}
+.kicker{display:inline-block;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-size:.74rem;font-weight:600}
+.hero h1{font-size:clamp(2.5rem,9.5vw,5.4rem);margin:14px 0 18px}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:500}
+.hero p{font-size:1.08rem;max-width:34em;opacity:.95;margin-bottom:28px}
+.ctas{display:flex;flex-wrap:wrap;gap:10px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;padding:14px 26px;border-radius:40px;
+  text-decoration:none;font-weight:600;border:1.5px solid var(--accent);cursor:pointer;font-size:1rem;font-family:inherit;transition:transform .25s,background .25s}
+.btn:hover{transform:translateY(-2px);background:var(--accent-d);border-color:var(--accent-d)}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.8);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.btn.dark{background:var(--ink);border-color:var(--ink)}
+.btn.dark:hover{background:var(--ink-2)}
+.btn.line{background:transparent;color:var(--ink);border-color:var(--ink)}
 .btn.line:hover{background:var(--ink);color:#fff}
-#inst{display:none}
-svg.i{width:1.05em;height:1.05em;flex:none}
 
-/* hero */
-.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;padding:7rem 5vw 5rem;color:#fff;overflow:hidden;isolation:isolate}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:-2}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(29,20,18,.25) 0%,rgba(29,20,18,.55) 45%,rgba(29,20,18,.9) 100%)}
-.hero .in{max-width:720px}
-.kicker{display:inline-block;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-size:.78rem;font-weight:500}
-.hero h1{font-size:clamp(2.6rem,7.5vw,5.4rem);margin:.9rem 0 1.1rem}
-.hero h1 em{color:var(--gold);font-style:italic}
-.hero p{font-size:1.15rem;margin-bottom:2rem;max-width:520px;color:#f3e9dc}
-.ctas{display:flex;flex-wrap:wrap;gap:.75rem}
-.today{display:inline-flex;align-items:center;gap:.55rem;margin-top:1.8rem;font-size:.92rem;color:#efe3d2}
-.dot{width:.55rem;height:.55rem;border-radius:50%;background:#9db08a;box-shadow:0 0 0 4px rgba(157,176,138,.25)}
-.dot.off{background:#c98b7a;box-shadow:0 0 0 4px rgba(201,139,122,.25)}
+/* Sections */
+section{padding:88px 6vw}
+@media(min-width:900px){section{padding:120px 6vw}}
+.wrap{max-width:1120px;margin:0 auto}
+.eyebrow{display:block;color:var(--accent);text-transform:uppercase;letter-spacing:.2em;font-size:.74rem;font-weight:600;margin-bottom:12px}
+h2{font-size:clamp(2.1rem,6.5vw,3.4rem);margin-bottom:18px}
+.lead{font-size:1.08rem;color:var(--muted);max-width:38em}
 
-/* sections */
-section{padding:6.5rem 5vw}
-.wrap{max-width:1120px;margin:auto}
-.tag{display:block;color:var(--rose);letter-spacing:.25em;text-transform:uppercase;font-size:.76rem;font-weight:500}
-.dark .tag{color:var(--rose-l)}
-h2{font-size:clamp(2.1rem,5vw,3.4rem);margin:.6rem 0 1.3rem}
-.lead{font-size:1.12rem;max-width:640px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
-.about figure{position:relative}
-.about img{width:100%;height:520px;object-fit:cover;border-radius:220px 220px 14px 14px}
-.about figure::after{content:"";position:absolute;inset:1.2rem -1.2rem -1.2rem 1.2rem;border:1px solid var(--gold);border-radius:220px 220px 14px 14px;z-index:-1}
-.about p+p{margin-top:1rem}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0;padding:1.4rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.facts b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;line-height:1.1}
-.facts span{font-size:.85rem;color:var(--mut)}
+/* About */
+.about{display:grid;gap:44px}
+@media(min-width:900px){.about{grid-template-columns:1.05fr .95fr;align-items:center;gap:72px}}
+.about p+p{margin-top:14px}
+.facts{list-style:none;margin-top:28px;display:grid;gap:12px}
+.facts li{display:flex;gap:14px;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--sand)}
+.facts b{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.25rem;min-width:7.5em;font-weight:600}
+.photo{position:relative}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:var(--shadow)}
+.photo::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid var(--gold);border-radius:var(--r);z-index:-1}
+.photo{isolation:isolate;margin-right:18px}
 
-.dark{background:var(--ink);color:#f3e9dc}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem;margin-top:2.8rem}
-.card{background:#fbf7f1;color:var(--ink);padding:2.2rem 2rem;border-radius:16px;transition:transform .35s,box-shadow .35s}
-.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(0,0,0,.25)}
-.card .n{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--rose);font-size:1.1rem}
-.card h3{font-size:1.9rem;margin:.3rem 0 .6rem}
-.card .p{color:var(--rose);font-weight:500;margin-top:1.2rem;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase}
-.svc-note{margin-top:2rem;color:#d8c8b6;font-size:.95rem}
+/* Services */
+.services{background:var(--paper)}
+.cards{display:grid;gap:18px;margin-top:40px}
+@media(min-width:760px){.cards{grid-template-columns:repeat(3,1fr);gap:22px}}
+.card{background:#fff;border:1px solid var(--sand);border-radius:var(--r);padding:34px 30px;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(43,36,32,.13)}
+.num{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;color:var(--gold);font-size:1.3rem}
+.card h3{font-size:1.9rem;margin:6px 0 10px}
+.card p{color:var(--muted)}
+.price{display:block;margin-top:20px;padding-top:16px;border-top:1px solid var(--sand);color:var(--accent);font-weight:600;font-size:.88rem;letter-spacing:.02em}
+.note{margin-top:28px;color:var(--muted);font-size:.95rem}
+.note a{color:var(--accent);font-weight:600}
 
-.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:1rem;margin-top:2.6rem}
-.gal figure{overflow:hidden;border-radius:12px;background:var(--sand)}
-.gal figure:nth-child(1){grid-column:span 2;grid-row:span 2}
-.gal figure:nth-child(4){grid-column:span 2}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
-.gal figure:hover img{transform:scale(1.05)}
-.note{font-size:.86rem;color:var(--mut)}
+/* Gallery */
+.gal{background:var(--ink);color:var(--cream)}
+.gal .eyebrow{color:var(--gold)}
+.gal .lead{color:#cbbdaf}
+.grid{display:grid;gap:12px;margin-top:40px;grid-template-columns:1fr 1fr}
+@media(min-width:900px){.grid{grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:260px 260px;gap:16px}}
+.grid figure{overflow:hidden;border-radius:16px;position:relative;background:var(--ink-2)}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.grid figure:hover img{transform:scale(1.04)}
+.g1{grid-column:1/-1;aspect-ratio:16/10}
+.g2{aspect-ratio:3/4;grid-row:span 2}
+@media(min-width:900px){.g1{grid-column:1;grid-row:1/3;aspect-ratio:auto}.g2{grid-column:2;grid-row:1/3;aspect-ratio:auto}}
+.tile{display:flex;flex-direction:column;justify-content:flex-end;padding:22px;border:1px solid rgba(210,173,114,.35);border-radius:16px;min-height:150px}
+.tile strong{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;font-weight:600;line-height:1.1;color:#fff}
+.tile span{font-size:.85rem;color:#cbbdaf;margin-top:6px}
+.tile.warm{background:var(--accent);border-color:var(--accent)}
+.tile.warm span{color:#f6e3da}
+.illus{margin-top:18px;font-size:.8rem;color:#b3a596}
 
-.info{display:grid;grid-template-columns:1fr 1.15fr;gap:3.5rem;align-items:stretch}
-.addr{font-size:1.15rem;margin-bottom:1.2rem}
-table{width:100%;border-collapse:collapse;margin:1.2rem 0}
-td{padding:.65rem .4rem;border-bottom:1px solid var(--line)}
-td:last-child{text-align:right}
-tr.now td{font-weight:500;color:var(--rose)}
-.map{border-radius:16px;overflow:hidden;min-height:400px;background:var(--sand);box-shadow:0 18px 40px rgba(43,31,28,.1)}
-.map iframe{width:100%;height:100%;min-height:400px;border:0;display:block}
-.row{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}
+/* Hours + map */
+.info{display:grid;gap:48px}
+@media(min-width:900px){.info{grid-template-columns:1fr 1.1fr;gap:64px}}
+table{width:100%;border-collapse:collapse;margin-top:8px;font-size:1rem}
+th,td{padding:12px 4px;border-bottom:1px solid var(--sand);text-align:left;font-weight:400}
+td{text-align:right;font-weight:500}
+tr.today th,tr.today td{color:var(--accent);font-weight:600}
+tr.today th::after{content:" · aujourd'hui";font-size:.78rem;font-weight:500}
+.closed{color:var(--muted)}
+.small{font-size:.86rem;color:var(--muted);margin-top:16px}
+.map{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);background:var(--sand)}
+.map iframe{display:block;width:100%;height:360px;border:0}
+.addr{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.addr p{font-weight:600}
+.addr a{color:var(--accent);font-weight:600;font-size:.92rem}
 
+/* Contact */
 .contact{background:var(--sand);text-align:center}
 .contact .lead{margin:0 auto}
-.tels{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;max-width:760px;margin:2.6rem auto 0}
-.tel{background:#fff;border-radius:16px;padding:1.8rem 1.4rem;border:1px solid var(--line);transition:transform .3s}
-.tel:hover{transform:translateY(-4px)}
-.tel small{display:block;color:var(--mut);letter-spacing:.15em;text-transform:uppercase;font-size:.74rem}
-.tel strong{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;margin:.3rem 0 .2rem}
+.contact-grid{display:grid;gap:14px;max-width:760px;margin:40px auto 0}
+@media(min-width:700px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.cbox{background:var(--paper);border-radius:var(--r);padding:26px 18px;text-decoration:none;box-shadow:var(--shadow);transition:transform .25s}
+.cbox:hover{transform:translateY(-4px)}
+.cbox small{display:block;text-transform:uppercase;letter-spacing:.16em;font-size:.7rem;color:var(--accent);font-weight:600;margin-bottom:6px}
+.cbox span{font-weight:600;word-break:break-word}
 
-footer{background:var(--ink2);color:#c9b9aa;padding:3rem 5vw 3rem;font-size:.86rem;text-align:center}
-footer .logo{color:#f3e9dc;display:inline-block;margin-bottom:.6rem}
-footer p+p{margin-top:.5rem}
-footer a{text-decoration:underline;text-underline-offset:3px}
+/* Footer */
+footer{background:#1d1714;color:#cdbfb0;padding:48px 6vw 40px;font-size:.84rem;text-align:center}
+footer .fname{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.6rem;color:#fff;font-weight:600;margin-bottom:8px}
+footer a{color:var(--gold)}
+footer p+p{margin-top:10px}
 
-.sticky{display:none}
+/* Sticky mobile bar */
+.sticky{position:fixed;bottom:0;left:0;right:0;display:flex;z-index:30;box-shadow:0 -6px 20px rgba(0,0,0,.15);padding-bottom:env(safe-area-inset-bottom);background:var(--ink)}
+.sticky a{flex:1;text-align:center;padding:18px 8px;color:#fff;text-decoration:none;font-weight:600;font-size:.98rem}
+.sticky a:first-child{background:var(--accent)}
+@media(min-width:900px){.sticky{display:none}}
 
-/* reveal: only hides when JS is running */
-.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
-.js .rv.on{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}*{transition:none!important}}
-
-@media(max-width:860px){
-  nav .lk{display:none}
-  .about,.info{grid-template-columns:1fr;gap:2.6rem}
-  .about img{height:400px}
-  .about figure{margin-right:1.2rem}
-  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
-  .gal figure:nth-child(1){grid-column:span 2;grid-row:span 2}
-  .gal figure:nth-child(4){grid-column:span 2}
-  section{padding:4.5rem 6vw}
-  .hero{padding:6rem 6vw 4rem}
-  .sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;padding-bottom:env(safe-area-inset-bottom);background:var(--ink2);box-shadow:0 -6px 20px rgba(0,0,0,.18)}
-  .sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:.45rem;padding:1rem .4rem;color:#fff;font-weight:500;font-size:.95rem}
-  .sticky a:first-child{background:var(--rose)}
-  .sticky a+a{border-left:1px solid rgba(255,255,255,.12)}
-  footer{padding-bottom:6rem}
-}
-@media(max-width:420px){
-  header{padding:.65rem 4vw}
-  .logo{font-size:1.35rem}
-  .btn.sm{padding:.5rem .9rem;font-size:.86rem}
-  .facts{grid-template-columns:1fr 1fr 1fr;gap:.6rem}
-  .facts b{font-size:1.25rem}
-  .ctas .btn{flex:1 1 100%}
-}
+/* Reveal: only hides when JS is running */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="ribbon">Aperçu réalisé pour Le Petit Salon par Kinoverse – pas encore en ligne</div>
 
-<header>
-  <a href="#top" class="logo" aria-label="Le Petit Salon, retour en haut">Le Petit Salon</a>
-  <nav aria-label="Navigation principale">
-    <a class="lk" href="#salon">Le salon</a>
-    <a class="lk" href="#prestations">Prestations</a>
-    <a class="lk" href="#galerie">Galerie</a>
-    <a class="lk" href="#infos">Horaires &amp; accès</a>
-    <span class="actions">
-      <button class="btn sm dark" id="inst" type="button">Installer l'appli</button>
-      <a class="btn sm" href="tel:+33667293329"><svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler</a>
-    </span>
-  </nav>
-</header>
+<div class="ribbon" role="note">Aperçu réalisé pour Le Petit Salon par Kinoverse – pas encore en ligne</div>
 
-<main>
-<div class="hero" id="top">
-  <img src="img/salon-red-seats.jpg?v=1" alt="Fauteuils de coiffure rouges dans un salon" fetchpriority="high">
-  <div class="in">
-    <span class="kicker">Coiffeur · Vieux Lyon · 69005</span>
-    <h1>Votre coiffeur sur la <em>place Saint-Jean</em>, au cœur du Vieux Lyon</h1>
-    <p>Le Petit Salon vous reçoit au 6 place Saint-Jean, du lundi au vendredi. Coupe, couleur, soins&nbsp;: un coup de fil et votre rendez-vous est pris.</p>
-    <div class="ctas">
-      <a class="btn" href="tel:+33667293329">Prendre rendez-vous</a>
-      <a class="btn ghost" href="#infos">Horaires &amp; accès</a>
+<div class="hero">
+  <header>
+    <a class="logo" href="#top" id="top">Le Petit Salon</a>
+    <nav aria-label="Navigation principale"><a href="#salon">Le salon</a><a href="#prestations">Prestations</a><a href="#galerie">Galerie</a><a href="#infos">Horaires</a><a href="#contact">Contact</a></nav>
+    <div class="head-actions">
+      <a class="pill solid" href="tel:+33981871371" aria-label="Appeler Le Petit Salon au 09 81 87 13 71">Appeler</a>
+      <button class="pill install" id="install" type="button">Installer l'app</button>
     </div>
-    <div class="today" id="today" hidden><span class="dot" id="dot"></span><span id="todayTxt"></span></div>
+  </header>
+
+  <div class="hero-body">
+    <div class="hero-inner">
+      <span class="kicker">Coiffeur · 6 place Saint-Jean · Lyon 5e</span>
+      <h1>Votre coiffeur au pied de la <em>cathédrale Saint-Jean</em></h1>
+      <p>Coupe, couleur et soins au cœur du Vieux Lyon. Un appel suffit pour réserver votre moment au Petit Salon.</p>
+      <div class="ctas">
+        <a class="btn" href="tel:+33981871371">Appeler · 09 81 87 13 71</a>
+        <a class="btn ghost" href="#prestations">Nos prestations</a>
+      </div>
+    </div>
   </div>
 </div>
 
-<section id="salon">
+<main>
+<section id="salon" aria-labelledby="t-salon">
   <div class="wrap about">
-    <figure class="rv"><img src="img/salon-2.jpg?v=1" alt="Intérieur d'un salon de coiffure" loading="lazy"></figure>
-    <div class="rv">
-      <span class="tag">Le salon</span>
-      <h2>Un petit salon, sur l'une des plus belles places de Lyon</h2>
-      <p>Le Petit Salon est installé au 6 place Saint-Jean, dans le 5e arrondissement, au pied de la cathédrale et à deux pas des traboules du Vieux Lyon.</p>
-      <p>Coupe, couleur ou soin&nbsp;: pour réserver, il suffit d'appeler le salon, qui vous propose le créneau qui vous convient.</p>
-      <div class="facts">
-        <div><b>6</b><span>place Saint-Jean</span></div>
-        <div><b>Lun–Ven</b><span>ouvert en semaine</span></div>
-        <div><b>9h–18h</b><span>horaires indiqués</span></div>
-      </div>
-      <a class="btn" href="tel:+33667293329">06 67 29 33 29</a>
+    <div class="reveal">
+      <span class="eyebrow">Le salon</span>
+      <h2 id="t-salon">Place Saint-Jean, dans le Vieux Lyon</h2>
+      <p class="lead">Le Petit Salon vous reçoit au 6 place Saint-Jean, face à la cathédrale, dans le 5e arrondissement de Lyon.</p>
+      <p>Coupe, couleur ou soin : appelez le salon, on vous propose un créneau qui vous convient. La station Vieux Lyon (métro D) n'est qu'à quelques pas.</p>
+      <ul class="facts">
+        <li><b>Adresse</b><span>6 place Saint-Jean, 69005 Lyon</span></li>
+        <li><b>Prestations</b><span>Coupe · Couleur · Soins</span></li>
+        <li><b>Rendez-vous</b><span>Par téléphone, du lundi au vendredi</span></li>
+      </ul>
+    </div>
+    <div class="photo reveal">
+      <img src="img/salon2.jpg?v=1" alt="Fauteuils rouges dans un salon de coiffure (photo d'illustration)" loading="lazy" width="800" height="1000">
     </div>
   </div>
 </section>
 
-<section id="prestations" class="dark">
+<section id="prestations" class="services" aria-labelledby="t-presta">
   <div class="wrap">
-    <span class="tag">Prestations</span>
-    <h2>Ce que le salon vous propose</h2>
-    <p class="lead">Les essentiels d'un salon de coiffure, pour elle comme pour lui. Le détail des prestations et les tarifs vous sont donnés par téléphone.</p>
+    <span class="eyebrow">Prestations</span>
+    <h2 id="t-presta">Coupe, couleur, soins</h2>
+    <p class="lead">L'essentiel du savoir-faire de coiffeur, pour femmes et pour hommes, à demander directement au salon.</p>
     <div class="cards">
-      <div class="card rv"><span class="n">01</span><h3>Coupe</h3><p>Une coupe adaptée à votre visage, à votre nature de cheveux et à votre quotidien.</p><div class="p">Tarif sur demande</div></div>
-      <div class="card rv"><span class="n">02</span><h3>Couleur</h3><p>Coloration et nuances, à discuter ensemble selon le résultat que vous souhaitez.</p><div class="p">Tarif sur demande</div></div>
-      <div class="card rv"><span class="n">03</span><h3>Soins</h3><p>Des soins pour le cheveu, conseillés selon ses besoins du moment.</p><div class="p">Tarif sur demande</div></div>
+      <article class="card reveal"><span class="num">01</span><h3>Coupe</h3><p>Coupe et coiffage pensés pour votre style, votre nature de cheveux et votre quotidien.</p><span class="price">Tarif sur demande</span></article>
+      <article class="card reveal"><span class="num">02</span><h3>Couleur</h3><p>Coloration et nuances à définir ensemble, de la retouche au changement de teinte.</p><span class="price">Tarif sur demande</span></article>
+      <article class="card reveal"><span class="num">03</span><h3>Soins</h3><p>Soins du cheveu pour nourrir, réparer et retrouver de l'éclat.</p><span class="price">Tarif sur demande</span></article>
     </div>
-    <p class="svc-note">Liste des prestations à confirmer avec le salon.</p>
+    <p class="note">Pour un tarif ou un conseil, le plus simple est d'appeler : <a href="tel:+33981871371">09 81 87 13 71</a>.</p>
   </div>
 </section>
 
-<section id="galerie">
+<section id="galerie" class="gal" aria-labelledby="t-gal">
   <div class="wrap">
-    <span class="tag">Galerie</span>
-    <h2>L'univers de la coiffure</h2>
-    <div class="gal">
-      <figure class="rv"><img src="img/salon-red-seats.jpg?v=1" alt="Fauteuils de coiffure rouges" loading="lazy"></figure>
-      <figure class="rv"><img src="img/brushes.jpg?v=1" alt="Brosses rondes à cheveux" loading="lazy"></figure>
-      <figure class="rv"><img src="img/salon-2.jpg?v=1" alt="Salon de coiffure" loading="lazy"></figure>
-      <figure class="rv"><img src="img/coiffure-mariee.jpg?v=1" alt="Coiffeuse préparant la coiffure d'une mariée" loading="lazy"></figure>
+    <span class="eyebrow">Galerie</span>
+    <h2 id="t-gal">L'univers du salon</h2>
+    <p class="lead">Un lieu pour prendre soin de vos cheveux, au cœur du quartier Saint-Jean.</p>
+    <div class="grid">
+      <figure class="g1 reveal"><img src="img/hero.jpg?v=1" alt="Intérieur d'un salon de coiffure (photo d'illustration)" loading="lazy"></figure>
+      <figure class="g2 reveal"><img src="img/salon2.jpg?v=1" alt="Fauteuils rouges de salon de coiffure (photo d'illustration)" loading="lazy"></figure>
+      <div class="tile warm reveal"><strong>Coupe · Couleur · Soins</strong><span>Tarifs sur demande</span></div>
+      <div class="tile reveal"><strong>6 place Saint-Jean</strong><span>Vieux Lyon · 69005</span></div>
     </div>
-    <p class="note" style="margin-top:1.2rem">Photos d'illustration, bientôt remplacées par celles du salon.</p>
+    <p class="illus">Photos d'illustration, à remplacer par celles du salon.</p>
   </div>
 </section>
 
-<section id="infos" style="background:#fff">
+<section id="infos" aria-labelledby="t-hours">
   <div class="wrap info">
-    <div class="rv">
-      <span class="tag">Horaires &amp; accès</span>
-      <h2>Venez nous voir place Saint-Jean</h2>
-      <p class="addr">6 place Saint-Jean<br>69005 Lyon – Vieux Lyon</p>
-      <table aria-label="Horaires d'ouverture">
+    <div class="reveal">
+      <span class="eyebrow">Horaires</span>
+      <h2 id="t-hours">Quand passer</h2>
+      <table aria-describedby="hours-note">
         <tbody id="hours">
-          <tr data-d="1"><td>Lundi</td><td>9h – 18h</td></tr>
-          <tr data-d="2"><td>Mardi</td><td>9h – 18h</td></tr>
-          <tr data-d="3"><td>Mercredi</td><td>9h – 18h</td></tr>
-          <tr data-d="4"><td>Jeudi</td><td>9h – 18h</td></tr>
-          <tr data-d="5"><td>Vendredi</td><td>9h – 18h</td></tr>
-          <tr data-d="6"><td>Samedi</td><td>Fermé</td></tr>
-          <tr data-d="0"><td>Dimanche</td><td>Fermé</td></tr>
+          <tr data-d="1"><th scope="row">Lundi</th><td>9h – 18h</td></tr>
+          <tr data-d="2"><th scope="row">Mardi</th><td>9h – 18h</td></tr>
+          <tr data-d="3"><th scope="row">Mercredi</th><td>9h – 18h</td></tr>
+          <tr data-d="4"><th scope="row">Jeudi</th><td>9h – 18h</td></tr>
+          <tr data-d="5"><th scope="row">Vendredi</th><td>9h – 18h</td></tr>
+          <tr data-d="6"><th scope="row">Samedi</th><td class="closed">Fermé</td></tr>
+          <tr data-d="0"><th scope="row">Dimanche</th><td class="closed">Fermé</td></tr>
         </tbody>
       </table>
-      <p class="note">Horaires à confirmer avec le salon avant votre venue.</p>
-      <div class="row">
-        <a class="btn" href="tel:+33667293329">Appeler</a>
-        <a class="btn line" href="https://www.google.com/maps/dir/?api=1&amp;destination=6+place+Saint-Jean+69005+Lyon" target="_blank" rel="noopener">Itinéraire</a>
-      </div>
+      <p class="small" id="hours-note">Horaires publiés en ligne ; la page Facebook du salon indique 9h – 19h du lundi au vendredi. Merci de confirmer par téléphone avant de passer.</p>
     </div>
-    <div class="map rv">
-      <iframe title="Plan : Le Petit Salon, 6 place Saint-Jean, 69005 Lyon" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=6%20place%20Saint-Jean%2C%2069005%20Lyon&amp;z=17&amp;output=embed"></iframe>
+    <div class="reveal">
+      <span class="eyebrow">Accès</span>
+      <h2>Nous trouver</h2>
+      <div class="map">
+        <iframe title="Plan : Le Petit Salon, 6 place Saint-Jean, 69005 Lyon" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=6+place+Saint-Jean,+69005+Lyon,+France&amp;z=17&amp;output=embed"></iframe>
+      </div>
+      <div class="addr">
+        <p>6 place Saint-Jean, 69005 Lyon</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=6+place+Saint-Jean+69005+Lyon" target="_blank" rel="noopener">Itinéraire →</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <div class="wrap rv">
-    <span class="tag">Rendez-vous</span>
-    <h2>Réservez votre moment</h2>
-    <p class="lead">Les rendez-vous se prennent par téléphone, du lundi au vendredi aux heures d'ouverture.</p>
-    <div class="tels">
-      <a class="tel" href="tel:+33667293329"><small>Portable</small><strong>06 67 29 33 29</strong><span class="note">Appeler ou envoyer un SMS</span></a>
-      <a class="tel" href="tel:+33981871371"><small>Fixe du salon</small><strong>09 81 87 13 71</strong><span class="note">Appeler le salon</span></a>
+<section id="contact" class="contact" aria-labelledby="t-contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2 id="t-contact">Prenez rendez-vous</h2>
+    <p class="lead">Un appel ou un e-mail, et le salon vous propose un créneau.</p>
+    <div class="contact-grid">
+      <a class="cbox reveal" href="tel:+33981871371"><small>Salon</small><span>09 81 87 13 71</span></a>
+      <a class="cbox reveal" href="tel:+33667293329"><small>Portable</small><span>06 67 29 33 29</span></a>
+      <a class="cbox reveal" href="mailto:lepetitsalonsarl@gmail.com"><small>E-mail</small><span>lepetitsalonsarl@gmail.com</span></a>
     </div>
-    <p class="row" style="justify-content:center"><a class="btn dark" href="sms:+33667293329">Envoyer un SMS</a></p>
+    <p style="margin-top:34px"><a class="btn" href="tel:+33981871371">Appeler le salon</a></p>
   </div>
 </section>
 </main>
 
 <footer>
-  <span class="logo">Le Petit Salon</span>
-  <p>Salon de coiffure · 6 place Saint-Jean, 69005 Lyon · <a href="tel:+33667293329">06 67 29 33 29</a></p>
+  <p class="fname">Le Petit Salon</p>
+  <p>6 place Saint-Jean, 69005 Lyon · <a href="tel:+33981871371">09 81 87 13 71</a> · <a href="mailto:lepetitsalonsarl@gmail.com">lepetitsalonsarl@gmail.com</a></p>
   <p>Photos d'illustration : rawpixel (CC0, domaine public).</p>
-  <p>Aperçu réalisé par Kinoverse – pas encore en ligne.</p>
+  <p>Aperçu réalisé pour Le Petit Salon par Kinoverse – pas encore en ligne.</p>
 </footer>
 
-<div class="sticky" aria-label="Actions rapides">
-  <a href="tel:+33667293329"><svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler</a>
-  <a href="sms:+33667293329">SMS</a>
-  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=6+place+Saint-Jean+69005+Lyon" target="_blank" rel="noopener">Itinéraire</a>
+<div class="sticky" aria-label="Contact rapide">
+  <a href="tel:+33981871371">Appeler</a>
+  <a href="mailto:lepetitsalonsarl@gmail.com">E-mail</a>
 </div>
 
 <script>
 (function(){
-  // Reveal on scroll (content stays visible without JS)
-  var els=document.querySelectorAll('.rv');
+  var els=document.querySelectorAll('.reveal');
+  function showAll(){els.forEach(function(e){e.classList.add('in')})}
   if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
     els.forEach(function(el){io.observe(el)});
-  }else{els.forEach(function(el){el.classList.add('on')})}
+    setTimeout(showAll,4000);
+  }else{showAll()}
 
-  // Today's hours (Paris time) - based on the published hours
-  try{
-    var p=new Intl.DateTimeFormat('fr-FR',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
-    var map={'lun.':1,'mar.':2,'mer.':3,'jeu.':4,'ven.':5,'sam.':6,'dim.':0},d,h=0,m=0;
-    p.forEach(function(x){if(x.type==='weekday')d=map[x.value];if(x.type==='hour')h=+x.value;if(x.type==='minute')m=+x.value});
-    if(d!==undefined){
-      var row=document.querySelector('#hours tr[data-d="'+d+'"]');if(row)row.classList.add('now');
-      var t=h*60+m,week=d>=1&&d<=5,open=week&&t>=540&&t<1080;
-      var txt=open?"Ouvert aujourd'hui jusqu'à 18h":(week&&t<540?"Ouvre aujourd'hui à 9h":"Fermé pour le moment – réouverture "+((d>=5||d===0)&&!(d===0&&false)?(d===0?"demain":"lundi"):"demain")+" à 9h");
-      document.getElementById('todayTxt').textContent=txt+" (horaires à confirmer)";
-      if(!open)document.getElementById('dot').classList.add('off');
-      document.getElementById('today').hidden=false;
-    }
-  }catch(e){}
+  var d=new Date().getDay();
+  var row=document.querySelector('#hours tr[data-d="'+d+'"]');
+  if(row)row.classList.add('today');
 
-  // Install the app (Android / Chrome only)
-  var dp,b=document.getElementById('inst');
-  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
-  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none'})}});
-  window.addEventListener('appinstalled',function(){b.style.display='none'});
-  if('serviceWorker' in navigator&&location.protocol!=='file:'){navigator.serviceWorker.register('sw.js').catch(function(){})}
+  var dp,btn=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;btn.classList.add('show')});
+  btn.addEventListener('click',function(){if(dp){dp.prompt();dp=null;btn.classList.remove('show')}});
+  window.addEventListener('appinstalled',function(){btn.classList.remove('show')});
 })();
 </script>
 </body>
