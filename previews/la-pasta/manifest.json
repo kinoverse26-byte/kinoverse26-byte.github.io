@@ -1,0 +1,19 @@
+{
+  "name": "La Pasta - Nantes",
+  "short_name": "La Pasta",
+  "description": "Restaurant italien, 14 rue Saint-Léonard, Nantes",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf3e7",
+  "theme_color": "#9b2c1f",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
