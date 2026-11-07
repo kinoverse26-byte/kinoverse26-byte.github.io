@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>à boire &amp; à manger · Restaurant à Nantes · 02 40 58 05 10</title>
+<meta name="description" content="à boire &amp; à manger, restaurant à Nantes. Pour réserver une table ou connaître les horaires, appelez le 02 40 58 05 10.">
+<meta name="theme-color" content="#7a2e1d">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237a2e1d'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-style='italic' text-anchor='middle' fill='%23f7f0e6'%3E%26amp;%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="à boire &amp; à manger · Restaurant à Nantes">
+<meta property="og:description" content="Une table nantaise qui porte bien son nom. Réservation par téléphone au 02 40 58 05 10.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wine:#7a2e1d;--wine-d:#5e2215;--ink:#1d1512;--cream:#f7f0e6;--gold:#c9a15b;--paper:#fffaf2;--muted:#6b5b4f;
+  --radius:10px;--pad:clamp(20px,6vw,88px)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;font-weight:300;font-size:1.02rem}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--ink);padding:10px 14px;z-index:99}
+.skip:focus{left:10px;top:10px}
+
+/* Ribbon */
+.ribbon{background:#111;color:#e6e0d8;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.03em;line-height:1.4}
+
+/* Header: wraps on small phones so every button stays visible */
+header{position:sticky;top:0;z-index:40;background:rgba(29,21,18,.94);backdrop-filter:saturate(140%) blur(8px);-webkit-backdrop-filter:saturate(140%) blur(8px);color:#fff;border-bottom:1px solid rgba(201,161,91,.25)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px var(--pad)}
+.logo{font-family:'Playfair Display',Georgia,serif;font-size:1.3rem;font-style:italic;text-decoration:none;white-space:nowrap;color:var(--cream)}
+nav{display:flex;align-items:center;gap:22px}
+nav a{text-decoration:none;font-size:.9rem;font-weight:400;color:#efe6da}
+nav a:hover{color:var(--gold)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:40px;font-size:.88rem;font-weight:600;text-decoration:none;border:1px solid var(--gold);background:var(--gold);color:var(--ink);cursor:pointer;font-family:inherit;white-space:nowrap}
+.pill.line{background:transparent;color:var(--cream)}
+.pill[hidden]{display:none}
+
+/* Hero */
+.hero{position:relative;min-height:calc(100svh - 90px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(18,12,10,.35) 0%,rgba(18,12,10,.55) 45%,rgba(18,12,10,.9) 100%)}
+.hero .inner{padding:96px var(--pad) clamp(56px,10vh,110px);max-width:1100px}
+.kicker{display:inline-block;text-transform:uppercase;letter-spacing:.22em;font-size:.74rem;font-weight:600;color:var(--gold);margin-bottom:18px}
+.hero h1{font-size:clamp(2.4rem,7.4vw,5.6rem);max-width:15ch}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p.lead{max-width:44ch;margin:22px 0 34px;font-size:clamp(1.02rem,2.4vw,1.2rem);color:#f3ece2}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:var(--ink);padding:15px 28px;border-radius:40px;text-decoration:none;font-weight:600;border:1px solid var(--gold);cursor:pointer;font-size:1rem;font-family:inherit;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.3)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.75)}
+.btn.wine{background:var(--wine);border-color:var(--wine);color:#fff}
+.btn.wine:hover{background:var(--wine-d)}
+
+/* Sections */
+section{padding:clamp(72px,11vw,128px) var(--pad)}
+.wrap{max-width:1180px;margin:0 auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:.74rem;color:var(--wine);font-weight:600;margin-bottom:14px}
+h2{font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:22px}
+.muted{color:var(--muted)}
+
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,6vw,80px);align-items:center}
+.about p+p{margin-top:16px}
+.about figure{position:relative}
+.about figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+.about figure::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);border-radius:var(--radius);z-index:-1}
+.about figure{isolation:isolate}
+.sign{font-family:'Playfair Display',serif;font-style:italic;font-size:1.25rem;color:var(--wine);margin-top:26px}
+
+.cream{background:var(--cream)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:36px}
+.card{background:#fff;border-radius:var(--radius);padding:32px 28px;box-shadow:0 4px 22px rgba(29,21,18,.06);border-top:3px solid var(--gold);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(29,21,18,.12)}
+.card .n{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);font-size:1.1rem}
+.card h3{font-size:1.5rem;margin:6px 0 10px;color:var(--wine)}
+.note{margin-top:28px;font-size:.92rem;color:var(--muted)}
+
+.dark{background:var(--ink);color:var(--cream)}
+.dark .eyebrow{color:var(--gold)}
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:34px}
+.gallery figure{overflow:hidden;border-radius:var(--radius);position:relative}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.04)}
+.g1{grid-column:span 4;aspect-ratio:16/10}
+.g2{grid-column:span 2}
+.g3{grid-column:span 3;aspect-ratio:3/2}
+.g4{grid-column:span 3;aspect-ratio:3/2}
+.gallery figcaption{position:absolute;left:12px;bottom:12px;background:rgba(18,12,10,.72);color:#f3ece2;font-size:.78rem;padding:5px 10px;border-radius:30px}
+.small{margin-top:18px;font-size:.82rem;color:#c8bcae}
+
+.info{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(32px,5vw,64px);align-items:start}
+.list{list-style:none;margin-top:8px}
+.list li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid #e8dccb}
+.list li span:first-child{font-weight:600}
+.list li span:last-child{text-align:right}
+.map{border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 30px rgba(29,21,18,.12);background:var(--cream)}
+.map iframe{display:block;width:100%;height:400px;border:0}
+.map p{padding:12px 16px;font-size:.85rem;color:var(--muted)}
+
+.contact{background:var(--wine);color:#fff;text-align:center}
+.contact .eyebrow{color:#f0d7a6}
+.contact h2{max-width:20ch;margin:0 auto 18px}
+.contact p{max-width:52ch;margin:0 auto 32px;color:#f6e9e3}
+.contact .ctas{justify-content:center}
+.contact .btn.ghost{border-color:#fff}
+.tel{display:block;font-family:'Playfair Display',serif;font-size:clamp(2rem,7vw,3.4rem);text-decoration:none;margin-bottom:28px;color:#fff}
+
+footer{background:#120d0b;color:#b9ada0;padding:48px var(--pad) 40px;font-size:.85rem;text-align:center;line-height:1.8}
+footer .logo{display:inline-block;margin-bottom:10px;font-size:1.4rem}
+footer a{color:#e3d6c4}
+
+.sticky{display:none}
+
+/* Reveal: only hidden once JS is confirmed running */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.btn,.card,.gallery img{transition:none}}
+
+@media (max-width:860px){
+  nav{display:none}
+  .about,.info{grid-template-columns:1fr}
+  .about figure::before{inset:12px -10px -12px 10px}
+  .gallery{grid-template-columns:1fr 1fr}
+  .g1{grid-column:span 2}
+  .g2{grid-column:span 2;aspect-ratio:3/2}
+  .g3,.g4{grid-column:span 1;aspect-ratio:1/1}
+  .sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:50;padding-bottom:env(safe-area-inset-bottom);background:var(--wine);box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+  .sticky a{flex:1;text-align:center;padding:16px 8px;color:#fff;text-decoration:none;font-weight:600}
+  .sticky a+a{background:var(--gold);color:var(--ink)}
+  body{padding-bottom:60px}
+}
+@media (max-width:420px){
+  .bar{padding:10px 16px}
+  .logo{font-size:1.15rem}
+  .pill{padding:8px 13px;font-size:.84rem}
+  .ctas .btn{width:100%}
+  .list li{flex-direction:column;gap:2px}
+  .list li span:last-child{text-align:left}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#apropos">Aller au contenu</a>
+<div class="ribbon">Aperçu réalisé pour « à boire &amp; à manger » par Kinoverse · pas encore en ligne</div>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">à boire &amp; à manger</a>
+    <nav aria-label="Navigation principale">
+      <a href="#apropos">La maison</a>
+      <a href="#table">À table</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#infos">Infos pratiques</a>
+    </nav>
+    <div class="actions">
+      <a class="pill" href="tel:+33240580510" aria-label="Appeler le restaurant au 02 40 58 05 10">📞 Appeler</a>
+      <button class="pill line" id="install" type="button" hidden>Installer l'app</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top" aria-label="Accueil" style="padding:0">
+  <img src="img/hero.jpg?v=1" alt="Photo d'illustration : le comptoir d'un bar de restaurant" fetchpriority="high">
+  <div class="inner reveal">
+    <span class="kicker">Restaurant · Nantes</span>
+    <h1>À Nantes, une table qui tient sa promesse : <em>à boire &amp; à manger.</em></h1>
+    <p class="lead">Tout est dans le nom. Un verre, une assiette, une table à Nantes, et un numéro à composer pour réserver la vôtre.</p>
+    <div class="ctas">
+      <a class="btn" href="tel:+33240580510">Réserver : 02 40 58 05 10</a>
+      <a class="btn ghost" href="#infos">Infos pratiques</a>
+    </div>
+  </div>
+</section>
+
+<section id="apropos">
+  <div class="wrap about">
+    <div class="reveal">
+      <p class="eyebrow">La maison</p>
+      <h2>Un nom simple, une idée claire</h2>
+      <p>« à boire &amp; à manger » est un restaurant nantais. Le nom dit l'essentiel : on vient ici pour boire un verre et pour manger, à table, à Nantes.</p>
+      <p>Pour connaître la carte du moment, les horaires d'ouverture ou réserver, le plus simple est d'appeler directement le restaurant. Vous pouvez aussi suivre la maison sur sa <a href="https://www.facebook.com/A-boire-et-%C3%A0-manger-Nantes-220672114942873" target="_blank" rel="noopener">page Facebook</a>.</p>
+      <p class="sign">À très vite à Nantes.</p>
+    </div>
+    <figure class="reveal">
+      <img src="img/salle.jpg?v=1" alt="Photo d'illustration : une salle de restaurant dressée" loading="lazy" width="960" height="640">
+    </figure>
+  </div>
+</section>
+
+<section id="table" class="cream">
+  <div class="wrap">
+    <p class="eyebrow">À table</p>
+    <h2>Ce que promet le nom</h2>
+    <div class="cards">
+      <div class="card reveal"><span class="n">01</span><h3>À boire</h3><p>Pour l'apéritif ou pour accompagner le repas. La sélection du moment vous est présentée sur place.</p></div>
+      <div class="card reveal"><span class="n">02</span><h3>À manger</h3><p>La carte du jour : détail et prix sur demande, par téléphone ou au restaurant.</p></div>
+      <div class="card reveal"><span class="n">03</span><h3>Réserver</h3><p>Une table pour deux ou pour un groupe : appelez le <a href="tel:+33240580510">02 40 58 05 10</a> pour vérifier les disponibilités.</p></div>
+    </div>
+    <p class="note">La carte, les tarifs et les formules sont communiqués sur demande.</p>
+  </div>
+</section>
+
+<section class="dark" id="galerie">
+  <div class="wrap">
+    <p class="eyebrow">Galerie</p>
+    <h2>L'esprit du lieu</h2>
+    <div class="gallery">
+      <figure class="g1 reveal"><img src="img/plat.jpg?v=1" alt="Photo d'illustration : une assiette servie au restaurant" loading="lazy"><figcaption>À manger</figcaption></figure>
+      <figure class="g2 reveal"><img src="img/bar.jpg?v=1" alt="Photo d'illustration : un bar de restaurant" loading="lazy"><figcaption>À boire</figcaption></figure>
+      <figure class="g3 reveal"><img src="img/salle.jpg?v=1" alt="Photo d'illustration : une salle de restaurant" loading="lazy"><figcaption>La salle</figcaption></figure>
+      <figure class="g4 reveal"><img src="img/hero.jpg?v=1" alt="Photo d'illustration : un comptoir de bar" loading="lazy"><figcaption>Le comptoir</figcaption></figure>
+    </div>
+    <p class="small">Photos d'illustration, à remplacer par les photos du restaurant.</p>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="wrap info">
+    <div class="reveal">
+      <p class="eyebrow">Infos pratiques</p>
+      <h2>Horaires &amp; accès</h2>
+      <ul class="list">
+        <li><span>Horaires</span><span>Sur demande : appelez avant de venir</span></li>
+        <li><span>Réservation</span><span><a href="tel:+33240580510">02 40 58 05 10</a></span></li>
+        <li><span>Ville</span><span>Nantes</span></li>
+        <li><span>Adresse exacte</span><span>À confirmer</span></li>
+        <li><span>Facebook</span><span><a href="https://www.facebook.com/A-boire-et-%C3%A0-manger-Nantes-220672114942873" target="_blank" rel="noopener">À boire et à manger Nantes</a></span></li>
+      </ul>
+      <p style="margin-top:26px"><a class="btn wine" href="https://www.openstreetmap.org/node/652826823" target="_blank" rel="noopener">Voir l'emplacement sur OpenStreetMap</a></p>
+    </div>
+    <div class="map reveal">
+      <iframe title="Plan de Nantes (OpenStreetMap)" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5900%2C47.2000%2C-1.5100%2C47.2330&amp;layer=mapnik"></iframe>
+      <p>Plan de Nantes. L'emplacement précis du restaurant est indiqué sur <a href="https://www.openstreetmap.org/node/652826823" target="_blank" rel="noopener">sa fiche OpenStreetMap</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <p class="eyebrow">Contact</p>
+    <h2>Une table ce soir ? Un simple appel suffit.</h2>
+    <p>Réservations, horaires, carte du moment : l'équipe vous répond par téléphone.</p>
+    <a class="tel" href="tel:+33240580510">02 40 58 05 10</a>
+    <div class="ctas">
+      <a class="btn" href="tel:+33240580510">Appeler le restaurant</a>
+      <a class="btn ghost" href="https://www.facebook.com/A-boire-et-%C3%A0-manger-Nantes-220672114942873" target="_blank" rel="noopener">Écrire sur Facebook</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <a class="logo" href="#top">à boire &amp; à manger</a><br>
+  Restaurant · Nantes · <a href="tel:+33240580510">02 40 58 05 10</a><br>
+  © à boire &amp; à manger<br>
+  Aperçu réalisé par Kinoverse, non officiel, pas encore en ligne.<br>
+  Photos d'illustration libres de droit (CC0) via StockSnap : Serge Esteve, Leeroy, Jay Wennington, Daria Nepriakhina. Plan © contributeurs OpenStreetMap.
+</footer>
+
+<div class="sticky" aria-label="Actions rapides">
+  <a href="tel:+33240580510">📞 Appeler</a>
+  <a href="#infos">Horaires &amp; accès</a>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el);});
+    // Safety net: never leave content hidden
+    setTimeout(function(){els.forEach(function(el){el.classList.add('on');});},3500);
+  }
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.hidden=false;});
+  b.addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.finally(function(){dp=null;b.hidden=true;});});
+  window.addEventListener('appinstalled',function(){b.hidden=true;});
+})();
+</script>
+</body>
+</html>
