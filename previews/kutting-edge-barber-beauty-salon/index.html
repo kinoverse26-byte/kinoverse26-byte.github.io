@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kutting Edge Barber &amp; Beauty Salon | Wells Branch Parkway, Austin TX</title>
+<meta name="description" content="Kutting Edge Barber &amp; Beauty Salon, 1779 Wells Branch Parkway, Unit 110A, Austin TX 78728. Unisex barber and beauty salon, walk-ins welcome, open Tuesday to Saturday. Call +1 512-906-2500.">
+<meta name="theme-color" content="#14110f">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/icon.svg?v=1" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon.svg?v=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kutting Edge Barber &amp; Beauty Salon, Austin TX">
+<meta property="og:description" content="Unisex barber and beauty salon on Wells Branch Parkway in North Austin. Walk-ins welcome, Tuesday to Saturday.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta property="og:locale" content="en_US">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14110f;--ink2:#1f1b18;--line:#342e29;
+  --paper:#f7f3ec;--white:#fffdf9;
+  --brass:#d2a65a;--brass2:#e6bf78;
+  --red:#a3201c;--red-d:#86160f;
+  --text:#2a2420;--mute:#5f5750;
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:var(--paper);line-height:1.65;font-size:16px;padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;font-weight:800;letter-spacing:-.01em}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brass);color:var(--ink);padding:10px 14px;z-index:100}
+.skip:focus{left:10px;top:10px}
+
+/* ribbon + header */
+.ribbon{background:#000;color:#cfc6bb;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+header{position:sticky;top:0;z-index:40;background:rgba(20,17,15,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid #ffffff14}
+.bar{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 14px;padding:12px 18px}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:19px;text-decoration:none;line-height:1.15;color:#fff}
+.logo small{display:block;font-family:Inter,sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin-top:2px}
+nav{display:none;gap:24px}
+nav a{text-decoration:none;font-size:14px;font-weight:500;color:#e9e2d8}
+nav a:hover{color:var(--brass2)}
+.hbtns{display:flex;flex-wrap:wrap;gap:8px}
+.hb{display:inline-flex;align-items:center;gap:6px;padding:9px 15px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid var(--brass);color:var(--ink);background:var(--brass);cursor:pointer;font-family:inherit;white-space:nowrap}
+.hb.alt{background:transparent;color:#fff;border-color:#ffffff55}
+#install{display:none}
+@media(min-width:940px){nav{display:flex}}
+
+/* hero */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04);animation:drift 18s ease-out forwards}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(14,11,9,.45) 0%,rgba(14,11,9,.55) 45%,rgba(14,11,9,.94) 100%)}
+@keyframes drift{to{transform:scale(1)}}
+.hero-in{max-width:1180px;width:100%;margin:0 auto;padding:120px 18px 64px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--brass2)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--brass)}
+.hero h1{font-size:clamp(40px,9vw,88px);margin:16px 0 18px;max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--brass2)}
+.hero p.lead{font-size:clamp(17px,2.2vw,20px);color:#efe8de;max-width:56ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent;transition:transform .25s,background .25s,color .25s;cursor:pointer;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:var(--brass);color:var(--ink)}
+.btn.gold:hover{background:var(--brass2)}
+.btn.red{background:var(--red);color:#fff}
+.btn.red:hover{background:var(--red-d)}
+.btn.line{border-color:#ffffff80;color:#fff}
+.btn.line:hover{background:#fff;color:var(--ink)}
+.btn.dline{border-color:var(--ink);color:var(--ink)}
+.btn.dline:hover{background:var(--ink);color:#fff}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:14px;color:#e9e2d8;background:#00000055;border:1px solid #ffffff22;padding:7px 14px;border-radius:999px}
+.dot{width:9px;height:9px;border-radius:50%;background:#8a8079}
+.dot.open{background:#4cc97a;box-shadow:0 0 0 4px #4cc97a33}
+
+/* sections */
+section{padding:88px 18px;scroll-margin-top:70px}
+.wrap{max-width:1180px;margin:0 auto}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.dark .eyebrow{color:var(--brass2)}
+h2{font-size:clamp(32px,5.5vw,52px);margin-bottom:18px;color:var(--ink)}
+.dark h2{color:#fff}
+.dark{background:var(--ink);color:#e4ddd3}
+.sub{max-width:60ch;color:var(--mute);font-size:17px}
+.dark .sub{color:#bdb4a9}
+
+/* facts strip */
+.facts{background:var(--ink2);color:#fff;padding:0 18px;border-top:1px solid var(--line)}
+.facts .wrap{display:grid;grid-template-columns:repeat(2,1fr)}
+.fact{padding:22px 10px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fact:nth-child(2n){border-right:0}
+.fact b{display:block;font-family:Fraunces,Georgia,serif;font-size:20px;color:var(--brass2)}
+.fact span{font-size:13.5px;color:#bdb4a9}
+@media(min-width:800px){.facts .wrap{grid-template-columns:repeat(4,1fr)}.fact{border-bottom:0;padding:28px 22px}.fact:nth-child(2n){border-right:1px solid var(--line)}.fact:last-child{border-right:0}}
+
+/* about */
+.about{display:grid;gap:44px;align-items:center}
+.about p+p{margin-top:14px}
+.about .frame{position:relative}
+.about .frame img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+.about .tag{position:absolute;left:-1px;bottom:22px;background:var(--red);color:#fff;padding:12px 18px;border-radius:0 12px 12px 0;font-weight:600;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chips span{border:1px solid #c9b68f;background:var(--white);padding:7px 15px;border-radius:999px;font-size:14px;font-weight:500}
+@media(min-width:860px){.about{grid-template-columns:1.05fr .95fr;gap:72px}.about .frame img{aspect-ratio:4/4.6}}
+
+/* services */
+.cards{display:grid;gap:18px;margin-top:40px}
+@media(min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--ink2);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--brass)}
+.card .n{font-family:Fraunces,Georgia,serif;font-size:15px;color:var(--brass);letter-spacing:.1em}
+.card h3{font-size:26px;color:#fff;margin:10px 0 10px}
+.card p{color:#c7bfb4}
+.card .price{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;color:var(--brass2);font-weight:600}
+.note{margin-top:26px;font-size:14px;color:#a89f94}
+
+/* gallery */
+.gal{display:grid;gap:14px;margin-top:40px;grid-template-columns:1fr}
+.gal figure{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--ink)}
+.gal figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.04)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 20px 16px;background:linear-gradient(transparent,#000c);color:#fff;font-size:14px}
+.tile{border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;justify-content:flex-end;min-height:200px}
+.tile h3{font-size:24px;margin-bottom:6px}
+.tile.t1{background:var(--red);color:#fff}
+.tile.t2{background:var(--ink);color:#fff}
+.tile.t2 h3{color:var(--brass2)}
+.tile.t3{background:var(--white);border:1px solid #e2d8c8}
+.tile a{font-weight:600}
+@media(min-width:760px){
+  .gal{grid-template-columns:repeat(3,1fr);grid-auto-rows:220px}
+  .gal figure{grid-column:span 2;grid-row:span 2}
+  .gal figure img{aspect-ratio:auto}
+  .tile{min-height:0}
+  .tile.t3{grid-column:span 3}
+}
+.credit-note{font-size:13px;color:var(--mute);margin-top:14px}
+
+/* visit */
+.visit{background:var(--white)}
+.info{display:grid;gap:40px}
+@media(min-width:900px){.info{grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}}
+.hours{list-style:none;margin:22px 0 26px;border-top:1px solid #e2d8c8}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:13px 4px;border-bottom:1px solid #e2d8c8;font-size:16px}
+.hours li b{font-weight:600;color:var(--ink)}
+.hours li.closed b{color:var(--mute);font-weight:500}
+.hours li.today{background:#f3ead9;border-radius:8px;padding-left:12px;padding-right:12px}
+.addr{font-size:17px;color:var(--ink);font-style:normal}
+.addr strong{display:block;font-family:Fraunces,Georgia,serif;font-size:22px;margin-bottom:4px}
+.map{width:100%;height:440px;border:0;border-radius:var(--radius);background:#e8e0d2;box-shadow:0 20px 50px -25px #14110f66}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+
+/* contact */
+.contact{text-align:center;background:radial-gradient(circle at 50% 0%,#2a221d,var(--ink) 70%)}
+.contact .sub{margin:0 auto}
+.ways{display:grid;gap:14px;margin:40px auto 0;max-width:900px}
+@media(min-width:760px){.ways{grid-template-columns:repeat(3,1fr)}}
+.way{display:block;text-decoration:none;background:var(--ink2);border:1px solid var(--line);border-radius:var(--radius);padding:26px 20px;transition:border-color .3s,transform .3s;overflow-wrap:anywhere}
+.way:hover{border-color:var(--brass);transform:translateY(-4px)}
+.way span{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass2);font-weight:700;margin-bottom:8px}
+.way b{font-size:17px;color:#fff;font-weight:600}
+
+footer{background:#0c0a09;color:#a59c91;padding:48px 18px 40px;font-size:13.5px}
+footer .wrap{display:grid;gap:18px}
+footer .fname{font-family:Fraunces,Georgia,serif;font-size:20px;color:#fff}
+footer a{color:var(--brass2)}
+
+/* sticky mobile bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;padding-bottom:env(safe-area-inset-bottom);background:var(--ink);box-shadow:0 -6px 24px #0005}
+.sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:60px;font-weight:700;font-size:15px;text-decoration:none;color:#fff}
+.sticky a.call{background:var(--red)}
+.sticky a.dir{color:var(--brass2)}
+@media(min-width:900px){.sticky{display:none}body{padding-bottom:0}}
+
+/* reveal: only hides when JS is running */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero img{animation:none;transform:none}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .btn,.card,.way,.gal figure img{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ribbon">Preview made for Kutting Edge Barber &amp; Beauty Salon by Kinoverse - not live yet</div>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">Kutting Edge<small>Barber &amp; Beauty Salon</small></a>
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Hours &amp; map</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="hbtns">
+      <a class="hb" href="tel:+15129062500">Call</a>
+      <button class="hb alt" id="install" type="button">Install the app</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <img src="img/hero.jpg?v=1" alt="Vintage red barber chairs in a wooden barbershop" fetchpriority="high">
+  <div class="hero-in">
+    <p class="kicker">North Austin &middot; Wells Branch Parkway</p>
+    <h1>Fresh cuts on <em>Wells Branch Parkway.</em></h1>
+    <p class="lead">Kutting Edge is a unisex barber and beauty salon at 1779 Wells Branch Parkway, Austin. Walk in Tuesday to Saturday, or call ahead and we'll have your chair ready.</p>
+    <div class="ctas">
+      <a class="btn gold" href="tel:+15129062500">Call 512-906-2500</a>
+      <a class="btn line" href="#visit">Hours &amp; directions</a>
+    </div>
+    <p class="status" id="status" aria-live="polite"><span class="dot" id="dot"></span><span id="statusText">Tue-Fri 10 AM-6 PM &middot; Sat 9 AM-6 PM</span></p>
+  </div>
+</div>
+
+<div class="facts" aria-label="At a glance">
+  <div class="wrap">
+    <div class="fact"><b>Walk-ins</b><span>Welcome, no appointment needed</span></div>
+    <div class="fact"><b>Unisex</b><span>Barber &amp; beauty for everyone</span></div>
+    <div class="fact"><b>Cool inside</b><span>Fully air-conditioned salon</span></div>
+    <div class="fact"><b>Accessible</b><span>Wheelchair-friendly access</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="reveal">
+      <p class="eyebrow">About the salon</p>
+      <h2>A barber chair and a beauty chair, under one roof in Wells Branch.</h2>
+      <p>Kutting Edge Barber &amp; Beauty Salon is a neighborhood spot in Unit 110A on Wells Branch Parkway, North Austin. Barber and beauty services share the same welcoming room, so the whole family can come in together.</p>
+      <p>No appointment? No problem: walk-ins are welcome. Prefer a set time? Give us a call and ask what works for you.</p>
+      <div class="chips"><span>Unisex</span><span>Walk-ins welcome</span><span>Air-conditioned</span><span>Wheelchair accessible</span></div>
+    </div>
+    <div class="frame reveal">
+      <img src="img/hero.jpg?v=1" alt="Close view of red vintage barber chairs" loading="lazy">
+      <span class="tag">Unit 110A &middot; Austin, TX 78728</span>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="dark">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h2>Barber. Beauty. Both.</h2>
+    <p class="sub">Ask us for the full menu: we'll tell you exactly what's available and what it costs before you sit down.</p>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="n">01</span>
+        <h3>Barber</h3>
+        <p>Haircuts and grooming at the barber chair, for men, women and kids.</p>
+        <p class="price">Prices on request</p>
+      </article>
+      <article class="card reveal">
+        <span class="n">02</span>
+        <h3>Beauty salon</h3>
+        <p>Beauty and hair services from the salon side. Call to ask what's on offer.</p>
+        <p class="price">Prices on request</p>
+      </article>
+      <article class="card reveal">
+        <span class="n">03</span>
+        <h3>Walk-ins</h3>
+        <p>Drop in during opening hours, or call ahead to check the wait.</p>
+        <p class="price">Call to book: 512-906-2500</p>
+      </article>
+    </div>
+    <p class="note">Full service list and prices to confirm with the salon.</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <p class="eyebrow">Gallery</p>
+    <h2>Take a seat.</h2>
+    <p class="sub">A first look at the mood. Photos of our own chairs, our team and our work are on the way.</p>
+    <div class="gal">
+      <figure class="reveal">
+        <img src="img/hero.jpg?v=1" alt="Row of vintage red barber chairs in a wooden barbershop" loading="lazy">
+        <figcaption>The chair is waiting.</figcaption>
+      </figure>
+      <div class="tile t1 reveal"><h3>Walk right in</h3><p>Tuesday to Saturday, no appointment needed.</p></div>
+      <div class="tile t2 reveal"><h3>For everyone</h3><p>A unisex barber and beauty salon.</p></div>
+      <div class="tile t3 reveal"><h3>See our latest work</h3><p>Follow Kutting Edge on <a href="https://www.facebook.com/KuttingEdgeBBS/" target="_blank" rel="noopener">Facebook</a> for fresh cuts and salon news.</p></div>
+    </div>
+    <p class="credit-note">Illustrative photo, not taken at our salon.</p>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="wrap info">
+    <div class="reveal">
+      <p class="eyebrow">Hours &amp; location</p>
+      <h2>Find us on Wells Branch Parkway.</h2>
+      <ul class="hours" id="hours">
+        <li data-d="1" class="closed"><span>Monday</span><b>Closed</b></li>
+        <li data-d="2"><span>Tuesday</span><b>10 AM - 6 PM</b></li>
+        <li data-d="3"><span>Wednesday</span><b>10 AM - 6 PM</b></li>
+        <li data-d="4"><span>Thursday</span><b>10 AM - 6 PM</b></li>
+        <li data-d="5"><span>Friday</span><b>10 AM - 6 PM</b></li>
+        <li data-d="6"><span>Saturday</span><b>9 AM - 6 PM</b></li>
+        <li data-d="0" class="closed"><span>Sunday</span><b>Closed</b></li>
+      </ul>
+      <address class="addr">
+        <strong>Kutting Edge Barber &amp; Beauty Salon</strong>
+        1779 Wells Branch Parkway, Unit 110A<br>Austin, TX 78728
+      </address>
+      <div class="row">
+        <a class="btn red" href="https://www.google.com/maps/dir/?api=1&amp;destination=1779+Wells+Branch+Pkwy+110A+Austin+TX+78728" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn dline" href="tel:+15129062500">Call ahead</a>
+      </div>
+    </div>
+    <iframe class="map reveal" title="Map: Kutting Edge Barber &amp; Beauty Salon, 1779 Wells Branch Parkway, Austin" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-97.6800%2C30.4324%2C-97.6680%2C30.4384&amp;layer=mapnik&amp;marker=30.4354377%2C-97.6740748"></iframe>
+  </div>
+</section>
+
+<section id="contact" class="dark contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Ready for a fresh look?</h2>
+    <p class="sub">Walk in, call to book, or send us a message.</p>
+    <div class="ways">
+      <a class="way reveal" href="tel:+15129062500"><span>Call</span><b>+1 512-906-2500</b></a>
+      <a class="way reveal" href="mailto:kuttingedgebbs@gmail.com"><span>Email</span><b>kuttingedgebbs@gmail.com</b></a>
+      <a class="way reveal" href="https://www.facebook.com/KuttingEdgeBBS/" target="_blank" rel="noopener"><span>Facebook</span><b>@KuttingEdgeBBS</b></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fname">Kutting Edge Barber &amp; Beauty Salon</p>
+    <p>1779 Wells Branch Parkway, Unit 110A, Austin, TX 78728 &middot; <a href="tel:+15129062500">+1 512-906-2500</a> &middot; <a href="mailto:kuttingedgebbs@gmail.com">kuttingedgebbs@gmail.com</a></p>
+    <p>Photo: "Vintage red barber chairs in a rustic wooden shop" by PattayaPatrol, via <a href="https://commons.wikimedia.org/wiki/File:DSCF1083_Vintage_red_barber_chairs_in_a_rustic_wooden_shop_waiting_for_the_next_customer.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA</a>. Map data &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
+    <p>Preview made for Kutting Edge Barber &amp; Beauty Salon by Kinoverse - not live yet.</p>
+  </div>
+</footer>
+
+<div class="sticky" aria-label="Quick actions">
+  <a class="call" href="tel:+15129062500">Call now</a>
+  <a class="dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=1779+Wells+Branch+Pkwy+110A+Austin+TX+78728" target="_blank" rel="noopener">Directions</a>
+</div>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  // reveal (content stays visible if JS or IntersectionObserver is unavailable)
+  if('IntersectionObserver' in window){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+    setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})},3500);
+  }
+
+  // open now / today, in Austin time
+  try{
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date());
+    var get=function(t){var p=parts.find(function(x){return x.type===t});return p?p.value:''};
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+    var mins=parseInt(get('hour'),10)*60+parseInt(get('minute'),10);
+    var hrs={2:[600,1080],3:[600,1080],4:[600,1080],5:[600,1080],6:[540,1080]};
+    var li=document.querySelector('#hours li[data-d="'+day+'"]');if(li)li.classList.add('today');
+    var h=hrs[day],txt=document.getElementById('statusText'),dot=document.getElementById('dot');
+    if(h&&mins>=h[0]&&mins<h[1]){dot.classList.add('open');txt.textContent='Open now \u00b7 walk-ins welcome until 6 PM';}
+    else{txt.textContent='Closed now \u00b7 Tue-Fri 10 AM-6 PM, Sat 9 AM-6 PM';}
+  }catch(e){}
+
+  // install the app (Android / Chromium only)
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none'})}});
+  window.addEventListener('appinstalled',function(){b.style.display='none'});
+  if('serviceWorker' in navigator&&location.protocol!=='file:'){navigator.serviceWorker.register('sw.js').catch(function(){})}
+})();
+</script>
+</body>
+</html>
