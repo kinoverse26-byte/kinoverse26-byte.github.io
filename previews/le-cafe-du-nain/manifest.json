@@ -1,0 +1,19 @@
+{
+  "name": "Le Café du Nain",
+  "short_name": "Café du Nain",
+  "description": "Restaurant français à Lyon - Le Café du Nain",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1210",
+  "theme_color": "#1b1210",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
