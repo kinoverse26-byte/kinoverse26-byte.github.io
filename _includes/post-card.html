@@ -1,9 +1,13 @@
 {% assign words = include.post.content | number_of_words %}{% assign mins = words | divided_by: 200 | plus: 1 %}
 {% assign paras = include.post.content | split: "</p>" %}{% assign first = paras[0] | strip_html | strip %}
-{% assign ex = first %}{% if first contains "Kino" and first contains "AI" and paras.size > 1 %}{% assign ex = paras[1] | strip_html | strip %}{% endif %}
+{% assign ex = first %}{% if first contains "Kino" and paras.size > 1 %}{% if first contains "AI" or first contains "IA" %}{% assign ex = paras[1] | strip_html | strip %}{% endif %}{% endif %}
 <a class="card post-card" href="{{ include.post.url | relative_url }}">
+  {% if include.post.lang == "fr" %}
+  <div class="meta">{{ include.post.date | date: "%d/%m/%Y" }} <span>·</span> {{ mins }} min de lecture</div>
+  {% else %}
   <div class="meta">{{ include.post.date | date: "%b %-d, %Y" }} <span>·</span> {{ mins }} min read</div>
+  {% endif %}
   <h3>{{ include.post.title }}</h3>
   <p>{{ ex | truncatewords: 32 }}</p>
-  <span class="more">Read →</span>
+  <span class="more">{% if include.post.lang == "fr" %}Lire →{% else %}Read →{% endif %}</span>
 </a>
