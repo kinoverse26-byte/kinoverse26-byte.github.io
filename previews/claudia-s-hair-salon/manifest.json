@@ -1,0 +1,20 @@
+{
+  "name": "Claudia's Hair Salon",
+  "short_name": "Claudia's",
+  "description": "Hair salon at 2006 West Parmer Lane, Austin, Texas. Call +1 512-260-2566.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1b1517",
+  "theme_color": "#1b1517",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
