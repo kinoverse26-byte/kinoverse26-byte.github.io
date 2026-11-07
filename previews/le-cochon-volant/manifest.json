@@ -1,0 +1,19 @@
+{
+  "name": "Le Cochon Volant",
+  "short_name": "Cochon Volant",
+  "description": "Restaurant régional, 22 Place des Capucins, Bordeaux",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "lang": "fr",
+  "background_color": "#1b1210",
+  "theme_color": "#1b1210",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
