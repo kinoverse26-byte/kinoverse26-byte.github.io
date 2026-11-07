@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Le Café du Nain – Restaurant de cuisine française à Lyon</title>
 <meta name="description" content="Le Café du Nain, restaurant de cuisine française à Lyon. Service du lundi au vendredi, le midi de 12h à 14h et le soir de 18h30 à minuit. Terrasse. Réservation au 04 37 28 54 44.">
-<meta name="theme-color" content="#5a131e">
+<meta name="theme-color" content="#0f2150">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%235a131e' stroke='%23c8a15a' stroke-width='2'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='26' text-anchor='middle' fill='%23c8a15a'%3ECN%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--wine:#7a1f2b;--wine2:#5a131e;--cream:#f7f1e8;--sand:#efe5d3;--ink:#1d1514;--gold:#c8a15a;--gold2:#e2c48a;--mut:#5f524c;--line:#e3d6bf}
+:root{--wine:#1b3a7a;--wine2:#0f2150;--cream:#f7f1e8;--sand:#efe5d3;--ink:#0a1634;--gold:#c8a15a;--gold2:#e2c48a;--mut:#5f524c;--line:#e3d6bf}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -30,7 +30,7 @@ a{color:inherit}
 
 .ribbon{background:#120c0b;color:#e9dcc4;text-align:center;font-size:.74rem;padding:.4rem 1rem;letter-spacing:.03em}
 
-header{position:sticky;top:0;z-index:50;background:rgba(29,21,20,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(200,161,90,.25)}
+header{position:sticky;top:0;z-index:50;background:rgba(10,22,52,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(200,161,90,.25)}
 .bar{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding:.7rem 5vw}
 .logo{font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;font-weight:700;color:#fff;text-decoration:none;display:flex;align-items:center;gap:.55rem;white-space:nowrap}
 .logo .mark{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--wine);border:1px solid var(--gold);flex:none}
@@ -44,7 +44,7 @@ nav a:hover{color:var(--gold2)}
 .hbtn.inst{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55);display:none}
 @media(max-width:900px){nav{display:none}}
 
-.hero{position:relative;min-height:calc(100svh - 90px);display:flex;align-items:flex-end;color:#fff;padding:6rem 5vw 5rem;overflow:hidden;background:#1d1514}
+.hero{position:relative;min-height:calc(100svh - 90px);display:flex;align-items:flex-end;color:#fff;padding:6rem 5vw 5rem;overflow:hidden;background:#0a1634}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:zoom 14s ease-out forwards}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,8,8,.35) 0%,rgba(18,8,8,.55) 45%,rgba(18,8,8,.88) 100%)}
 @keyframes zoom{to{transform:scale(1)}}
@@ -119,13 +119,13 @@ tr.today td:first-child::after{content:" · aujourd'hui";font-weight:400;font-si
 .socials{margin-top:2rem;color:var(--mut);font-size:.94rem}
 .socials a{color:var(--wine);font-weight:600}
 
-footer{background:#1d1514;color:#c2b5a7;padding:3.5rem 5vw 6.5rem;font-size:.84rem;text-align:center;line-height:1.8}
+footer{background:#0a1634;color:#c2b5a7;padding:3.5rem 5vw 6.5rem;font-size:.84rem;text-align:center;line-height:1.8}
 footer strong{font-family:'Playfair Display',Georgia,serif;color:#fff;font-size:1.35rem;display:block;margin-bottom:.4rem;font-weight:700}
 footer a{color:var(--gold2)}
 footer .fine{margin-top:1.2rem;color:#a39587;font-size:.78rem}
 @media(min-width:761px){footer{padding-bottom:3.5rem}}
 
-.sticky{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:.5rem;padding:.6rem .6rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(29,21,20,.96);border-top:1px solid rgba(200,161,90,.3)}
+.sticky{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:.5rem;padding:.6rem .6rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(10,22,52,.96);border-top:1px solid rgba(200,161,90,.3)}
 .sticky a{flex:1;text-align:center;padding:.8rem .5rem;border-radius:999px;font-weight:600;text-decoration:none;font-size:.95rem}
 .sticky .s1{background:var(--gold);color:#2a1a10}
 .sticky .s2{background:#fff;color:var(--wine2)}
@@ -162,7 +162,7 @@ footer .fine{margin-top:1.2rem;color:#a39587;font-size:.78rem}
       <a class="btn" href="tel:+33437285444">Réserver : 04 37 28 54 44</a>
       <a class="btn ghost" href="#infos">Horaires &amp; plan</a>
     </div>
-    <div class="facts"><span>Lun – Ven, 12h – 14h</span><span>Lun – Ven, 18h30 – minuit</span><span>Terrasse</span></div>
+    <div class="facts"><span>Lun – Ven, 12h – 14h</span><span>Lun – Ven, 18h30 – minuit</span><span>Terrasse</span><span>100 % des 25 avis Facebook le recommandent</span></div>
   </div>
 </div>
 
@@ -217,10 +217,10 @@ footer .fine{margin-top:1.2rem;color:#a39587;font-size:.78rem}
       <tr data-d="0"><td>Dimanche</td><td>Fermé (à confirmer)</td></tr>
       </tbody>
     </table>
-    <p class="addr"><strong>Adresse :</strong> Lyon – adresse exacte à confirmer, voir le plan.<br>Terrasse · Fumeurs en extérieur · Accès fauteuil limité.</p>
+    <p class="addr"><strong>Adresse :</strong> 5 rue Montesquieu, 69007 Lyon.<br>Terrasse · Fumeurs en extérieur · Accès fauteuil limité.</p>
   </div>
   <div class="mapbox rv">
-    <iframe class="map" title="Plan : Le Café du Nain à Lyon" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=4.8357%2C45.7520%2C4.8437%2C45.7560&amp;layer=mapnik&amp;marker=45.7540392%2C4.8397073"></iframe>
+    <iframe class="map" title="Plan : Le Café du Nain à Lyon" loading="lazy" src="https://maps.google.com/maps?q=5+rue+Montesquieu,+69007+Lyon&hl=fr&z=17&output=embed"></iframe>
     <a class="maplink" href="https://www.openstreetmap.org/node/2077032485" target="_blank" rel="noopener">Ouvrir le plan en grand →</a>
   </div>
 </div></section>
@@ -232,20 +232,20 @@ footer .fine{margin-top:1.2rem;color:#a39587;font-size:.78rem}
   <a class="phone" href="tel:+33437285444">04 37 28 54 44</a>
   <div class="ctas">
     <a class="btn wine" href="tel:+33437285444">Appeler le restaurant</a>
-    <a class="btn" href="https://www.openstreetmap.org/directions?to=45.7540392%2C4.8397073" target="_blank" rel="noopener">Itinéraire</a>
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=5+rue+Montesquieu,+69007+Lyon" target="_blank" rel="noopener">Itinéraire</a>
   </div>
-  <p class="socials">Suivez-nous sur <a href="https://www.facebook.com/cafedunain" target="_blank" rel="noopener">Facebook</a> et <a href="https://www.instagram.com/cafedunain" target="_blank" rel="noopener">Instagram</a>.</p>
+  <p class="socials">Écrire : <a href="mailto:cafedunain@hotmail.com">cafedunain@hotmail.com</a><br>Suivez-nous sur <a href="https://www.facebook.com/cafedunain" target="_blank" rel="noopener">Facebook</a> et <a href="https://www.instagram.com/cafedunain" target="_blank" rel="noopener">Instagram</a>.</p>
 </div></section>
 </main>
 
 <footer>
   <strong>Le Café du Nain</strong>
-  Restaurant de cuisine française · Lyon · <a href="tel:+33437285444">04 37 28 54 44</a><br>
+  Restaurant de cuisine française · Lyon · <a href="tel:+33437285444">04 37 28 54 44</a> · <a href="mailto:cafedunain@hotmail.com">cafedunain@hotmail.com</a><br>5 rue Montesquieu, 69007 Lyon<br>
   Lundi – vendredi : 12h – 14h et 18h30 – 00h
   <p class="fine">Aperçu réalisé pour Le Café du Nain par Kinoverse – pas encore en ligne. Horaires d'après OpenStreetMap, à confirmer.<br>Photos d'illustration : StockSnap (CC0). Plan © contributeurs <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.</p>
 </footer>
 
-<div class="sticky"><a class="s1" href="tel:+33437285444">Appeler</a><a class="s2" href="https://www.openstreetmap.org/directions?to=45.7540392%2C4.8397073" target="_blank" rel="noopener">Itinéraire</a></div>
+<div class="sticky"><a class="s1" href="tel:+33437285444">Appeler</a><a class="s2" href="https://www.google.com/maps/dir/?api=1&destination=5+rue+Montesquieu,+69007+Lyon" target="_blank" rel="noopener">Itinéraire</a></div>
 
 <script>
 (function(){
