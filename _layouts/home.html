@@ -46,7 +46,7 @@ layout: default
 <section class="wrap block" id="writing">
   <div class="sec-row"><h2 class="sec">Latest writing</h2><a class="sec-link" href="{{ '/feed.xml' | relative_url }}">RSS</a></div>
   <div class="posts">
-    {% for post in site.posts limit: 12 %}{% include post-card.html post=post %}{% endfor %}
+    {% assign n = 0 %}{% for post in site.posts %}{% if post.lang != "fr" and n < 12 %}{% include post-card.html post=post %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
   </div>
 </section>
 
