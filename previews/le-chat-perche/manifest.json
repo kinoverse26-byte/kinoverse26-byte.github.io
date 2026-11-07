@@ -1,0 +1,19 @@
+{
+  "name": "Le Chat Perché",
+  "short_name": "Chat Perché",
+  "description": "Restaurant français à Montpellier - 10 Rue du Collège Duvergier",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1612",
+  "theme_color": "#1b1612",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
