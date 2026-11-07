@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Friterie Jules · 14 Contour Saint-Aubin, Rennes · Frites &amp; fritures</title>
+<meta name="description" content="Friterie Jules, 14 Contour Saint-Aubin à Rennes (35000). Frites et fritures, en salle ou en terrasse. Ouvert du mardi au dimanche dès 11h30. Tél. 09 82 40 12 27.">
+<meta name="theme-color" content="#1d1a16">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c62323'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23f7b32b'%3EJ%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Friterie Jules">
+<meta property="og:title" content="Friterie Jules · Frites &amp; fritures, Contour Saint-Aubin, Rennes">
+<meta property="og:description" content="Frites et fritures au 14 Contour Saint-Aubin, Rennes. En salle ou en terrasse, du mardi au dimanche dès 11h30.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c62323;--red-d:#a51b1b;--gold:#f7b32b;--gold-l:#ffd77a;
+  --ink:#1d1a16;--ink-2:#2a2620;--cream:#fff7e6;--paper:#fffdf8;--muted:#5d554a;
+  --radius:18px;--shadow:0 10px 30px rgba(29,26,22,.08);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:16px}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Bebas Neue",Impact,"Arial Narrow",sans-serif;font-weight:400;letter-spacing:.02em;line-height:1}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1160px,100%);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--ink);padding:10px 16px;z-index:100}
+.skip:focus{left:10px}
+
+/* Ribbon */
+.ribbon{background:#0f0d0b;color:#e9e2d4;font-size:12px;text-align:center;padding:7px 14px;letter-spacing:.02em}
+
+/* Header – wraps on small phones so every button stays visible */
+.top{position:sticky;top:0;z-index:40;background:rgba(255,247,230,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid rgba(29,26,22,.08)}
+.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;padding-top:10px;padding-bottom:10px}
+.logo{font-family:"Bebas Neue",Impact,sans-serif;font-size:28px;color:var(--red);text-decoration:none;letter-spacing:.04em;line-height:1;white-space:nowrap}
+.menu{display:none;gap:22px}
+.menu a{text-decoration:none;font-weight:500;font-size:14px;color:var(--ink)}
+.menu a:hover{color:var(--red)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:700;font-size:16px;border:2px solid var(--red);cursor:pointer;font-family:inherit;transition:transform .25s,background .25s,border-color .25s;min-height:48px}
+.btn:hover{background:var(--red-d);border-color:var(--red-d);transform:translateY(-2px)}
+.btn.sm{padding:8px 16px;font-size:14px;min-height:40px}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.85)}
+.btn.ghost:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn.dark{background:var(--ink);border-color:var(--ink)}
+.btn.dark:hover{background:#000;border-color:#000}
+.btn svg{width:18px;height:18px;flex:none}
+#install[hidden]{display:none}
+@media(min-width:860px){.menu{display:flex}}
+
+/* Hero */
+.hero{position:relative;min-height:calc(100svh - 90px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#1d1a16}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:zoom 14s ease-out forwards}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,13,11,.25) 0%,rgba(15,13,11,.55) 45%,rgba(15,13,11,.92) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-top:120px;padding-bottom:64px}
+.kicker{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-l);margin-bottom:14px}
+.hero h1{font-size:clamp(54px,13vw,148px);color:#fff;max-width:11ch}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{max-width:540px;margin:18px 0 30px;font-size:clamp(17px,2.2vw,20px);color:#f3ece0}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-size:14px;color:#efe8db}
+.dot{width:10px;height:10px;border-radius:50%;background:#9a9186}
+.dot.open{background:#4ade80;box-shadow:0 0 0 4px rgba(74,222,128,.25)}
+@keyframes zoom{to{transform:scale(1)}}
+
+/* Sections */
+section{padding:88px 0}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+section h2{font-size:clamp(42px,7vw,72px);color:var(--ink);margin-bottom:18px}
+.intro{max-width:640px;color:var(--muted);font-size:17px}
+
+/* About */
+.about .wrap{display:grid;gap:40px;align-items:center}
+.about figure{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
+.about figure img{width:100%;height:100%;object-fit:cover}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:28px}
+.fact{background:var(--paper);border:1px solid rgba(29,26,22,.08);border-radius:14px;padding:16px 18px}
+.fact b{display:block;font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:26px;color:var(--red);letter-spacing:.03em;line-height:1.1}
+.fact span{font-size:14px;color:var(--muted)}
+@media(min-width:900px){.about .wrap{grid-template-columns:1.05fr .95fr;gap:64px}}
+
+/* Services */
+.carte{background:var(--paper)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:36px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(29,26,22,.13)}
+.card img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.card .in{padding:22px 24px 26px}
+.card h3{font-size:30px;margin-bottom:6px}
+.card p{color:var(--muted)}
+.note{margin-top:12px;font-size:14px;font-weight:600;color:var(--red)}
+
+/* Gallery */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:34px}
+.gal figure{border-radius:14px;overflow:hidden;background:#e9dfcc}
+.gal img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.05)}
+@media(min-width:760px){
+  .gal{grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:14px}
+  .gal img{aspect-ratio:auto}
+  .gal .big{grid-column:span 2;grid-row:span 2}
+  .gal .wide{grid-column:span 2}
+}
+.small{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* Hours + map */
+.dark{background:var(--ink);color:#f3ece0}
+.dark h2{color:#fff}
+.dark .eyebrow{color:var(--gold)}
+.hm{display:grid;gap:44px}
+@media(min-width:900px){.hm{grid-template-columns:.9fr 1.1fr;gap:64px}}
+.hours{width:100%;border-collapse:collapse;margin-top:10px;font-size:16px}
+.hours th,.hours td{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.14);text-align:left;font-weight:400}
+.hours td{text-align:right;font-variant-numeric:tabular-nums}
+.hours tr.today th,.hours tr.today td{color:var(--gold);font-weight:700}
+.closed{color:#b9b0a3}
+.addr{font-size:18px;margin-bottom:18px}
+.map{border-radius:var(--radius);overflow:hidden;background:var(--ink-2);aspect-ratio:4/3}
+.map iframe{width:100%;height:100%;border:0;display:block}
+.dark .btn.ghost{margin-top:18px}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:34px}
+.cc{display:block;background:#fff;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);text-decoration:none;transition:transform .3s,box-shadow .3s;border-top:4px solid var(--red)}
+.cc:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(29,26,22,.13)}
+.cc h3{font-size:28px;margin-bottom:6px}
+.cc p{color:var(--muted);word-break:break-word}
+.cc strong{color:var(--ink)}
+
+/* Footer */
+footer{background:#0f0d0b;color:#c9c0b2;padding:46px 0 40px;font-size:14px}
+footer .wrap{display:grid;gap:18px}
+footer .logo{color:var(--gold);font-size:30px}
+footer a{color:var(--gold-l)}
+footer .fine{font-size:12.5px;color:#9e9586;line-height:1.7}
+
+/* Sticky mobile call bar */
+.bar{display:none}
+@media(max-width:759px){
+  .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;box-shadow:0 -6px 20px rgba(0,0,0,.18);padding-bottom:env(safe-area-inset-bottom);background:var(--ink)}
+  .bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;color:#fff;font-weight:700;text-decoration:none;font-size:15px}
+  .bar a:first-child{background:var(--red)}
+  .bar svg{width:18px;height:18px}
+  body{padding-bottom:calc(56px + env(safe-area-inset-bottom))}
+}
+
+/* Reveal – content only hidden when JS is running */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .hero img{animation:none;transform:none}
+  .card,.cc,.btn,.gal img{transition:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="ribbon">Aperçu réalisé pour Friterie Jules par Kinoverse – pas encore en ligne</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">Friterie Jules</a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="#maison">La maison</a>
+      <a href="#carte">La carte</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#horaires">Horaires</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="actions">
+      <a class="btn sm" href="tel:+33982401227" aria-label="Appeler la Friterie Jules au 09 82 40 12 27">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler</a>
+      <button class="btn sm dark" id="install" type="button" hidden>Installer l'app</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-label="Accueil" style="padding:0">
+  <img src="img/hero.jpg?v=1" alt="Portion de frites dorées" fetchpriority="high">
+  <div class="wrap">
+    <span class="kicker">14 Contour Saint-Aubin · Rennes</span>
+    <h1>Les frites du Contour <em>Saint-Aubin.</em></h1>
+    <p class="lead">Friterie Jules sert frites et fritures en plein centre de Rennes. Installez-vous en salle ou en terrasse, du mardi au dimanche dès 11h30.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+33982401227">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+        09 82 40 12 27</a>
+      <a class="btn ghost" href="#horaires">Horaires &amp; accès</a>
+    </div>
+    <p class="status" id="status" aria-live="polite"><span class="dot" id="dot"></span><span id="statusTxt">Mar.–dim. dès 11h30 · fermé le lundi</span></p>
+  </div>
+</section>
+
+<section class="about" id="maison">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow rv">La maison</p>
+      <h2 class="rv">Une friterie, en plein cœur de Rennes</h2>
+      <p class="intro rv">Au 14 Contour Saint-Aubin, Friterie Jules fait une chose et la fait sérieusement&nbsp;: la friture. Des frites dorées, des spécialités frites, à déguster à table à l'intérieur ou dehors, en terrasse, quand Rennes s'y prête.</p>
+      <div class="facts rv">
+        <div class="fact"><b>Friture</b><span>Notre spécialité</span></div>
+        <div class="fact"><b>Salle</b><span>Places à l'intérieur</span></div>
+        <div class="fact"><b>Terrasse</b><span>Places en extérieur</span></div>
+        <div class="fact"><b>6 jours / 7</b><span>Du mardi au dimanche</span></div>
+      </div>
+    </div>
+    <figure class="rv"><img src="img/frites2.jpg?v=1" alt="Frites servies en portion" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="carte" id="carte">
+  <div class="wrap">
+    <p class="eyebrow rv">La carte</p>
+    <h2 class="rv">Ce qu'on sert</h2>
+    <p class="intro rv">Le détail de la carte et les prix sont communiqués sur demande&nbsp;: un appel suffit.</p>
+    <div class="cards">
+      <article class="card rv">
+        <img src="img/frites3.jpg?v=1" alt="Frites accompagnées de ketchup" loading="lazy">
+        <div class="in"><h3>Les frites</h3><p>Le cœur de la maison&nbsp;: chaudes, dorées, croustillantes.</p><p class="note">Prix sur demande</p></div>
+      </article>
+      <article class="card rv">
+        <img src="img/frites6.jpg?v=1" alt="Frites en cours de cuisson dans l'huile" loading="lazy">
+        <div class="in"><h3>Les fritures</h3><p>Les spécialités frites de la friterie, à découvrir sur place.</p><p class="note">Carte sur demande</p></div>
+      </article>
+      <article class="card rv">
+        <img src="img/frites4.jpg?v=1" alt="Frites en gros plan" loading="lazy">
+        <div class="in"><h3>Salle &amp; terrasse</h3><p>Asseyez-vous à l'intérieur ou profitez de la terrasse sur le Contour Saint-Aubin.</p><p class="note">Vente à emporter&nbsp;: à confirmer</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <p class="eyebrow rv">Galerie</p>
+    <h2 class="rv">Croustillant, en images</h2>
+    <div class="gal rv">
+      <figure class="big"><img src="img/hero.jpg?v=1" alt="Portion de frites dorées" loading="lazy"></figure>
+      <figure><img src="img/frites5.jpg?v=1" alt="Frites" loading="lazy"></figure>
+      <figure><img src="img/frites3.jpg?v=1" alt="Frites et ketchup" loading="lazy"></figure>
+      <figure class="wide"><img src="img/frites6.jpg?v=1" alt="Cuisson de frites dans l'huile" loading="lazy"></figure>
+      <figure class="wide"><img src="img/frites2.jpg?v=1" alt="Frites servies en portion" loading="lazy"></figure>
+      <figure class="wide"><img src="img/frites4.jpg?v=1" alt="Frites en gros plan" loading="lazy"></figure>
+    </div>
+    <p class="small">Photos d'illustration libres de droits, en attendant celles de la friterie.</p>
+  </div>
+</section>
+
+<section class="dark" id="horaires">
+  <div class="wrap hm">
+    <div>
+      <p class="eyebrow rv">Horaires</p>
+      <h2 class="rv">Quand passer</h2>
+      <table class="hours rv" id="hours">
+        <caption class="skip" style="position:static;left:auto;background:none;color:inherit;padding:0;font-size:0">Horaires d'ouverture</caption>
+        <tr data-d="1"><th scope="row">Lundi</th><td class="closed">Fermé</td></tr>
+        <tr data-d="2"><th scope="row">Mardi</th><td>11h30 – 22h00</td></tr>
+        <tr data-d="3"><th scope="row">Mercredi</th><td>11h30 – 22h00</td></tr>
+        <tr data-d="4"><th scope="row">Jeudi</th><td>11h30 – 23h00</td></tr>
+        <tr data-d="5"><th scope="row">Vendredi</th><td>11h30 – 23h00</td></tr>
+        <tr data-d="6"><th scope="row">Samedi</th><td>11h30 – 23h00</td></tr>
+        <tr data-d="0"><th scope="row">Dimanche</th><td>11h30 – 22h00</td></tr>
+      </table>
+      <p class="small rv" style="color:#b9b0a3">Jours fériés&nbsp;: à confirmer par téléphone.</p>
+    </div>
+    <div>
+      <p class="eyebrow rv">Nous trouver</p>
+      <h2 class="rv">Venir à la friterie</h2>
+      <p class="addr rv">14 Contour Saint-Aubin<br>35000 Rennes</p>
+      <div class="map rv">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-1.6847%2C48.1134%2C-1.6767%2C48.1174&amp;layer=mapnik&amp;marker=48.1154332%2C-1.6807766" title="Plan : Friterie Jules, 14 Contour Saint-Aubin, Rennes" loading="lazy"></iframe>
+      </div>
+      <a class="btn ghost rv" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.1154332,-1.6807766" target="_blank" rel="noopener">Itinéraire</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <p class="eyebrow rv">Contact</p>
+    <h2 class="rv">Une question&nbsp;? Appelez-nous</h2>
+    <p class="intro rv">Pour la carte, les prix ou une table, le plus simple reste le téléphone.</p>
+    <div class="contact-grid">
+      <a class="cc rv" href="tel:+33982401227"><h3>Téléphone</h3><p><strong>09 82 40 12 27</strong><br>Pendant les heures d'ouverture</p></a>
+      <a class="cc rv" href="mailto:friteriejules@gmail.com"><h3>E-mail</h3><p><strong>friteriejules@gmail.com</strong></p></a>
+      <a class="cc rv" href="https://www.instagram.com/friteriejules_rennes/" target="_blank" rel="noopener"><h3>Instagram</h3><p><strong>@friteriejules_rennes</strong></p></a>
+      <a class="cc rv" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.1154332,-1.6807766" target="_blank" rel="noopener"><h3>Adresse</h3><p><strong>14 Contour Saint-Aubin</strong><br>35000 Rennes</p></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo">Friterie Jules</span>
+    <p>14 Contour Saint-Aubin, 35000 Rennes · <a href="tel:+33982401227">09 82 40 12 27</a> · <a href="mailto:friteriejules@gmail.com">friteriejules@gmail.com</a></p>
+    <p class="fine">© Friterie Jules, Rennes. Aperçu réalisé par Kinoverse, pas encore en ligne.<br>
+    Photos d'illustration&nbsp;: StockSnap (Candace McDaniel) et Rawpixel, licence CC0. Carte&nbsp;: © les contributeurs <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.</p>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Actions rapides">
+  <a href="tel:+33982401227"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Appeler</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=48.1154332,-1.6807766" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Itinéraire</a>
+</nav>
+
+<script>
+(function(){
+  // Reveal on scroll (content stays visible without JS / without IntersectionObserver)
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el);});
+  }else{els.forEach(function(el){el.classList.add('on');});}
+
+  // Open / closed now (Europe/Paris), from the published hours
+  var H={0:[690,1320],1:null,2:[690,1320],3:[690,1320],4:[690,1380],5:[690,1380],6:[690,1380]};
+  try{
+    var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+    var g=function(t){return (parts.find(function(p){return p.type===t;})||{}).value;};
+    var d={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')];
+    var m=parseInt(g('hour'),10)%24*60+parseInt(g('minute'),10);
+    var row=document.querySelector('#hours tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+    var h=H[d],txt=document.getElementById('statusTxt'),dot=document.getElementById('dot');
+    var fmt=function(v){return Math.floor(v/60)+'h'+('0'+v%60).slice(-2);};
+    if(h&&m>=h[0]&&m<h[1]){dot.classList.add('open');txt.textContent='Ouvert maintenant · jusqu\'à '+fmt(h[1]);}
+    else if(h&&m<h[0]){txt.textContent='Fermé · ouvre aujourd\'hui à '+fmt(h[0]);}
+    else{var n=(d+1)%7;while(!H[n])n=(n+1)%7;var names=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];txt.textContent='Fermé · réouverture '+(n===(d+1)%7?'demain':names[n])+' à '+fmt(H[n][0]);}
+  }catch(e){}
+
+  // Install the app (Android / Chromium only)
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.hidden=false;});
+  b.addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.finally(function(){dp=null;b.hidden=true;});});
+  window.addEventListener('appinstalled',function(){b.hidden=true;});
+  if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(function(){});}
+})();
+</script>
+</body>
+</html>
