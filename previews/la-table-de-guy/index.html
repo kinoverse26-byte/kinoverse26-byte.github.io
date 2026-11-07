@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La Table de Guy – Restaurant créole, 145 Avenue des Chartreux, Marseille</title>
+<meta name="description" content="La Table de Guy, restaurant de cuisine créole au 145 Avenue des Chartreux à Marseille. Ouvert tous les soirs de 19h à 2h. Réservation au 04 91 05 93 57.">
+<meta name="theme-color" content="#1a110e">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a110e'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23e8b04a'%3EG%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="La Table de Guy – Cuisine créole aux Chartreux, Marseille">
+<meta property="og:description" content="Restaurant créole au 145 Avenue des Chartreux, Marseille. Tous les soirs, 19h – 2h. Réservation : 04 91 05 93 57.">
+<meta property="og:image" content="img/plat4.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1a110e;--ink2:#241815;--ink3:#2f201b;
+  --cream:#f6ead6;--mut:#d2c1aa;--line:#ffffff1c;
+  --terra:#b8441c;--terra2:#d0592f;--gold:#e8b04a;--leaf:#4f7a52;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;background:var(--ink);color:var(--cream);line-height:1.7;font-size:1rem;overflow-x:hidden}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.1;letter-spacing:-.01em}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ribbon */
+.ribbon{background:var(--gold);color:var(--ink);text-align:center;font-size:.76rem;line-height:1.35;padding:.4rem .8rem;font-weight:600}
+
+/* header – wraps on small phones, every button stays visible */
+.top{position:sticky;top:0;z-index:40;background:#1a110ef2;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .in{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem .8rem;padding:.65rem 5vw}
+.logo{font-family:Fraunces,Georgia,serif;font-size:1.25rem;font-weight:700;text-decoration:none;color:var(--cream);white-space:nowrap}
+.menu{display:flex;gap:1.5rem;list-style:none;font-size:.9rem;font-weight:500}
+.menu a{text-decoration:none;color:var(--mut)}
+.menu a:hover{color:var(--gold)}
+.acts{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:.4rem;padding:.55rem 1rem;border-radius:40px;font-size:.86rem;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-family:inherit;white-space:nowrap}
+.pill.call{background:var(--terra);color:#fff}
+.pill.call:hover{background:var(--terra2)}
+.pill.app{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.pill.app[hidden]{display:none}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 90px);display:flex;align-items:flex-end;padding:7rem 5vw 4.5rem;isolation:isolate}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#1a110e66 0%,#1a110e99 45%,#1a110ef5 100%),linear-gradient(90deg,#1a110ecc,#1a110e22 70%)}
+.hero .in{max-width:1180px;width:100%;margin:auto}
+.eyebrow{display:inline-block;color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:.74rem;font-weight:600}
+.hero h1{font-size:clamp(2.4rem,7.4vw,5.4rem);max-width:15ch;margin:.8rem 0 1.1rem}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--gold)}
+.hero p.lead{font-size:clamp(1.02rem,2.4vw,1.2rem);max-width:36rem;color:var(--cream);margin-bottom:2rem}
+.status{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:500;background:#00000055;border:1px solid var(--line);padding:.35rem .85rem;border-radius:40px;margin-bottom:1.4rem}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.status.open i{background:#6fcf7a;box-shadow:0 0 0 4px #6fcf7a33}
+.ctas{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--terra);color:#fff;padding:1rem 1.7rem;border-radius:40px;text-decoration:none;font-weight:600;font-size:1rem;transition:background .25s,transform .25s}
+.btn:hover{background:var(--terra2);transform:translateY(-2px)}
+.btn.o{background:transparent;border:1px solid #f6ead699;color:var(--cream)}
+.btn.o:hover{border-color:var(--gold);color:var(--gold);background:transparent}
+.credit-hero{position:absolute;right:5vw;bottom:1rem;font-size:.7rem;color:#f6ead6aa}
+
+/* sections */
+section{padding:6.5rem 5vw}
+.wrap{max-width:1180px;margin:auto}
+h2{font-size:clamp(2rem,5vw,3.2rem);margin:.6rem 0 1.3rem;max-width:20ch}
+.alt{background:var(--ink2)}
+p.mut{color:var(--mut)}
+
+/* about */
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:4rem;align-items:center}
+.about figure{position:relative}
+.about figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:22px}
+.about figure::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);border-radius:22px;z-index:-1;opacity:.5}
+.about figure{isolation:isolate}
+figcaption{font-size:.78rem;color:var(--mut);margin-top:.7rem}
+.about p{margin-bottom:1.1rem;color:var(--mut);max-width:34rem}
+.about p strong{color:var(--cream);font-weight:600}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem;border-top:1px solid var(--line);padding-top:1.6rem}
+.facts b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.6rem;color:var(--gold);line-height:1.2}
+.facts span{font-size:.82rem;color:var(--mut)}
+
+/* services */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:2.6rem}
+.card{background:var(--ink);border:1px solid var(--line);border-radius:18px;padding:2rem 1.7rem;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-5px);border-color:#e8b04a88}
+.card .n{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--gold);font-size:1rem}
+.card h3{font-size:1.4rem;margin:.6rem 0 .6rem}
+.card p{color:var(--mut);font-size:.96rem}
+.card em{display:block;margin-top:1.1rem;padding-top:.9rem;border-top:1px dashed var(--line);color:var(--gold);font-style:normal;font-size:.84rem;font-weight:500}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:auto auto;gap:1rem;margin-top:2.6rem}
+.gal figure{margin:0;border-radius:18px;overflow:hidden;position:relative}
+.gal figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.03)}
+.gal .big{grid-row:span 2;min-height:520px}
+.gal .tile{background:var(--terra);border-radius:18px;padding:2rem;display:flex;flex-direction:column;justify-content:flex-end;min-height:250px}
+.gal .tile.g{background:var(--ink3);border:1px solid var(--line)}
+.gal .tile h3{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:.5rem}
+.gal .tile p{font-size:.95rem;color:#fff}
+.gal .tile.g p{color:var(--mut)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:2.4rem 1.2rem .9rem;margin:0;background:linear-gradient(transparent,#000000b0);color:#f6ead6dd}
+.gal-row2{display:grid;grid-template-columns:1fr 1.4fr;gap:1rem;margin-top:1rem}
+.gal-row2 figure{min-height:340px}
+.note{margin-top:1.2rem;font-size:.85rem;color:var(--mut)}
+
+/* infos */
+.info{display:grid;grid-template-columns:1fr 1.25fr;gap:3rem;align-items:stretch}
+.hours{list-style:none;margin:1.2rem 0 1.6rem}
+.hours li{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding:.7rem 0;color:var(--mut)}
+.hours li.today{color:var(--cream);font-weight:600}
+.hours li.today span:first-child::after{content:" · aujourd'hui";color:var(--gold);font-weight:500;font-size:.82rem}
+.addr{font-style:normal;font-size:1.05rem;margin-bottom:1.2rem}
+.lines a{display:block;text-decoration:none;color:var(--gold);font-weight:500;margin:.25rem 0;word-break:break-word}
+.lines a:hover{text-decoration:underline}
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:400px;display:flex;flex-direction:column}
+.map iframe{flex:1;width:100%;min-height:360px;border:0;display:block}
+.map a{display:block;text-align:center;padding:.8rem;font-size:.88rem;font-weight:600;text-decoration:none;background:var(--ink3);color:var(--gold)}
+
+/* contact */
+.contact{position:relative;text-align:center;isolation:isolate;padding:8rem 5vw}
+.contact>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.contact::after{content:"";position:absolute;inset:0;background:#1a110ee0;z-index:-1}
+.contact h2{margin-left:auto;margin-right:auto}
+.contact p{max-width:34rem;margin:0 auto 2rem;color:var(--cream)}
+.contact .ctas{justify-content:center}
+.contact .tel{display:block;font-family:Fraunces,Georgia,serif;font-size:clamp(2rem,6vw,3.4rem);color:var(--gold);text-decoration:none;margin:0 0 2rem}
+
+/* footer */
+footer{padding:3rem 5vw 7rem;font-size:.82rem;color:var(--mut);border-top:1px solid var(--line)}
+footer .wrap{display:grid;gap:1rem}
+footer .fl{font-family:Fraunces,Georgia,serif;font-size:1.2rem;color:var(--cream)}
+footer a{color:var(--gold)}
+
+/* sticky mobile bar */
+.fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));display:none;gap:.6rem;z-index:50}
+.fab a{flex:1;text-align:center;padding:.95rem .5rem;border-radius:40px;background:var(--terra);color:#fff;text-decoration:none;font-weight:600;box-shadow:0 6px 22px #000a}
+.fab a+a{background:var(--gold);color:var(--ink)}
+
+/* reveal – only hides when JS is running */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media(max-width:900px){
+  .menu{display:none}
+  .about,.info{grid-template-columns:1fr;gap:2.6rem}
+  .about figure img{aspect-ratio:4/3}
+  .gal,.gal-row2{grid-template-columns:1fr}
+  .gal .big{grid-row:auto;min-height:340px}
+  .gal-row2 figure{min-height:280px}
+  .fab{display:flex}
+  section{padding:4.5rem 6vw}
+  footer{padding-bottom:8rem}
+}
+@media(max-width:400px){
+  .top .in{padding:.6rem 4vw}
+  .logo{font-size:1.12rem}
+  .pill{padding:.5rem .85rem;font-size:.82rem}
+  .facts{grid-template-columns:1fr 1fr}
+  .btn{width:100%}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Aperçu réalisé pour La Table de Guy par Kinoverse – pas encore en ligne</div>
+
+<header class="top">
+  <div class="in">
+    <a class="logo" href="#top">La Table de Guy</a>
+    <ul class="menu">
+      <li><a href="#restaurant">Le restaurant</a></li>
+      <li><a href="#cuisine">La maison</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#infos">Horaires &amp; accès</a></li>
+      <li><a href="#reserver">Réserver</a></li>
+    </ul>
+    <div class="acts">
+      <button class="pill app" id="inst" type="button" hidden>Installer l'app</button>
+      <a class="pill call" href="tel:+33491059357" aria-label="Appeler La Table de Guy au 04 91 05 93 57">Appeler</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="hero" id="top">
+  <img src="img/plat4.jpg?v=1" alt="Débarquement de lambis au port du Vauclin, en Martinique (photo d'illustration)" fetchpriority="high">
+  <div class="in">
+    <span class="eyebrow">Cuisine créole · Les Chartreux, Marseille</span>
+    <h1>Le créole se sert tard, <em>avenue des Chartreux.</em></h1>
+    <p class="lead">Au 145 Avenue des Chartreux, La Table de Guy vous reçoit chaque soir, de 19h à 2h du matin. Un coup de fil et votre table est prête.</p>
+    <div class="status" id="status" aria-live="polite"><i></i><span>Tous les soirs · 19h – 2h</span></div>
+    <div class="ctas">
+      <a class="btn" href="tel:+33491059357">Réserver : 04 91 05 93 57</a>
+      <a class="btn o" href="#infos">Nous trouver</a>
+    </div>
+  </div>
+  <span class="credit-hero">Photo d'illustration : Emilie Le Roy / Ifremer, CC BY</span>
+</div>
+
+<section id="restaurant" aria-labelledby="t-about">
+  <div class="wrap about">
+    <figure class="rv">
+      <img src="img/plat6.jpg?v=1" alt="Pêcheurs et lambis au port du Vauclin, en Martinique (photo d'illustration)" loading="lazy">
+      <figcaption>Le Vauclin, Martinique – photo d'illustration.</figcaption>
+    </figure>
+    <div class="rv">
+      <span class="eyebrow">Le restaurant</span>
+      <h2 id="t-about">Une table créole, au cœur des Chartreux</h2>
+      <p><strong>La Table de Guy</strong> est un restaurant de cuisine créole installé au 145 Avenue des Chartreux, à Marseille.</p>
+      <p>La maison ouvre ses portes tous les soirs, sept jours sur sept, et sert jusqu'à 2h du matin : l'adresse qu'on garde en tête pour un dîner qui se prolonge, entre amis ou en famille.</p>
+      <p>Carte, plats du moment et prix : sur demande, par téléphone ou par e-mail.</p>
+      <div class="facts">
+        <div><b>7j/7</b><span>ouvert tous les soirs</span></div>
+        <div><b>19h–2h</b><span>service du soir</span></div>
+        <div><b>N°145</b><span>av. des Chartreux</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="cuisine" aria-labelledby="t-cuisine">
+  <div class="wrap">
+    <span class="eyebrow">La maison</span>
+    <h2 id="t-cuisine">Ce que vous trouverez à La Table de Guy</h2>
+    <div class="cards">
+      <article class="card rv">
+        <span class="n">01</span>
+        <h3>Cuisine créole</h3>
+        <p>Une table de cuisine créole, à Marseille. Demandez ce que Guy prépare en ce moment.</p>
+        <em>Carte &amp; prix : sur demande</em>
+      </article>
+      <article class="card rv">
+        <span class="n">02</span>
+        <h3>Dîner tard</h3>
+        <p>Service chaque soir de 19h à 2h du matin, du lundi au dimanche. Idéal après le travail, un spectacle ou un match.</p>
+        <em>Ouvert 7 jours sur 7</em>
+      </article>
+      <article class="card rv">
+        <span class="n">03</span>
+        <h3>Réservation</h3>
+        <p>Une table pour deux ou une grande tablée ? Le plus simple est d'appeler : on vous confirme tout de suite.</p>
+        <em>Groupes &amp; à emporter : à confirmer par téléphone</em>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="galerie" aria-labelledby="t-gal">
+  <div class="wrap">
+    <span class="eyebrow">Galerie</span>
+    <h2 id="t-gal">Aux sources de la cuisine créole</h2>
+    <div class="gal">
+      <figure class="big rv">
+        <img src="img/plat6.jpg?v=1" alt="Lambis débarqués sur le port du Vauclin, en Martinique (photo d'illustration)" loading="lazy">
+        <figcaption>Débarquement de lambis, Le Vauclin (Martinique)</figcaption>
+      </figure>
+      <div class="tile rv">
+        <h3>Chaque soir, jusqu'à 2h</h3>
+        <p>Du lundi au dimanche, la table est dressée dès 19h.</p>
+      </div>
+      <div class="tile g rv">
+        <h3>145 Avenue des Chartreux</h3>
+        <p>Marseille – quartier des Chartreux.</p>
+      </div>
+    </div>
+    <div class="gal-row2">
+      <div class="tile g rv">
+        <h3>Réservez</h3>
+        <p><a href="tel:+33491059357" style="color:var(--gold);font-weight:600;text-decoration:none">04 91 05 93 57</a></p>
+      </div>
+      <figure class="rv">
+        <img src="img/plat4.jpg?v=1" alt="Pêche de lambis au port du Vauclin, en Martinique (photo d'illustration)" loading="lazy">
+        <figcaption>Le port du Vauclin, Martinique</figcaption>
+      </figure>
+    </div>
+    <p class="note">Photos d'illustration – les photos de la salle et des plats de La Table de Guy prendront leur place ici.</p>
+  </div>
+</section>
+
+<section class="alt" id="infos" aria-labelledby="t-infos">
+  <div class="wrap info">
+    <div class="rv">
+      <span class="eyebrow">Horaires &amp; accès</span>
+      <h2 id="t-infos">Venez dîner chez Guy</h2>
+      <ul class="hours" id="hours">
+        <li data-d="1"><span>Lundi</span><span>19h00 – 02h00</span></li>
+        <li data-d="2"><span>Mardi</span><span>19h00 – 02h00</span></li>
+        <li data-d="3"><span>Mercredi</span><span>19h00 – 02h00</span></li>
+        <li data-d="4"><span>Jeudi</span><span>19h00 – 02h00</span></li>
+        <li data-d="5"><span>Vendredi</span><span>19h00 – 02h00</span></li>
+        <li data-d="6"><span>Samedi</span><span>19h00 – 02h00</span></li>
+        <li data-d="0"><span>Dimanche</span><span>19h00 – 02h00</span></li>
+      </ul>
+      <address class="addr">145 Avenue des Chartreux<br>Marseille</address>
+      <div class="lines">
+        <a href="tel:+33491059357">04 91 05 93 57</a>
+        <a href="mailto:latabledeguy@hotmail.fr">latabledeguy@hotmail.fr</a>
+      </div>
+      <p class="mut" style="margin-top:1.2rem;font-size:.88rem">Jours fériés et fermetures exceptionnelles : un appel avant de venir.</p>
+    </div>
+    <div class="map rv">
+      <iframe title="Plan d'accès : La Table de Guy, 145 Avenue des Chartreux, Marseille" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=5.3955%2C43.3058%2C5.4047%2C43.3110&amp;layer=mapnik&amp;marker=43.3083923%2C5.4000970"></iframe>
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=43.3083923,5.4000970" target="_blank" rel="noopener">Itinéraire jusqu'au 145 Avenue des Chartreux →</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="reserver" aria-labelledby="t-res">
+  <img src="img/plat4.jpg?v=1" alt="" loading="lazy">
+  <div class="wrap rv">
+    <span class="eyebrow">Réservation</span>
+    <h2 id="t-res">Votre table vous attend ce soir</h2>
+    <p>Appelez-nous dès 19h, ou écrivez-nous : nous vous confirmons votre réservation.</p>
+    <a class="tel" href="tel:+33491059357">04 91 05 93 57</a>
+    <div class="ctas">
+      <a class="btn" href="tel:+33491059357">Appeler</a>
+      <a class="btn o" href="mailto:latabledeguy@hotmail.fr?subject=R%C3%A9servation%20-%20La%20Table%20de%20Guy">Envoyer un e-mail</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="fl">La Table de Guy</span>
+    <span>Restaurant créole · 145 Avenue des Chartreux, Marseille · <a href="tel:+33491059357">04 91 05 93 57</a> · <a href="mailto:latabledeguy@hotmail.fr">latabledeguy@hotmail.fr</a></span>
+    <span>SIRET 751 376 237 00010</span>
+    <span>Photos d'illustration : Emilie Le Roy / Ifremer, « Observation d'une marée au débarquement de lambis sur le port du Vauclin en Martinique », licence CC BY, via Wikimedia Commons. Carte : © contributeurs OpenStreetMap.</span>
+    <span>© <span id="yr">2026</span> La Table de Guy</span>
+  </div>
+</footer>
+
+<nav class="fab" aria-label="Actions rapides">
+  <a href="tel:+33491059357">Appeler</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=43.3083923,5.4000970" target="_blank" rel="noopener">Itinéraire</a>
+</nav>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // reveal (content stays visible if JS or IntersectionObserver is missing)
+  if('IntersectionObserver' in window){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+    setTimeout(function(){document.querySelectorAll('.rv').forEach(function(el){el.classList.add('on')})},4000);
+  }
+
+  // open now (Marseille time) – 19:00 to 02:00 every day
+  try{
+    var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',hour12:false}).formatToParts(new Date());
+    var h=+p.find(function(x){return x.type==='hour'}).value%24;
+    var wd=p.find(function(x){return x.type==='weekday'}).value;
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(wd);
+    var open=h>=19||h<2;
+    var s=document.getElementById('status');
+    s.classList.toggle('open',open);
+    s.querySelector('span').textContent=open?'Ouvert en ce moment · jusqu\'à 2h':'Ouvre ce soir à 19h';
+    var li=document.querySelector('#hours li[data-d="'+day+'"]');
+    if(li)li.classList.add('today');
+  }catch(e){}
+
+  // install button – only shown where the browser offers it (Android/Chrome)
+  var dp,b=document.getElementById('inst');
+  addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.hidden=false});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.hidden=true})}});
+  addEventListener('appinstalled',function(){b.hidden=true});
+  if('serviceWorker' in navigator&&location.protocol!=='file:'){navigator.serviceWorker.register('sw.js').catch(function(){})}
+})();
+</script>
+</body>
+</html>
