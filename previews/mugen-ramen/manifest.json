@@ -1,0 +1,19 @@
+{
+  "name": "Mugen ramen - Nantes",
+  "short_name": "Mugen ramen",
+  "description": "Restaurant japonais de ramen, 4 rue Fénelon, Nantes",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14110f",
+  "theme_color": "#b3261e",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
