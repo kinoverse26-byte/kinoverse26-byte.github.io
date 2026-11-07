@@ -1,0 +1,13 @@
+{
+  "name": "Rhema Salon & Spa",
+  "short_name": "Rhema",
+  "description": "Rhema Salon & Spa, 2013 Wells Branch Parkway, Austin, Texas",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1512",
+  "theme_color": "#b08d57",
+  "icons": [
+    { "src": "img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
