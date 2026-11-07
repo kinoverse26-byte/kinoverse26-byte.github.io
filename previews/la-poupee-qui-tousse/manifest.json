@@ -1,0 +1,20 @@
+{
+  "name": "La Poupée qui Tousse",
+  "short_name": "La Poupée",
+  "description": "Restaurant bistro à Rennes - 1 Rue Anatole France",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "fr",
+  "background_color": "#1b1512",
+  "theme_color": "#8c2f2b",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
