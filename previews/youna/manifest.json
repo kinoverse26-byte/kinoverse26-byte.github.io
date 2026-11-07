@@ -1,0 +1,19 @@
+{
+  "name": "Youna - Restaurant libanais Nantes",
+  "short_name": "Youna",
+  "description": "Restaurant libanais, 10B Rue de l'Hôtel de Ville, Nantes",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1a1210",
+  "theme_color": "#8c2f1b",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
