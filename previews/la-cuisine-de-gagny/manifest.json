@@ -1,0 +1,19 @@
+{
+  "name": "La Cuisine de Gagny",
+  "short_name": "Cuisine Gagny",
+  "description": "Restaurant à Marseille - 153 Boulevard Chave",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1410",
+  "theme_color": "#1b1410",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
