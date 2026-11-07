@@ -1,0 +1,20 @@
+{
+  "name": "Kutting Edge Barber & Beauty Salon",
+  "short_name": "Kutting Edge",
+  "description": "Barber and beauty salon at 1779 Wells Branch Parkway, Austin, TX. Walk-ins welcome.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
