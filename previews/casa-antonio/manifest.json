@@ -1,0 +1,19 @@
+{
+  "name": "Casa Antonio - Restaurant italien Rennes",
+  "short_name": "Casa Antonio",
+  "description": "Restaurant italien et pizzas au 42 Rue Vasselot, Rennes.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf5ec",
+  "theme_color": "#9b2c1d",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
