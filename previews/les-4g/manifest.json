@@ -1,0 +1,19 @@
+{
+  "name": "Les 4G - Restaurant à Lyon",
+  "short_name": "Les 4G",
+  "description": "Restaurant de cuisine française à Lyon - ouvert du lundi au vendredi.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1b1612",
+  "theme_color": "#b8432f",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
