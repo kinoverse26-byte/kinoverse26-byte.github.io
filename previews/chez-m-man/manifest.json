@@ -1,0 +1,19 @@
+{
+  "name": "Chez M'man - Restaurant à Lyon",
+  "short_name": "Chez M'man",
+  "description": "Restaurant à Lyon : burgers, cuisine française et régionale.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b120d",
+  "theme_color": "#b3392b",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
