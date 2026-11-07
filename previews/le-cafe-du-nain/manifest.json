@@ -1,13 +1,13 @@
 {
-  "name": "Le Café du Nain",
-  "short_name": "Café du Nain",
-  "description": "Restaurant français à Lyon - Le Café du Nain",
+  "name": "Le Caf\u00e9 du Nain",
+  "short_name": "Caf\u00e9 du Nain",
+  "description": "Bistrot - Bouchon \u00e0 Lyon - Le Caf\u00e9 du Nain, 5 rue Montesquieu",
   "lang": "fr",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#1b1210",
-  "theme_color": "#1b1210",
+  "background_color": "#0f2150",
+  "theme_color": "#0f2150",
   "icons": [
     {
       "src": "img/icon.svg",
