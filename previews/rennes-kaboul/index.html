@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rennes-Kaboul · Restaurant afghan, 54 rue d'Antrain à Rennes</title>
+<meta name="description" content="Rennes-Kaboul, restaurant de cuisine afghane au 54 rue d'Antrain, 35000 Rennes. Options végétariennes et véganes, vente à emporter. Réservation au 02 99 38 09 22.">
+<meta name="theme-color" content="#6e1a26">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236e1a26'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23e3b25c'%3ERK%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Rennes-Kaboul">
+<meta property="og:title" content="Rennes-Kaboul · Cuisine afghane rue d'Antrain, Rennes">
+<meta property="og:description" content="Restaurant afghan au 54 rue d'Antrain à Rennes. Végétarien, vegan, à emporter. Réservation : 02 99 38 09 22.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wine:#6e1a26;--wine-d:#4f111b;--saffron:#e3b25c;--saffron-d:#c9943a;
+  --cream:#faf5ec;--sand:#f1e7d6;--ink:#24170f;--muted:#5e4a3f;--night:#1a110d;
+  --r:18px;--max:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:16px;padding-bottom:64px}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.12;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px;border-radius:6px}
+
+.ribbon{background:var(--night);color:#eadcbf;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+
+/* HERO */
+.hero{position:relative;min-height:92vh;min-height:92svh;color:#fff;display:flex;flex-direction:column;overflow:hidden;background:var(--night)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:zoom 14s ease-out forwards}
+@keyframes zoom{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,8,5,.72) 0%,rgba(18,8,5,.35) 35%,rgba(18,8,5,.82) 100%)}
+header{position:relative;z-index:3;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 14px;padding:16px 5vw}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.35rem;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+nav{display:none;gap:26px}
+nav a{text-decoration:none;font-size:.92rem;font-weight:500;opacity:.92}
+nav a:hover{color:var(--saffron)}
+.hd-actions{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:999px;font-size:.88rem;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.7);color:#fff;background:rgba(0,0,0,.18);cursor:pointer;font-family:inherit;white-space:nowrap}
+.chip.solid{background:var(--saffron);border-color:var(--saffron);color:var(--night)}
+#install{display:none}
+.hero-in{position:relative;z-index:2;margin-top:auto;padding:40px 5vw 64px;max-width:820px}
+.eyebrow{display:inline-block;color:var(--saffron);letter-spacing:.22em;text-transform:uppercase;font-size:.76rem;font-weight:600}
+.hero h1{font-size:clamp(2.3rem,8vw,4.6rem);margin:14px 0 18px}
+.hero h1 em{font-style:italic;color:var(--saffron);font-weight:500}
+.hero p{font-size:1.08rem;max-width:560px;color:#f3eadb;margin-bottom:28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--saffron);color:var(--night);padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:1rem;border:0;transition:transform .25s,background .25s}
+.btn:hover{transform:translateY(-2px);background:#efc27a}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.8);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.btn.wine{background:var(--wine);color:#fff}
+.btn.wine:hover{background:var(--wine-d)}
+
+/* SECTIONS */
+section{padding:84px 6vw}
+.wrap{max-width:var(--max);margin:0 auto}
+.kicker{color:var(--wine);letter-spacing:.2em;text-transform:uppercase;font-size:.75rem;font-weight:600;margin-bottom:10px;display:block}
+section h2{font-size:clamp(1.9rem,5vw,2.9rem);color:var(--ink);margin-bottom:16px}
+.lead{max-width:640px;color:var(--muted);margin-bottom:40px;font-size:1.04rem}
+
+.about{display:grid;gap:44px;align-items:center}
+.about p{color:var(--muted);margin-bottom:14px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.fact{background:#fff;border:1px solid #ecdfca;border-radius:14px;padding:14px 16px}
+.fact b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.05rem;color:var(--wine)}
+.fact span{font-size:.86rem;color:var(--muted)}
+.about figure{position:relative}
+.about figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:0 24px 50px rgba(60,20,10,.22)}
+.about figure figcaption{position:absolute;left:-10px;bottom:22px;background:var(--wine);color:#fff;padding:12px 18px;border-radius:12px;font-family:Fraunces,Georgia,serif;font-size:1rem;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+
+.alt{background:var(--sand)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 6px 22px rgba(60,20,10,.08);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(60,20,10,.16)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card div{padding:18px 20px 22px}
+.card h3{font-size:1.3rem;color:var(--wine);margin-bottom:6px}
+.card p{font-size:.93rem;color:var(--muted)}
+.note{margin-top:30px;padding:18px 20px;border-left:4px solid var(--saffron);background:#fff;border-radius:0 12px 12px 0;color:var(--muted);font-size:.95rem}
+.note a{color:var(--wine);font-weight:600}
+
+.dark{background:var(--night);color:#efe4d0}
+.dark h2{color:#fff}
+.dark .kicker{color:var(--saffron)}
+.dark .lead{color:#cbbb9e}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery figure{overflow:hidden;border-radius:14px}
+.gallery img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.05)}
+
+.hours{display:grid;gap:40px}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.92rem;margin-bottom:14px;padding:6px 14px;border-radius:999px;background:#fff;border:1px solid #ecdfca}
+.status i{width:9px;height:9px;border-radius:50%;background:#9a8a7d}
+.status.open i{background:#2f8a4a}
+table{width:100%;border-collapse:collapse}
+td{padding:11px 4px;border-bottom:1px solid #e8dac3;vertical-align:top}
+td:last-child{text-align:right;font-weight:600}
+tr.today td{color:var(--wine)}
+tr.today td:first-child::after{content:" · aujourd'hui";font-weight:400;font-size:.85rem}
+.addr{margin-top:20px;color:var(--muted)}
+.addr strong{color:var(--ink);font-size:1.05rem}
+.small{font-size:.83rem;color:#7a665a;margin-top:8px}
+.map{border-radius:var(--r);overflow:hidden;box-shadow:0 14px 36px rgba(60,20,10,.15);background:#e9e1d3}
+.map iframe{display:block;width:100%;height:360px;border:0}
+.map a{display:block;padding:12px 16px;background:#fff;font-size:.9rem;font-weight:600;color:var(--wine);text-decoration:none}
+
+.contact{text-align:center}
+.contact .lead{margin:0 auto 30px}
+.big{font-family:Fraunces,Georgia,serif;font-size:clamp(1.8rem,6vw,2.6rem);color:var(--wine);text-decoration:none;display:inline-block;margin-bottom:10px}
+.links{display:flex;flex-direction:column;gap:8px;margin:8px 0 30px;color:var(--muted);word-break:break-word}
+.links a{color:var(--ink);font-weight:500}
+.contact .ctas{justify-content:center}
+
+footer{background:#120b08;color:#b3a38a;padding:40px 6vw 30px;font-size:.82rem;text-align:center}
+footer .f-logo{font-family:Fraunces,Georgia,serif;color:#fff;font-size:1.3rem;margin-bottom:8px}
+footer p{max-width:820px;margin:8px auto}
+footer a{color:var(--saffron)}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;background:var(--wine);box-shadow:0 -6px 20px rgba(0,0,0,.18);padding-bottom:env(safe-area-inset-bottom)}
+.sticky a{flex:1;text-align:center;color:#fff;text-decoration:none;padding:15px 6px;font-weight:600;font-size:.95rem}
+.sticky a:first-child{background:var(--saffron);color:var(--night)}
+.sticky a+a{border-left:1px solid rgba(255,255,255,.18)}
+
+/* reveal: only hides when JS is running */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.hero>img{animation:none;transform:none}html{scroll-behavior:auto}}
+
+@media(min-width:640px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery figure:first-child{grid-column:span 2;grid-row:span 2}}
+@media(min-width:860px){
+  .about{grid-template-columns:1.1fr .9fr;gap:70px}
+  .hours{grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+  section{padding:110px 6vw}
+}
+@media(min-width:960px){nav{display:flex}.sticky{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<div class="ribbon">Aperçu réalisé pour Rennes-Kaboul par Kinoverse – pas encore en ligne</div>
+
+<div class="hero" id="top">
+  <img src="img/hero.jpg?v=1" alt="Assortiment de plats de la cuisine afghane (photo d'illustration)" fetchpriority="high">
+  <header>
+    <a class="logo" href="#top">Rennes-Kaboul</a>
+    <nav aria-label="Navigation principale">
+      <a href="#restaurant">Le restaurant</a><a href="#cuisine">La cuisine</a><a href="#galerie">Galerie</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="hd-actions">
+      <a class="chip solid" href="tel:+33299380922">Appeler</a>
+      <button class="chip" id="install" type="button">Installer l'application</button>
+    </div>
+  </header>
+  <div class="hero-in">
+    <span class="eyebrow">Restaurant afghan · Rennes</span>
+    <h1>De Kaboul à la <em>rue d'Antrain</em>, la cuisine afghane à Rennes</h1>
+    <p>Au 54 rue d'Antrain, Rennes-Kaboul vous reçoit midi et soir. Sur place ou à emporter, avec des options végétariennes et véganes.</p>
+    <div class="ctas">
+      <a class="btn" href="tel:+33299380922">Réserver · 02 99 38 09 22</a>
+      <a class="btn ghost" href="#horaires">Horaires &amp; accès</a>
+    </div>
+  </div>
+</div>
+
+<main>
+<section id="restaurant">
+  <div class="wrap about reveal">
+    <div>
+      <span class="kicker">Le restaurant</span>
+      <h2>Une table afghane au cœur de Rennes</h2>
+      <p>Rennes-Kaboul est un restaurant de cuisine afghane installé au 54 rue d'Antrain, à Rennes. Une adresse pour découvrir les saveurs de l'Afghanistan, au déjeuner comme au dîner.</p>
+      <p>Végétariens et véganes y trouvent aussi leur place, et tout peut être emporté pour un repas à la maison.</p>
+      <div class="facts">
+        <div class="fact"><b>Végétarien</b><span>Options proposées</span></div>
+        <div class="fact"><b>Vegan</b><span>Options proposées</span></div>
+        <div class="fact"><b>À emporter</b><span>Oui · pas de livraison</span></div>
+        <div class="fact"><b>Du mardi au dimanche</b><span>Fermé le lundi</span></div>
+      </div>
+    </div>
+    <figure>
+      <img src="img/kebab.jpg?v=1" alt="Brochettes d'agneau à l'afghane (photo d'illustration)" loading="lazy">
+      <figcaption>54 rue d'Antrain</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="cuisine" class="alt">
+  <div class="wrap reveal">
+    <span class="kicker">La cuisine</span>
+    <h2>Les saveurs de l'Afghanistan</h2>
+    <p class="lead">Quelques classiques de la cuisine afghane, pour vous mettre l'eau à la bouche. La carte du jour et les prix sont communiqués sur demande.</p>
+    <div class="cards">
+      <article class="card"><img src="img/mantu.jpg?v=1" alt="Mantu, raviolis afghans" loading="lazy"><div><h3>Mantu</h3><p>Les raviolis cuits à la vapeur, emblème de la table afghane.</p></div></article>
+      <article class="card"><img src="img/kebab.jpg?v=1" alt="Brochettes d'agneau grillées" loading="lazy"><div><h3>Kebab</h3><p>Les grillades, incontournables de la cuisine afghane.</p></div></article>
+      <article class="card"><img src="img/salad.jpg?v=1" alt="Salade afghane" loading="lazy"><div><h3>Salade afghane</h3><p>Fraîcheur et légèreté, pour accompagner le repas.</p></div></article>
+      <article class="card"><img src="img/firni.jpg?v=1" alt="Firni, crème dessert" loading="lazy"><div><h3>Firni</h3><p>Une crème dessert traditionnelle, douce et parfumée.</p></div></article>
+      <article class="card"><img src="img/jalebi.jpg?v=1" alt="Jalebi, pâtisseries frites au sirop" loading="lazy"><div><h3>Jalebi</h3><p>Des spirales frites et sucrées, pour finir en douceur.</p></div></article>
+    </div>
+    <p class="note">Carte complète, plats du jour et prix : <a href="tel:+33299380922">appelez le 02 99 38 09 22</a> ou suivez <a href="https://www.instagram.com/restaurantkaboul.rennes" target="_blank" rel="noopener">@restaurantkaboul.rennes</a> sur Instagram.</p>
+  </div>
+</section>
+
+<section id="galerie" class="dark">
+  <div class="wrap reveal">
+    <span class="kicker">Galerie</span>
+    <h2>Un avant-goût</h2>
+    <p class="lead">Photos d'illustration de la cuisine afghane, en attendant celles du restaurant.</p>
+    <div class="gallery">
+      <figure><img src="img/hero.jpg?v=1" alt="Assortiment de plats afghans" loading="lazy"></figure>
+      <figure><img src="img/mantu.jpg?v=1" alt="Assiette de mantu" loading="lazy"></figure>
+      <figure><img src="img/kebab.jpg?v=1" alt="Brochettes d'agneau" loading="lazy"></figure>
+      <figure><img src="img/salad.jpg?v=1" alt="Salade afghane" loading="lazy"></figure>
+      <figure><img src="img/firni.jpg?v=1" alt="Firni" loading="lazy"></figure>
+      <figure><img src="img/jalebi.jpg?v=1" alt="Jalebi" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="horaires">
+  <div class="wrap reveal">
+    <span class="kicker">Horaires &amp; accès</span>
+    <h2>Nous trouver rue d'Antrain</h2>
+    <div class="hours">
+      <div>
+        <div class="status" id="status" hidden><i></i><span></span></div>
+        <table aria-label="Horaires d'ouverture">
+          <tr data-d="1"><td>Lundi</td><td>Fermé</td></tr>
+          <tr data-d="2"><td>Mardi</td><td>12h–13h30 · 19h–21h30</td></tr>
+          <tr data-d="3"><td>Mercredi</td><td>12h–13h30 · 19h–21h30</td></tr>
+          <tr data-d="4"><td>Jeudi</td><td>12h–13h30 · 19h–22h</td></tr>
+          <tr data-d="5"><td>Vendredi</td><td>12h–13h30 · 19h–22h</td></tr>
+          <tr data-d="6"><td>Samedi</td><td>12h–13h30 · 19h–22h</td></tr>
+          <tr data-d="0"><td>Dimanche</td><td>19h–21h</td></tr>
+        </table>
+        <p class="small">Horaires à confirmer par téléphone, notamment les jours fériés.</p>
+        <p class="addr"><strong>54 rue d'Antrain, 35000 Rennes</strong><br>Sur place et à emporter · pas de livraison · pas de terrasse</p>
+        <div class="ctas" style="margin-top:22px">
+          <a class="btn wine" href="tel:+33299380922">Réserver par téléphone</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Plan : Rennes-Kaboul, 54 rue d'Antrain, Rennes" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-1.6840%2C48.1140%2C-1.6720%2C48.1195&amp;layer=mapnik&amp;marker=48.116877%2C-1.6780702"></iframe>
+        <a href="https://www.openstreetmap.org/directions?to=48.116877%2C-1.6780702" target="_blank" rel="noopener">Calculer l'itinéraire →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact alt">
+  <div class="wrap reveal">
+    <span class="kicker">Contact</span>
+    <h2>Réserver une table</h2>
+    <p class="lead">Un appel suffit pour réserver ou commander à emporter.</p>
+    <a class="big" href="tel:+33299380922">02 99 38 09 22</a>
+    <div class="links">
+      <a href="mailto:rennes.kaboul.restau@gmail.com">rennes.kaboul.restau@gmail.com</a>
+      <a href="https://www.instagram.com/restaurantkaboul.rennes" target="_blank" rel="noopener">Instagram · @restaurantkaboul.rennes</a>
+      <span>54 rue d'Antrain, 35000 Rennes</span>
+    </div>
+    <div class="ctas">
+      <a class="btn wine" href="tel:+33299380922">Appeler maintenant</a>
+      <a class="btn" href="mailto:rennes.kaboul.restau@gmail.com">Écrire un e-mail</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="f-logo">Rennes-Kaboul</div>
+  <p>Restaurant afghan · 54 rue d'Antrain, 35000 Rennes · <a href="tel:+33299380922">02 99 38 09 22</a> · SIRET 804 067 759 00014</p>
+  <p>Photos d'illustration (Wikimedia Commons) : « Salam Afghan Food Hero » par Nourished Writer (CC BY-SA) ; « FOOD Mantu », « FOOD Firni », « FOOD Jalebi » par Grueslayer (CC BY-SA) ; « Afghan-Salad » par ANBI (CC BY-SA) ; « Afghani lamb kebab » par rochelle hartman (CC BY). Licences : <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank" rel="noopener">CC BY-SA</a>, <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" target="_blank" rel="noopener">CC BY</a>. Carte et données : © contributeurs <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.</p>
+  <p>Aperçu réalisé pour Rennes-Kaboul par Kinoverse – pas encore en ligne.</p>
+</footer>
+
+<nav class="sticky" aria-label="Actions rapides">
+  <a href="tel:+33299380922">Appeler</a>
+  <a href="https://www.openstreetmap.org/directions?to=48.116877%2C-1.6780702" target="_blank" rel="noopener">Itinéraire</a>
+  <a href="#horaires">Horaires</a>
+</nav>
+
+<script>
+(function(){
+  // Reveal
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.08});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('on')})}
+  setTimeout(function(){els.forEach(function(el){el.classList.add('on')})},4000);
+
+  // Today + open status (Europe/Paris time)
+  try{
+    var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+    var get=function(t){return (parts.find(function(p){return p.type===t})||{}).value};
+    var d={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[get('weekday')];
+    var m=parseInt(get('hour'),10)%24*60+parseInt(get('minute'),10);
+    var H={0:[[1140,1260]],1:[],2:[[720,810],[1140,1290]],3:[[720,810],[1140,1290]],4:[[720,810],[1140,1320]],5:[[720,810],[1140,1320]],6:[[720,810],[1140,1320]]};
+    var row=document.querySelector('tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+    var open=H[d].some(function(s){return m>=s[0]&&m<s[1]});
+    var st=document.getElementById('status');
+    st.querySelector('span').textContent=open?'Ouvert en ce moment':'Fermé en ce moment';
+    if(open)st.classList.add('open');
+    st.hidden=false;
+  }catch(e){}
+
+  // App install (Android / Chrome only)
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp=null;b.style.display='none'}});
+  window.addEventListener('appinstalled',function(){b.style.display='none'});
+  if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(function(){})}
+})();
+</script>
+</body>
+</html>
