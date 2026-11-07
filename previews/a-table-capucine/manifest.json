@@ -1,0 +1,19 @@
+{
+  "name": "À table Capucine",
+  "short_name": "Capucine",
+  "description": "À table Capucine, 29 Rue de Redon, 35000 Rennes",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf5ee",
+  "theme_color": "#b4533a",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
