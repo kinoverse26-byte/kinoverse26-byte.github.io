@@ -1,0 +1,19 @@
+{
+  "name": "Midipopote - Restaurant Lyon",
+  "short_name": "Midipopote",
+  "description": "Restaurant Midipopote, 140 avenue Félix Faure, 69003 Lyon. Ouvert du lundi au vendredi, 12h-15h.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf6ee",
+  "theme_color": "#b8432f",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
