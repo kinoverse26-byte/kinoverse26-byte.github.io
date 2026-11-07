@@ -1,0 +1,19 @@
+{
+  "name": "Les Petits Siamois - Montpellier",
+  "short_name": "Petits Siamois",
+  "description": "Restaurant thaïlandais à Montpellier, 10 Rue du Pila Saint-Gély.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1a1410",
+  "theme_color": "#b8322a",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
