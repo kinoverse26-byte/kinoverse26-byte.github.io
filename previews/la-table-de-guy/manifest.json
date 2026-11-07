@@ -1,0 +1,19 @@
+{
+  "name": "La Table de Guy",
+  "short_name": "Table de Guy",
+  "description": "Restaurant créole à Marseille - 145 Avenue des Chartreux",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1210",
+  "theme_color": "#b8431f",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
