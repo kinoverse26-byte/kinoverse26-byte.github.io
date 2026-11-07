@@ -1,0 +1,20 @@
+{
+  "name": "Ciao Marcello",
+  "short_name": "Ciao Marcello",
+  "description": "Restaurant français et italien, 4 Rue du Lacydon, Marseille",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "fr",
+  "background_color": "#1b120e",
+  "theme_color": "#8c2f1b",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
