@@ -1,0 +1,19 @@
+{
+  "name": "Friterie Jules",
+  "short_name": "Jules",
+  "description": "Friterie Jules, Rennes - frites, friture et plats à emporter ou sur place.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff6e0",
+  "theme_color": "#d62828",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
