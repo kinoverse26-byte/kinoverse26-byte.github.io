@@ -1,0 +1,19 @@
+{
+  "name": "La Timonerie - Bar Restaurant Rennes",
+  "short_name": "La Timonerie",
+  "description": "Bar-restaurant au 39 Avenue Jean Janvier, Rennes",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f2a3d",
+  "theme_color": "#0f2a3d",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
