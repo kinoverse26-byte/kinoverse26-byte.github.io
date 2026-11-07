@@ -147,3 +147,6 @@ a.card:hover{border-color:var(--line2);transform:translateY(-2px);box-shadow:0 1
   .card,.how,.contact{padding:22px}
   .prose{font-size:17px}
 }
+
+.nav nav a.lang{border:1px solid var(--line2);font-size:13px;font-weight:700;padding:6px 9px;color:var(--ink2)}
+.byline .alt{margin-left:auto;font-size:13.5px;color:var(--b);font-weight:500}
