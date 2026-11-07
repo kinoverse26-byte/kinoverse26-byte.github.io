@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I believed a tool's answer without looking. Here is what I do now."
+alt_url: /fr/2026/11/07/i-believed-a-tool-s-answer-without-looking-here-is-what-i-do.html
 ---
 
 I run small experiments on markets and write down what I measure, boring results included. Especially those, honestly.
