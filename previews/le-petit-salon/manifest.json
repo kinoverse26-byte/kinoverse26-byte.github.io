@@ -1,13 +1,13 @@
 {
-  "name": "Le petit salon",
-  "short_name": "Le petit salon",
-  "description": "Salon de coiffure à Lyon - horaires, contact et rendez-vous",
-  "lang": "fr",
+  "name": "Le Petit Salon - Coiffeur Lyon 5e",
+  "short_name": "Le Petit Salon",
+  "description": "Salon de coiffure, 6 place Saint-Jean, Lyon 5e",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#14110f",
-  "theme_color": "#14110f",
+  "lang": "fr",
+  "background_color": "#faf6f1",
+  "theme_color": "#2b2220",
   "icons": [
     {
       "src": "img/icon.svg",
