@@ -1,0 +1,14 @@
+{
+  "name": "La Mesa Latina",
+  "short_name": "La Mesa",
+  "description": "Restaurant latino-américain, 20 Cours Julien, Marseille",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1210",
+  "theme_color": "#c8472b",
+  "icons": [
+    { "src": "img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
