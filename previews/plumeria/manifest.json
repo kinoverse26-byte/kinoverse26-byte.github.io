@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "Plumeria Nail Spa",
   "short_name": "Plumeria",
   "description": "Mani, pedi and waxing in Portland, OR. Acrylic free.",
@@ -9,7 +9,7 @@
   "theme_color": "#c2577a",
   "icons": [
     {
-      "src": "img/icon.svg",
+      "src": "icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
