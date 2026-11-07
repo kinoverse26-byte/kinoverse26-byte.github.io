@@ -1,0 +1,20 @@
+{
+  "name": "Terra Mia - Restaurant italien Lyon Confluence",
+  "short_name": "Terra Mia",
+  "description": "Pizzeria et cuisine italienne, 5 Quai Antoine Riboud, Lyon 2e",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "fr",
+  "background_color": "#faf5ec",
+  "theme_color": "#9c2f1e",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
