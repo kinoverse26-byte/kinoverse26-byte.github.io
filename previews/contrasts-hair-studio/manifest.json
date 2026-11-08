@@ -1,0 +1,18 @@
+{
+  "name": "Contrasts Hair Studio",
+  "short_name": "Contrasts",
+  "description": "Organic hair salon in Grange, Brisbane. Cutting, colouring and styling.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf7f2",
+  "theme_color": "#1f1a17",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
