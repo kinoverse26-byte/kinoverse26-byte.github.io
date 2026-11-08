@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contrasts Hair Studio | Organic Hair Salon, 82 Days Road, Grange, Brisbane</title>
+<meta name="description" content="Contrasts Hair Studio is an organic hair salon at 82 Days Road, Grange, Brisbane. Cutting, colouring and styling with 100% ammonia, paraben and sulphate free products. Free consultations. Call (07) 3356 4433 to book.">
+<meta name="theme-color" content="#26302a">
+<link rel="icon" href="img/logo.png?v=1" type="image/png">
+<link rel="apple-touch-icon" href="img/logo.png?v=1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="Contrasts Hair Studio">
+<meta property="og:title" content="Contrasts Hair Studio, organic hair salon in Grange, Brisbane">
+<meta property="og:description" content="Cutting, colouring and styling with 100% ammonia, paraben and sulphate free products. 82 Days Road, Grange QLD 4051. Call (07) 3356 4433.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta property="og:url" content="https://contrasts.com.au/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1d2420;--forest:#26302a;--forest-2:#323e36;--sage:#9aab8c;--sage-soft:#e6ebdf;
+  --cream:#f7f2ea;--paper:#fffdf9;--gold:#8a6a35;--gold-dark:#6f5428;--gold-light:#dcbd84;
+  --muted:#535c55;--radius:18px;--max:1140px
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold-light);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 14px;z-index:100}
+.skip:focus{left:10px;top:10px}
+
+/* ribbon */
+.ribbon{background:var(--forest);color:#efe6d6;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.03em}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(247,242,234,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid rgba(29,36,32,.08)}
+.nav{max-width:var(--max);margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 14px;padding:10px 18px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand img{height:38px;width:auto;flex:none}
+.brand span{font-family:'Cormorant Garamond',Georgia,serif;font-size:21px;font-weight:700;line-height:1.1;color:var(--forest)}
+nav ul{display:flex;gap:26px;list-style:none;font-size:14px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted);transition:color .2s}
+nav a:hover{color:var(--gold)}
+.head-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#fff;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:15px;font-family:inherit;line-height:1.2;transition:background .25s,transform .25s,color .25s}
+.btn:hover{background:var(--gold-dark);transform:translateY(-2px)}
+.btn.sm{padding:10px 18px;font-size:14px}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.85);color:#fff}
+.btn.ghost:hover{background:#fff;color:var(--forest)}
+.btn.line{background:transparent;border:1.5px solid var(--gold);color:var(--gold)}
+.btn.line:hover{background:var(--gold);color:#fff}
+#install{display:none}
+
+/* hero */
+.hero{position:relative;min-height:86vh;min-height:86svh;display:flex;align-items:flex-end;color:#fff;
+  background:linear-gradient(180deg,rgba(20,26,22,.35) 0%,rgba(20,26,22,.55) 45%,rgba(20,26,22,.88) 100%),url(img/hero.jpg?v=1) center/cover no-repeat}
+.hero-inner{max-width:var(--max);margin:auto;padding:120px 20px 72px;width:100%}
+.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:12px;color:var(--gold);margin-bottom:14px;font-weight:600}
+.hero .eyebrow,.dark .eyebrow,.cta .eyebrow{color:var(--gold-light)}
+.hero h1{font-size:clamp(40px,8.4vw,88px);max-width:820px;font-weight:600}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--gold-light)}
+.hero p.lead{max-width:560px;margin:22px 0 32px;font-size:18px;color:rgba(255,255,255,.92)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.22);font-size:14px;color:rgba(255,255,255,.88);list-style:none}
+.hero-facts li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold-light);margin-right:9px;vertical-align:middle}
+
+/* sections */
+section{padding:96px 20px}
+.wrap{max-width:var(--max);margin:auto}
+.center{text-align:center}
+h2{font-size:clamp(34px,5vw,56px);margin-bottom:18px;color:var(--forest)}
+.dark h2,.cta h2{color:#fff}
+.intro{max-width:620px;margin:0 auto;color:var(--muted)}
+.dark .intro{color:rgba(255,255,255,.82)}
+
+/* about */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.photo{position:relative}
+.photo img{border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 28px 60px rgba(20,26,22,.2)}
+.photo::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid var(--gold-light);border-radius:var(--radius);z-index:-1}
+.about-text p+p{margin-top:16px}
+.about-text p{color:#38403a}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;list-style:none}
+.badges li{background:var(--sage-soft);color:var(--forest);border:1px solid #cfd8c4;border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600}
+
+/* promise strip */
+.promise{background:var(--paper);padding:72px 20px;border-top:1px solid rgba(29,36,32,.06);border-bottom:1px solid rgba(29,36,32,.06)}
+.promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.promise-item{text-align:center;padding:10px}
+.promise-item .num{font-family:'Cormorant Garamond',serif;font-size:58px;line-height:1;color:var(--gold);font-weight:600}
+.promise-item h3{font-size:26px;margin:8px 0 6px;color:var(--forest)}
+.promise-item p{color:var(--muted);font-size:15px}
+
+/* services */
+.dark{background:var(--forest);color:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:48px;text-align:left}
+.card{background:var(--forest-2);border:1px solid rgba(255,255,255,.09);padding:34px 28px;border-radius:var(--radius);transition:transform .3s,background .3s}
+.card:hover{transform:translateY(-6px);background:#3a473e}
+.card .ico{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(220,189,132,.15);color:var(--gold-light);margin-bottom:18px}
+.card h3{font-size:30px;margin-bottom:10px;color:#fff}
+.card p{color:rgba(255,255,255,.82);font-size:15px}
+.card .price{margin-top:18px;color:var(--gold-light);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.services-note{margin-top:36px;color:rgba(255,255,255,.8);font-size:15px}
+.services-note a{color:var(--gold-light);font-weight:600}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:auto auto;gap:14px;margin-top:44px}
+.gallery figure{overflow:hidden;border-radius:14px;background:#e9e2d6}
+.gallery img{width:100%;height:100%;min-height:260px;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery .tall{grid-row:span 2}
+.gallery .tall img{min-height:540px}
+.gallery .quote{display:flex;flex-direction:column;justify-content:center;padding:34px 30px;background:var(--forest);color:#fff;border-radius:14px;text-align:left}
+.gallery .quote p{font-family:'Cormorant Garamond',serif;font-size:28px;line-height:1.25;font-style:italic}
+.gallery .quote span{display:block;margin-top:14px;font-size:13px;color:var(--gold-light);letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.gal-note{font-size:12px;margin-top:16px;color:var(--muted)}
+
+/* visit */
+.visit{background:var(--paper)}
+.info{display:grid;grid-template-columns:1fr 1.25fr;gap:40px;margin-top:44px;align-items:stretch}
+.info ul{list-style:none}
+.info li{padding:18px 0;border-bottom:1px solid rgba(29,36,32,.1)}
+.info li:first-child{padding-top:0}
+.info strong{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.info li a{font-weight:600;text-decoration-color:var(--gold-light);text-underline-offset:3px}
+.map{border-radius:var(--radius);overflow:hidden;min-height:360px;box-shadow:0 18px 44px rgba(20,26,22,.12);background:#e9e2d6}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block}
+
+/* contact cta */
+.cta{background:linear-gradient(rgba(20,26,22,.86),rgba(20,26,22,.9)),url(img/salon-seats.jpg?v=1) center/cover no-repeat;color:#fff;text-align:center}
+.cta .big{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,8vw,72px);display:inline-block;margin:6px 0 10px;text-decoration:none;color:#fff;font-weight:600}
+.cta .big:hover{color:var(--gold-light)}
+.cta p.sub{color:rgba(255,255,255,.82);max-width:520px;margin:0 auto 30px}
+.cta-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+/* footer */
+footer{background:#151b17;color:#c3cabf;padding:52px 20px 110px;font-size:13px}
+.foot{max-width:var(--max);margin:auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}
+.foot h3{font-size:24px;color:#fff;margin-bottom:8px}
+.foot p{margin:4px 0}
+.foot a{color:#e7dcc6}
+.credits{max-width:var(--max);margin:34px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);font-size:12px;color:#a5ad a1;color:#a7afa3}
+.credits a{color:#d9ccb2}
+
+/* sticky call bar */
+.sticky{display:none}
+
+/* reveal: only hidden when JS is running */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .btn,.card,.gallery img{transition:none}
+}
+
+@media(max-width:860px){
+  nav{display:none}
+  .split,.info{grid-template-columns:1fr}
+  .split{gap:44px}
+  .photo img{aspect-ratio:4/3}
+  .photo::after{inset:12px -10px -12px 10px}
+  .promise-grid{grid-template-columns:1fr;gap:18px}
+  .gallery{grid-template-columns:1fr}
+  .gallery .tall{grid-row:auto}
+  .gallery .tall img,.gallery img{min-height:240px;max-height:340px}
+  .foot{grid-template-columns:1fr}
+  section{padding:68px 20px}
+  .sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--forest);padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+  .sticky a{flex:1;text-align:center;color:#fff;padding:15px 8px;text-decoration:none;font-weight:600;font-size:15px}
+  .sticky a:first-child{background:var(--gold)}
+  .sticky a+a{border-left:1px solid rgba(255,255,255,.18)}
+}
+@media(max-width:400px){
+  .nav{padding:9px 14px}
+  .brand img{height:32px}
+  .brand span{font-size:19px}
+  .btn.sm{padding:9px 15px;font-size:13.5px}
+  .hero-inner{padding:96px 18px 56px}
+  .hero p.lead{font-size:16.5px}
+  .hero-actions .btn{flex:1 1 100%}
+}
+</style>
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ribbon">Preview made for Contrasts Hair Studio by Kinoverse - not live yet</div>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#top" aria-label="Contrasts Hair Studio, back to top">
+      <img src="img/logo.png?v=1" alt="" width="76" height="38">
+      <span>Contrasts Hair Studio</span>
+    </a>
+    <nav aria-label="Main"><ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <div class="head-actions">
+      <button class="btn sm line" id="install" type="button">Install the app</button>
+      <a class="btn sm" href="tel:+61733564433">Call to book</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top" role="img" aria-label="Hair salon interior">
+    <div class="hero-inner">
+      <p class="eyebrow">Organic hair salon &middot; Grange, Brisbane</p>
+      <h1>Organic colour &amp; cuts on Days Road, <em>Grange.</em></h1>
+      <p class="lead">Quality cutting, colouring and styling with products that are 100% ammonia free, paraben free and sulphate free. Safe for even the most sensitive skin, without sacrificing results.</p>
+      <div class="hero-actions">
+        <a class="btn" href="tel:+61733564433">Call (07) 3356 4433</a>
+        <a class="btn ghost" href="#services">See our services</a>
+      </div>
+      <ul class="hero-facts">
+        <li>Complimentary consultations</li>
+        <li>Ammonia, paraben &amp; sulphate free</li>
+        <li>82 Days Road, Grange QLD 4051</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="about" aria-labelledby="about-h">
+    <div class="wrap split">
+      <div class="photo reveal">
+        <img src="img/salon-seats.jpg?v=1" alt="Salon styling chairs" loading="lazy" width="800" height="1000">
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">Welcome to Contrasts</p>
+        <h2 id="about-h">Great hair, without the harsh chemicals</h2>
+        <p>As a local Brisbane organic hair salon, Contrasts Hair Studio is committed to delivering an exceptional hair salon experience without endangering your health or the environment.</p>
+        <p>We have made a conscious effort to select only products that are completely ammonia free, sulphate free and paraben free. That makes them environmentally friendly and safe for even the most sensitive of skin, without sacrificing results.</p>
+        <p>We pride ourselves on quality cutting, colouring and styling, and we understand the desire to look your best. Every client is welcomed with a complimentary consultation.</p>
+        <ul class="badges">
+          <li>Ammonia free</li><li>Paraben free</li><li>Sulphate free</li><li>Free consultation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="promise" aria-label="Our product promise">
+    <div class="wrap promise-grid">
+      <div class="promise-item reveal">
+        <div class="num">100%</div>
+        <h3>Ammonia free</h3>
+        <p>Every product we use, colour included.</p>
+      </div>
+      <div class="promise-item reveal">
+        <div class="num">0</div>
+        <h3>Parabens &amp; sulphates</h3>
+        <p>Kinder to sensitive skin and to the environment.</p>
+      </div>
+      <div class="promise-item reveal">
+        <div class="num">Free</div>
+        <h3>Consultation</h3>
+        <p>For every client, before any cut or colour.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="dark" aria-labelledby="services-h">
+    <div class="wrap center">
+      <p class="eyebrow">Service menu</p>
+      <h2 id="services-h">Cutting, colouring &amp; styling</h2>
+      <p class="intro">Three things done properly, with organic products and a conversation first. Full service menu and pricing on request.</p>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div>
+          <h3>Cutting</h3>
+          <p>Cuts tailored to you, your hair and your routine, starting with a complimentary consultation.</p>
+          <p class="price">Price on request</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z"/></svg></div>
+          <h3>Colouring</h3>
+          <p>Colour with ammonia free products, gentle on hair and safe for even the most sensitive skin.</p>
+          <p class="price">Price on request</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l2.2 5.6L20 9l-4.5 3.8L17 19l-5-3.2L7 19l1.5-6.2L4 9l5.8-.4z"/></svg></div>
+          <h3>Styling</h3>
+          <p>Finishing and styling so you leave looking, and feeling, your best.</p>
+          <p class="price">Price on request</p>
+        </article>
+      </div>
+      <p class="services-note">Not sure what you need? Call <a href="tel:+61733564433">(07) 3356 4433</a> and book your free consultation.</p>
+    </div>
+  </section>
+
+  <section id="gallery" aria-labelledby="gallery-h">
+    <div class="wrap center">
+      <p class="eyebrow">Gallery</p>
+      <h2 id="gallery-h">Calm, light, unhurried</h2>
+      <div class="gallery">
+        <figure class="tall reveal"><img src="img/gallery1.jpg?v=1" alt="Hair salon interior (illustrative photo)" loading="lazy" width="1000" height="750"></figure>
+        <figure class="reveal"><img src="img/gallery2.jpg?v=1" alt="Hair salon interior (illustrative photo)" loading="lazy" width="1000" height="750"></figure>
+        <div class="quote reveal">
+          <p>"Exceptional hair, without endangering your health or the environment."</p>
+          <span>The Contrasts commitment</span>
+        </div>
+      </div>
+      <p class="gal-note">Illustrative images, to be replaced with the salon's own photos.</p>
+    </div>
+  </section>
+
+  <section id="visit" class="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">Visit us</p>
+        <h2 id="visit-h">Find us in Grange</h2>
+        <p class="intro">On Days Road in Grange, in Brisbane's inner north.</p>
+      </div>
+      <div class="info">
+        <ul class="reveal">
+          <li><strong>Address</strong>82 Days Road, Grange QLD 4051</li>
+          <li><strong>Phone</strong><a href="tel:+61733564433">(07) 3356 4433</a></li>
+          <li><strong>Opening hours</strong>To confirm. Please call to check availability.</li>
+          <li><strong>Booking</strong>Call to book. Online booking coming soon.</li>
+          <li><strong>Directions</strong><a href="https://www.google.com/maps/dir/?api=1&amp;destination=82+Days+Road+Grange+QLD+4051" target="_blank" rel="noopener">Open in Google Maps</a></li>
+        </ul>
+        <div class="map reveal">
+          <iframe title="Map showing Contrasts Hair Studio, 82 Days Road, Grange QLD 4051" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=82+Days+Road,+Grange+QLD+4051,+Australia&amp;z=16&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="cta" aria-labelledby="contact-h">
+    <div class="wrap">
+      <p class="eyebrow">Book your appointment</p>
+      <h2 id="contact-h">Your free consultation starts with a call</h2>
+      <a class="big" href="tel:+61733564433">(07) 3356 4433</a>
+      <p class="sub">Call to book a cut, colour or style at 82 Days Road, Grange.</p>
+      <div class="cta-actions">
+        <a class="btn" href="tel:+61733564433">Call now</a>
+        <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=82+Days+Road+Grange+QLD+4051" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot">
+    <div>
+      <h3>Contrasts Hair Studio</h3>
+      <p>Organic hair salon in Grange, Brisbane. 100% ammonia free, paraben free &amp; sulphate free.</p>
+    </div>
+    <div>
+      <p>82 Days Road, Grange QLD 4051</p>
+      <p>Ph: <a href="tel:+61733564433">(07) 3356 4433</a></p>
+      <p>ABN 92 134 923 763</p>
+    </div>
+    <div>
+      <p><a href="#about">About</a> &middot; <a href="#services">Services</a> &middot; <a href="#visit">Visit</a></p>
+      <p>&copy; 2014 - 2026 Contrasts Hair Studio</p>
+    </div>
+  </div>
+  <div class="credits">
+    <p>Photo credits: gallery salon photos by Jlgay38, via <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, licensed CC BY. Other photos rawpixel (CC0).</p>
+    <p>Preview made for Contrasts Hair Studio by Kinoverse - not live yet.</p>
+  </div>
+</footer>
+
+<div class="sticky" role="navigation" aria-label="Quick contact">
+  <a href="tel:+61733564433">Call to book</a>
+  <a href="#visit">Find us</a>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el);});
+    /* safety net: never leave content hidden */
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},3500);
+  }
+
+  var deferred=null,btn=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){
+    e.preventDefault();deferred=e;btn.style.display='inline-flex';
+  });
+  btn.addEventListener('click',function(){
+    if(!deferred)return;
+    deferred.prompt();
+    deferred.userChoice.finally(function(){deferred=null;btn.style.display='none';});
+  });
+  window.addEventListener('appinstalled',function(){btn.style.display='none';});
+})();
+</script>
+</body>
+</html>
