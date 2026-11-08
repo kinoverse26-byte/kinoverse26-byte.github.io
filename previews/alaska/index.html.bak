@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Alaska – Brocante &amp; Snack à Rennes</title>
+<meta name="description" content="Alaska, brocante et snack à Rennes : chinez des objets qui ont une histoire, puis faites une pause au snack. Renseignements au 02 90 08 12 77.">
+<meta name="theme-color" content="#1f3a4d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a4d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='700' text-anchor='middle' fill='%23f3e6d3'%3EA%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Alaska – Brocante &amp; Snack à Rennes">
+<meta property="og:description" content="Une brocante où l'on chine sans se presser, et un snack pour souffler entre deux trouvailles. À Rennes.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f3a4d;--ink-deep:#14262f;--ice:#e9f1f5;--cream:#faf6ef;--paper:#fffdf9;
+  --accent:#b8611a;--accent-soft:#f3e6d3;--muted:#4a5a64;--line:#e4dacb;
+  --radius:18px;--shadow:0 6px 28px rgba(20,38,47,.08)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink-deep);background:var(--cream);line-height:1.65;font-size:1rem}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.12;font-weight:700;letter-spacing:-.01em}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 14px;z-index:99}
+.skip:focus{left:10px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* Ribbon */
+.ribbon{background:var(--ink-deep);color:#d3e0e7;font-size:.76rem;text-align:center;padding:6px 12px;letter-spacing:.02em}
+
+/* Header – wraps on small phones so every button stays visible */
+header{position:sticky;top:0;z-index:40;background:rgba(250,246,239,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 16px;padding:10px 5vw}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.45rem;color:var(--ink);text-decoration:none;letter-spacing:.06em;white-space:nowrap}
+.logo small{display:block;font-family:Inter,sans-serif;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-top:-2px}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px}
+nav .links{display:flex;gap:20px}
+nav .links a{text-decoration:none;font-weight:500;font-size:.94rem;color:var(--ink)}
+nav .links a:hover{color:var(--accent)}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;padding:13px 26px;border-radius:999px;text-decoration:none;font-weight:600;border:2px solid var(--accent);cursor:pointer;font:600 1rem/1.2 Inter,sans-serif;transition:transform .25s,box-shadow .25s,background .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(184,97,26,.35)}
+.btn.sm{padding:9px 16px;font-size:.9rem}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff;box-shadow:none}
+.btn.light{background:transparent;border-color:#fff;color:#fff}
+.btn.light:hover{background:#fff;color:var(--ink-deep)}
+#install{display:none}
+
+/* Hero */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;color:#fff;background:var(--ink-deep) url("img/hero.jpg?v=1") center/cover no-repeat;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,38,47,.25) 0%,rgba(20,38,47,.55) 45%,rgba(20,38,47,.92) 100%)}
+.hero-in{max-width:1180px;width:100%;margin:auto;padding:120px 5vw 72px}
+.kicker{display:inline-block;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--accent-soft);border:1px solid rgba(243,230,211,.5);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+.hero h1{font-size:clamp(2.3rem,7.2vw,4.8rem);max-width:15ch;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--accent-soft);font-weight:500}
+.hero p{font-size:clamp(1.05rem,2.4vw,1.25rem);max-width:56ch;margin-bottom:32px;color:#eef3f5}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Sections */
+section{padding:clamp(64px,10vw,110px) 5vw}
+.wrap{max-width:1180px;margin:auto}
+.eyebrow{font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:12px}
+h2{font-size:clamp(1.9rem,4.4vw,3rem);color:var(--ink);margin-bottom:16px}
+.lead{max-width:62ch;color:var(--muted);font-size:1.08rem;margin-bottom:44px}
+.alt-bg{background:var(--ice)}
+.paper{background:var(--paper)}
+
+/* About */
+.about{display:grid;gap:clamp(32px,6vw,72px);align-items:center}
+.about-text p{color:var(--muted);margin-bottom:16px;font-size:1.05rem}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.duo img{width:100%;height:clamp(220px,40vw,420px);object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+.duo img:last-child{margin-top:48px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;list-style:none}
+.facts li{background:var(--accent-soft);color:#6b3a10;font-weight:600;font-size:.88rem;padding:8px 14px;border-radius:999px}
+
+/* Services */
+.cards{display:grid;gap:20px}
+.card{background:#fff;border-radius:var(--radius);padding:32px 28px;box-shadow:var(--shadow);border:1px solid #efe7da;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 38px rgba(20,38,47,.13)}
+.card .num{font-family:Fraunces,Georgia,serif;font-size:.95rem;color:var(--accent);font-weight:700;margin-bottom:14px;display:block}
+.card h3{font-size:1.35rem;color:var(--ink);margin-bottom:10px}
+.card p{color:var(--muted)}
+.note{display:inline-block;margin-top:16px;font-size:.84rem;color:#8a4712;font-weight:600}
+
+/* Snack */
+.snack{display:grid;gap:clamp(32px,6vw,64px);align-items:center}
+.snack img{width:100%;height:clamp(260px,50vw,460px);object-fit:cover;border-radius:22px;box-shadow:var(--shadow)}
+.snack-box{background:#fff;border-radius:var(--radius);padding:24px;margin:8px 0 26px;border-left:4px solid var(--accent)}
+.snack-box p{color:var(--muted)}
+.snack-box strong{color:var(--ink)}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery figure{overflow:hidden;border-radius:16px;position:relative;background:#dde6eb}
+.gallery img{width:100%;height:clamp(170px,32vw,300px);object-fit:cover;transition:transform .6s ease}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;left:10px;bottom:10px;background:rgba(20,38,47,.78);color:#fff;font-size:.78rem;padding:4px 10px;border-radius:999px}
+.gallery .wide{grid-column:span 2}
+.disclaimer{margin-top:18px;font-size:.85rem;color:var(--muted)}
+
+/* Infos */
+.infos{display:grid;gap:clamp(28px,5vw,56px);align-items:start}
+.info-list{list-style:none;margin:8px 0 28px;border-top:1px solid #cfdbe2}
+.info-list li{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid #cfdbe2;flex-wrap:wrap}
+.info-list span:first-child{font-weight:600;color:var(--ink)}
+.info-list span:last-child{color:var(--muted);text-align:right}
+.map{width:100%;height:clamp(300px,50vw,440px);border:0;border-radius:22px;box-shadow:var(--shadow);background:#dbe5ea}
+
+/* Contact */
+.contact{text-align:center;max-width:760px}
+.contact .lead{margin-left:auto;margin-right:auto}
+.contact .cta{justify-content:center}
+.phone-big{display:block;font-family:Fraunces,Georgia,serif;font-size:clamp(1.8rem,6vw,2.8rem);color:var(--ink);text-decoration:none;margin:0 0 28px;font-weight:700}
+.phone-big:hover{color:var(--accent)}
+
+footer{background:var(--ink-deep);color:#c1d0d8;padding:48px 5vw 110px;font-size:.9rem}
+footer .wrap{display:grid;gap:18px}
+footer strong{color:#fff;font-family:Fraunces,Georgia,serif;font-size:1.2rem;letter-spacing:.05em}
+footer a{color:#f3e6d3}
+.credits{font-size:.8rem;color:#9fb3be;border-top:1px solid rgba(255,255,255,.12);padding-top:18px}
+
+/* Sticky mobile call bar */
+.sticky{position:fixed;bottom:0;left:0;right:0;display:none;z-index:50;padding-bottom:env(safe-area-inset-bottom);background:var(--ink);box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+.sticky a{flex:1;text-align:center;padding:16px 8px;color:#fff;text-decoration:none;font-weight:600;font-size:.98rem}
+.sticky a.call{background:var(--accent)}
+
+/* Reveal – content stays visible if JS is off */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+
+@media (min-width:760px){
+  .about{grid-template-columns:1.05fr 1fr}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .snack{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(4,1fr)}
+  .gallery .wide{grid-column:span 2}
+  .infos{grid-template-columns:1fr 1.15fr}
+  footer{padding-bottom:48px}
+  footer .wrap{grid-template-columns:1.2fr 1fr}
+}
+@media (max-width:759px){
+  nav .links{display:none}
+  .sticky{display:flex}
+  .bar{padding:10px 4vw}
+  .btn.sm{padding:9px 14px}
+}
+@media (max-width:380px){
+  .logo{font-size:1.3rem}
+  .btn.sm{font-size:.86rem;padding:8px 12px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="ribbon">Aperçu réalisé pour Alaska par Kinoverse – pas encore en ligne</div>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top" aria-label="Alaska, retour en haut">Alaska<small>Brocante &amp; snack</small></a>
+    <nav aria-label="Navigation principale">
+      <div class="links">
+        <a href="#apropos">Alaska</a>
+        <a href="#brocante">Brocante</a>
+        <a href="#snack">Snack</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#infos">Infos</a>
+      </div>
+      <div class="actions">
+        <button class="btn sm ghost" id="install" type="button">Installer l’app</button>
+        <a class="btn sm" href="tel:+33290081277">Appeler</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero" id="top" role="img" aria-label="Verrerie ancienne exposée sur un étal de brocante">
+    <div class="hero-in">
+      <span class="kicker">Rennes · Brocante &amp; snack</span>
+      <h1>À Rennes, on chine chez Alaska <em>et on y reste</em> pour le snack.</h1>
+      <p>Une brocante où chaque objet a déjà vécu une vie, et un snack pour souffler entre deux trouvailles. Une question, un objet recherché ? Un coup de fil suffit.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+33290081277">Appeler le 02 90 08 12 77</a>
+        <a class="btn light" href="#infos">Nous trouver</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="apropos" class="paper" aria-labelledby="t-about">
+    <div class="wrap about">
+      <div class="about-text reveal">
+        <p class="eyebrow">Bienvenue chez Alaska</p>
+        <h2 id="t-about">Deux plaisirs sous le même toit</h2>
+        <p>Alaska réunit à Rennes une brocante et un snack. On y vient pour fouiller, comparer, dénicher la pièce qui manquait – et on s’y arrête pour une pause.</p>
+        <p>Pas de vitrine figée : l’assortiment change au fil des arrivages. Le meilleur moyen de savoir ce qui vous attend, c’est de passer… ou d’appeler avant.</p>
+        <ul class="facts">
+          <li>Brocante</li><li>Snack</li><li>Rennes</li>
+        </ul>
+      </div>
+      <div class="duo reveal">
+        <img src="img/g5.jpg?v=1" alt="Porcelaine ancienne" loading="lazy" width="1024" height="682">
+        <img src="img/g1.jpg?v=1" alt="Objets anciens de brocante" loading="lazy" width="1024" height="716">
+      </div>
+    </div>
+  </section>
+
+  <section id="brocante" aria-labelledby="t-broc">
+    <div class="wrap">
+      <p class="eyebrow reveal">La brocante</p>
+      <h2 id="t-broc" class="reveal">Des objets qui ont une histoire</h2>
+      <p class="lead reveal">Prenez le temps de fouiller : on ne sait jamais sur quoi l’on va tomber. L’assortiment évolue avec les arrivages – renseignez-vous par téléphone si vous cherchez quelque chose de précis.</p>
+      <div class="cards">
+        <article class="card reveal">
+          <span class="num">01</span>
+          <h3>Chiner sur place</h3>
+          <p>Flânez entre les étals et laissez-vous surprendre par les trouvailles du moment.</p>
+          <span class="note">Prix indiqués en boutique</span>
+        </article>
+        <article class="card reveal">
+          <span class="num">02</span>
+          <h3>Un objet recherché ?</h3>
+          <p>Décrivez ce que vous cherchez par téléphone : on vous dit si c’est là, ou à surveiller.</p>
+          <span class="note">Sur demande</span>
+        </article>
+        <article class="card reveal">
+          <span class="num">03</span>
+          <h3>Vendre ou déposer</h3>
+          <p>Vous videz un grenier ? Appelez pour savoir si et comment Alaska reprend des objets.</p>
+          <span class="note">À confirmer par téléphone</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="snack" class="alt-bg" aria-labelledby="t-snack">
+    <div class="wrap snack">
+      <img class="reveal" src="img/hero.jpg?v=1" alt="Verrerie ancienne sur un étal de brocante" loading="lazy" width="1024" height="683">
+      <div class="reveal">
+        <p class="eyebrow">Le snack</p>
+        <h2 id="t-snack">Une pause entre deux trouvailles</h2>
+        <p class="lead" style="margin-bottom:20px">Chiner donne faim. Le snack d’Alaska vous accueille pour reprendre des forces avant de repartir fouiller.</p>
+        <div class="snack-box">
+          <p><strong>Carte, plats et tarifs :</strong> sur demande. Appelez le 02 90 08 12 77 pour connaître la carte du jour ou réserver.</p>
+        </div>
+        <div class="cta">
+          <a class="btn" href="tel:+33290081277">Demander la carte</a>
+          <a class="btn ghost" href="tel:+33290081277">Appeler pour réserver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galerie" aria-labelledby="t-gal">
+    <div class="wrap">
+      <p class="eyebrow reveal">Galerie</p>
+      <h2 id="t-gal" class="reveal">L’esprit brocante</h2>
+      <p class="lead reveal">Un avant-goût de ce que l’on aime chiner.</p>
+      <div class="gallery reveal">
+        <figure class="wide"><img src="img/hero.jpg?v=1" alt="Verrerie ancienne sur un étal" loading="lazy" width="1024" height="683"><figcaption>Verrerie</figcaption></figure>
+        <figure><img src="img/g5.jpg?v=1" alt="Porcelaine ancienne" loading="lazy" width="1024" height="682"><figcaption>Porcelaine</figcaption></figure>
+        <figure><img src="img/g4.jpg?v=1" alt="Assortiment de poupées anciennes" loading="lazy" width="1024" height="694"><figcaption>Poupées</figcaption></figure>
+        <figure class="wide"><img src="img/g1.jpg?v=1" alt="Objets anciens de brocante" loading="lazy" width="1024" height="716"><figcaption>Trouvailles</figcaption></figure>
+        <figure class="wide"><img src="img/g5.jpg?v=1" alt="Détail de porcelaine ancienne" loading="lazy" width="1024" height="682" style="object-position:30% 50%"><figcaption>Vaisselle d’hier</figcaption></figure>
+      </div>
+      <p class="disclaimer">Photos d’illustration – elles seront remplacées par les photos d’Alaska.</p>
+    </div>
+  </section>
+
+  <section id="infos" class="alt-bg" aria-labelledby="t-infos">
+    <div class="wrap infos">
+      <div class="reveal">
+        <p class="eyebrow">Horaires &amp; accès</p>
+        <h2 id="t-infos">Venir chez Alaska</h2>
+        <ul class="info-list">
+          <li><span>Adresse</span><span>Rennes – adresse exacte à confirmer</span></li>
+          <li><span>Horaires</span><span>Sur demande – appelez avant de passer</span></li>
+          <li><span>Téléphone</span><span><a href="tel:+33290081277">02 90 08 12 77</a></span></li>
+          <li><span>Facebook</span><span><a href="https://www.facebook.com/Alaska-Brocante-et-snack-1949590578616680/" target="_blank" rel="noopener">Alaska Brocante et snack</a></span></li>
+          <li><span>Plan</span><span><a href="https://www.openstreetmap.org/node/4754652249" target="_blank" rel="noopener">Voir sur OpenStreetMap</a></span></li>
+        </ul>
+        <div class="cta">
+          <a class="btn" href="tel:+33290081277">Vérifier les horaires</a>
+          <a class="btn ghost" href="https://www.openstreetmap.org/node/4754652249" target="_blank" rel="noopener">Itinéraire</a>
+        </div>
+      </div>
+      <iframe class="map reveal" title="Carte : Alaska Brocante et snack, Rennes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Alaska%20Brocante%20et%20snack%2C%20Rennes&amp;z=14&amp;output=embed"></iframe>
+    </div>
+  </section>
+
+  <section id="contact" class="paper" aria-labelledby="t-contact">
+    <div class="wrap contact">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 id="t-contact" class="reveal">Une question ? Appelez Alaska.</h2>
+      <p class="lead reveal">Un objet à dénicher, la carte du snack, les horaires du jour : le plus simple reste le téléphone. Vous pouvez aussi écrire via Facebook.</p>
+      <a class="phone-big reveal" href="tel:+33290081277">02 90 08 12 77</a>
+      <div class="cta reveal">
+        <a class="btn" href="tel:+33290081277">Appeler maintenant</a>
+        <a class="btn ghost" href="https://www.facebook.com/Alaska-Brocante-et-snack-1949590578616680/" target="_blank" rel="noopener">Écrire sur Facebook</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Alaska</strong>
+      <p>Brocante &amp; snack · Rennes</p>
+      <p><a href="tel:+33290081277">02 90 08 12 77</a> · <a href="https://www.facebook.com/Alaska-Brocante-et-snack-1949590578616680/" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+    <div>
+      <p>Horaires et adresse exacte : sur demande, par téléphone.</p>
+    </div>
+    <p class="credits">Photos d’illustration du domaine public (CC0) via rawpixel – aucun crédit requis. Aperçu réalisé pour Alaska par Kinoverse – pas encore en ligne.</p>
+  </div>
+</footer>
+
+<div class="sticky" aria-label="Actions rapides">
+  <a class="call" href="tel:+33290081277">📞 Appeler</a>
+  <a href="#infos">📍 Venir</a>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});
+  },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el)});
+  setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},4000);
+})();
+(function(){
+  var dp=null,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex';});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none';});}});
+  window.addEventListener('appinstalled',function(){b.style.display='none';});
+  if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}
+})();
+</script>
+</body>
+</html>
