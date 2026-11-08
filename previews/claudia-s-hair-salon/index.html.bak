@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Claudia's Hair Salon | 2006 West Parmer Lane, Austin, TX</title>
+<meta name="description" content="Claudia's Hair Salon at 2006 West Parmer Lane in Austin, Texas. Call +1 512-260-2566 to book your cut, color or styling appointment.">
+<meta name="theme-color" content="#6e2a36">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Claudia's Hair Salon | West Parmer Lane, Austin">
+<meta property="og:description" content="Your hair salon at 2006 West Parmer Lane, Austin, Texas. Call +1 512-260-2566 to book.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#6e2a36;--wine-d:#521d27;--dark:#1d1517;--cream:#faf6f1;--sand:#efe6dc;--gold:#c9a063;--gold-l:#e0bd85;--ink:#2a2123;--muted:#6b5c5f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--ink);padding:10px 14px;z-index:99}
+.skip:focus{left:10px;top:10px}
+
+.ribbon{background:#120c0e;color:#d8c6b3;font-size:12px;letter-spacing:.02em;text-align:center;padding:7px 12px}
+
+header{position:sticky;top:0;z-index:40;background:rgba(29,21,23,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(201,160,99,.18)}
+.bar{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 5vw}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;text-decoration:none;white-space:nowrap;color:#fff}
+.nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px}
+.nav .lk{text-decoration:none;font-size:.9rem;font-weight:500;color:#eadfd4}
+.nav .lk:hover{color:var(--gold-l)}
+.hbtns{display:flex;flex-wrap:wrap;gap:8px}
+@media(max-width:760px){.nav .lk{display:none}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#22180e;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:1rem;font-family:inherit;transition:transform .25s,background .25s;min-height:46px}
+.btn:hover{transform:translateY(-2px);background:var(--gold-l)}
+.btn.sm{padding:9px 18px;font-size:.88rem;min-height:40px}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.75)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.wine{background:var(--wine);color:#fff}
+.btn.wine:hover{background:var(--wine-d)}
+#inst{display:none}
+
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;color:#fff;background:#1d1517 url(img/hero.jpg?v=1) center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,21,23,.35) 0%,rgba(29,21,23,.55) 45%,rgba(29,21,23,.92) 100%)}
+.hero .in{position:relative;max-width:1180px;width:100%;margin:auto;padding:120px 5vw 80px}
+.kicker{display:inline-block;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-l);font-weight:600;font-size:.78rem}
+.hero h1{font-size:clamp(2.6rem,8vw,5.4rem);margin:16px 0 18px;max-width:14ch}
+.hero h1 em{font-style:italic;color:var(--gold-l)}
+.hero p{font-size:1.12rem;max-width:520px;color:#efe4d9;margin-bottom:30px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.addr{margin-top:34px;font-size:.9rem;color:#d9cbbd;display:flex;gap:8px;align-items:center}
+.addr::before{content:"";width:28px;height:1px;background:var(--gold)}
+
+section{padding:96px 5vw}
+.wrap{max-width:1180px;margin:auto}
+.tag{display:block;color:var(--wine);letter-spacing:.2em;text-transform:uppercase;font-size:.76rem;font-weight:600}
+h2{font-size:clamp(2.1rem,5vw,3.3rem);margin:10px 0 24px}
+.lead{font-size:1.08rem;color:var(--muted);max-width:620px}
+
+.about{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+.about figure{position:relative}
+.about img{width:100%;height:420px;object-fit:cover;border-radius:4px}
+.about figure::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);border-radius:4px;z-index:-1}
+.about p+p{margin-top:14px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px;border-top:1px solid #0000001a;padding-top:24px}
+.facts b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--wine)}
+.facts span{font-size:.88rem;color:var(--muted)}
+@media(min-width:880px){.about{grid-template-columns:1fr 1.05fr;gap:80px}.about img{height:560px}}
+
+.dark{background:var(--dark);color:#f1e7dc}
+.dark .tag{color:var(--gold-l)}
+.dark .lead{color:#cbbbad}
+.cards{display:grid;grid-template-columns:1fr;gap:18px;margin-top:44px}
+@media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.cards{grid-template-columns:repeat(4,1fr)}}
+.card{border:1px solid rgba(201,160,99,.28);border-radius:4px;padding:30px 26px;transition:border-color .3s,transform .3s,background .3s}
+.card:hover{border-color:var(--gold);transform:translateY(-4px);background:rgba(255,255,255,.03)}
+.card .n{font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:1.1rem}
+.card h3{font-size:1.65rem;margin:10px 0 10px;color:#fff}
+.card p{color:#cbbbad;font-size:.95rem}
+.card .p{margin-top:18px;color:var(--gold-l);font-weight:600;font-size:.84rem;letter-spacing:.04em}
+.note{margin-top:30px;font-size:.92rem;color:#b9a99b}
+.note a{color:var(--gold-l);font-weight:600}
+
+.gallery{display:grid;grid-template-columns:1fr;gap:14px;margin-top:40px}
+.gallery figure{overflow:hidden;border-radius:4px;background:var(--sand)}
+.gallery img{width:100%;height:300px;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.04)}
+@media(min-width:700px){.gallery{grid-template-columns:repeat(6,1fr);grid-auto-rows:260px}
+.gallery figure:nth-child(1){grid-column:span 4;grid-row:span 2}
+.gallery figure:nth-child(2){grid-column:span 2;grid-row:span 2}
+.gallery figure:nth-child(3),.gallery figure:nth-child(4){grid-column:span 3}
+.gallery img{height:100%}}
+
+.visit{background:var(--sand)}
+.info{display:grid;grid-template-columns:1fr;gap:40px}
+@media(min-width:880px){.info{grid-template-columns:1fr 1.2fr;gap:60px}}
+.hours{width:100%;border-collapse:collapse;margin:8px 0 26px}
+.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid #00000018;font-weight:400}
+.hours td{text-align:right;color:var(--wine);font-weight:600}
+.mapbox{border-radius:4px;overflow:hidden;min-height:360px;box-shadow:0 20px 50px -24px #1d151766}
+.mapbox iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+.dl{display:grid;gap:14px;margin-bottom:26px}
+.dl small{display:block;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:var(--muted);font-weight:600}
+.dl a{color:var(--wine);font-weight:600;text-decoration:none}
+.dl a:hover{text-decoration:underline}
+
+.contact{text-align:center;background:var(--wine);color:#fff}
+.contact h2{max-width:16ch;margin-left:auto;margin-right:auto}
+.contact .tag{color:var(--gold-l)}
+.contact p{color:#f0dfe0;max-width:540px;margin:0 auto 30px}
+.contact .ctas{justify-content:center}
+.big{display:block;font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,7vw,3.2rem);color:#fff;text-decoration:none;margin:4px 0 30px}
+
+footer{background:#120c0e;color:#a8988c;padding:44px 5vw 110px;font-size:.86rem}
+footer .wrap{display:grid;gap:10px;text-align:center}
+footer .logo{font-size:1.4rem}
+footer a{color:#d8c6b3}
+@media(min-width:900px){footer{padding-bottom:44px}}
+
+.sticky{position:fixed;bottom:0;left:0;right:0;z-index:50;display:flex;background:var(--wine);box-shadow:0 -6px 20px #0003;padding-bottom:env(safe-area-inset-bottom)}
+.sticky a{flex:1;text-align:center;color:#fff;padding:16px 8px;text-decoration:none;font-weight:600;font-size:.98rem}
+.sticky a+a{background:var(--gold);color:#22180e}
+@media(min-width:900px){.sticky{display:none}}
+
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ribbon">Preview made for Claudia's Hair Salon by Kinoverse - not live yet</div>
+
+<header>
+<div class="bar">
+<a class="logo" href="#top">Claudia's Hair Salon</a>
+<nav class="nav" aria-label="Main">
+<a class="lk" href="#about">About</a>
+<a class="lk" href="#services">Services</a>
+<a class="lk" href="#gallery">Gallery</a>
+<a class="lk" href="#visit">Visit</a>
+<span class="hbtns">
+<button class="btn sm ghost" id="inst" type="button">Install the app</button>
+<a class="btn sm" href="tel:+15122602566">Call</a>
+</span>
+</nav>
+</div>
+</header>
+
+<main id="main">
+<div class="hero" id="top" role="img" aria-label="Interior of a hair salon">
+<div class="in">
+<span class="kicker">West Parmer Lane &middot; Austin, Texas</span>
+<h1>Your chair is waiting on <em>West Parmer Lane.</em></h1>
+<p>Claudia's Hair Salon welcomes you at 2006 West Parmer Lane in Austin. Call ahead and we'll find a time that works for you.</p>
+<div class="ctas">
+<a class="btn" href="tel:+15122602566">Call to book</a>
+<a class="btn ghost" href="#visit">Get directions</a>
+</div>
+<div class="addr">2006 West Parmer Lane, Austin, TX</div>
+</div>
+</div>
+
+<section id="about">
+<div class="wrap about">
+<figure class="rv"><img src="img/salon2.jpg?v=1" alt="Row of salon styling chairs" loading="lazy" width="680" height="1026"></figure>
+<div class="rv">
+<span class="tag">Welcome</span>
+<h2>A neighborhood salon in Austin</h2>
+<p class="lead">Claudia's Hair Salon is at 2006 West Parmer Lane, Austin, Texas - easy to reach from anywhere along Parmer.</p>
+<p>Bring an idea, a picture or simply a question. Give us a call and we'll talk through what you're looking for and book your visit.</p>
+<div class="facts">
+<div><b>West Parmer Ln</b><span>2006 West Parmer Lane, Austin</span></div>
+<div><b>By phone</b><span>+1 512-260-2566</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="services" class="dark">
+<div class="wrap">
+<div class="rv">
+<span class="tag">Services</span>
+<h2>Ask us about</h2>
+<p class="lead">Tell us what you have in mind when you call - we'll confirm the service, the time it takes and the price.</p>
+</div>
+<div class="cards">
+<div class="card rv"><span class="n">01</span><h3>Haircuts</h3><p>A fresh cut or a simple trim to keep your shape.</p><div class="p">PRICE ON REQUEST</div></div>
+<div class="card rv"><span class="n">02</span><h3>Color</h3><p>Ask about color options when you call to book.</p><div class="p">PRICE ON REQUEST</div></div>
+<div class="card rv"><span class="n">03</span><h3>Styling</h3><p>Blow-dry and styling for every day or a night out.</p><div class="p">PRICE ON REQUEST</div></div>
+<div class="card rv"><span class="n">04</span><h3>Special occasions</h3><p>Planning for a wedding or an event? Call to discuss.</p><div class="p">CALL TO CONFIRM</div></div>
+</div>
+<p class="note rv">Services and prices to confirm by phone: <a href="tel:+15122602566">+1 512-260-2566</a></p>
+</div>
+</section>
+
+<section id="gallery">
+<div class="wrap">
+<div class="rv">
+<span class="tag">Gallery</span>
+<h2>The look &amp; the feel</h2>
+</div>
+<div class="gallery rv">
+<figure><img src="img/hero.jpg?v=1" alt="Hair salon interior" loading="lazy"></figure>
+<figure><img src="img/salon2.jpg?v=1" alt="Salon chairs with red seats" loading="lazy"></figure>
+<figure><img src="img/bridal.jpg?v=1" alt="Hairdresser styling a bride's hair" loading="lazy"></figure>
+<figure><img src="img/brushes.jpg?v=1" alt="Round hair brushes" loading="lazy"></figure>
+</div>
+</div>
+</section>
+
+<section id="visit" class="visit">
+<div class="wrap info">
+<div class="rv">
+<span class="tag">Visit us</span>
+<h2>Hours &amp; location</h2>
+<table class="hours">
+<tr><th scope="row">Opening hours</th><td>To confirm</td></tr>
+<tr><th scope="row">Appointments</th><td>Call to book</td></tr>
+</table>
+<div class="dl">
+<div><small>Address</small>2006 West Parmer Lane<br>Austin, TX</div>
+<div><small>Phone</small><a href="tel:+15122602566">+1 512-260-2566</a></div>
+<div><small>Facebook</small><a href="https://www.facebook.com/SilveradoHairSalon/" target="_blank" rel="noopener">Our Facebook page</a></div>
+</div>
+<div class="ctas">
+<a class="btn wine" href="tel:+15122602566">Call to book</a>
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=2006+West+Parmer+Lane+Austin+TX" target="_blank" rel="noopener">Directions</a>
+</div>
+</div>
+<div class="mapbox rv">
+<iframe title="Map: 2006 West Parmer Lane, Austin, TX" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=2006+West+Parmer+Lane,+Austin,+TX&amp;output=embed"></iframe>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="wrap rv">
+<span class="tag">Book your visit</span>
+<h2>Ready for your next appointment?</h2>
+<p>The quickest way to book is a phone call. We'll find a time that suits you.</p>
+<a class="big" href="tel:+15122602566">+1 512-260-2566</a>
+<div class="ctas">
+<a class="btn" href="tel:+15122602566">Call now</a>
+<a class="btn ghost" href="https://www.facebook.com/SilveradoHairSalon/" target="_blank" rel="noopener">Message on Facebook</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<span class="logo">Claudia's Hair Salon</span>
+<p>2006 West Parmer Lane, Austin, TX &middot; <a href="tel:+15122602566">+1 512-260-2566</a></p>
+<p>&copy; <span id="yr">2026</span> Claudia's Hair Salon</p>
+<p style="font-size:.78rem;opacity:.8">Photos: CC0 public-domain stock images (rawpixel), shown until the salon's own photos are added.</p>
+</div>
+</footer>
+
+<nav class="sticky" aria-label="Quick actions">
+<a href="tel:+15122602566">Call</a>
+<a href="https://www.google.com/maps/dir/?api=1&amp;destination=2006+West+Parmer+Lane+Austin+TX" target="_blank" rel="noopener">Directions</a>
+</nav>
+
+<script>
+(function(){
+var els=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+els.forEach(function(el){io.observe(el)});
+setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},4000);
+}else{els.forEach(function(el){el.classList.add('in')})}
+document.getElementById('yr').textContent=new Date().getFullYear();
+var dp,b=document.getElementById('inst');
+addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none'})}});
+addEventListener('appinstalled',function(){b.style.display='none'});
+if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(function(){})}
+})();
+</script>
+</body>
+</html>
