@@ -1,0 +1,18 @@
+{
+  "name": "Le Loup, le Renard et la Galette",
+  "short_name": "Loup Renard",
+  "description": "Crêperie à Nantes - galettes et crêpes gourmandes",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1f2a1f",
+  "theme_color": "#b5651d",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
