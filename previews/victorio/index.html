@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
+<meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Victorio – Coiffeur mixte à Lyon · ouvert dès 7h30 le samedi</title>
@@ -399,8 +400,9 @@ footer p+p{margin-top:.4rem}
   window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex';});
   b.addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none';});});
   window.addEventListener('appinstalled',function(){b.style.display='none';});
-  if('serviceWorker' in navigator && location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(function(){});}
+  
 })();
 </script>
 </body>
 </html>
+
