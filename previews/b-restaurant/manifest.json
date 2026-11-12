@@ -1,0 +1,19 @@
+{
+  "name": "B Restaurant - B Exclusive Catering",
+  "short_name": "B Restaurant",
+  "description": "B Exclusive Catering, Thessaloniki: weddings, christenings, receptions, corporate and private events.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
