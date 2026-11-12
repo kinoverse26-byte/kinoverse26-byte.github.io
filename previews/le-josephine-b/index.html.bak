@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Le Joséphine B. · Restaurant au 95 Quai de la Fosse, Nantes</title>
+<meta name="description" content="Le Joséphine B., restaurant traditionnel au 95 Quai de la Fosse à Nantes, au bord de la Loire. Horaires, plan d'accès et réservation par téléphone au 02 40 69 36 51.">
+<meta name="theme-color" content="#1b3437">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b3437'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23c9a467'%3EJB%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Le Joséphine B.">
+<meta property="og:title" content="Le Joséphine B. · 95 Quai de la Fosse, Nantes">
+<meta property="og:description" content="Restaurant traditionnel au bord de la Loire, Quai de la Fosse à Nantes. Réservation au 02 40 69 36 51.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Restaurant",
+ "name":"Le Joséphine B.",
+ "telephone":"+33 2 40 69 36 51",
+ "email":"lejosephineb@gmail.com",
+ "address":{"@type":"PostalAddress","streetAddress":"95 Quai de la Fosse","addressLocality":"Nantes","addressCountry":"FR"},
+ "geo":{"@type":"GeoCoordinates","latitude":47.2079676,"longitude":-1.5708791},
+ "openingHours":["Mo-Th 12:00-15:00","Fr 12:00-15:00","Fr 19:00-23:00","Sa 19:00-23:00","Su 09:00-17:00"],
+ "acceptsReservations":true
+}
+</script>
+<style>
+:root{
+  --ink:#122427;--loire:#1b3437;--loire2:#24474b;--brass:#c9a467;--brass-d:#7d5f2e;
+  --cream:#f5efe4;--paper:#fcfaf6;--line:#e2d8c6;--muted:#5a6a6c;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.65;font-size:16px}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.005em}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:99}
+.skip:focus{left:8px}
+
+/* Ribbon */
+.ribbon{background:var(--ink);color:#d8ccb4;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.03em}
+
+/* Header — wraps on small phones, every button stays visible */
+.site-head{position:sticky;top:0;z-index:40;background:rgba(27,52,55,.96);color:#fff;
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,164,103,.25)}
+.head-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:12px 5vw;max-width:1240px;margin:auto}
+.logo{font-family:var(--serif);font-size:25px;font-weight:600;text-decoration:none;white-space:nowrap;margin-right:auto;line-height:1.1}
+.head-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:40px;font:600 14px/1 var(--sans);
+  text-decoration:none;border:1px solid transparent;cursor:pointer;white-space:nowrap;transition:background .25s,color .25s,transform .25s}
+.pill.call{background:var(--brass);color:var(--ink)}
+.pill.call:hover{background:#d8b77f}
+.pill.app{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.pill.app:hover{background:rgba(255,255,255,.1)}
+#install{display:none}
+#install.show{display:inline-flex}
+.menu{display:flex;gap:26px;list-style:none;order:2}
+.menu a{text-decoration:none;font-size:14px;color:#e9e3d6;padding:4px 0;border-bottom:1px solid transparent;transition:.2s}
+.menu a:hover{color:var(--brass);border-color:var(--brass)}
+
+/* Hero */
+.hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04);animation:drift 18s ease-out forwards}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(18,36,39,.35) 0%,rgba(18,36,39,.15) 35%,rgba(18,36,39,.88) 100%),
+             linear-gradient(90deg,rgba(18,36,39,.6),rgba(18,36,39,0) 70%)}
+@keyframes drift{to{transform:scale(1)}}
+.hero-in{width:100%;max-width:1240px;margin:auto;padding:120px 5vw 72px}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.hero h1{font-size:clamp(40px,8.4vw,92px);margin:16px 0 18px;max-width:14ch;text-wrap:balance}
+.hero h1 em{font-style:italic;font-weight:500;color:#f1e3c6}
+.hero p{font-size:clamp(16px,2.2vw,19px);max-width:540px;color:#efeae0;margin-bottom:30px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 28px;border-radius:44px;
+  font:600 15px/1 var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.btn.gold{background:var(--brass);color:var(--ink)}
+.btn.line{border-color:rgba(255,255,255,.75);color:#fff}
+.btn.line:hover{background:rgba(255,255,255,.1)}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:26px;font-size:14px;color:#e9e3d6}
+.status i{width:9px;height:9px;border-radius:50%;background:#9aa;box-shadow:0 0 0 4px rgba(255,255,255,.08)}
+.status.open i{background:#6fd08f}
+.status.closed i{background:#e0a35a}
+
+/* Sections */
+section{padding:96px 5vw}
+.wrap{max-width:1140px;margin:auto}
+.kicker{display:block;color:var(--brass-d);letter-spacing:.22em;text-transform:uppercase;font-size:12px;font-weight:600}
+.dark .kicker{color:var(--brass)}
+h2{font-size:clamp(34px,5.2vw,56px);margin:10px 0 22px;text-wrap:balance}
+.lead{font-size:18px;color:#2d3d40;max-width:60ch}
+.cream{background:var(--cream)}
+
+/* About */
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.about figure{position:relative}
+.about figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.about figure::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--brass);border-radius:4px;z-index:-1}
+.about figure{isolation:isolate}
+.about p+p{margin-top:14px}
+.facts{list-style:none;margin-top:30px;display:grid;gap:14px}
+.facts li{display:flex;gap:14px;align-items:flex-start;padding-top:14px;border-top:1px solid var(--line)}
+.facts b{font-family:var(--serif);font-size:22px;font-weight:600;min-width:110px;line-height:1.2}
+
+/* Services */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:36px}
+.card{background:#fff;padding:34px 30px;border-radius:6px;border-top:3px solid var(--brass);box-shadow:0 2px 16px rgba(18,36,39,.06);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(18,36,39,.12)}
+.card .n{font-family:var(--serif);font-style:italic;color:var(--brass-d);font-size:18px}
+.card h3{font-size:30px;margin:6px 0 10px}
+.card p{color:#33444a}
+.card small{display:block;margin-top:16px;font-size:13px;color:var(--muted);font-weight:500}
+.note{margin-top:28px;font-size:14px;color:var(--muted)}
+.note a{color:var(--brass-d);font-weight:600}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:220px;gap:12px;margin-top:36px}
+.gallery figure{position:relative;overflow:hidden;border-radius:4px;background:#dcd3c3}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;font-size:13px;color:#fff;
+  background:linear-gradient(transparent,rgba(18,36,39,.8))}
+.g1{grid-column:span 4;grid-row:span 2}
+.g2{grid-column:span 2}
+.g3{grid-column:span 2}
+.g4{grid-column:span 3}
+.g5{grid-column:span 3}
+
+/* Hours + map */
+.visit{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:stretch}
+table{width:100%;border-collapse:collapse;margin-top:6px;font-size:15px}
+th,td{padding:13px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:400;vertical-align:top}
+td{text-align:right;font-weight:500;font-variant-numeric:tabular-nums}
+tr.today th,tr.today td{color:var(--brass-d);font-weight:600}
+tr.today th::after{content:" · aujourd'hui";font-size:12px;font-weight:500}
+.addr{margin-top:26px;font-size:16px}
+.addr strong{font-family:var(--serif);font-size:22px;font-weight:600;display:block;margin-bottom:4px}
+.addr a{color:var(--brass-d);font-weight:600}
+.small{font-size:13px;color:var(--muted);margin-top:12px}
+.map{display:flex;flex-direction:column;gap:12px}
+.map iframe{width:100%;flex:1;min-height:400px;border:0;border-radius:6px;background:#e6e0d4}
+.map a{font-size:14px;color:var(--brass-d);font-weight:600}
+
+/* Contact */
+.dark{background:var(--loire);color:#fff;text-align:center;position:relative;overflow:hidden}
+.dark::before{content:"";position:absolute;inset:auto -10% -60% -10%;height:120%;background:radial-gradient(closest-side,rgba(201,164,103,.16),transparent);pointer-events:none}
+.dark .wrap{position:relative}
+.dark p{max-width:540px;margin:0 auto 30px;color:#e3ddd0}
+.dark .ctas{justify-content:center}
+.contact-lines{margin-top:34px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;font-size:15px;color:#e3ddd0}
+.contact-lines a{color:#fff;text-decoration-color:var(--brass);text-underline-offset:4px}
+
+/* Footer */
+footer{background:var(--ink);color:#b9b2a3;padding:44px 5vw 40px;font-size:13px}
+footer .wrap{display:grid;gap:18px}
+footer .brand{font-family:var(--serif);font-size:26px;color:#fff}
+footer a{color:#dcc08e}
+.credits{line-height:1.7;border-top:1px solid rgba(255,255,255,.1);padding-top:18px}
+
+/* Sticky mobile call bar */
+.callbar{display:none}
+
+/* Reveal: content stays visible unless JS is running */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero>img{animation:none;transform:none}
+  .js .reveal{opacity:1;transform:none;transition:none}
+}
+
+@media (max-width:860px){
+  .menu{order:3;width:100%;gap:22px;overflow-x:auto;scrollbar-width:none;padding-top:2px;-webkit-overflow-scrolling:touch}
+  .menu::-webkit-scrollbar{display:none}
+  .menu a{white-space:nowrap;font-size:13.5px}
+  .about,.visit{grid-template-columns:1fr;gap:44px}
+  .about figure img{aspect-ratio:4/3}
+  .about figure::before{inset:12px -10px -12px 12px}
+  section{padding:68px 6vw}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
+  .g1{grid-column:span 2;grid-row:span 2}
+  .g2,.g3,.g4,.g5{grid-column:span 1}
+  .g5{grid-column:span 2}
+  .map iframe{min-height:320px}
+  body{padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;gap:8px;
+    padding:10px 10px calc(10px + env(safe-area-inset-bottom));background:#fff;box-shadow:0 -6px 20px rgba(18,36,39,.16)}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:13px 6px;border-radius:30px;
+    font:600 14px/1 var(--sans);text-decoration:none;background:var(--loire);color:#fff;min-width:0}
+  .callbar a.main{background:var(--brass);color:var(--ink);flex:1.3}
+}
+@media (max-width:380px){
+  .head-row{padding:10px 4vw;gap:8px 10px}
+  .logo{font-size:22px}
+  .pill{padding:8px 13px;font-size:13px}
+  .hero-in{padding-bottom:56px}
+  .btn{padding:14px 22px;width:100%}
+  .facts li{flex-direction:column;gap:2px}
+}
+</style>
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#maison">Aller au contenu</a>
+
+<div class="ribbon" role="note">Aperçu réalisé pour Le Joséphine B. par Kinoverse – pas encore en ligne</div>
+
+<header class="site-head">
+  <div class="head-row">
+    <a class="logo" href="#top">Le Joséphine B.</a>
+    <div class="head-actions">
+      <a class="pill call" href="tel:+33240693651" aria-label="Appeler Le Joséphine B. au 02 40 69 36 51">📞 Appeler</a>
+      <button class="pill app" id="install" type="button">Installer l'app</button>
+    </div>
+    <nav aria-label="Navigation principale">
+      <ul class="menu">
+        <li><a href="#maison">La maison</a></li>
+        <li><a href="#table">À table</a></li>
+        <li><a href="#quartier">Le quartier</a></li>
+        <li><a href="#infos">Horaires &amp; accès</a></li>
+        <li><a href="#contact">Réserver</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="Accueil" style="padding:0">
+  <img src="img/hero.jpg?v=1" alt="Le quai de la Fosse à Nantes, le long de la Loire" fetchpriority="high" width="4535" height="3012">
+  <div class="hero-in">
+    <span class="eyebrow">Restaurant · 95 Quai de la Fosse · Nantes</span>
+    <h1>Une table nantaise <em>au bord de la Loire</em></h1>
+    <p>Le Joséphine B. vous reçoit au 95 Quai de la Fosse : déjeuner en semaine, dîner le vendredi et le samedi, et le dimanche de 9 h à 17 h.</p>
+    <div class="ctas">
+      <a class="btn gold" href="tel:+33240693651">Réserver au 02 40 69 36 51</a>
+      <a class="btn line" href="#infos">Horaires &amp; accès</a>
+    </div>
+    <div class="status" id="status" aria-live="polite"><i></i><span>Horaires ci-dessous</span></div>
+  </div>
+</section>
+
+<section id="maison">
+  <div class="wrap about">
+    <figure class="reveal">
+      <img src="img/balcon.jpg?v=1" alt="Balcon en fer forgé d'un immeuble du quai de la Fosse à Nantes" loading="lazy" width="4059" height="3044">
+    </figure>
+    <div class="reveal">
+      <span class="kicker">La maison</span>
+      <h2>Au 95, Quai de la Fosse</h2>
+      <p class="lead">Sur l'un des quais historiques de Nantes, entre la ville et le fleuve, Le Joséphine B. est un restaurant de restauration traditionnelle, avec service à table.</p>
+      <p>On y vient pour le déjeuner du lundi au vendredi, pour le dîner le vendredi et le samedi soir, et le dimanche toute la journée, de 9 h à 17 h.</p>
+      <ul class="facts">
+        <li><b>Accessible</b><span>Établissement accessible en fauteuil roulant.</span></li>
+        <li><b>Réservation</b><span>Par téléphone au <a href="tel:+33240693651">02 40 69 36 51</a> ou par e-mail.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="table" class="cream">
+  <div class="wrap">
+    <span class="kicker">À table</span>
+    <h2>Trois moments pour venir</h2>
+    <p class="lead">La carte et les tarifs sont communiqués par le restaurant, sur demande.</p>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="n">I.</span>
+        <h3>Le déjeuner</h3>
+        <p>Du lundi au vendredi, de 12 h à 15 h.</p>
+        <small>Carte et tarifs : sur demande</small>
+      </article>
+      <article class="card reveal">
+        <span class="n">II.</span>
+        <h3>Le dîner</h3>
+        <p>Le vendredi et le samedi soir, de 19 h à 23 h.</p>
+        <small>Carte et tarifs : sur demande</small>
+      </article>
+      <article class="card reveal">
+        <span class="n">III.</span>
+        <h3>Le dimanche</h3>
+        <p>Ouvert en continu de 9 h à 17 h.</p>
+        <small>Formule et tarifs : sur demande</small>
+      </article>
+    </div>
+    <p class="note">Une question sur la carte, un groupe, une occasion ? <a href="tel:+33240693651">Appelez le restaurant</a> ou <a href="mailto:lejosephineb@gmail.com">écrivez-lui</a>.</p>
+  </div>
+</section>
+
+<section id="quartier">
+  <div class="wrap">
+    <span class="kicker">Le quartier</span>
+    <h2>Le quai de la Fosse, côté Loire</h2>
+    <p class="lead">Façades d'armateurs, balcons ouvragés et vue sur le fleuve : le décor de votre repas, à deux pas de la porte.</p>
+    <div class="gallery">
+      <figure class="g1 reveal"><img src="img/quai.jpg?v=1" alt="Le port de Nantes le long du quai de la Fosse" loading="lazy"><figcaption>Le port, quai de la Fosse</figcaption></figure>
+      <figure class="g2 reveal"><img src="img/facade.jpg?v=1" alt="Façade d'immeuble ancien au n° 86 du quai de la Fosse" loading="lazy"><figcaption>Quai de la Fosse, n° 86</figcaption></figure>
+      <figure class="g3 reveal"><img src="img/immeubles.jpg?v=1" alt="Immeubles anciens alignés sur le quai de la Fosse" loading="lazy"><figcaption>Les immeubles du quai</figcaption></figure>
+      <figure class="g4 reveal"><img src="img/verrerie.jpg?v=1" alt="La rue de la Verrerie à Nantes" loading="lazy"><figcaption>Rue de la Verrerie</figcaption></figure>
+      <figure class="g5 reveal"><img src="img/balcon.jpg?v=1" alt="Balcon en fer forgé sur le quai de la Fosse" loading="lazy"><figcaption>Balcons du quai</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="infos" class="cream">
+  <div class="wrap visit">
+    <div class="reveal">
+      <span class="kicker">Horaires &amp; accès</span>
+      <h2>Venez nous voir</h2>
+      <table aria-label="Horaires d'ouverture">
+        <tbody id="hours">
+          <tr data-d="1"><th scope="row">Lundi</th><td>12:00 – 15:00</td></tr>
+          <tr data-d="2"><th scope="row">Mardi</th><td>12:00 – 15:00</td></tr>
+          <tr data-d="3"><th scope="row">Mercredi</th><td>12:00 – 15:00</td></tr>
+          <tr data-d="4"><th scope="row">Jeudi</th><td>12:00 – 15:00</td></tr>
+          <tr data-d="5"><th scope="row">Vendredi</th><td>12:00 – 15:00<br>19:00 – 23:00</td></tr>
+          <tr data-d="6"><th scope="row">Samedi</th><td>19:00 – 23:00</td></tr>
+          <tr data-d="0"><th scope="row">Dimanche</th><td>09:00 – 17:00</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Horaires à confirmer par téléphone, notamment les jours fériés.</p>
+      <p class="addr"><strong>Adresse</strong>95 Quai de la Fosse, Nantes<br>
+        <a href="tel:+33240693651">02 40 69 36 51</a> · <a href="mailto:lejosephineb@gmail.com">lejosephineb@gmail.com</a></p>
+    </div>
+    <div class="map reveal">
+      <iframe title="Plan : Le Joséphine B., 95 Quai de la Fosse, Nantes" loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5755%2C47.2058%2C-1.5663%2C47.2102&amp;layer=mapnik&amp;marker=47.2079676%2C-1.5708791"></iframe>
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=95%20Quai%20de%20la%20Fosse%2C%20Nantes" target="_blank" rel="noopener">Itinéraire jusqu'au restaurant →</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="dark">
+  <div class="wrap reveal">
+    <span class="kicker">Réservation</span>
+    <h2>Réservez votre table</h2>
+    <p>Un appel suffit pour réserver. Vous pouvez aussi écrire au restaurant, qui vous répondra pour confirmer.</p>
+    <div class="ctas">
+      <a class="btn gold" href="tel:+33240693651">📞 Appeler le 02 40 69 36 51</a>
+      <a class="btn line" href="mailto:lejosephineb@gmail.com?subject=R%C3%A9servation%20au%20Jos%C3%A9phine%20B.">✉ Écrire un e-mail</a>
+    </div>
+    <div class="contact-lines">
+      <span>95 Quai de la Fosse, Nantes</span>
+      <a href="tel:+33240693651">+33 2 40 69 36 51</a>
+      <a href="mailto:lejosephineb@gmail.com">lejosephineb@gmail.com</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">Le Joséphine B.</div>
+    <div>Restaurant · 95 Quai de la Fosse, Nantes · <a href="tel:+33240693651">02 40 69 36 51</a> · SIRET 918 871 617 00026</div>
+    <div class="credits">
+      Photos du quartier via Wikimedia Commons :
+      « Nantes - Quai de la Fosse 02 » par Selbymay ;
+      « Quai de la Fosse port de Nantes », « Balcon quai Fosse Nantes », « Quai Fosse n86 », « Immeubles quai Fosse Nantes » et « Rue de la Verrerie (Nantes) 2 » par Jibi44 —
+      sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank" rel="noopener">CC BY-SA</a>.
+      Carte © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">contributeurs OpenStreetMap</a>.<br>
+      Aperçu réalisé par Kinoverse – pas encore en ligne.
+    </div>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Actions rapides">
+  <a class="main" href="tel:+33240693651">📞 Appeler</a>
+  <a href="mailto:lejosephineb@gmail.com">✉ E-mail</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=95%20Quai%20de%20la%20Fosse%2C%20Nantes" target="_blank" rel="noopener">📍 Itinéraire</a>
+</nav>
+
+<script>
+(function(){
+  /* Reveal on scroll — content is visible by default if JS or the observer is unavailable */
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},4000);
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  /* Open / closed now (Nantes time) + highlight today */
+  try{
+    var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+    var get=function(t){var p=parts.find(function(x){return x.type===t});return p?p.value:''};
+    var day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[get('weekday')];
+    var mins=parseInt(get('hour'),10)*60+parseInt(get('minute'),10);
+    var H={0:[[540,1020]],1:[[720,900]],2:[[720,900]],3:[[720,900]],4:[[720,900]],5:[[720,900],[1140,1380]],6:[[1140,1380]]};
+    var row=document.querySelector('#hours tr[data-d="'+day+'"]');if(row)row.classList.add('today');
+    var fmt=function(m){var h=Math.floor(m/60),mm=m%60;return h+' h'+(mm?(mm<10?'0':'')+mm:'')};
+    var st=document.getElementById('status'),txt=st.querySelector('span'),open=null,next=null;
+    (H[day]||[]).forEach(function(s){if(mins>=s[0]&&mins<s[1])open=s;else if(mins<s[0]&&!next)next=s;});
+    if(open){st.classList.add('open');txt.textContent='Ouvert maintenant · jusqu\u2019à '+fmt(open[1]);}
+    else{st.classList.add('closed');txt.textContent=next?'Fermé pour le moment · ouverture à '+fmt(next[0]):'Fermé pour le moment · voir les horaires';}
+  }catch(e){}
+
+  /* Install the app (only shown where the browser offers it, e.g. Android) */
+  var dp,btn=document.getElementById('install');
+  addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;btn.classList.add('show');});
+  btn.addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.finally(function(){dp=null;btn.classList.remove('show');});});
+  addEventListener('appinstalled',function(){btn.classList.remove('show');});
+})();
+</script>
+</body>
+</html>
