@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
 <head>
 <meta name="robots" content="noindex, nofollow">
@@ -7,7 +7,6 @@
 <title>Casa Antonio – Pizzas &amp; cuisine italienne, 42 Rue Vasselot, Rennes</title>
 <meta name="description" content="Casa Antonio, restaurant italien au 42 Rue Vasselot à Rennes. Pizzas, cuisine italienne et options végétariennes, sur place, en terrasse, à emporter ou en livraison Deliveroo. Du mardi au samedi, midi et soir.">
 <meta name="theme-color" content="#8f2a1d">
-<link rel="manifest" href="manifest.json">
 <meta property="og:type" content="restaurant">
 <meta property="og:title" content="Casa Antonio – Restaurant italien, 42 Rue Vasselot, Rennes">
 <meta property="og:description" content="Pizzas et cuisine italienne au cœur de Rennes. Sur place, en terrasse, à emporter ou en livraison. Du mardi au samedi.">
@@ -151,6 +150,7 @@ footer .fl{font-family:Fraunces,serif;font-size:1.3rem;color:#fff;display:block;
 @media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.hero img{animation:none;transform:none}html{scroll-behavior:auto}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
+
 </head>
 <body>
 
@@ -336,9 +336,9 @@ footer .fl{font-family:Fraunces,serif;font-size:1.3rem;color:#fff;display:block;
 
   // Install button: shown only where the browser offers installation (Android)
   var dp,b=document.getElementById('inst');
-  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex';});
-  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none';});}});
-  window.addEventListener('appinstalled',function(){b.style.display='none';});
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;});}});
+  window.addEventListener('appinstalled',function(){});
 })();
 </script>
 </body>
