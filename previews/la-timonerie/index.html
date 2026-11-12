@@ -34,9 +34,9 @@ a{color:inherit}
 .top .bar{max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 5vw}
 .logo{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;letter-spacing:.03em;text-decoration:none;white-space:nowrap}
 .actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.top nav{width:100%;order:3;overflow-x:auto;scrollbar-width:none}
+.top nav{width:100%;order:3}
 .top nav::-webkit-scrollbar{display:none}
-.top nav ul{display:flex;gap:22px;list-style:none;font-size:.88rem;white-space:nowrap;padding-bottom:2px}
+.top nav ul{display:flex;flex-wrap:wrap;gap:6px 18px;list-style:none;font-size:.88rem;padding-bottom:2px}
 .top nav a{text-decoration:none;opacity:.85}
 .top nav a:hover{opacity:1;color:var(--brass2)}
 .pill{display:inline-flex;align-items:center;gap:6px;border-radius:40px;padding:8px 15px;font-size:.85rem;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-family:inherit;white-space:nowrap}
@@ -271,9 +271,9 @@ footer a{color:#d9c08f}
 
   var dp,b=document.getElementById('inst');
   window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;});
-  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;});}});
+  if(b)b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;});}});
   window.addEventListener('appinstalled',function(){});
-  if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(function(){});}
+  
 })();
 </script>
 </body>
