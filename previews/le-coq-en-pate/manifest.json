@@ -1,0 +1,19 @@
+{
+  "name": "Le Coq en Pâte - Brasserie à Nantes",
+  "short_name": "Le Coq en Pâte",
+  "description": "Brasserie traditionnelle, 10 allée Duquesne, Nantes. Aperçu non officiel.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "lang": "fr",
+  "background_color": "#1b1210",
+  "theme_color": "#1b1210",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
