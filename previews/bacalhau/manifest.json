@@ -1,0 +1,20 @@
+{
+  "name": "Bacalhau Porto",
+  "short_name": "Bacalhau",
+  "description": "Restaurante Bacalhau, Porto",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "pt-PT",
+  "background_color": "#10243a",
+  "theme_color": "#10243a",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
