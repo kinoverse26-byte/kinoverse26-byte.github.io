@@ -1,0 +1,19 @@
+{
+  "name": "Trattoria Don Vito",
+  "short_name": "Don Vito",
+  "description": "Trattoria Don Vito, Avenida Vitacura, Las Condes, Santiago",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1c1411",
+  "theme_color": "#8c1c13",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
