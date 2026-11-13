@@ -1,0 +1,20 @@
+{
+  "name": "AMAGAKI - Japanese restaurant, Geneva",
+  "short_name": "AMAGAKI",
+  "description": "AMAGAKI, Japanese restaurant at 14 Rue Jean-Violette, Geneva.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#14110f",
+  "theme_color": "#14110f",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
