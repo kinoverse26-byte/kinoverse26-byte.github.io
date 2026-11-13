@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AMAGAKI · Japanese restaurant, 14 Rue Jean-Violette, Geneva</title>
+<meta name="description" content="AMAGAKI, Japanese restaurant at 14 Rue Jean-Violette in Geneva. Weekday lunch, dinner Monday to Saturday, open until 2 am on Friday and Saturday nights. Call +41 22 320 18 60 to book.">
+<meta name="theme-color" content="#16120f">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316120f'/%3E%3Ccircle cx='32' cy='35' r='17' fill='%23e07a3c'/%3E%3Cpath d='M32 18c-1-6 4-9 9-8-2 5-5 7-9 8z' fill='%237d9a5a'/%3E%3C/svg%3E">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="AMAGAKI · Japanese restaurant in Geneva">
+<meta property="og:description" content="Japanese cuisine at 14 Rue Jean-Violette, Geneva. Lunch, dinner and late nights until 2 am at the weekend. Call +41 22 320 18 60.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16120f;--ink2:#1f1915;--paper:#f7f1e7;--paper2:#efe6d7;
+  --kaki:#e07a3c;--kaki-dark:#a4461a;--leaf:#7d9a5a;
+  --text-soft:#cfc5b6;--text-dim:#5c5349;--line:rgba(224,122,60,.25)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;background:var(--ink);color:var(--paper);line-height:1.65;font-weight:300;font-size:16px;overflow-x:hidden}
+h1,h2,h3{font-family:'Shippori Mincho',Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-.01em}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--kaki);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--kaki);color:var(--ink);padding:10px 14px;z-index:100}
+.skip:focus{left:8px;top:8px}
+
+/* ribbon */
+.ribbon{background:var(--kaki);color:var(--ink);text-align:center;font-size:12.5px;padding:7px 12px;font-weight:500;letter-spacing:.02em}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:40;background:rgba(22,18,15,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.head-in{max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 5vw}
+.logo{font-family:'Shippori Mincho',serif;font-size:22px;font-weight:700;letter-spacing:.22em;text-decoration:none;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.logo .dot{width:12px;height:12px;border-radius:50%;background:var(--kaki);box-shadow:4px -4px 0 -2px var(--leaf);flex:none}
+.menu{display:none;list-style:none;gap:28px;font-size:14px;letter-spacing:.04em}
+.menu a{text-decoration:none;color:var(--text-soft);transition:color .25s}
+.menu a:hover{color:var(--kaki)}
+.head-cta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+@media(min-width:900px){.menu{display:flex}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;background:var(--kaki);color:var(--ink);font:500 14px/1.2 Inter,sans-serif;letter-spacing:.05em;border-radius:999px;border:1px solid var(--kaki);cursor:pointer;text-decoration:none;transition:background .3s,color .3s,transform .3s}
+.btn:hover{background:transparent;color:var(--kaki)}
+.btn.sm{padding:10px 18px;font-size:13px}
+.btn.ghost{background:transparent;color:var(--paper);border-color:rgba(247,241,231,.45)}
+.btn.ghost:hover{border-color:var(--kaki);color:var(--kaki)}
+.light .btn.ghost{color:var(--ink);border-color:rgba(22,18,15,.35)}
+.light .btn:not(.ghost):hover{color:var(--kaki-dark);border-color:var(--kaki-dark)}
+.btn svg{width:16px;height:16px;flex:none}
+#install{display:none}
+
+/* hero */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;padding:120px 5vw 72px;isolation:isolate;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(22,18,15,.35) 0%,rgba(22,18,15,.55) 45%,rgba(22,18,15,.94) 100%),linear-gradient(90deg,rgba(22,18,15,.75),rgba(22,18,15,0) 70%)}
+.hero-in{max-width:1200px;margin:0 auto;width:100%}
+.hero-copy{max-width:680px}
+.eyebrow{display:inline-block;color:var(--kaki);letter-spacing:.28em;font-size:12px;font-weight:500;text-transform:uppercase;margin-bottom:18px}
+.light .eyebrow{color:var(--kaki-dark)}
+.hero h1{font-size:clamp(40px,7.4vw,84px);margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--kaki)}
+.hero p.sub{font-size:clamp(16px,2.2vw,19px);color:#e9e0d1;margin-bottom:30px;max-width:580px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.status{display:inline-flex;align-items:center;gap:10px;margin-top:26px;font-size:14px;color:var(--text-soft)}
+.status:empty{display:none}
+.status .pip{width:9px;height:9px;border-radius:50%;background:#8a8178}
+.status.open .pip{background:#8fc56a;box-shadow:0 0 0 4px rgba(143,197,106,.2)}
+
+/* sections */
+section{padding:88px 6vw;scroll-margin-top:70px}
+@media(min-width:800px){section{padding:120px 5vw}}
+.wrap{max-width:1140px;margin:auto}
+h2{font-size:clamp(32px,5vw,52px);margin-bottom:18px}
+.lead{color:var(--text-soft);max-width:620px;margin-bottom:44px;font-size:17px}
+.light{background:var(--paper);color:var(--ink)}
+.light .lead{color:var(--text-dim)}
+.dim{color:var(--text-dim)}
+
+/* about */
+.about{display:grid;gap:44px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.about-img::after{content:"";position:absolute;right:-14px;bottom:-14px;width:46%;height:46%;border:1px solid var(--kaki-dark);border-radius:4px;z-index:-1}
+.about-img{isolation:isolate}
+.kanji{font-family:'Shippori Mincho',serif;font-size:15px;color:var(--kaki-dark);letter-spacing:.2em}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px;border-top:1px solid #e0d4c0;padding-top:26px}
+.facts strong{display:block;font-family:'Shippori Mincho',serif;font-size:26px;font-weight:600;color:var(--kaki-dark);line-height:1.2}
+.facts span{font-size:14px;color:var(--text-dim)}
+@media(min-width:860px){.about{grid-template-columns:1.05fr .95fr;gap:72px}}
+
+/* dining */
+.grid3{display:grid;gap:20px}
+@media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr)}}
+.card{position:relative;padding:34px 30px 30px;border:1px solid var(--line);border-radius:4px;background:var(--ink2);transition:transform .35s,border-color .35s}
+.card:hover{transform:translateY(-5px);border-color:var(--kaki)}
+.card .num{font-family:'Shippori Mincho',serif;color:var(--kaki);font-size:14px;letter-spacing:.2em}
+.card h3{font-size:30px;margin:10px 0 12px}
+.card p{color:var(--text-soft)}
+.card .when{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--paper);font-weight:400}
+.note{margin-top:30px;font-size:14px;color:var(--text-soft)}
+.note a{color:var(--kaki)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery figure{overflow:hidden;border-radius:4px;background:var(--paper2)}
+.gallery img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .7s}
+.gallery figure:hover img{transform:scale(1.06)}
+@media(min-width:760px){
+  .gallery{grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+  .gallery img{aspect-ratio:auto}
+  .gallery .big{grid-column:span 2;grid-row:span 2}
+  .gallery .wide{grid-column:span 2}
+}
+.credit-note{margin-top:18px;font-size:13px;color:var(--text-dim)}
+
+/* visit */
+.visit{display:grid;gap:44px}
+@media(min-width:860px){.visit{grid-template-columns:1fr 1.15fr;gap:64px;align-items:stretch}}
+.hours{width:100%;border-collapse:collapse;margin-top:8px}
+.hours th,.hours td{padding:14px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:400;vertical-align:top}
+.hours td{text-align:right;color:var(--kaki)}
+.hours tr.today th,.hours tr.today td{font-weight:600}
+.hours tr.today th::after{content:" · today";color:var(--text-soft);font-weight:300;font-size:13px}
+.addr{margin-top:28px;font-size:17px}
+.addr small{display:block;color:var(--text-soft);font-size:14px;margin-top:4px}
+.map{position:relative;min-height:360px;border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.05)}
+
+/* contact */
+.contact-grid{display:grid;gap:16px;margin-top:10px}
+@media(min-width:760px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.c-item{display:block;padding:28px 26px;background:#fff;border:1px solid #e3d8c4;border-radius:4px;text-decoration:none;transition:border-color .3s,transform .3s}
+a.c-item:hover{border-color:var(--kaki-dark);transform:translateY(-3px)}
+.c-item span{display:block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--kaki-dark);font-weight:500;margin-bottom:8px}
+.c-item strong{font-family:'Shippori Mincho',serif;font-weight:600;font-size:21px;word-break:break-word}
+.contact .actions{margin-top:34px}
+
+/* footer */
+footer{padding:56px 6vw 110px;font-size:13.5px;color:var(--text-soft);border-top:1px solid var(--line)}
+footer .wrap{display:grid;gap:22px}
+footer .logo{font-size:20px}
+footer a{color:var(--paper)}
+footer a:hover{color:var(--kaki)}
+@media(min-width:900px){footer{padding-bottom:56px}}
+
+/* sticky call bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;background:var(--ink);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+.sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 6px;font-weight:500;font-size:15px;text-decoration:none;color:var(--paper)}
+.sticky a.main{background:var(--kaki);color:var(--ink)}
+.sticky svg{width:18px;height:18px}
+@media(min-width:900px){.sticky{display:none}}
+
+/* reveal – only hides when JS is running */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  *{transition:none!important}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ribbon">Preview made for AMAGAKI by Kinoverse - not live yet</div>
+
+<header class="site-head">
+  <div class="head-in">
+    <a href="#top" class="logo" aria-label="AMAGAKI, back to top"><i class="dot" aria-hidden="true"></i>AMAGAKI</a>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#dining">Dining</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#visit">Hours &amp; map</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="head-cta">
+      <button class="btn sm ghost" id="install" type="button">Install the app</button>
+      <a class="btn sm" href="tel:+41223201860">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Call to book
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-label="Welcome">
+  <img src="img/hero.jpg?v=1" alt="A Japanese sushi dinner laid out on the table (illustrative photo)" fetchpriority="high">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">Japanese restaurant · Geneva</p>
+      <h1>Japanese cuisine on <em>Rue Jean&#8209;Violette</em>, from lunch to 2&nbsp;am.</h1>
+      <p class="sub">AMAGAKI welcomes you at number 14 for weekday lunches, dinner Monday to Saturday, and late tables until 2 am on Friday and Saturday nights.</p>
+      <div class="actions">
+        <a class="btn" href="tel:+41223201860">Book: +41 22 320 18 60</a>
+        <a class="btn ghost" href="#visit">Hours &amp; location</a>
+      </div>
+      <p class="status" id="status-hero" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="light">
+  <div class="wrap about">
+    <div class="reveal">
+      <p class="eyebrow">About AMAGAKI</p>
+      <h2>A Japanese table in the heart of Geneva</h2>
+      <p class="kanji" lang="ja">甘柿 · amagaki</p>
+      <p class="lead" style="margin:18px 0 16px">In Japanese, <em>amagaki</em> is the sweet persimmon. On Rue Jean-Violette, it is the name of a Japanese restaurant open for lunch on weekdays and for dinner six evenings a week.</p>
+      <p class="dim">Whether you drop by at noon or come for a late evening at the weekend, the simplest way to secure your table is a quick call. Menu, specialities and prices are available on request.</p>
+      <div class="facts">
+        <div><strong>6 evenings</strong><span>Dinner from 18:00, Monday to Saturday</span></div>
+        <div><strong>Until 02:00</strong><span>Late nights on Friday and Saturday</span></div>
+      </div>
+    </div>
+    <div class="about-img reveal">
+      <img src="img/g1.jpg?v=1" alt="A Japanese sushi dinner (illustrative photo)" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="dining">
+  <div class="wrap">
+    <p class="eyebrow">Dining</p>
+    <h2 class="reveal">Three moments at AMAGAKI</h2>
+    <p class="lead reveal">From a weekday lunch break to a Saturday night that runs late. The menu and prices are on request – call the restaurant for today's offer.</p>
+    <div class="grid3">
+      <article class="card reveal">
+        <span class="num">01 · 昼</span>
+        <h3>Lunch</h3>
+        <p>A Japanese lunch in Geneva, served on weekdays.</p>
+        <p class="when">Monday – Friday · 11:00 – 15:00</p>
+      </article>
+      <article class="card reveal">
+        <span class="num">02 · 夜</span>
+        <h3>Dinner</h3>
+        <p>Evening service six days a week, ideal for dinner with friends or family.</p>
+        <p class="when">Monday – Saturday · from 18:00</p>
+      </article>
+      <article class="card reveal">
+        <span class="num">03 · 深夜</span>
+        <h3>Late night</h3>
+        <p>At the weekend, the kitchen keeps its doors open long after most of the city has closed.</p>
+        <p class="when">Friday &amp; Saturday · until 02:00</p>
+      </article>
+    </div>
+    <p class="note reveal">Menu &amp; prices: on request · <a href="tel:+41223201860">+41 22 320 18 60</a> · <a href="mailto:contact@amagaki.ch">contact@amagaki.ch</a></p>
+  </div>
+</section>
+
+<section id="gallery" class="light">
+  <div class="wrap">
+    <p class="eyebrow">Gallery</p>
+    <h2 class="reveal">A taste of Japan</h2>
+    <p class="lead reveal">Illustrative photos of Japanese cuisine – AMAGAKI's own pictures will take their place here.</p>
+    <div class="gallery reveal">
+      <figure class="big"><img src="img/g3.jpg?v=1" alt="Tuna nigiri (illustrative photo)" loading="lazy"></figure>
+      <figure><img src="img/g4.jpg?v=1" alt="A sushi set of nigiri and maki (illustrative photo)" loading="lazy"></figure>
+      <figure><img src="img/g2.jpg?v=1" alt="Japanese dishes (illustrative photo)" loading="lazy"></figure>
+      <figure class="wide"><img src="img/g5.jpg?v=1" alt="A Japanese bento box (illustrative photo)" loading="lazy"></figure>
+      <figure class="wide"><img src="img/hero.jpg?v=1" alt="A Japanese sushi dinner (illustrative photo)" loading="lazy"></figure>
+      <figure class="wide"><img src="img/g1.jpg?v=1" alt="Sushi served for dinner (illustrative photo)" loading="lazy"></figure>
+    </div>
+    <p class="credit-note">Photos: Rawpixel, CC0 public domain – illustrative.</p>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap visit">
+    <div class="reveal">
+      <p class="eyebrow">Opening hours</p>
+      <h2>Find us at 14 Rue Jean-Violette</h2>
+      <table class="hours" aria-label="Opening hours">
+        <tbody>
+        <tr data-d="0"><th scope="row">Monday</th><td>11:00–15:00 · 18:00–23:00</td></tr>
+        <tr data-d="1"><th scope="row">Tuesday</th><td>11:00–15:00 · 18:00–23:00</td></tr>
+        <tr data-d="2"><th scope="row">Wednesday</th><td>11:00–15:00 · 18:00–23:00</td></tr>
+        <tr data-d="3"><th scope="row">Thursday</th><td>11:00–15:00 · 18:00–23:00</td></tr>
+        <tr data-d="4"><th scope="row">Friday</th><td>11:00–15:00 · 18:00–02:00</td></tr>
+        <tr data-d="5"><th scope="row">Saturday</th><td>18:00–02:00</td></tr>
+        <tr data-d="6"><th scope="row">Sunday</th><td>Closed – to confirm</td></tr>
+        </tbody>
+      </table>
+      <p class="status" id="status-visit" aria-live="polite" style="margin-top:20px"></p>
+      <p class="addr">14 Rue Jean-Violette<br>1205 Genève, Switzerland<small>Hours as last listed – please call to confirm, especially on public holidays.</small></p>
+      <div class="actions" style="margin-top:24px">
+        <a class="btn" href="https://www.openstreetmap.org/directions?to=46.1940485%2C6.1448309" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn ghost" href="tel:+41223201860">Call</a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe title="Map showing AMAGAKI, 14 Rue Jean-Violette, Geneva" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=6.1408%2C46.1915%2C6.1488%2C46.1965&amp;layer=mapnik&amp;marker=46.1940485%2C6.1448309"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="light">
+  <div class="wrap contact">
+    <p class="eyebrow">Reservations</p>
+    <h2 class="reveal">Book your table</h2>
+    <p class="lead reveal">Call the restaurant during opening hours, or send an email – we look forward to welcoming you on Rue Jean-Violette.</p>
+    <div class="contact-grid reveal">
+      <a class="c-item" href="tel:+41223201860"><span>Phone</span><strong>+41 22 320 18 60</strong></a>
+      <a class="c-item" href="mailto:contact@amagaki.ch"><span>Email</span><strong>contact@amagaki.ch</strong></a>
+      <a class="c-item" href="https://www.instagram.com/amagaki.ch/" target="_blank" rel="noopener"><span>Instagram</span><strong>@amagaki.ch</strong></a>
+    </div>
+    <div class="actions reveal">
+      <a class="btn" href="tel:+41223201860">Call now</a>
+      <a class="btn ghost" href="mailto:contact@amagaki.ch?subject=Table%20reservation">Write to us</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="logo"><i class="dot" aria-hidden="true"></i>AMAGAKI</a>
+    <p>Japanese restaurant · 14 Rue Jean-Violette, 1205 Genève · <a href="tel:+41223201860">+41 22 320 18 60</a> · <a href="mailto:contact@amagaki.ch">contact@amagaki.ch</a></p>
+    <p>Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>. Photos: Rawpixel, CC0 / public domain, illustrative.</p>
+    <p>© <span id="y">2026</span> AMAGAKI · Preview made for AMAGAKI by Kinoverse - not live yet.</p>
+  </div>
+</footer>
+
+<nav class="sticky" aria-label="Quick contact">
+  <a class="main" href="tel:+41223201860"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a href="mailto:contact@amagaki.ch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Email</a>
+  <a href="https://www.openstreetmap.org/directions?to=46.1940485%2C6.1448309" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Directions</a>
+</nav>
+
+<script>
+(function(){
+  document.getElementById('y').textContent=new Date().getFullYear();
+
+  // Reveal on scroll (content stays visible without JS)
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  // Open / closed indicator, Geneva time, based on the listed hours
+  try{
+    var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Zurich',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+    var p={};parts.forEach(function(x){p[x.type]=x.value});
+    var d=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].indexOf(p.weekday);
+    var t=d*1440+(parseInt(p.hour,10)%24)*60+parseInt(p.minute,10);
+    var D=1440,iv=[];
+    for(var i=0;i<4;i++){iv.push([i*D+660,i*D+900],[i*D+1080,i*D+1380])}
+    iv.push([4*D+660,4*D+900],[4*D+1080,5*D+120],[5*D+1080,6*D+120]);
+    var open=iv.some(function(r){return t>=r[0]&&t<r[1]});
+    var row=document.querySelector('.hours tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+    ['status-hero','status-visit'].forEach(function(id){
+      var el=document.getElementById(id);if(!el)return;
+      el.className='status'+(open?' open':'');
+      el.innerHTML='<i class="pip" aria-hidden="true"></i>'+(open?'Open now in Geneva':'Closed right now')+' · per listed hours';
+    });
+  }catch(e){}
+
+  // Install the app (Android / Chromium only)
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none'})}});
+  window.addEventListener('appinstalled',function(){b.style.display='none'});
+  if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(function(){})}
+})();
+</script>
+</body>
+</html>
