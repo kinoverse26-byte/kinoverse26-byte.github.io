@@ -1,15 +1,16 @@
 {
   "name": "Domo Restobar",
   "short_name": "Domo",
-  "description": "Restobar en Providencia, Santiago",
+  "description": "Domo Restobar, Santa Beatriz 207, Providencia, Santiago",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#14110f",
   "theme_color": "#14110f",
+  "lang": "es",
   "icons": [
     {
-      "src": "icon.svg",
+      "src": "img/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
