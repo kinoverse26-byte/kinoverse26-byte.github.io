@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La Boca · Restaurant on Spyrou Kyprianou Avenue, Limassol</title>
+<meta name="description" content="La Boca, a restaurant at 101 Leoforos Spyrou Kyprianou, Limassol, Cyprus. Call 25 892500 to book a table or to ask about the menu and opening hours.">
+<meta name="theme-color" content="#6e1b27">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="La Boca · Restaurant in Limassol">
+<meta property="og:description" content="101 Leoforos Spyrou Kyprianou, Limassol. Call 25 892500 to reserve your table.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wine:#6e1b27;--wine-d:#521220;--ink:#1c1413;--ink2:#2a1e1c;
+  --cream:#f8f2e9;--sand:#efe5d6;--gold:#c9a25e;--gold-l:#e2c48d;--muted:#6b5b55;
+  --r:18px;--shadow:0 24px 60px -20px rgba(28,20,19,.35)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:1rem;padding-bottom:64px}
+@media(min-width:760px){body{padding-bottom:0}}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.005em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 14px;z-index:99}
+.skip:focus{left:10px;top:10px}
+
+/* ribbon */
+.ribbon{background:#0f0a09;color:#d9cfc4;font-size:.74rem;letter-spacing:.03em;text-align:center;padding:7px 12px}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(248,242,233,.95);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #e6d9c6}
+.bar{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 5vw}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:700;color:var(--wine);text-decoration:none;letter-spacing:.02em;line-height:1}
+.logo small{display:block;font-family:Inter,sans-serif;font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-top:4px}
+.menu{display:none;gap:26px;list-style:none;font-size:.88rem;font-weight:500}
+.menu a{text-decoration:none;color:var(--ink);opacity:.85}
+.menu a:hover{color:var(--wine);opacity:1}
+@media(min-width:900px){.menu{display:flex}}
+.acts{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--wine);color:#fff;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;border:1.5px solid transparent;cursor:pointer;font-family:inherit;transition:background .25s,transform .25s,border-color .25s;white-space:nowrap}
+.btn:hover{background:var(--wine-d);transform:translateY(-2px)}
+.btn.sm{padding:10px 18px;font-size:.86rem}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.gold:hover{background:var(--gold-l)}
+.btn.ghost{background:transparent;border-color:currentColor;color:inherit}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.line{background:transparent;color:var(--wine);border-color:var(--wine)}
+.btn.line:hover{background:var(--wine);color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+#install{display:none}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 110px);min-height:560px;display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04);animation:drift 18s ease-out forwards}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(18,8,8,.25) 0%,rgba(18,8,8,.45) 40%,rgba(18,8,8,.88) 100%)}
+@media(min-width:900px){.hero{align-items:center}.hero::after{background:linear-gradient(90deg,rgba(18,8,8,.86) 0%,rgba(18,8,8,.55) 45%,rgba(18,8,8,.15) 100%)}}
+@keyframes drift{to{transform:scale(1)}}
+.hero-in{width:100%;max-width:1180px;margin:auto;padding:80px 6vw 60px}
+.hero-in>div{max-width:660px}
+.kicker{display:inline-flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.24em;font-size:.72rem;font-weight:600;color:var(--gold-l);margin-bottom:18px}
+.kicker::before{content:"";width:28px;height:1px;background:currentColor}
+.hero h1{font-size:clamp(2.6rem,9vw,5.4rem);font-weight:600;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--gold-l);font-weight:500}
+.hero p.lead{font-size:clamp(1.02rem,2.6vw,1.2rem);font-weight:300;max-width:520px;margin-bottom:30px;color:#f1e7da}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero .addr{margin-top:34px;font-size:.85rem;color:#e5d8c8;display:flex;align-items:center;gap:10px}
+.hero .addr svg{width:16px;height:16px;color:var(--gold-l)}
+
+/* sections */
+section{padding:96px 6vw;scroll-margin-top:70px}
+@media(max-width:760px){section{padding:68px 6vw}}
+.wrap{max-width:1180px;margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.24em;font-size:.72rem;color:#9a7533;font-weight:600;margin-bottom:12px}
+h2{font-size:clamp(2.1rem,5vw,3.4rem);color:var(--wine);margin-bottom:20px}
+.lede{font-size:1.08rem;color:var(--muted);max-width:620px}
+.dark{background:var(--ink);color:#efe4d5}
+.dark h2{color:var(--gold-l)}
+.dark .eyebrow{color:var(--gold)}
+.dark .lede{color:#c9baa9}
+
+/* about */
+.split{display:grid;gap:48px;align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1.05fr .95fr;gap:80px}}
+.about-txt p+p{margin-top:16px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:32px}
+.fact{background:#fff;border:1px solid #eadfcf;border-radius:14px;padding:16px 18px}
+.fact b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--wine);line-height:1.2}
+.fact span{font-size:.82rem;color:var(--muted)}
+.frame{position:relative}
+.frame img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:var(--shadow)}
+.frame::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--gold);border-radius:var(--r);z-index:-1}
+.frame{isolation:isolate}
+.cap{font-size:.75rem;color:var(--muted);margin-top:12px}
+
+/* services */
+.cards{display:grid;gap:18px;margin-top:44px}
+@media(min-width:700px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1050px){.cards{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--ink2);border:1px solid #3a2c28;border-radius:var(--r);padding:30px 26px;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.card svg{width:34px;height:34px;color:var(--gold);margin-bottom:18px}
+.card h3{font-size:1.6rem;color:#f6ecdd;margin-bottom:8px}
+.card p{font-size:.94rem;color:#c9baa9}
+.card a{display:inline-block;margin-top:14px;font-size:.86rem;font-weight:600;color:var(--gold-l);text-decoration:none;border-bottom:1px solid rgba(226,196,141,.4)}
+.card a:hover{border-color:var(--gold-l)}
+
+/* gallery */
+.gal{display:grid;gap:16px;margin-top:40px}
+@media(min-width:760px){.gal{grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr}}
+.gal figure{position:relative;overflow:hidden;border-radius:var(--r);background:var(--sand)}
+.gal img{width:100%;height:100%;min-height:260px;object-fit:cover;transition:transform .8s ease}
+.gal figure:hover img{transform:scale(1.04)}
+@media(min-width:760px){.gal .big{grid-row:span 2}.gal .big img{min-height:540px}}
+.gal figcaption{position:absolute;left:14px;bottom:14px;background:rgba(28,20,19,.72);color:#f3e9da;font-size:.78rem;padding:6px 12px;border-radius:999px}
+.note-tile{display:flex;flex-direction:column;justify-content:center;padding:32px;background:var(--wine);color:#f8ecdf;border-radius:var(--r)}
+.note-tile h3{font-size:1.8rem;margin-bottom:10px;color:#fff}
+.note-tile p{font-size:.95rem;color:#ecd9cf;margin-bottom:18px}
+.note-tile .btn{align-self:flex-start}
+
+/* visit */
+.visit{display:grid;gap:40px}
+@media(min-width:900px){.visit{grid-template-columns:.9fr 1.1fr;gap:64px;align-items:stretch}}
+.info{list-style:none;margin:26px 0 30px;display:grid;gap:18px}
+.info li{display:flex;gap:16px;align-items:flex-start;padding-bottom:18px;border-bottom:1px solid #3a2c28}
+.info svg{width:22px;height:22px;color:var(--gold);flex:none;margin-top:3px}
+.info b{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);font-weight:600;margin-bottom:2px}
+.info a{color:#f6ecdd;text-decoration:none;border-bottom:1px solid rgba(246,236,221,.3)}
+.info a:hover{border-color:var(--gold-l)}
+.map{border-radius:var(--r);overflow:hidden;min-height:360px;box-shadow:var(--shadow);background:#2a1e1c}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block;filter:grayscale(.25) contrast(1.05)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* contact */
+.contact{text-align:center;background:radial-gradient(ellipse at top,#fff 0%,var(--cream) 60%)}
+.contact .wrap{max-width:720px}
+.contact h2{font-size:clamp(2.4rem,6vw,4rem)}
+.phone-big{display:inline-block;font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,8vw,3.6rem);font-weight:600;color:var(--ink);text-decoration:none;margin:10px 0 26px;letter-spacing:.02em}
+.phone-big:hover{color:var(--wine)}
+.contact .btns{justify-content:center}
+.small{font-size:.86rem;color:var(--muted);margin-top:26px}
+
+/* footer */
+footer{background:#120c0b;color:#b7a698;padding:56px 6vw 40px;font-size:.86rem}
+footer .wrap{display:grid;gap:28px}
+@media(min-width:760px){footer .wrap{grid-template-columns:1.2fr 1fr 1fr}}
+footer .logo{color:var(--gold-l)}
+footer h4{font-family:Inter,sans-serif;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#e2d3c0;margin-bottom:10px;font-weight:600}
+footer a{color:#e2d3c0;text-decoration:none}
+footer a:hover{color:var(--gold-l)}
+.legal{max-width:1180px;margin:36px auto 0;padding-top:22px;border-top:1px solid #2a1f1c;font-size:.76rem;color:#8f7f73;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+
+/* sticky mobile bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;box-shadow:0 -6px 24px rgba(0,0,0,.22);padding-bottom:env(safe-area-inset-bottom);background:var(--wine)}
+.sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:60px;font-weight:600;text-decoration:none;color:#fff;background:var(--wine);font-size:.95rem}
+.sticky a+a{background:var(--ink);color:var(--gold-l)}
+.sticky svg{width:18px;height:18px}
+@media(min-width:760px){.sticky{display:none}}
+
+/* reveal – content stays visible without JS */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ribbon">Preview made for La Boca by Kinoverse – not live yet</div>
+
+<header class="top">
+  <div class="bar">
+    <a class="logo" href="#top" aria-label="La Boca – back to top">La Boca<small>Limassol · Cyprus</small></a>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">At La Boca</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#visit">Hours &amp; map</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="acts">
+      <button class="btn sm line" id="install" type="button">Install the app</button>
+      <a class="btn sm" href="tel:+35725892500">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Book a table
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <img src="img/hero.jpg?v=1" alt="A plated pasta dish" fetchpriority="high">
+  <div class="hero-in"><div>
+    <p class="kicker">Restaurant · Limassol</p>
+    <h1>Your table at <em>101 Spyrou Kyprianou</em>, Limassol</h1>
+    <p class="lead">La Boca is on Leoforos Spyrou Kyprianou, one of Limassol's main avenues. Call us, tell us when you're coming, and we'll have a table ready.</p>
+    <div class="cta">
+      <a class="btn gold" href="tel:+35725892500">Call 25 892500</a>
+      <a class="btn ghost" href="#visit">Find us</a>
+    </div>
+    <p class="addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>101 Leoforos Spyrou Kyprianou, Limassol</p>
+  </div></div>
+</div>
+
+<section id="about">
+  <div class="wrap split">
+    <div class="about-txt reveal">
+      <p class="eyebrow">Welcome to La Boca</p>
+      <h2>A Limassol restaurant, one phone call away</h2>
+      <p class="lede">You'll find La Boca at number 101 on Leoforos Spyrou Kyprianou, in Limassol.</p>
+      <p>Whether you're planning a quiet meal for two or a table for the whole family, the simplest way to reach us is by phone. We'll answer your questions about the menu, check availability and reserve your table.</p>
+      <p>Today's menu, prices and opening hours are shared on request – just give us a call.</p>
+      <div class="facts">
+        <div class="fact"><b>No. 101</b><span>Leoforos Spyrou Kyprianou</span></div>
+        <div class="fact"><b>25 892500</b><span>Bookings &amp; questions</span></div>
+        <div class="fact"><b>Limassol</b><span>Cyprus</span></div>
+      </div>
+    </div>
+    <div class="frame reveal">
+      <img src="img/pasta1.jpg?v=1" alt="A bowl of pasta with green herbs" loading="lazy" width="960" height="1200">
+      <p class="cap">Illustrative photo</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="dark">
+  <div class="wrap">
+    <p class="eyebrow">At La Boca</p>
+    <h2>How we can welcome you</h2>
+    <p class="lede">Tell us what you have in mind – we'll confirm the details with you by phone.</p>
+    <div class="cards">
+      <article class="card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 11h18M5 11v9M19 11v9M8 4h8l2 7H6z"/></svg>
+        <h3>Table reservations</h3>
+        <p>Call ahead and we'll hold a table for you at the time you choose.</p>
+        <a href="tel:+35725892500">Call to book</a>
+      </article>
+      <article class="card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h5"/></svg>
+        <h3>The menu</h3>
+        <p>Dishes and prices are shared on request – ask us what's on today.</p>
+        <a href="tel:+35725892500">Ask about the menu</a>
+      </article>
+      <article class="card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14.5 14.3c3.3-.6 6.5 1.6 6.5 5.7"/></svg>
+        <h3>Groups &amp; occasions</h3>
+        <p>Coming with a larger party or celebrating something? Call us to talk it through.</p>
+        <a href="tel:+35725892500">Talk to us</a>
+      </article>
+      <article class="card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <h3>Easy to find</h3>
+        <p>Right on Leoforos Spyrou Kyprianou, at number 101, in Limassol.</p>
+        <a href="#visit">See the map</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <p class="eyebrow">Gallery</p>
+    <h2>A taste of the table</h2>
+    <p class="lede">A first look – La Boca's own photos of the dining room and dishes will appear here.</p>
+    <div class="gal reveal">
+      <figure class="big">
+        <img src="img/hero.jpg?v=1" alt="A plated pasta dish, seen close up" loading="lazy">
+        <figcaption>Illustrative photo</figcaption>
+      </figure>
+      <figure>
+        <img src="img/pasta1.jpg?v=1" alt="Pasta with green herbs" loading="lazy">
+        <figcaption>Illustrative photo</figcaption>
+      </figure>
+      <div class="note-tile">
+        <h3>Hungry already?</h3>
+        <p>Call us to hear what's on the menu and to reserve your table.</p>
+        <a class="btn gold" href="tel:+35725892500">25 892500</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="dark">
+  <div class="wrap visit">
+    <div class="reveal">
+      <p class="eyebrow">Hours &amp; map</p>
+      <h2>Come and see us</h2>
+      <ul class="info">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div><b>Address</b>101 Leoforos Spyrou Kyprianou<br>Limassol, Cyprus</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><b>Opening hours</b>To confirm – please call before your visit</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <div><b>Phone</b><a href="tel:+35725892500">+357 25 892500</a></div>
+        </li>
+      </ul>
+      <div class="btns">
+        <a class="btn gold" href="tel:+35725892500">Call to book</a>
+        <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=101+Leoforos+Spyrou+Kyprianou+Limassol+Cyprus" target="_blank" rel="noopener">Directions</a>
+        <a class="btn ghost" href="https://www.openstreetmap.org/node/11064391666" target="_blank" rel="noopener">OpenStreetMap</a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe title="Map showing 101 Leoforos Spyrou Kyprianou, Limassol" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=101%20Leoforos%20Spyrou%20Kyprianou%2C%20Limassol%2C%20Cyprus&amp;z=16&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap reveal">
+    <p class="eyebrow">Reservations</p>
+    <h2>Book your table at La Boca</h2>
+    <p class="lede" style="margin:0 auto">One call is all it takes – for a reservation, the menu or today's opening hours.</p>
+    <a class="phone-big" href="tel:+35725892500">25 892500</a>
+    <div class="btns">
+      <a class="btn" href="tel:+35725892500">Call now</a>
+      <a class="btn line" href="https://www.google.com/maps/dir/?api=1&amp;destination=101+Leoforos+Spyrou+Kyprianou+Limassol+Cyprus" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <p class="small">101 Leoforos Spyrou Kyprianou, Limassol, Cyprus</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#top">La Boca</a>
+      <p style="margin-top:12px;max-width:320px">Restaurant on Leoforos Spyrou Kyprianou, Limassol, Cyprus.</p>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <p>101 Leoforos Spyrou Kyprianou<br>Limassol, Cyprus</p>
+      <p style="margin-top:6px">Hours: to confirm by phone</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:+35725892500">+357 25 892500</a></p>
+      <p style="margin-top:6px"><a href="#visit">Map &amp; directions</a></p>
+    </div>
+  </div>
+  <div class="legal">
+    <span>© La Boca, Limassol</span>
+    <span>Photos: illustrative, CC0 public domain (via Rawpixel) · Site preview by Kinoverse</span>
+  </div>
+</footer>
+
+<nav class="sticky" aria-label="Quick contact">
+  <a href="tel:+35725892500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=101+Leoforos+Spyrou+Kyprianou+Limassol+Cyprus" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Directions</a>
+</nav>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  function showAll(){els.forEach(function(el){el.classList.add('in')})}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(showAll,4000);
+  }else{showAll()}
+
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none'})});
+  window.addEventListener('appinstalled',function(){b.style.display='none'});
+})();
+</script>
+</body>
+</html>
