@@ -1,0 +1,19 @@
+{
+  "name": "Crêperie Sainte-Croix",
+  "short_name": "Sainte-Croix",
+  "description": "Crêperie à Nantes, 11 rue Sainte Croix. Crêpes et galettes.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf5ea",
+  "theme_color": "#7a2e1d",
+  "icons": [
+    {
+      "src": "img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
