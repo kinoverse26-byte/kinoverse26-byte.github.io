@@ -1,0 +1,19 @@
+{
+  "name": "Brasserie du Gourmet",
+  "short_name": "Gourmet",
+  "description": "Brasserie du Gourmet, restaurant à Bruxelles",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "lang": "fr",
+  "background_color": "#1a1210",
+  "theme_color": "#1a1210",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
