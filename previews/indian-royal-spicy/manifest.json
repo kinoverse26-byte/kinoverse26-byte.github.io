@@ -1,0 +1,19 @@
+{
+  "name": "Indian Royal Spicy",
+  "short_name": "Royal Spicy",
+  "description": "Restaurant indien à Bruxelles - Indian Royal Spicy",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1a0f0a",
+  "theme_color": "#8c1c13",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
