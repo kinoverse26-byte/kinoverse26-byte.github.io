@@ -1,0 +1,19 @@
+{
+  "name": "Barapom Nantes - Bouffay",
+  "short_name": "Barapom",
+  "description": "Crêpes et galettes artisanales à Nantes, 17 rue de la Juiverie",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf4e8",
+  "theme_color": "#1f2a44",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='96' fill='%231f2a44'/%3E%3Ctext x='256' y='320' font-size='220' font-family='Georgia,serif' font-weight='700' fill='%23fbf4e8' text-anchor='middle'%3EBP%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
