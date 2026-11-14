@@ -1,0 +1,18 @@
+{
+  "name": "Bedouin Restaurant",
+  "short_name": "Bedouin",
+  "description": "Middle Eastern restaurant on Langata Road, Karen, Nairobi.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1410",
+  "theme_color": "#b8793a",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
