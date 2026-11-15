@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#1b1410"/>
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#d99a3d" stroke-width="12"/>
+  <text x="256" y="300" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="190" font-weight="700" fill="#d99a3d">SP</text>
+  <text x="256" y="372" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" letter-spacing="10" fill="#f3e6d0">PUB</text>
+</svg>
