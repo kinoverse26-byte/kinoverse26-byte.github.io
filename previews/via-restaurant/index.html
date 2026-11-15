@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Via Restaurant · Strada Inocențiu Micu Klein 6, Cluj-Napoca</title>
+<meta name="description" content="Via Restaurant, pe Strada Inocențiu Micu Klein 6 din Cluj-Napoca: meniu, preparate speciale, vinuri și evenimente. Rezervă o masă online.">
+<meta name="theme-color" content="#5a121c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Via Restaurant">
+<meta property="og:title" content="Via Restaurant · Cluj-Napoca">
+<meta property="og:description" content="Meniu, preparate speciale, vinuri și evenimente pe Strada Inocențiu Micu Klein 6, Cluj-Napoca.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wine:#7a1f2b;--wine2:#5a121c;--wine3:#3d0b13;
+  --gold:#c8a15a;--gold-d:#7d5f26;
+  --ink:#1d1a19;--cream:#faf6f0;--sand:#f1e9de;--muted:#5f5652;
+  --r:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:16px;padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;line-height:1.12}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 14px;z-index:100}
+.skip:focus{left:10px;top:10px}
+
+/* ribbon */
+.ribbon{background:#111;color:#e6e0dc;font-size:12.5px;text-align:center;padding:7px 12px;letter-spacing:.2px;line-height:1.4}
+.ribbon span{color:var(--gold)}
+
+/* header */
+.hd{position:sticky;top:0;z-index:40;background:rgba(61,11,19,.94);backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filter:saturate(140%) blur(10px);color:#fff;border-bottom:1px solid rgba(200,161,90,.25)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;min-height:64px;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'Playfair Display',Georgia,serif;font-size:22px;letter-spacing:.5px;color:#fff;text-decoration:none;white-space:nowrap}
+.logo small{display:block;font-family:Inter,sans-serif;font-size:10.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-top:-2px}
+nav.main{display:none;gap:26px}
+nav.main a{color:#f1e6e2;text-decoration:none;font-size:14px;letter-spacing:.3px;padding:6px 0;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+nav.main a:hover{color:#fff;border-color:var(--gold)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn-sm{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--ink);text-decoration:none;font-weight:600;font-size:14px;padding:9px 16px;border-radius:40px;border:1px solid var(--gold);cursor:pointer;font-family:inherit;white-space:nowrap}
+.btn-sm.line{background:transparent;color:var(--gold)}
+#install[hidden]{display:none}
+@media(min-width:960px){nav.main{display:flex}}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 94px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04);animation:slow 18s ease-out forwards}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,6,9,.35) 0%,rgba(20,6,9,.55) 45%,rgba(30,6,11,.9) 100%)}
+@keyframes slow{to{transform:scale(1)}}
+.hero .wrap{padding-top:90px;padding-bottom:70px;width:100%}
+.eyebrow{display:inline-block;color:var(--gold-d);letter-spacing:3.5px;font-size:12px;font-weight:600;text-transform:uppercase;margin-bottom:14px}
+.hero .eyebrow,.dark .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(38px,8.4vw,86px);max-width:880px;margin-bottom:20px;letter-spacing:-.5px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{font-size:clamp(16px,2.3vw,20px);max-width:560px;font-weight:300;margin-bottom:32px;color:#f3ebe7}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:var(--ink);padding:15px 28px;border-radius:40px;text-decoration:none;font-weight:600;border:1px solid var(--gold);cursor:pointer;font-size:15.5px;font-family:inherit;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.28)}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.8);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.wine{background:var(--wine);border-color:var(--wine);color:#fff}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:38px;font-size:14px;color:#e8dcd6}
+.hero-meta span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);margin-right:9px;vertical-align:middle}
+
+/* sections */
+section{padding:clamp(70px,10vw,120px) 0}
+h2{font-size:clamp(32px,5.2vw,50px);margin-bottom:18px;color:var(--wine)}
+.lead{color:var(--muted);max-width:640px;margin-bottom:42px;font-size:17px}
+.dark{background:var(--wine2);color:#f3e9e4}
+.dark h2{color:#fff}
+.dark .lead{color:#e3d4ce}
+.sand{background:var(--sand)}
+
+/* about */
+.about{display:grid;gap:46px;align-items:center}
+.about figure{position:relative}
+.about figure img{width:100%;height:320px;object-fit:cover;border-radius:var(--r)}
+.about figure::before{content:"";position:absolute;inset:18px -14px -14px 18px;border:1px solid var(--gold);border-radius:var(--r);z-index:-1}
+.facts{display:grid;gap:14px;margin-top:30px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.fact{border-left:2px solid var(--gold);padding:4px 0 4px 14px}
+.fact b{display:block;font-family:'Playfair Display',serif;font-size:20px;font-weight:500;color:var(--wine)}
+.fact span{font-size:14px;color:var(--muted)}
+@media(min-width:860px){.about{grid-template-columns:1.05fr 1fr}.about figure img{height:480px}}
+
+/* menu cards */
+.cards{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;color:var(--ink);padding:32px 26px 28px;border-radius:var(--r);border-top:3px solid var(--gold);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(0,0,0,.28)}
+.card .num{font-family:'Playfair Display',serif;color:var(--gold-d);font-size:14px;letter-spacing:2px}
+.card h3{font-size:27px;color:var(--wine);margin:6px 0 10px}
+.card p{font-size:15px;color:var(--muted);flex:1}
+.card .tag{display:block;margin-top:18px;font-size:12.5px;color:var(--wine);font-weight:600;text-transform:uppercase;letter-spacing:1.2px}
+
+/* gallery */
+.gallery{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.gallery a{display:block;overflow:hidden;border-radius:var(--r);position:relative}
+.gallery img{width:100%;height:160px;object-fit:cover;transition:transform .6s}
+.gallery a:hover img{transform:scale(1.05)}
+.gallery a:first-child{grid-column:span 2}
+.gallery a:first-child img{height:240px}
+.note{font-size:13.5px;color:var(--muted);margin-top:16px;font-style:italic}
+@media(min-width:760px){
+  .gallery{grid-template-columns:repeat(4,1fr);grid-auto-rows:220px}
+  .gallery img,.gallery a:first-child img{height:100%}
+  .gallery a:first-child{grid-column:span 2;grid-row:span 2}
+  .gallery a:nth-child(4){grid-column:span 2}
+}
+.lb{position:fixed;inset:0;background:rgba(10,4,5,.92);display:none;align-items:center;justify-content:center;z-index:90;padding:20px}
+.lb.open{display:flex}
+.lb img{max-height:86vh;max-width:100%;border-radius:6px}
+.lb button{position:absolute;top:14px;right:14px;background:var(--gold);border:0;border-radius:50%;width:44px;height:44px;font-size:22px;cursor:pointer;color:var(--ink)}
+
+/* events */
+.events{display:grid;gap:34px;align-items:center}
+.events ul{list-style:none;display:grid;gap:12px}
+.events li{padding:16px 18px;border:1px solid rgba(200,161,90,.4);border-radius:var(--r);color:#f3e9e4}
+.events li b{color:var(--gold);font-weight:600;display:block}
+@media(min-width:860px){.events{grid-template-columns:1.1fr 1fr}}
+
+/* booking */
+.book{display:grid;gap:40px}
+@media(min-width:900px){.book{grid-template-columns:1fr 1.1fr;align-items:start}}
+form{display:grid;gap:14px;background:#fff;padding:26px;border-radius:14px;box-shadow:0 14px 40px rgba(60,20,25,.08)}
+label{font-size:13.5px;font-weight:600;color:var(--ink);display:grid;gap:6px}
+input,select,textarea{font:inherit;font-weight:400;padding:13px 14px;border-radius:8px;border:1px solid #cfc3b9;background:#fffdfa;width:100%;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--wine);box-shadow:0 0 0 3px rgba(122,31,43,.15)}
+.row{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+#msg{color:var(--wine);font-weight:600;display:none;background:var(--sand);padding:12px 14px;border-radius:8px}
+.small{font-size:13px;color:var(--muted)}
+
+/* hours + map */
+.info{display:grid;gap:36px}
+@media(min-width:860px){.info{grid-template-columns:1fr 1.3fr;align-items:stretch}}
+.panel{background:#fff;border-radius:14px;padding:30px 26px}
+.panel dl dt{font-weight:600;color:var(--wine);margin-top:18px;font-size:14px;text-transform:uppercase;letter-spacing:1px}
+.panel dl dt:first-child{margin-top:0}
+.panel dd{color:var(--muted)}
+.map{border-radius:14px;overflow:hidden;min-height:340px;background:#e8dfd5}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+
+/* contact */
+.contact{text-align:center}
+.contact .lead{margin-left:auto;margin-right:auto}
+.contact .ctas{justify-content:center}
+
+footer{background:#161111;color:#bfb6b2;padding:46px 0 40px;font-size:14px}
+footer .wrap{display:grid;gap:14px}
+footer .logo{font-size:24px}
+footer a{color:#e6d6b5}
+footer .credits{font-size:12.5px;color:#9d938f}
+
+/* sticky mobile bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--wine3);padding:10px 12px calc(10px + env(safe-area-inset-bottom));display:flex;gap:10px;border-top:1px solid rgba(200,161,90,.35)}
+.sticky a{flex:1;text-align:center;background:var(--gold);color:var(--ink);padding:13px 8px;border-radius:30px;text-decoration:none;font-weight:600;font-size:15px}
+.sticky a.o{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+@media(min-width:960px){.sticky{display:none}body{padding-bottom:0}}
+
+/* reveal: only hides when JS is running */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .hero>img{animation:none;transform:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#continut">Sari la conținut</a>
+<div class="ribbon">Preview made for <span>Via Restaurant</span> by Kinoverse - not live yet &middot; Previzualizare realizat&#259; de Kinoverse, &#238;nc&#259; nepublicat&#259;</div>
+
+<header class="hd" id="hd">
+  <div class="wrap bar">
+    <a class="logo" href="#top">Via Restaurant<small>Cluj-Napoca</small></a>
+    <nav class="main" aria-label="Navigare principală">
+      <a href="#despre">Despre</a><a href="#meniu">Meniu</a><a href="#galerie">Galerie</a><a href="#evenimente">Evenimente</a><a href="#program">Program</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="actions">
+      <button class="btn-sm line" id="install" type="button" hidden>Instalează aplicația</button>
+      <a class="btn-sm" href="#rezervari">Rezervă</a>
+    </div>
+  </div>
+</header>
+
+<main id="continut">
+<section class="hero" id="top" style="padding:0">
+  <img src="img/hero.jpg?v=1" alt="Sală de restaurant modernă, cu mese pregătite (fotografie de prezentare)" fetchpriority="high">
+  <div class="wrap">
+    <span class="eyebrow">Strada Inocențiu Micu Klein 6 · Cluj-Napoca</span>
+    <h1>O masă la Via, pe <em>Inocențiu Micu Klein</em>.</h1>
+    <p>Meniul casei, preparatele speciale și vinurile Via Restaurant, într-un singur loc din Cluj-Napoca. Rezervă-ți masa în câteva secunde.</p>
+    <div class="ctas">
+      <a class="btn" href="#rezervari">Rezervă o masă</a>
+      <a class="btn ghost" href="#meniu">Vezi meniul</a>
+    </div>
+    <div class="hero-meta"><span>Meniu</span><span>Special</span><span>Vin</span><span>Evenimente</span></div>
+  </div>
+</section>
+
+<section id="despre">
+  <div class="wrap about">
+    <div class="rv">
+      <span class="eyebrow">Despre noi</span>
+      <h2>Bun venit la Via</h2>
+      <p class="lead" style="margin-bottom:0">Via Restaurant te așteaptă pe Strada Inocențiu Micu Klein 6, în Cluj-Napoca. La noi găsești meniul casei, propuneri speciale, o listă de vinuri și spațiu pentru evenimentele tale. Povestea completă a restaurantului: de confirmat cu echipa Via.</p>
+      <div class="facts">
+        <div class="fact"><b>Meniu</b><span>Preparatele casei</span></div>
+        <div class="fact"><b>Special</b><span>Propunerile Via</span></div>
+        <div class="fact"><b>Vin</b><span>Lista de vinuri</span></div>
+      </div>
+    </div>
+    <figure class="rv">
+      <img src="img/gallery1.jpg?v=1" alt="Interior de cafenea-restaurant (fotografie de prezentare)" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="dark" id="meniu">
+  <div class="wrap">
+    <span class="eyebrow rv">Ce te așteaptă</span>
+    <h2 class="rv">Meniul Via</h2>
+    <p class="lead rv">Secțiunile restaurantului. Preparatele și prețurile exacte vor fi adăugate împreună cu echipa Via.</p>
+    <div class="cards">
+      <article class="card rv"><span class="num">01</span><h3>Meniu</h3><p>Preparatele de bază ale restaurantului, pentru prânz sau cină.</p><span class="tag">Detalii: de confirmat</span></article>
+      <article class="card rv"><span class="num">02</span><h3>Special</h3><p>Propunerile speciale ale casei.</p><span class="tag">Detalii: de confirmat</span></article>
+      <article class="card rv"><span class="num">03</span><h3>Vin</h3><p>Lista de vinuri care însoțește preparatele.</p><span class="tag">Detalii: de confirmat</span></article>
+      <article class="card rv"><span class="num">04</span><h3>Evenimente</h3><p>Mese de grup și ocazii speciale, organizate la cerere.</p><span class="tag">La cerere</span></article>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <span class="eyebrow rv">Atmosferă</span>
+    <h2 class="rv">Galerie</h2>
+    <div class="gallery rv">
+      <a href="img/gallery2.jpg?v=1"><img src="img/gallery2.jpg?v=1" alt="Bar de restaurant (fotografie de prezentare)" loading="lazy"></a>
+      <a href="img/gallery3.jpg?v=1"><img src="img/gallery3.jpg?v=1" alt="Bar de restaurant, alt unghi (fotografie de prezentare)" loading="lazy"></a>
+      <a href="img/gallery4.jpg?v=1"><img src="img/gallery4.jpg?v=1" alt="Interior de restaurant (fotografie de prezentare)" loading="lazy"></a>
+      <a href="img/gallery5.jpg?v=1"><img src="img/gallery5.jpg?v=1" alt="Restaurant (fotografie de prezentare)" loading="lazy"></a>
+      <a href="img/gallery1.jpg?v=1"><img src="img/gallery1.jpg?v=1" alt="Interior de cafenea-restaurant (fotografie de prezentare)" loading="lazy"></a>
+    </div>
+    <p class="note rv">Fotografii de atmosferă pentru previzualizare – vor fi înlocuite cu imaginile Via Restaurant.</p>
+  </div>
+</section>
+
+<section class="dark" id="evenimente">
+  <div class="wrap events">
+    <div class="rv">
+      <span class="eyebrow">Evenimente</span>
+      <h2>Ocazia ta, la Via</h2>
+      <p class="lead" style="margin-bottom:28px">Aniversări, mese de firmă sau întâlniri în familie. Spune-ne data și numărul de persoane, iar echipa Via revine cu o propunere.</p>
+      <a class="btn" href="#rezervari" data-event>Cere o ofertă</a>
+    </div>
+    <ul class="rv">
+      <li><b>Aniversări</b>Detalii și meniuri la cerere</li>
+      <li><b>Mese de firmă</b>Detalii și meniuri la cerere</li>
+      <li><b>Grupuri</b>Capacitate: de confirmat</li>
+    </ul>
+  </div>
+</section>
+
+<section id="rezervari" class="sand">
+  <div class="wrap book">
+    <div class="rv">
+      <span class="eyebrow">Rezervări</span>
+      <h2>Rezervă o masă</h2>
+      <p class="lead">Alege ziua, ora și numărul de persoane. Echipa Via îți confirmă rezervarea.</p>
+      <p class="small">Aceasta este o previzualizare: formularul nu trimite încă cereri. În versiunea finală, cererea ajunge direct la restaurant.</p>
+    </div>
+    <form id="f" class="rv" novalidate>
+      <label>Nume<input name="nume" required autocomplete="name" placeholder="Numele tău"></label>
+      <label>Telefon<input name="tel" type="tel" required autocomplete="tel" placeholder="07xx xxx xxx"></label>
+      <div class="row">
+        <label>Data<input type="date" name="data" id="d" required></label>
+        <label>Ora<input type="time" name="ora" required></label>
+      </div>
+      <label>Persoane
+        <select name="pers" id="pers">
+          <option>2 persoane</option><option>3 persoane</option><option>4 persoane</option><option>5–8 persoane</option><option>Eveniment / grup mare</option>
+        </select>
+      </label>
+      <label>Observații<textarea name="obs" rows="3" placeholder="Ocazie specială, preferințe..."></textarea></label>
+      <button class="btn wine" type="submit">Trimite cererea</button>
+      <p id="msg" role="status">Mulțumim! În versiunea finală, cererea ajunge direct la Via Restaurant.</p>
+    </form>
+  </div>
+</section>
+
+<section id="program">
+  <div class="wrap">
+    <span class="eyebrow rv">Program & locație</span>
+    <h2 class="rv">Ne găsești aici</h2>
+    <div class="info">
+      <div class="panel rv">
+        <dl>
+          <dt>Adresă</dt><dd>Strada Inocențiu Micu Klein 6<br>Cluj-Napoca, România</dd>
+          <dt>Program</dt><dd>De confirmat cu restaurantul</dd>
+          <dt>Rezervări</dt><dd>Prin formularul de pe site</dd>
+        </dl>
+        <p style="margin-top:24px"><a class="btn wine" href="https://www.google.com/maps/dir/?api=1&amp;destination=Strada+Inocentiu+Micu+Klein+6,+Cluj-Napoca" target="_blank" rel="noopener">Indicații de drum</a></p>
+      </div>
+      <div class="map rv">
+        <iframe title="Hartă: Via Restaurant, Strada Inocențiu Micu Klein 6, Cluj-Napoca" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Strada+Inocentiu+Micu+Klein+6,+Cluj-Napoca,+Romania&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sand contact">
+  <div class="wrap">
+    <span class="eyebrow rv">Contact</span>
+    <h2 class="rv">Te așteptăm la Via</h2>
+    <p class="lead rv">Strada Inocențiu Micu Klein 6, Cluj-Napoca. Telefon și e-mail: de confirmat. Până atunci, rezervă direct de pe site.</p>
+    <div class="ctas rv">
+      <a class="btn wine" href="#rezervari">Rezervă o masă</a>
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Strada+Inocentiu+Micu+Klein+6,+Cluj-Napoca" target="_blank" rel="noopener">Indicații de drum</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#top">Via Restaurant</a>
+    <div>Strada Inocențiu Micu Klein 6, Cluj-Napoca · viarestaurant.ro</div>
+    <div>© Via Restaurant</div>
+    <div class="credits">Fotografii de prezentare cu licență CC0 (rawpixel, StockSnap: donterase, Afta Putta Gunawan, Roman Bozhko, Michael Browning). Previzualizare realizată de Kinoverse – încă nu este publicată.</div>
+  </div>
+</footer>
+
+<div class="sticky" aria-label="Acțiuni rapide">
+  <a href="#rezervari">Rezervă o masă</a>
+  <a class="o" href="https://www.google.com/maps/dir/?api=1&amp;destination=Strada+Inocentiu+Micu+Klein+6,+Cluj-Napoca" target="_blank" rel="noopener">Indicații</a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Fotografie mărită">
+  <button type="button" id="lbx" aria-label="Închide">×</button>
+  <img id="lbi" src="" alt="">
+</div>
+
+<script>
+(function(){
+  // reveal
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+  setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},4000);
+
+  // booking form
+  var d=document.getElementById('d');
+  if(d){var t=new Date();t.setMinutes(t.getMinutes()-t.getTimezoneOffset());d.min=t.toISOString().slice(0,10)}
+  var f=document.getElementById('f');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!f.checkValidity()){f.reportValidity();return}
+    document.getElementById('msg').style.display='block';
+  });
+  document.querySelectorAll('[data-event]').forEach(function(a){
+    a.addEventListener('click',function(){document.getElementById('pers').value='Eveniment / grup mare'});
+  });
+
+  // lightbox
+  var lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+  document.querySelectorAll('.gallery a').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();var im=a.querySelector('img');
+      lbi.src=a.getAttribute('href');lbi.alt=im.alt;lb.classList.add('open');document.getElementById('lbx').focus();
+    });
+  });
+  function close(){lb.classList.remove('open');lbi.src=''}
+  document.getElementById('lbx').addEventListener('click',close);
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+
+  // app install (Android / Chromium only)
+  var dp,ib=document.getElementById('install');
+  addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;ib.hidden=false});
+  ib.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;ib.hidden=true})}});
+  addEventListener('appinstalled',function(){ib.hidden=true});
+  if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
+})();
+</script>
+</body>
+</html>
