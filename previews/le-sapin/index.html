@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Le Sapin – Restaurant de cuisine indienne à Port Louis, Maurice</title>
+<meta name="description" content="Le Sapin, restaurant de cuisine indienne à Port Louis, île Maurice. Appelez le +230 606 2622 pour réserver ou écrivez à lesapin98@gmail.com.">
+<meta name="theme-color" content="#6e1c1c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Le Sapin – Cuisine indienne à Port Louis">
+<meta property="og:description" content="Restaurant de cuisine indienne à Port Louis, île Maurice. Réservation par téléphone : +230 606 2622.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --red:#6e1c1c;--red-d:#4a1111;--saffron:#e0a43a;--saffron-l:#f3cf86;
+  --cream:#fbf6ec;--sand:#f2e7d3;--ink:#2a1a14;--muted:#6a584c;--line:#e4d5bb;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:16px}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.1;letter-spacing:.2px}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+
+/* ribbon */
+.ribbon{background:#141010;color:#e8ddd2;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.3px}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(251,246,236,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;max-width:1240px;margin:0 auto;padding:12px 5vw}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;color:var(--red);text-decoration:none;line-height:1;white-space:nowrap}
+.menu-links{display:none;gap:28px;list-style:none;font-size:.92rem;font-weight:500}
+.menu-links a{text-decoration:none;padding:6px 0;border-bottom:1.5px solid transparent;transition:border-color .2s}
+.menu-links a:hover{border-color:var(--saffron)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--saffron);color:#2a1a14;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font:600 1rem Inter,sans-serif;transition:transform .25s,box-shadow .25s,background .25s;min-height:46px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.btn.sm{padding:9px 16px;font-size:.88rem;min-height:40px}
+.btn.red{background:var(--red);color:#fff}
+.btn.outline{background:transparent;color:var(--red);border:1.5px solid var(--red)}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.85)}
+.btn.wa{background:#1d8a4a;color:#fff}
+.btn[hidden]{display:none}
+svg.i{width:18px;height:18px;flex:none}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 100px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04);animation:zoom 14s ease-out forwards}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(30,8,6,.35) 0%,rgba(30,8,6,.55) 45%,rgba(30,8,6,.9) 100%)}
+@keyframes zoom{to{transform:scale(1)}}
+.hero-in{max-width:1240px;width:100%;margin:0 auto;padding:120px 6vw 72px}
+.eyebrow{display:inline-block;letter-spacing:.28em;text-transform:uppercase;font-size:.74rem;font-weight:600;color:var(--saffron-l)}
+.hero h1{font-size:clamp(2.5rem,8vw,5.2rem);margin:16px 0 18px;max-width:14ch;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--saffron-l)}
+.hero p{font-size:clamp(1.02rem,2.4vw,1.2rem);font-weight:300;max-width:46ch;margin-bottom:30px;color:#f6ebe2}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* sections */
+section{padding:88px 6vw}
+.wrap{max-width:1180px;margin:0 auto}
+.head{max-width:640px;margin:0 0 44px}
+.head.c{text-align:center;margin-left:auto;margin-right:auto}
+.kicker{color:var(--red);letter-spacing:.24em;text-transform:uppercase;font-size:.74rem;font-weight:600}
+.head h2{font-size:clamp(2.1rem,5vw,3.2rem);margin-top:10px}
+.head p{margin-top:14px;color:var(--muted)}
+
+/* about */
+.about{display:grid;gap:44px;align-items:center}
+.about figure{position:relative}
+.about figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius);box-shadow:0 24px 50px rgba(60,20,10,.2)}
+.about figure img.small{position:absolute;width:42%;aspect-ratio:1;right:-4%;bottom:-8%;border:6px solid var(--cream);border-radius:14px}
+.about p{margin-bottom:16px;color:#3f2d24}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0 30px}
+.facts div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.facts b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--red)}
+.facts span{font-size:.85rem;color:var(--muted)}
+
+/* cuisine */
+.dark{background:var(--red-d);color:#fff;background-image:radial-gradient(circle at 15% 0%,rgba(224,164,58,.18),transparent 45%)}
+.dark .kicker{color:var(--saffron-l)}
+.dark .head p{color:#ecd6cb}
+.cards{display:grid;gap:24px}
+.card{background:#fff;color:var(--ink);border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.2);transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(0,0,0,.3)}
+.card img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.card div{padding:22px 22px 24px}
+.card h3{font-size:1.6rem;margin-bottom:6px}
+.card p{font-size:.94rem;color:var(--muted)}
+.card small{display:inline-block;margin-top:14px;font-size:.8rem;font-weight:600;color:var(--red);letter-spacing:.04em}
+.note{margin-top:34px;text-align:center;color:#ecd6cb;font-size:.95rem}
+.note a{color:var(--saffron-l);font-weight:600}
+
+/* gallery */
+.gal{background:var(--sand)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid figure{overflow:hidden;border-radius:14px;background:#e6d6bb}
+.grid img{width:100%;height:100%;aspect-ratio:1;object-fit:cover;transition:transform .6s}
+.grid figure:hover img{transform:scale(1.05)}
+.grid .tall img{aspect-ratio:auto}
+.grid .tall{grid-row:span 2}
+
+/* hours + map */
+.info{display:grid;gap:28px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px}
+.panel h3{font-size:1.5rem;color:var(--red);margin-bottom:6px}
+.panel p{color:#3f2d24}
+.panel + .panel{margin-top:18px}
+.muted{color:var(--muted);font-size:.9rem}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#e9e1d2;min-height:360px;display:flex;flex-direction:column}
+.map iframe{flex:1;width:100%;min-height:360px;border:0}
+.map a{display:block;padding:12px 16px;font-size:.88rem;background:#fff;text-decoration:none;color:var(--red);font-weight:600}
+
+/* contact */
+.contact{background:var(--cream)}
+.ways{display:grid;gap:16px}
+.way{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;text-decoration:none;transition:border-color .25s,transform .25s}
+.way:hover{border-color:var(--saffron);transform:translateY(-3px)}
+.way .ic{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#fff;flex:none}
+.way.w .ic{background:#1d8a4a}
+.way b{display:block;font-size:1.02rem}
+.way span{font-size:.9rem;color:var(--muted);word-break:break-word}
+
+/* footer */
+footer{background:#170c09;color:#cbbdb1;padding:56px 6vw 110px;font-size:.88rem}
+footer .wrap{display:grid;gap:22px}
+footer .logo{color:#fff;font-size:2rem}
+footer a{color:#f3cf86}
+footer .credits{border-top:1px solid #33221c;padding-top:18px;font-size:.8rem;color:#a9998c}
+
+/* sticky call bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:1px;background:var(--line);padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -6px 20px rgba(0,0,0,.15)}
+.sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 10px;font-weight:600;text-decoration:none;color:#fff;background:var(--red)}
+.sticky a.w{background:#1d8a4a}
+
+/* reveal – only hides when JS is running */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  .hero img{animation:none;transform:none}
+  html{scroll-behavior:auto}
+}
+
+@media (max-width:380px){
+  .bar{padding:10px 4vw}
+  .logo{font-size:1.5rem}
+  .btn.sm{padding:8px 13px}
+}
+@media (min-width:720px){
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:220px}
+  .grid img{aspect-ratio:auto}
+  .grid .wide{grid-column:span 2}
+  .ways{grid-template-columns:repeat(3,1fr)}
+  footer .wrap{grid-template-columns:1.2fr 1fr}
+  footer .credits{grid-column:1/-1}
+}
+@media (min-width:960px){
+  .menu-links{display:flex}
+  .about{grid-template-columns:1fr 1.05fr;gap:80px}
+  .info{grid-template-columns:1fr 1.4fr;align-items:stretch}
+  .sticky{display:none}
+  footer{padding-bottom:56px}
+  section{padding:110px 6vw}
+}
+</style>
+</head>
+<body>
+
+<div class="ribbon" role="note">Aperçu réalisé pour Le Sapin par Kinoverse – pas encore en ligne</div>
+
+<header class="top">
+  <div class="bar">
+    <a class="logo" href="#top" aria-label="Le Sapin – accueil">Le Sapin</a>
+    <nav aria-label="Navigation principale">
+      <ul class="menu-links">
+        <li><a href="#apropos">Le restaurant</a></li>
+        <li><a href="#cuisine">Cuisine</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#horaires">Horaires &amp; plan</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <button class="btn sm outline" id="install" hidden>Installer l'app</button>
+      <a class="btn sm red" href="tel:+2306062622">
+        <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Appeler
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero" role="banner">
+  <img src="img/hero.jpg?v=1" alt="Curry indien épicé servi dans un bol" fetchpriority="high">
+  <div class="hero-in">
+    <span class="eyebrow">Restaurant indien · Port Louis, Maurice</span>
+    <h1>La cuisine indienne de <em>Port Louis</em>, chez Le Sapin</h1>
+    <p>Une table de cuisine indienne à Port Louis. Réservez par téléphone, demandez la carte du jour ou écrivez-nous sur WhatsApp.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+2306062622">Réserver : +230 606 2622</a>
+      <a class="btn ghost" href="https://wa.me/23052535858">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<section id="apropos">
+  <div class="wrap about">
+    <figure class="rv">
+      <img src="img/spices.jpg?v=1" alt="Bol d'épices avec des gousses de cardamome" loading="lazy">
+      <img class="small" src="img/herbs.jpg?v=1" alt="Herbes et ingrédients frais" loading="lazy">
+    </figure>
+    <div class="rv">
+      <span class="kicker">Le restaurant</span>
+      <h2 style="font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 18px">Le Sapin, une adresse de cuisine indienne à Maurice</h2>
+      <p>Le Sapin est un restaurant de cuisine indienne à Port Louis, sur l'île Maurice. Pour connaître les plats du moment, réserver une table ou organiser un repas en groupe, le plus simple est d'appeler directement le restaurant.</p>
+      <p>Une question sur la carte, les tarifs ou les horaires ? L'équipe vous répond par téléphone, sur WhatsApp ou par email.</p>
+      <div class="facts">
+        <div><b>Cuisine indienne</b><span>Spécialité de la maison</span></div>
+        <div><b>Port Louis</b><span>Île Maurice</span></div>
+      </div>
+      <a class="btn red" href="#horaires">Horaires &amp; plan</a>
+    </div>
+  </div>
+</section>
+
+<section id="cuisine" class="dark">
+  <div class="wrap">
+    <div class="head c rv">
+      <span class="kicker">La cuisine</span>
+      <h2>Les couleurs de la cuisine indienne</h2>
+      <p>Des images d'illustration de l'univers culinaire indien. La carte exacte, les plats du jour et les prix sont communiqués par le restaurant.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <img src="img/curry.jpg?v=1" alt="Curry de pois chiches" loading="lazy">
+        <div><h3>Currys</h3><p>Plats en sauce aux épices, emblèmes de la cuisine indienne.</p><small>Carte &amp; prix : sur demande</small></div>
+      </article>
+      <article class="card rv">
+        <img src="img/sambar.jpg?v=1" alt="Assiette de riz et sambar" loading="lazy">
+        <div><h3>Riz &amp; accompagnements</h3><p>Le riz, compagnon incontournable des plats épicés.</p><small>Carte &amp; prix : sur demande</small></div>
+      </article>
+      <article class="card rv">
+        <img src="img/veg.jpg?v=1" alt="Curry de légumes" loading="lazy">
+        <div><h3>Légumes</h3><p>Demandez au restaurant les options végétariennes du moment.</p><small>À confirmer avec le restaurant</small></div>
+      </article>
+    </div>
+    <p class="note rv">Pour la carte du jour : <a href="tel:+2306062622">+230 606 2622</a></p>
+  </div>
+</section>
+
+<section id="galerie" class="gal">
+  <div class="wrap">
+    <div class="head c rv">
+      <span class="kicker">Galerie</span>
+      <h2>Épices, parfums &amp; couleurs</h2>
+    </div>
+    <div class="grid rv">
+      <figure class="tall wide"><img src="img/hero.jpg?v=1" alt="Curry indien épicé" loading="lazy"></figure>
+      <figure><img src="img/spices.jpg?v=1" alt="Bol d'épices et de cardamome" loading="lazy"></figure>
+      <figure><img src="img/herbs.jpg?v=1" alt="Herbes et ingrédients frais" loading="lazy"></figure>
+      <figure><img src="img/sambar.jpg?v=1" alt="Riz et sambar" loading="lazy"></figure>
+      <figure><img src="img/curry.jpg?v=1" alt="Curry de pois chiches" loading="lazy"></figure>
+      <figure class="wide"><img src="img/veg.jpg?v=1" alt="Curry de légumes" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="horaires">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="kicker">Horaires &amp; plan</span>
+      <h2>Quand venir, et où nous trouver</h2>
+    </div>
+    <div class="info">
+      <div class="rv">
+        <div class="panel">
+          <h3>Horaires</h3>
+          <p>Horaires d'ouverture sur demande.</p>
+          <p class="muted" style="margin-top:8px">Appelez avant de venir pour confirmer l'ouverture et réserver.</p>
+          <p style="margin-top:18px"><a class="btn red sm" href="tel:+2306062622">Appeler le restaurant</a></p>
+        </div>
+        <div class="panel">
+          <h3>Adresse</h3>
+          <p>Le Sapin<br>Port Louis, Île Maurice</p>
+          <p class="muted" style="margin-top:8px">Adresse exacte à confirmer avec le restaurant. Le plan indique l'emplacement enregistré sur OpenStreetMap.</p>
+        </div>
+      </div>
+      <div class="map rv">
+        <iframe title="Plan : emplacement de Le Sapin sur OpenStreetMap" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=57.5152%2C-20.3191%2C57.5252%2C-20.3131&amp;layer=mapnik&amp;marker=-20.3161521%2C57.5202123"></iframe>
+        <a href="https://www.openstreetmap.org/node/10701676398" target="_blank" rel="noopener">Ouvrir le plan en grand →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="head c rv">
+      <span class="kicker">Contact &amp; réservation</span>
+      <h2>Réservez votre table</h2>
+      <p>Par téléphone, sur WhatsApp ou par email : choisissez ce qui vous arrange.</p>
+    </div>
+    <div class="ways">
+      <a class="way rv" href="tel:+2306062622">
+        <span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+        <span><b>Téléphone</b><span>+230 606 2622</span></span>
+      </a>
+      <a class="way w rv" href="https://wa.me/23052535858">
+        <span class="ic"><svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg></span>
+        <span><b>WhatsApp / mobile</b><span>+230 5253 5858</span></span>
+      </a>
+      <a class="way rv" href="mailto:lesapin98@gmail.com">
+        <span class="ic"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+        <span><b>Email</b><span>lesapin98@gmail.com</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="logo">Le Sapin</div>
+      <p style="margin-top:10px">Restaurant de cuisine indienne · Port Louis, Île Maurice</p>
+    </div>
+    <div>
+      <p><a href="tel:+2306062622">+230 606 2622</a> · <a href="tel:+23052535858">+230 5253 5858</a></p>
+      <p><a href="mailto:lesapin98@gmail.com">lesapin98@gmail.com</a></p>
+    </div>
+    <div class="credits">
+      <p>Photos d'illustration : rawpixel, domaine public (CC0) – elles ne représentent pas les plats du restaurant. Plan © contributeurs OpenStreetMap.</p>
+      <p style="margin-top:6px">Aperçu réalisé pour Le Sapin par Kinoverse – pas encore en ligne.</p>
+    </div>
+  </div>
+</footer>
+
+<nav class="sticky" aria-label="Contact rapide">
+  <a href="tel:+2306062622">Appeler</a>
+  <a class="w" href="https://wa.me/23052535858">WhatsApp</a>
+</nav>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});
+  },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+  setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},4000);
+})();
+(function(){
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.hidden=false;});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp=null;}b.hidden=true;});
+  window.addEventListener('appinstalled',function(){b.hidden=true;});
+})();
+</script>
+<!-- QA note: the OSM node coordinates (-20.316, 57.520) fall closer to Curepipe than to central Port Louis; exact address to confirm with the owner. market.jpg deliberately not used (market stall, possible third-party signage). -->
+</body>
+</html>
