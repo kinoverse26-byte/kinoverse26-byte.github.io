@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>World of Feng Shui · Restaurant à Belle Rose, Royal Road &amp; Ollier Street · Île Maurice</title>
+<meta name="description" content="World of Feng Shui, restaurant à l'angle de Royal Road et d'Ollier Street, Belle Rose, Île Maurice. Réservation par téléphone au +230 467 5005.">
+<meta name="theme-color" content="#7a1616">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="World of Feng Shui">
+<meta property="og:title" content="World of Feng Shui · Restaurant à Belle Rose, Île Maurice">
+<meta property="og:description" content="À l'angle de Royal Road et d'Ollier Street, Belle Rose. Réservez votre table au +230 467 5005.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.className+=' js';</script>
+<style>
+:root{
+  --lacquer:#7a1616;--lacquer-2:#9b2220;--ink:#1f1412;--night:#160c0a;
+  --gold:#d1ab55;--gold-soft:#e6c983;--cream:#f8f2e7;--paper:#fffbf4;--jade:#2f5a4c;
+  --muted:#5e4f49;--radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:1rem;padding-bottom:72px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:.005em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* ---------- top bar ---------- */
+.top{position:fixed;inset:0 0 auto 0;z-index:40;transition:background .35s,box-shadow .35s}
+.ribbon{background:#0d0706;color:#cbbfb3;font-size:11.5px;letter-spacing:.02em;text-align:center;padding:5px 12px;line-height:1.4}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 14px;padding:12px 5vw;color:#fff;background:linear-gradient(rgba(10,4,3,.72),rgba(10,4,3,0))}
+.top.solid .bar{background:rgba(22,12,10,.96);box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;letter-spacing:.03em;text-decoration:none;white-space:nowrap}
+.bar nav{display:none;gap:26px;font-size:.88rem;letter-spacing:.03em}
+.bar nav a{text-decoration:none;opacity:.9}
+.bar nav a:hover{color:var(--gold-soft);opacity:1}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border-radius:40px;font-size:.88rem;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-family:inherit;white-space:nowrap}
+.pill.call{background:var(--gold);color:var(--ink)}
+.pill.install{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6);display:none}
+.pill svg{width:16px;height:16px}
+@media(min-width:900px){.bar nav{display:flex}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;padding:170px 6vw 72px;isolation:isolate;overflow:hidden}
+.hero-img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;filter:sepia(.35) saturate(.9) contrast(1.05);transform:scale(1.04)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(120% 80% at 80% 10%,rgba(155,34,32,.35),transparent 60%),
+  linear-gradient(180deg,rgba(18,6,5,.55) 0%,rgba(40,8,8,.62) 45%,rgba(14,5,4,.94) 100%)}
+.hero-inner{max-width:780px}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-soft);font-weight:600}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor}
+.hero h1{font-size:clamp(2.5rem,8.5vw,5.4rem);margin:18px 0 20px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--gold-soft);font-weight:500}
+.hero p.lead{font-size:clamp(1.02rem,2.6vw,1.2rem);max-width:540px;color:rgba(255,255,255,.9);margin-bottom:32px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--gold);color:var(--ink);padding:15px 28px;border-radius:44px;font-weight:600;text-decoration:none;font-size:1rem;border:0;cursor:pointer;font-family:inherit;transition:transform .2s,background .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);background:var(--gold-soft);box-shadow:0 10px 26px rgba(0,0,0,.25)}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.65)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.red{background:var(--lacquer);color:#fff}
+.btn.red:hover{background:var(--lacquer-2)}
+.btn svg{width:18px;height:18px}
+.hero-meta{margin-top:44px;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:.88rem;color:rgba(255,255,255,.82)}
+.hero-meta b{color:#fff;font-weight:600}
+.credit-tag{position:absolute;right:5vw;bottom:16px;font-size:10.5px;color:rgba(255,255,255,.55);max-width:60%;text-align:right;line-height:1.35}
+
+/* ---------- sections ---------- */
+section{padding:96px 6vw}
+.wrap{max-width:1140px;margin:0 auto}
+.tag{display:inline-block;color:var(--lacquer);letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;font-weight:600}
+h2{font-size:clamp(2.1rem,5.5vw,3.4rem);margin:12px 0 20px}
+.sub{color:var(--muted);max-width:620px}
+
+.about{display:grid;gap:44px;align-items:center}
+.about-figure{position:relative}
+.about-figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius);filter:sepia(.25);box-shadow:0 30px 60px rgba(40,10,8,.22)}
+.about-figure::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);border-radius:var(--radius);z-index:-1}
+.about-figure{isolation:isolate}
+.about-figure figcaption{font-size:.75rem;color:var(--muted);margin-top:14px}
+.about p+p{margin-top:14px}
+.facts{margin-top:30px;display:grid;gap:0;border-top:1px solid rgba(122,22,22,.18)}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid rgba(122,22,22,.18);font-size:.95rem}
+.facts dt{color:var(--muted)}
+.facts dd{font-weight:600;text-align:right}
+@media(min-width:860px){.about{grid-template-columns:1.05fr .95fr;gap:80px}}
+
+.dark{background:var(--night);color:#efe4d3;position:relative;overflow:hidden}
+.dark::before{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-180px;border-radius:50%;border:1px solid rgba(209,171,85,.18);box-shadow:0 0 0 60px rgba(209,171,85,.03),0 0 0 120px rgba(209,171,85,.02)}
+.dark .tag{color:var(--gold)}
+.dark .sub{color:#c9bcab}
+.cards{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));position:relative}
+.card{background:rgba(255,255,255,.035);border:1px solid rgba(209,171,85,.25);border-radius:var(--radius);padding:30px 26px;transition:transform .3s,border-color .3s,background .3s}
+.card:hover{transform:translateY(-5px);border-color:var(--gold);background:rgba(255,255,255,.06)}
+.card .num{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold);letter-spacing:.1em}
+.card h3{font-size:1.7rem;color:#fff;margin:6px 0 10px}
+.card p{color:#cdbfae;font-size:.95rem}
+.card .note{display:inline-block;margin-top:16px;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-soft)}
+
+.gallery{display:grid;gap:14px;margin-top:40px;grid-template-columns:1fr}
+.gallery figure{position:relative;overflow:hidden;border-radius:var(--radius);background:#2a1512}
+.gallery img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;filter:sepia(.3);transition:transform .7s ease,filter .5s}
+.gallery figure:hover img{transform:scale(1.05);filter:sepia(.1)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 18px 14px;color:#fff;font-size:.82rem;background:linear-gradient(transparent,rgba(10,4,3,.85))}
+@media(min-width:760px){
+  .gallery{grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr}
+  .gallery figure:first-child{grid-row:span 2}
+  .gallery figure:first-child img{aspect-ratio:auto;min-height:100%}
+}
+.gallery-note{font-size:.82rem;color:var(--muted);margin-top:18px}
+
+.info{background:var(--paper)}
+.info-grid{display:grid;gap:40px}
+.info-list{list-style:none;margin-top:8px}
+.info-list li{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid #eadfcd}
+.info-list span{color:var(--muted);font-size:.9rem}
+.info-list b{font-weight:600}
+.map{border-radius:var(--radius);overflow:hidden;box-shadow:0 24px 50px rgba(40,10,8,.15);background:#e9e0d2;min-height:340px}
+.map iframe{display:block;width:100%;height:100%;min-height:380px;border:0}
+.map-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+@media(min-width:860px){.info-grid{grid-template-columns:1fr 1.25fr;gap:64px;align-items:stretch}}
+
+.book{background:linear-gradient(135deg,var(--lacquer) 0%,#4d0d0d 100%);color:#fff;text-align:center;position:relative;overflow:hidden}
+.book::after{content:"";position:absolute;inset:auto -10% -60% -10%;height:420px;background:radial-gradient(closest-side,rgba(209,171,85,.22),transparent)}
+.book .tag{color:var(--gold-soft)}
+.book h2{color:#fff}
+.book p{color:rgba(255,255,255,.88);max-width:560px;margin:0 auto}
+.phone-big{display:block;font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,9vw,4.2rem);font-weight:600;color:var(--gold-soft);text-decoration:none;margin:26px 0 8px;letter-spacing:.02em}
+.steps{display:grid;gap:12px;max-width:760px;margin:36px auto 34px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));position:relative;z-index:1}
+.steps div{border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:16px;font-size:.92rem;background:rgba(0,0,0,.12)}
+.steps b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--gold-soft)}
+.book .cta{justify-content:center;position:relative;z-index:1}
+
+footer{background:#0f0807;color:#b9ab9b;padding:56px 6vw 40px;font-size:.86rem}
+.foot{max-width:1140px;margin:0 auto;display:grid;gap:28px}
+.foot .logo{color:#fff;font-size:1.6rem}
+.foot a{color:#e6d9c6}
+.foot small{display:block;font-size:.78rem;line-height:1.6;color:#8f8273}
+@media(min-width:760px){.foot{grid-template-columns:1.2fr 1fr 1fr}}
+
+/* sticky mobile bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;background:var(--night);box-shadow:0 -6px 20px rgba(0,0,0,.25);padding-bottom:env(safe-area-inset-bottom)}
+.sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;padding:17px 10px;text-decoration:none;font-weight:600;font-size:.98rem}
+.sticky a.primary{background:var(--lacquer)}
+.sticky svg{width:18px;height:18px}
+@media(min-width:900px){.sticky{display:none}body{padding-bottom:0}}
+
+/* reveal: content stays visible without JS */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.hero-img{transform:none}}
+</style>
+</head>
+<body>
+
+<!-- Photos : le site greatdelight.net n'affiche qu'une page par défaut ; photos d'illustration du domaine public en attendant celles du restaurant.
+     Le +230 467 5005 est une ligne fixe : lien WhatsApp à ajouter seulement quand un numéro WhatsApp est confirmé. -->
+
+<div class="top" id="top">
+  <div class="ribbon">Aperçu réalisé pour World of Feng Shui par Kinoverse – pas encore en ligne</div>
+  <div class="bar">
+    <a class="logo" href="#accueil">World of Feng Shui</a>
+    <nav aria-label="Navigation principale">
+      <a href="#apropos">La maison</a><a href="#carte">La table</a><a href="#galerie">Ambiance</a><a href="#infos">Nous trouver</a><a href="#reserver">Réserver</a>
+    </nav>
+    <div class="actions">
+      <button class="pill install" id="install" type="button">Installer l’app</button>
+      <a class="pill call" href="tel:+2304675005" aria-label="Appeler World of Feng Shui au +230 467 5005">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+        Appeler
+      </a>
+    </div>
+  </div>
+</div>
+
+<header class="hero" id="accueil">
+  <img class="hero-img" src="img/hero.jpg?v=1" alt="Photographie ancienne de l’intérieur d’un restaurant chinois à San Francisco (illustration)" fetchpriority="high">
+  <div class="hero-inner">
+    <span class="eyebrow">Restaurant · Belle Rose · Île Maurice</span>
+    <h1>À l’angle de Royal Road et d’Ollier Street, <em>votre table vous attend.</em></h1>
+    <p class="lead">World of Feng Shui reçoit Belle Rose pour le déjeuner, le dîner, les repas de famille et les retrouvailles entre amis. Un appel, et votre table est prête.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+2304675005">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+        Réserver : +230 467 5005
+      </a>
+      <a class="btn ghost" href="#infos">Nous trouver</a>
+    </div>
+    <div class="hero-meta">
+      <span><b>Adresse</b> · Royal Road &amp; Ollier Street, Belle Rose</span>
+      <span><b>Réservation</b> · par téléphone</span>
+    </div>
+  </div>
+  <span class="credit-tag">Photo d’illustration : restaurant chinois, San Francisco, XIXᵉ s. – domaine public</span>
+</header>
+
+<main>
+<section id="apropos">
+  <div class="wrap about">
+    <div class="reveal">
+      <span class="tag">La maison</span>
+      <h2>Une adresse de Belle Rose, au carrefour de Royal Road</h2>
+      <p>World of Feng Shui vous accueille à l’angle de Royal Road et d’Ollier Street, à Belle Rose. Un repas en famille, un déjeuner entre collègues, un dîner entre amis : la maison vous reçoit sur réservation par téléphone.</p>
+      <p>La carte du moment, les spécialités et les tarifs vous sont présentés directement par l’équipe : il suffit d’appeler.</p>
+      <dl class="facts">
+        <div><dt>Adresse</dt><dd>Royal Road &amp; Ollier Street, Belle Rose</dd></div>
+        <div><dt>Téléphone</dt><dd><a href="tel:+2304675005">+230 467 5005</a></dd></div>
+        <div><dt>Horaires</dt><dd>Sur demande</dd></div>
+      </dl>
+    </div>
+    <figure class="about-figure reveal">
+      <img src="img/salle.jpg?v=1" alt="Photographie ancienne d’une salle de restaurant chinois à San Francisco (illustration)" loading="lazy">
+      <figcaption>Photo d’illustration (domaine public), en attendant les photos du restaurant.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="carte" class="dark">
+  <div class="wrap">
+    <span class="tag">La table</span>
+    <h2 class="reveal">Venir chez World of Feng Shui</h2>
+    <p class="sub reveal">Carte, plats du jour et prix : sur demande. L’équipe vous renseigne au téléphone.</p>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="num">01</span>
+        <h3>Déjeuner &amp; dîner sur place</h3>
+        <p>Réservez votre table par téléphone et dites-nous combien vous serez.</p>
+        <span class="note">Réservation : +230 467 5005</span>
+      </article>
+      <article class="card reveal">
+        <span class="num">02</span>
+        <h3>Familles &amp; groupes</h3>
+        <p>Une grande tablée, un anniversaire, un repas d’équipe ? Appelez pour vérifier les disponibilités.</p>
+        <span class="note">Sur demande</span>
+      </article>
+      <article class="card reveal">
+        <span class="num">03</span>
+        <h3>La carte &amp; les prix</h3>
+        <p>Les plats et les tarifs vous sont communiqués directement par le restaurant.</p>
+        <span class="note">Sur demande</span>
+      </article>
+      <article class="card reveal">
+        <span class="num">04</span>
+        <h3>À emporter</h3>
+        <p>Renseignez-vous par téléphone pour savoir ce qui est possible.</p>
+        <span class="note">À confirmer</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <span class="tag">Ambiance</span>
+    <h2 class="reveal">Bois sculpté, lanternes et grandes tablées</h2>
+    <p class="sub reveal">Une sélection d’images d’inspiration, avant les photos de la salle de Belle Rose.</p>
+    <div class="gallery">
+      <figure class="reveal">
+        <img src="img/hero.jpg?v=1" alt="Photographie ancienne de l’intérieur d’un restaurant chinois à San Francisco" loading="lazy">
+        <figcaption>Restaurant chinois, San Francisco – photographie ancienne</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="img/maison.jpg?v=1" alt="Photographie ancienne de l’intérieur d’une maison de mandarin à Canton" loading="lazy">
+        <figcaption>Maison de mandarin, Canton – photographie ancienne</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="img/salle.jpg?v=1" alt="Photographie ancienne d’une salle de restaurant chinois à San Francisco" loading="lazy">
+        <figcaption>Salle de restaurant chinois, San Francisco – photographie ancienne</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-note">Photos d’illustration du domaine public, à remplacer par celles du restaurant.</p>
+  </div>
+</section>
+
+<section id="infos" class="info">
+  <div class="wrap info-grid">
+    <div class="reveal">
+      <span class="tag">Nous trouver</span>
+      <h2>Royal Road &amp; Ollier Street, Belle Rose</h2>
+      <ul class="info-list">
+        <li><span>Adresse</span><b>Angle Royal Road &amp; Ollier Street, Belle Rose, Île Maurice</b></li>
+        <li><span>Téléphone</span><b><a href="tel:+2304675005">+230 467 5005</a></b></li>
+        <li><span>Horaires</span><b>Sur demande – appelez-nous</b></li>
+        <li><span>Réservation</span><b>Par téléphone</b></li>
+        <li><span>Paiement</span><b>À confirmer</b></li>
+      </ul>
+      <div class="map-links">
+        <a class="btn red" href="https://www.google.com/maps/dir/?api=1&amp;destination=Royal%20Road%20%26%20Ollier%20Street%2C%20Belle%20Rose%2C%20Mauritius" target="_blank" rel="noopener">Itinéraire</a>
+        <a class="btn ghost" style="color:var(--ink);border-color:#cdbfa8" href="https://www.google.com/maps/search/?api=1&amp;query=Royal%20Road%20%26%20Ollier%20Street%2C%20Belle%20Rose%2C%20Mauritius" target="_blank" rel="noopener">Ouvrir la carte</a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe title="Carte : Royal Road et Ollier Street, Belle Rose, Île Maurice" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Royal%20Road%20%26%20Ollier%20Street%2C%20Belle%20Rose%2C%20Mauritius&amp;z=16&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="reserver" class="book">
+  <div class="wrap reveal">
+    <span class="tag">Réservation</span>
+    <h2>Réservez votre table à Belle Rose</h2>
+    <p>Le plus simple : un appel. Ayez ces trois informations sous la main, l’équipe s’occupe du reste.</p>
+    <a class="phone-big" href="tel:+2304675005">+230 467 5005</a>
+    <div class="steps">
+      <div><b>Le jour</b>et l’heure souhaités</div>
+      <div><b>Le nombre</b>de personnes</div>
+      <div><b>Vos envies</b>occasion, enfants, groupe…</div>
+    </div>
+    <div class="cta">
+      <a class="btn" href="tel:+2304675005">Appeler maintenant</a>
+      <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Royal%20Road%20%26%20Ollier%20Street%2C%20Belle%20Rose%2C%20Mauritius" target="_blank" rel="noopener">Itinéraire</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot">
+    <div>
+      <span class="logo">World of Feng Shui</span>
+      <p style="margin-top:10px">Restaurant · Royal Road &amp; Ollier Street, Belle Rose, Île Maurice</p>
+      <p><a href="tel:+2304675005">+230 467 5005</a></p>
+    </div>
+    <div>
+      <p><b style="color:#e6d9c6">Horaires</b><br>Sur demande – appelez-nous.</p>
+      <p style="margin-top:10px"><b style="color:#e6d9c6">Réservation</b><br>Par téléphone.</p>
+    </div>
+    <div>
+      <small>Photos d’illustration : photographies anciennes de la collection du J. Paul Getty Museum (restaurant chinois à San Francisco, par Carleton E. Watkins ; maison de mandarin à Canton), domaine public (CC0), via rawpixel.</small>
+      <small style="margin-top:10px">Aperçu réalisé pour World of Feng Shui par Kinoverse – pas encore en ligne.</small>
+    </div>
+  </div>
+</footer>
+
+<nav class="sticky" aria-label="Actions rapides">
+  <a class="primary" href="tel:+2304675005">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+    Appeler
+  </a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Royal%20Road%20%26%20Ollier%20Street%2C%20Belle%20Rose%2C%20Mauritius" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+    Itinéraire
+  </a>
+</nav>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  function showAll(){for(var i=0;i<els.length;i++)els[i].classList.add('in');}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});
+    },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    for(var i=0;i<els.length;i++)io.observe(els[i]);
+    setTimeout(showAll,4000);
+  }else{showAll();}
+
+  var top=document.getElementById('top');
+  function onScroll(){top.classList.toggle('solid',window.scrollY>40);}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var deferred,btn=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();deferred=e;btn.style.display='inline-flex';});
+  btn.addEventListener('click',function(){if(!deferred)return;deferred.prompt();deferred.userChoice.finally(function(){deferred=null;btn.style.display='none';});});
+  window.addEventListener('appinstalled',function(){btn.style.display='none';});
+
+  if('serviceWorker' in navigator && location.protocol==='https:'){
+    navigator.serviceWorker.register('sw.js').catch(function(){});
+  }
+})();
+</script>
+</body>
+</html>
