@@ -1,0 +1,26 @@
+{
+  "name": "Zucca – Cluj-Napoca",
+  "short_name": "Zucca",
+  "description": "Restaurant Zucca, Cluj-Napoca. Meniu, program și contact.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "ro",
+  "background_color": "#1b1410",
+  "theme_color": "#1b1410",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
