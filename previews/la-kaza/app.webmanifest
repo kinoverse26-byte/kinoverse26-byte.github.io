@@ -1,0 +1,19 @@
+{
+  "name": "La Kaza - Restaurant Port Louis",
+  "short_name": "La Kaza",
+  "description": "La Kaza, restaurant de poissons, grillades et cuisine locale à Port Louis, Île Maurice.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1b2d",
+  "theme_color": "#0f1b2d",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
