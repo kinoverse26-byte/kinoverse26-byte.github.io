@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Zucca Bistro · Restaurant pe Str. Louis Pasteur 74, Cluj-Napoca</title>
+<meta name="description" content="Zucca Bistro, Str. Louis Pasteur 74, Cluj-Napoca: bucătărie internațională, cu pizza, burgeri, paste și risotto, salate, supe și deserturi. Luni-Vineri 09:00-23:00, Sâmbătă-Duminică 10:00-23:00. Rezervări la 0786 221 622.">
+<meta name="theme-color" content="#1f2a1c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/logo.png?v=1" type="image/png">
+<link rel="apple-touch-icon" href="img/logo.png?v=1">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Zucca Bistro">
+<meta property="og:title" content="Zucca Bistro · Str. Louis Pasteur 74, Cluj-Napoca">
+<meta property="og:description" content="Bucătărie internațională în Cluj-Napoca: pizza, burgeri, paste, salate, deserturi. Rezervări la 0786 221 622.">
+<meta property="og:image" content="img/og.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#1f2a1c;--green-2:#2a3826;--pumpkin:#b4530c;--pumpkin-lt:#f0a35e;
+  --cream:#f7f1e6;--paper:#fffdf9;--ink:#24231f;--muted:#5d5a52;--line:#e6dccb;
+  --r:20px;--shadow:0 10px 30px rgba(31,42,28,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:16px}
+img{display:block;max-width:100%}
+a{color:var(--pumpkin)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.12;letter-spacing:-.01em}
+.wrap{max-width:1140px;margin:0 auto}
+.kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pumpkin);margin-bottom:14px}
+.dark .kicker,.hero .kicker{color:var(--pumpkin-lt)}
+h2{font-size:clamp(30px,4.4vw,48px);margin-bottom:16px}
+.sub{color:var(--muted);max-width:640px;margin-bottom:44px;font-size:17px}
+
+/* ribbon */
+.ribbon{background:#0f130d;color:#cfcabc;font-size:12px;text-align:center;padding:6px 12px;letter-spacing:.02em}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(31,42,28,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:10px 5vw;max-width:1240px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:Fraunces,Georgia,serif;font-size:22px;font-weight:700;min-width:0}
+.brand img{height:38px;width:38px;border-radius:10px;background:#fff;object-fit:contain;padding:3px;flex:none}
+.links{display:flex;gap:26px}
+.links a{color:#e9e5da;text-decoration:none;font-size:14px;font-weight:500}
+.links a:hover{color:#fff}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--pumpkin);color:#fff;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:16px;border:2px solid var(--pumpkin);cursor:pointer;font-family:inherit;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.22)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--pumpkin-lt);outline-offset:3px}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.85);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.sm{padding:8px 16px;font-size:14px}
+#inst{display:none}
+
+/* hero */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;color:#fff;padding:120px 6vw 80px;
+  background:linear-gradient(180deg,rgba(15,20,12,.35) 0%,rgba(15,20,12,.55) 45%,rgba(15,20,12,.88) 100%),url("img/hero.jpg?v=1") center/cover no-repeat}
+.hero .wrap{width:100%}
+.hero h1{font-size:clamp(38px,7vw,84px);max-width:900px}
+.hero h1 em{font-style:normal;color:var(--pumpkin-lt)}
+.hero p.lead{font-size:clamp(17px,2vw,20px);max-width:600px;margin:20px 0 32px;color:#f0ece2}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.status i{width:9px;height:9px;border-radius:50%;background:#9aa395;display:inline-block}
+.status.open i{background:#6fd36a;box-shadow:0 0 0 4px rgba(111,211,106,.25)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:38px;font-size:14px;color:#e0dccf}
+.facts b{color:#fff;font-weight:600}
+
+section{padding:96px 6vw}
+
+/* about */
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+.about figure{position:relative}
+.about figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);box-shadow:var(--shadow)}
+.about p+p{margin-top:14px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.pills span{background:var(--paper);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500}
+
+/* menu */
+.dark{background:var(--green);color:#f3efe4}
+.dark .sub{color:#cdd3c6}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:56px}
+.cat{background:var(--green-2);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px}
+.cat h3{font-size:20px;color:#fff}
+.cat span{font-size:14px;color:#c7cdbf}
+.menu-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:18px}
+.menu-head h3{font-size:26px;color:#fff}
+.menu-head small{color:#c7cdbf;font-size:13px}
+.dishes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 48px}
+.dish{display:flex;align-items:baseline;gap:12px;padding:16px 0;border-bottom:1px dashed rgba(255,255,255,.18)}
+.dish b{font-weight:600;color:#fff}
+.dish .dots{flex:1;border-bottom:1px dotted rgba(255,255,255,.25);transform:translateY(-4px)}
+.dish .pr{color:var(--pumpkin-lt);font-weight:700;white-space:nowrap}
+.menu-cta{margin-top:40px;display:flex;flex-wrap:wrap;gap:12px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:220px;gap:14px}
+.gal figure{overflow:hidden;border-radius:16px;position:relative;background:#e9e1d2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:12px;bottom:12px;background:rgba(15,20,12,.72);color:#fff;font-size:13px;padding:4px 12px;border-radius:999px}
+.g1{grid-column:span 4;grid-row:span 2}.g2{grid-column:span 2}.g3{grid-column:span 2}
+.g4{grid-column:span 2}.g5{grid-column:span 2}.g6{grid-column:span 2}
+.note{font-size:13px;color:var(--muted);margin-top:16px}
+
+/* hours + map */
+.info{display:grid;grid-template-columns:1fr 1.25fr;gap:48px;align-items:stretch}
+.hours{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:32px;box-shadow:var(--shadow)}
+.hours table{width:100%;border-collapse:collapse;margin:8px 0 22px}
+.hours td{padding:14px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--pumpkin)}
+.hours p{font-size:15px;color:var(--muted)}
+.hours address{font-style:normal;font-weight:600;font-size:18px;margin-bottom:6px}
+.map{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);min-height:380px;background:#e9e1d2}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* reservations / contact */
+.contact{background:linear-gradient(135deg,var(--green) 0%,#2d3b28 100%);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact .sub{color:#d5dacf;margin:0 auto 34px}
+.contact .cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:56px;text-align:left}
+.cbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:22px}
+.cbox span{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--pumpkin-lt);font-weight:700;margin-bottom:6px}
+.cbox a{color:#fff;font-weight:600;text-decoration:none;word-break:break-word}
+.cbox a:hover{text-decoration:underline}
+
+footer{background:#0f130d;color:#b9b5aa;padding:44px 6vw 110px;font-size:14px}
+footer .wrap{display:grid;gap:10px}
+footer b{color:#fff}
+footer a{color:#e2ddd0}
+
+/* sticky mobile bar */
+.sticky{position:fixed;bottom:calc(12px + env(safe-area-inset-bottom));left:12px;right:12px;z-index:50;display:none;gap:10px}
+.sticky a{flex:1;text-align:center;padding:14px 10px;border-radius:999px;color:#fff;text-decoration:none;font-weight:700;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+.sticky .call{background:var(--pumpkin)}
+.sticky .wa{background:#1d7a45}
+
+/* reveal: only hidden when JS is running */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.btn,.gal img{transition:none}}
+
+@media (max-width:900px){
+  .links{display:none}
+  .about,.info{grid-template-columns:1fr;gap:36px}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
+  .g1{grid-column:span 2;grid-row:span 2}.g2,.g3,.g4,.g5{grid-column:span 1}.g6{grid-column:span 2}
+}
+@media (max-width:760px){
+  section{padding:68px 6vw}
+  .sticky{display:flex}
+  .hero{padding:90px 6vw 60px}
+  .hours{padding:24px}
+}
+@media (max-width:380px){
+  .brand{font-size:20px}
+  .brand img{height:32px;width:32px}
+  .btn.sm{padding:7px 13px;font-size:13px}
+  .hero .cta .btn{width:100%}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<div class="ribbon">Preview made for Zucca by Kinoverse - not live yet</div>
+
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="#top"><img src="img/logo.png?v=1" alt="Logo Zucca" width="38" height="38">Zucca</a>
+    <nav class="links" aria-label="Navigare principală">
+      <a href="#despre">Despre</a><a href="#meniu">Meniu</a><a href="#galerie">Galerie</a><a href="#program">Program</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="actions">
+      <button class="btn sm ghost" id="inst" type="button">Instalează aplicația</button>
+      <a class="btn sm" href="tel:+40786221622">Sună</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top" aria-label="Zucca Bistro">
+  <div class="wrap">
+    <span class="kicker">Zucca Bistro · Bucătărie internațională</span><br>
+    <span class="status" id="status"><i></i><span id="statusTxt">Luni-Vineri 09:00-23:00 · Weekend 10:00-23:00</span></span>
+    <h1>Pizza, burgeri și paste pe <em>Louis Pasteur 74</em>, în Cluj-Napoca</h1>
+    <p class="lead">Gust, calitate, experiență: de la Pizza Zucca la Pulled Brisket Burger și tiramisu. Vino la masă, ridică la pachet sau comandă acasă.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+40786221622">Rezervă o masă · 0786 221 622</a>
+      <a class="btn ghost" href="https://wa.me/40786221622" target="_blank" rel="noopener">Scrie pe WhatsApp</a>
+    </div>
+    <div class="facts">
+      <span><b>Livrare</b> estimată 30-45 min</span>
+      <span><b>Ridicare</b> estimată 15-20 min</span>
+      <span><b>Deschis</b> 7 zile din 7</span>
+    </div>
+  </div>
+</section>
+
+<section id="despre">
+  <div class="wrap about">
+    <figure class="reveal">
+      <img src="img/og.jpg?v=1" alt="Imagine de prezentare Zucca Bistro" width="1200" height="900" loading="lazy">
+    </figure>
+    <div class="reveal">
+      <span class="kicker">Despre noi</span>
+      <h2>Bistroul din Str. Louis Pasteur</h2>
+      <p>Zucca Bistro gătește bucătărie internațională în Cluj-Napoca, pe Strada Louis Pasteur 74. Meniul are de toate pentru o masă bună: pizza, burgeri, paste și risotto, supe, salate și deserturi, plus bar.</p>
+      <p>Ne găsești în fiecare zi a săptămânii, de dimineață până la 23:00, pentru o masă la restaurant, o comandă la pachet sau livrare. Pentru rezervări, sună la <a href="tel:+40786221622">0786 221 622</a>.</p>
+      <div class="pills">
+        <span>Bucătărie internațională</span><span>Rezervări</span><span>Livrare</span><span>Ridicare la pachet</span><span>Bar</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="meniu">
+  <div class="wrap">
+    <span class="kicker reveal">Meniu</span>
+    <h2 class="reveal">Din bucătăria Zucca</h2>
+    <p class="sub reveal">Categoriile din meniul nostru și câteva dintre preparatele recomandate de bucătari. Meniul complet, cu bucătărie și bar, este pe zucca.ro.</p>
+
+    <div class="cats">
+      <div class="cat reveal"><h3>Pizza</h3><span>18 preparate</span></div>
+      <div class="cat reveal"><h3>Burgeri</h3><span>13 preparate</span></div>
+      <div class="cat reveal"><h3>Paste &amp; Risotto</h3><span>11 preparate</span></div>
+      <div class="cat reveal"><h3>Deserturi</h3><span>8 preparate</span></div>
+      <div class="cat reveal"><h3>Supe</h3><span>6 preparate</span></div>
+      <div class="cat reveal"><h3>Salate</h3><span>6 preparate</span></div>
+    </div>
+
+    <div class="menu-head reveal">
+      <h3>Recomandările bucătarilor</h3>
+      <small>Prețuri afișate pe zucca.ro la 15.11.2026</small>
+    </div>
+    <div class="dishes reveal">
+      <div class="dish"><b>Chicken Kiev</b><span class="dots"></span><span class="pr">58,80 lei</span></div>
+      <div class="dish"><b>Pulled Brisket Burger</b><span class="dots"></span><span class="pr">62,80 lei</span></div>
+      <div class="dish"><b>Pizza Zucca</b><span class="dots"></span><span class="pr">39,80 lei</span></div>
+      <div class="dish"><b>Zucca Salad</b><span class="dots"></span><span class="pr">42,80 lei</span></div>
+      <div class="dish"><b>Pizza Salame Quattro Formaggi</b><span class="dots"></span><span class="pr">42,80 lei</span></div>
+      <div class="dish"><b>Crispy Fries Pizza</b><span class="dots"></span><span class="pr">39,80 lei</span></div>
+      <div class="dish"><b>La Dolce Pizza</b><span class="dots"></span><span class="pr">34,80 lei</span></div>
+      <div class="dish"><b>Tiramisu</b><span class="dots"></span><span class="pr">25,80 lei</span></div>
+    </div>
+    <div class="menu-cta reveal">
+      <a class="btn" href="https://zucca.ro" target="_blank" rel="noopener">Vezi meniul complet și comandă</a>
+      <a class="btn ghost" href="tel:+40786221622">Sună pentru rezervare</a>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <span class="kicker reveal">Galerie</span>
+    <h2 class="reveal">Ce te așteaptă la masă</h2>
+    <p class="sub reveal">Pizza, burgeri, paste și deserturi, în bucătăria noastră internațională.</p>
+    <div class="gal">
+      <figure class="g1 reveal"><img src="img/pizza1.jpg?v=1" alt="Pizza cu brânză topită" loading="lazy"><figcaption>Pizza</figcaption></figure>
+      <figure class="g2 reveal"><img src="img/burger1.jpg?v=1" alt="Burgeri serviți la restaurant" loading="lazy"><figcaption>Burgeri</figcaption></figure>
+      <figure class="g3 reveal"><img src="img/pasta1.jpg?v=1" alt="Farfurie cu paste" loading="lazy"><figcaption>Paste</figcaption></figure>
+      <figure class="g4 reveal"><img src="img/tiramisu1.jpg?v=1" alt="Porție de tiramisu" loading="lazy"><figcaption>Tiramisu</figcaption></figure>
+      <figure class="g5 reveal"><img src="img/interior2.jpg?v=1" alt="Interior de restaurant" loading="lazy"><figcaption>La masă</figcaption></figure>
+      <figure class="g6 reveal"><img src="img/hero.jpg?v=1" alt="Sală de restaurant modernă" loading="lazy"><figcaption>Seara</figcaption></figure>
+    </div>
+    <p class="note">Fotografii ilustrative, până la înlocuirea cu fotografiile Zucca.</p>
+  </div>
+</section>
+
+<section id="program">
+  <div class="wrap">
+    <span class="kicker reveal">Program &amp; locație</span>
+    <h2 class="reveal">Te așteptăm în fiecare zi</h2>
+    <p class="sub reveal">Pe Strada Louis Pasteur 74, Cluj-Napoca. Sună înainte pentru o masă rezervată.</p>
+    <div class="info">
+      <div class="hours reveal">
+        <address>Str. Louis Pasteur 74<br>Cluj-Napoca, România</address>
+        <table aria-label="Program de funcționare">
+          <tr data-days="1,2,3,4,5"><td>Luni - Vineri</td><td>09:00 - 23:00</td></tr>
+          <tr data-days="6,0"><td>Sâmbătă - Duminică</td><td>10:00 - 23:00</td></tr>
+        </table>
+        <p>Livrare estimată: 30-45 min · Ridicare: 15-20 min.</p>
+        <p style="margin-top:18px"><a class="btn" href="https://www.openstreetmap.org/?mlat=46.7551210&amp;mlon=23.5755554#map=18/46.7551210/23.5755554" target="_blank" rel="noopener">Deschide harta</a></p>
+      </div>
+      <div class="map reveal">
+        <iframe title="Hartă: Zucca Bistro, Str. Louis Pasteur 74, Cluj-Napoca" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=23.5695%2C46.7521%2C23.5815%2C46.7581&amp;layer=mapnik&amp;marker=46.7551210%2C23.5755554"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="kicker reveal">Rezervări &amp; contact</span>
+    <h2 class="reveal">Rezervă-ți masa la Zucca</h2>
+    <p class="sub reveal">Un telefon și îți pregătim locul. Pentru comenzi online, livrare sau ridicare, folosește zucca.ro.</p>
+    <div class="cta reveal">
+      <a class="btn" href="tel:+40786221622">Sună: 0786 221 622</a>
+      <a class="btn ghost" href="https://wa.me/40786221622" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn ghost" href="https://zucca.ro" target="_blank" rel="noopener">Comandă online</a>
+    </div>
+    <div class="cgrid">
+      <div class="cbox reveal"><span>Telefon</span><a href="tel:+40786221622">0786 221 622</a></div>
+      <div class="cbox reveal"><span>Email</span><a href="mailto:office@zucca.ro">office@zucca.ro</a></div>
+      <div class="cbox reveal"><span>Adresă</span><a href="https://www.openstreetmap.org/node/4128155961" target="_blank" rel="noopener">Str. Louis Pasteur 74, Cluj-Napoca</a></div>
+      <div class="cbox reveal"><span>Program</span><a href="#program">L-V 09-23 · S-D 10-23</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Zucca Bistro</b> · Str. Louis Pasteur 74, Cluj-Napoca · <a href="tel:+40786221622">0786 221 622</a> · <a href="mailto:office@zucca.ro">office@zucca.ro</a></p>
+    <p>© 2026 S.C. GH INVEST S.R.L. · Logo și imaginea de prezentare: Zucca.</p>
+    <p>Fotografii ilustrative CC0 (domeniu public, fără atribuire obligatorie): Rawpixel, StockSnap (Krzysztof Puszczyński, Jay Mantri, Peter Belch, donterase), WordPress Photo Directory (ChrisEdwardsCE).</p>
+    <p>Preview made for Zucca by Kinoverse - not live yet.</p>
+  </div>
+</footer>
+
+<div class="sticky" aria-label="Contact rapid">
+  <a class="call" href="tel:+40786221622">Sună acum</a>
+  <a class="wa" href="https://wa.me/40786221622" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  // Reveal on scroll (content stays visible if JS or IntersectionObserver is missing)
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},4000);
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  // Open / closed, in Cluj time
+  try{
+    var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Bucharest',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+    var get=function(t){return (parts.find(function(p){return p.type===t})||{}).value};
+    var day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[get('weekday')];
+    var mins=parseInt(get('hour'),10)*60+parseInt(get('minute'),10);
+    var openAt=(day===0||day===6)?600:540, closeAt=1380;
+    var st=document.getElementById('status'),tx=document.getElementById('statusTxt');
+    if(mins>=openAt&&mins<closeAt){st.classList.add('open');tx.textContent='Deschis acum · până la 23:00'}
+    else{tx.textContent='Închis acum · deschidem la '+(mins<openAt?(openAt===600?'10:00':'09:00'):(((day+1)%7===0||(day+1)%7===6)?'10:00':'09:00'))}
+    document.querySelectorAll('.hours tr[data-days]').forEach(function(r){if(r.getAttribute('data-days').split(',').indexOf(String(day))>-1)r.classList.add('today')});
+  }catch(e){}
+
+  // Install button: only where the browser offers it (Android / Chrome)
+  var dp,b=document.getElementById('inst');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none'})}});
+  window.addEventListener('appinstalled',function(){b.style.display='none'});
+  if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(function(){})}
+})();
+</script>
+</body>
+</html>
