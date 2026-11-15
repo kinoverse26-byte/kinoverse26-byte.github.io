@@ -1,0 +1,20 @@
+{
+  "name": "Selfish - Restaurant Port Louis",
+  "short_name": "Selfish",
+  "description": "Restaurant de cuisine régionale à Port Louis, Maurice. Ouvert à partir de 18h30.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "fr",
+  "background_color": "#14100d",
+  "theme_color": "#14100d",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
