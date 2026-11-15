@@ -1,0 +1,19 @@
+{
+  "name": "La Rougaille Créole",
+  "short_name": "Rougaille",
+  "description": "Restaurant créole et fruits de mer, Royal Road, Port Louis, Maurice",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1a0f0a",
+  "theme_color": "#b8321f",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
