@@ -1,0 +1,19 @@
+{
+  "name": "Social People Pub",
+  "short_name": "People Pub",
+  "description": "Social People Pub - Cluj-Napoca, Strada Dávid Ferenc 13",
+  "lang": "ro",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14110f",
+  "theme_color": "#14110f",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
