@@ -1,0 +1,20 @@
+{
+  "name": "World of Feng Shui",
+  "short_name": "Feng Shui",
+  "description": "Restaurant à Belle Rose, Maurice",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "fr",
+  "background_color": "#1a0f0c",
+  "theme_color": "#8e1b1b",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
