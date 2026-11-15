@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Selfish · Restaurant de cuisine régionale · Port Louis, Île Maurice</title>
+<meta name="description" content="Selfish, restaurant de cuisine régionale à Port Louis, île Maurice. Service du soir à partir de 18h30. Réservation par e-mail : selfishmauritius@gmail.com.">
+<meta name="theme-color" content="#14110f">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon.svg">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Selfish">
+<meta property="og:title" content="Selfish · Cuisine régionale à Port Louis, Île Maurice">
+<meta property="og:description" content="La cuisine de l'île, servie le soir à partir de 18h30. Réservation par e-mail.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14110f;--bg2:#1c1714;--line:#2e2621;
+  --gold:#d9a441;--coral:#c4472a;--coral-h:#d9562f;
+  --txt:#f4ece1;--mut:#c2b6a6;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.65;font-weight:300;overflow-x:hidden}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;line-height:1.12}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* Ribbon */
+.ribbon{background:var(--gold);color:#14110f;text-align:center;font-size:.74rem;padding:.4rem 1rem;font-weight:500;letter-spacing:.02em}
+
+/* Header — wraps on small phones so every button stays visible */
+.top{position:sticky;top:0;z-index:50;background:rgba(20,17,15,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1rem;padding:.75rem 5vw}
+.logo{font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:600;letter-spacing:.03em;color:var(--txt)}
+.menu{display:none;gap:1.8rem;list-style:none;font-size:.88rem}
+.menu a{color:var(--mut);transition:color .2s}
+.menu a:hover{color:var(--gold)}
+.actions{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--coral);color:#fff;padding:.9rem 1.7rem;border-radius:50px;font-weight:500;border:1px solid var(--coral);cursor:pointer;font:500 1rem/1.2 Inter,sans-serif;transition:background .25s,color .25s,transform .25s,border-color .25s;white-space:nowrap}
+.btn:hover{background:var(--coral-h);border-color:var(--coral-h);transform:translateY(-2px)}
+.btn.ghost{background:transparent;border-color:var(--gold);color:var(--gold)}
+.btn.ghost:hover{background:var(--gold);color:#14110f}
+.btn.sm{padding:.55rem 1rem;font-size:.85rem}
+.btn svg{width:1.05em;height:1.05em;flex:none}
+#install{display:none}
+
+/* Hero */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;padding:7rem 5vw 4.5rem;background:#14110f url(img/hero.jpg?v=1) center/cover no-repeat;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,17,15,.35) 0%,rgba(20,17,15,.55) 45%,rgba(20,17,15,.95) 100%)}
+.hero-in{max-width:1180px;width:100%;margin:auto}
+.eyebrow{display:inline-block;color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:.74rem;font-weight:500}
+.hero h1{font-size:clamp(2.4rem,8vw,5.2rem);margin:1rem 0 1.2rem;max-width:14ch}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{font-size:clamp(1rem,2.6vw,1.2rem);color:#ebe1d3;max-width:36rem;margin-bottom:2rem}
+.hero .row{display:flex;flex-wrap:wrap;gap:.8rem}
+.hero-facts{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2.6rem;padding-top:1.4rem;border-top:1px solid rgba(217,164,65,.3);font-size:.88rem;color:#e6dccd}
+.hero-facts b{color:var(--gold);font-weight:500}
+
+/* Sections */
+section{padding:5rem 6vw}
+.wrap{max-width:1100px;margin:auto}
+.tag{color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:.74rem;font-weight:500}
+h2{font-size:clamp(1.9rem,5vw,3rem);margin:.6rem 0 1.4rem}
+.lead{color:var(--mut);max-width:40rem}
+.alt{background:var(--bg2)}
+
+/* About */
+.about{display:grid;gap:2.5rem;align-items:center}
+.about figure{position:relative}
+.about img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.about figure::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid rgba(217,164,65,.45);border-radius:var(--r);z-index:-1}
+.about p{color:var(--mut);margin-bottom:1rem}
+.about p strong{color:var(--txt);font-weight:500}
+
+/* Services */
+.cards{display:grid;gap:1.3rem;margin-top:2.4rem}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.8rem 1.6rem;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-5px);border-color:rgba(217,164,65,.6)}
+.card .ic{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(217,164,65,.12);color:var(--gold);margin-bottom:1.1rem}
+.card .ic svg{width:22px;height:22px}
+.card h3{font-size:1.35rem;margin-bottom:.5rem}
+.card p{color:var(--mut);font-size:.95rem}
+.note{margin-top:2rem;font-size:.85rem;color:var(--mut)}
+.note b{color:var(--gold);font-weight:500}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:2.2rem}
+.gallery figure{overflow:hidden;border-radius:14px;background:#221c18}
+.gallery img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery .wide{grid-column:span 2}
+.gallery .wide img{aspect-ratio:16/9}
+.caption{margin-top:1rem;font-size:.8rem;color:var(--mut)}
+
+/* Info */
+.info{display:grid;gap:2.5rem}
+.info dl{margin-top:.4rem}
+.info dt{color:var(--gold);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-top:1.4rem;font-weight:500}
+.info dd{font-size:1.08rem;margin-top:.2rem}
+.info dd small{display:block;color:var(--mut);font-size:.85rem}
+.info dd a{color:var(--gold);border-bottom:1px solid rgba(217,164,65,.4);word-break:break-all}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:340px}
+.map iframe{display:block;width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.25) contrast(1.05)}
+
+/* Contact */
+.contact{text-align:center;background:radial-gradient(ellipse at top,rgba(217,164,65,.12),transparent 60%),var(--bg)}
+.contact p{color:var(--mut);max-width:34rem;margin:0 auto 2rem}
+.cta-row{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.mail{display:inline-block;margin-top:1.8rem;color:var(--gold);font-size:1.05rem;word-break:break-all}
+
+/* Footer */
+footer{padding:3rem 6vw 7.5rem;border-top:1px solid var(--line);text-align:center;color:var(--mut);font-size:.82rem}
+footer .f-logo{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--txt);display:block;margin-bottom:.4rem}
+footer p{margin-top:.6rem}
+footer a{color:var(--gold)}
+
+/* Sticky mobile bar */
+.sticky{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:flex;gap:.5rem;padding:.45rem;background:rgba(20,17,15,.94);border:1px solid var(--line);border-radius:50px;box-shadow:0 10px 30px rgba(0,0,0,.55);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:.45rem;padding:.8rem .5rem;border-radius:50px;font-weight:500;font-size:.92rem}
+.sticky .s1{background:var(--coral);color:#fff}
+.sticky .s2{color:var(--gold);border:1px solid rgba(217,164,65,.5)}
+.sticky svg{width:1.05em;height:1.05em}
+
+/* Reveal — only hides when JS is running */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .btn,.card,.gallery img{transition:none}
+}
+
+/* Larger screens */
+@media (min-width:700px){
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .gallery{grid-template-columns:repeat(3,1fr);gap:1rem}
+  .gallery .wide{grid-column:span 2}
+  .gallery .wide img{aspect-ratio:auto}
+}
+@media (min-width:900px){
+  section{padding:7rem 5vw}
+  .menu{display:flex}
+  .about{grid-template-columns:1.05fr 1fr;gap:4.5rem}
+  .info{grid-template-columns:1fr 1.25fr;gap:3.5rem}
+  .hero{align-items:center;padding-bottom:5rem}
+  .sticky{display:none}
+  footer{padding-bottom:3rem}
+}
+@media (max-width:380px){
+  .logo{font-size:1.35rem}
+  .btn.sm{padding:.5rem .85rem;font-size:.8rem}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Aperçu réalisé pour Selfish par Kinoverse – pas encore en ligne</div>
+
+<header class="top">
+  <div class="top-in">
+    <a href="#top" class="logo" aria-label="Selfish, retour en haut">Selfish</a>
+    <ul class="menu">
+      <li><a href="#maison">La maison</a></li>
+      <li><a href="#cuisine">La cuisine</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#infos">Horaires &amp; accès</a></li>
+    </ul>
+    <div class="actions">
+      <button class="btn ghost sm" id="install" type="button">Installer l'app</button>
+      <a href="mailto:selfishmauritius@gmail.com?subject=R%C3%A9servation%20chez%20Selfish" class="btn sm">Réserver</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top" aria-label="Accueil">
+  <div class="hero-in">
+    <span class="eyebrow">Restaurant · Port Louis · Île Maurice</span>
+    <h1>Port Louis, 18h30&nbsp;: <em>la cuisine de l'île</em> passe à table.</h1>
+    <p>Selfish sert une cuisine régionale mauricienne, le soir venu. Une table à réserver simplement, par e-mail.</p>
+    <div class="row">
+      <a href="mailto:selfishmauritius@gmail.com?subject=R%C3%A9servation%20chez%20Selfish" class="btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Réserver une table
+      </a>
+      <a href="#infos" class="btn ghost">Horaires &amp; accès</a>
+    </div>
+    <div class="hero-facts">
+      <span><b>Cuisine</b> régionale</span>
+      <span><b>Service</b> le soir, dès 18h30</span>
+      <span><b>Lieu</b> Port Louis, Maurice</span>
+    </div>
+  </div>
+</section>
+
+<section id="maison">
+  <div class="wrap about">
+    <figure class="reveal">
+      <img src="img/table.jpg?v=1" alt="Photo d'illustration : table de restaurant dressée pour le dîner" loading="lazy" width="1024" height="683">
+    </figure>
+    <div class="reveal">
+      <span class="tag">La maison</span>
+      <h2>Les saveurs d'ici, servies le soir.</h2>
+      <p><strong>Selfish</strong> est un restaurant de <strong>cuisine régionale</strong> à Port Louis, sur l'île Maurice. Les portes s'ouvrent à partir de <strong>18h30</strong>, pour le dîner.</p>
+      <p>Une adresse pour se faire plaisir — le nom le dit bien — entre amis, en famille ou à deux, autour des goûts de l'île.</p>
+      <p>Carte du moment, spécialités et tarifs&nbsp;: sur demande auprès du restaurant.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cuisine" class="alt">
+  <div class="wrap">
+    <span class="tag">La cuisine</span>
+    <h2>Ce que Selfish vous propose</h2>
+    <p class="lead">L'essentiel, sans artifice. Les plats et les prix exacts sont communiqués par le restaurant sur demande.</p>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0Z"/><path d="M8 7c0-1.5 1-2 1-3.5M12 7c0-1.5 1-2 1-3.5M16 7c0-1.5 1-2 1-3.5"/></svg></div>
+        <h3>Cuisine régionale</h3>
+        <p>Une cuisine ancrée dans l'île Maurice et ses saveurs. Carte et spécialités sur demande.</p>
+      </article>
+      <article class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></div>
+        <h3>Le service du soir</h3>
+        <p>Ouvert à partir de 18h30. Jours d'ouverture et heure de fermeture&nbsp;: à confirmer.</p>
+      </article>
+      <article class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+        <h3>Réservation</h3>
+        <p>Écrivez au restaurant pour réserver votre table ou poser une question (groupes, occasions…).</p>
+      </article>
+    </div>
+    <p class="note"><b>Prix&nbsp;:</b> sur demande · <b>Carte détaillée&nbsp;:</b> à confirmer par le restaurant</p>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <span class="tag">Galerie</span>
+    <h2>L'esprit du dîner</h2>
+    <div class="gallery">
+      <figure class="wide reveal"><img src="img/hero.jpg?v=1" alt="Photo d'illustration : table de restaurant dressée pour le dîner" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/dish1.jpg?v=1" alt="Photo d'illustration : assiette servie au restaurant" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/dinner.jpg?v=1" alt="Photo d'illustration : dîner au restaurant" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/platter.jpg?v=1" alt="Photo d'illustration : plateau de plats à partager" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/table.jpg?v=1" alt="Photo d'illustration : table dressée pour le dîner" loading="lazy"></figure>
+    </div>
+    <p class="caption">Photos d'illustration, en attendant les photos de Selfish.</p>
+  </div>
+</section>
+
+<section id="infos" class="alt">
+  <div class="wrap info">
+    <div class="reveal">
+      <span class="tag">Horaires &amp; accès</span>
+      <h2>Venir chez Selfish</h2>
+      <dl>
+        <dt>Horaires</dt>
+        <dd>Le soir, à partir de 18h30<small>Jours d'ouverture et heure de fermeture&nbsp;: à confirmer</small></dd>
+        <dt>Adresse</dt>
+        <dd>Port Louis, Île Maurice<small>Emplacement indiqué sur la carte · adresse postale à confirmer</small></dd>
+        <dt>Téléphone</dt>
+        <dd>À confirmer<small>Réservation par e-mail en attendant</small></dd>
+        <dt>E-mail</dt>
+        <dd><a href="mailto:selfishmauritius@gmail.com">selfishmauritius@gmail.com</a></dd>
+      </dl>
+      <div class="cta-row" style="justify-content:flex-start;margin-top:2rem">
+        <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=-20.0063409,57.557133" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          Itinéraire
+        </a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe loading="lazy" title="Carte : emplacement du restaurant Selfish" src="https://www.openstreetmap.org/export/embed.html?bbox=57.5511%2C-20.0113%2C57.5631%2C-20.0013&amp;layer=mapnik&amp;marker=-20.0063409%2C57.557133"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap reveal">
+    <span class="tag">Réservation</span>
+    <h2>Réservez votre soirée</h2>
+    <p>Indiquez la date, l'heure souhaitée (à partir de 18h30) et le nombre de convives. Le restaurant vous répond pour confirmer.</p>
+    <div class="cta-row">
+      <a class="btn" href="mailto:selfishmauritius@gmail.com?subject=R%C3%A9servation%20chez%20Selfish&amp;body=Bonjour%2C%0A%0ADate%20%3A%20%0AHeure%20%3A%20%0ANombre%20de%20personnes%20%3A%20%0ANom%20%3A%20%0A%0AMerci%20!">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Réserver par e-mail
+      </a>
+      <a class="btn ghost" href="https://www.openstreetmap.org/node/4202286962" target="_blank" rel="noopener">Voir sur la carte</a>
+    </div>
+    <a class="mail" href="mailto:selfishmauritius@gmail.com">selfishmauritius@gmail.com</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span class="f-logo">Selfish</span>
+  Restaurant · cuisine régionale · Port Louis, Île Maurice<br>
+  Le soir, à partir de 18h30
+  <p>Photos d'illustration libres de droits (CC0, Rawpixel &amp; StockSnap), à remplacer par les photos du restaurant. Carte © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">contributeurs OpenStreetMap</a>.</p>
+  <p>Aperçu réalisé pour Selfish par Kinoverse – pas encore en ligne.</p>
+</footer>
+
+<nav class="sticky" aria-label="Actions rapides">
+  <a class="s1" href="mailto:selfishmauritius@gmail.com?subject=R%C3%A9servation%20chez%20Selfish">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    Réserver
+  </a>
+  <a class="s2" href="https://www.google.com/maps/dir/?api=1&amp;destination=-20.0063409,57.557133" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+    Itinéraire
+  </a>
+</nav>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el);});
+    /* safety net: never leave content hidden */
+    setTimeout(function(){els.forEach(function(el){el.classList.add('on');});},4000);
+  }
+  var dp,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex';});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp=null;b.style.display='none';}});
+  window.addEventListener('appinstalled',function(){b.style.display='none';});
+  if('serviceWorker' in navigator && location.protocol==='https:'){
+    navigator.serviceWorker.register('sw.js').catch(function(){});
+  }
+})();
+</script>
+</body>
+</html>
