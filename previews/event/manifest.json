@@ -1,18 +1,18 @@
 {
-  "name": "Event Hall - Δεξιώσεις Θεσσαλονίκη",
-  "short_name": "Event Hall",
-  "description": "Wedding and event reception halls at Derveni, Thessaloniki",
+  "name": "Event Dexiosi",
+  "short_name": "Event",
+  "description": "Event Dexiosi - receptions and events",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#14110f",
-  "theme_color": "#14110f",
+  "background_color": "#111111",
+  "theme_color": "#111111",
   "icons": [
     {
-      "src": "img/icon.svg",
+      "src": "icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
