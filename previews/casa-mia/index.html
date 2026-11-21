@@ -334,7 +334,7 @@ footer a{color:#e8dccb}
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo agrandie">
   <button type="button" aria-label="Fermer">×</button>
-  <img src="" alt="">
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
 </div>
 
 <script>
@@ -356,7 +356,7 @@ footer a{color:#e8dccb}
   document.querySelectorAll('.gal button').forEach(function(t){
     t.addEventListener('click',function(){last=t;var im=t.querySelector('img');li.src=t.dataset.full;li.alt=im.alt;lb.classList.add('open');lb.querySelector('button').focus()});
   });
-  function close(){lb.classList.remove('open');li.src='';if(last)last.focus()}
+  function close(){lb.classList.remove('open');li.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';if(last)last.focus()}
   lb.addEventListener('click',function(e){if(e.target!==li)close()});
   addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))close()});
   if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(function(){})}
