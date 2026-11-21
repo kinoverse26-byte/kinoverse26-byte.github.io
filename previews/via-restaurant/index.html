@@ -349,7 +349,7 @@ footer .credits{font-size:12.5px;color:#9d938f}
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Fotografie mărită">
   <button type="button" id="lbx" aria-label="Închide">×</button>
-  <img id="lbi" src="" alt="">
+  <img id="lbi" alt="">
 </div>
 
 <script>
@@ -383,7 +383,7 @@ footer .credits{font-size:12.5px;color:#9d938f}
       lbi.src=a.getAttribute('href');lbi.alt=im.alt;lb.classList.add('open');document.getElementById('lbx').focus();
     });
   });
-  function close(){lb.classList.remove('open');lbi.src=''}
+  function close(){lb.classList.remove('open');lbi.removeAttribute('src')}
   document.getElementById('lbx').addEventListener('click',close);
   lb.addEventListener('click',function(e){if(e.target===lb)close()});
   addEventListener('keydown',function(e){if(e.key==='Escape')close()});
