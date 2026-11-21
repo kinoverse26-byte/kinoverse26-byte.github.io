@@ -1,18 +1,18 @@
 {
-  "name": "Enastros Reception Hall",
-  "short_name": "Enastros",
-  "description": "Wedding and christening receptions in Thessaloniki",
+  "name": "Tzlilei HaEsh - צלילי האש",
+  "short_name": "Tzlilei HaEsh",
+  "description": "Grill restaurant in Bnei Brak. Call to order or reserve.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#14161f",
-  "theme_color": "#14161f",
+  "background_color": "#14100d",
+  "theme_color": "#c8441b",
   "icons": [
     {
-      "src": "img/logo.png",
+      "src": "img/icon.svg",
       "sizes": "any",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     }
   ]
 }
