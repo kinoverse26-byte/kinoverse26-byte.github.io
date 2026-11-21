@@ -1,0 +1,19 @@
+{
+  "name": "Monteen - Restaurante Mediterrânico, Porto",
+  "short_name": "Monteen",
+  "description": "Restaurante mediterrânico no Porto. Reservas recomendadas.",
+  "lang": "pt",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1512",
+  "theme_color": "#1b1512",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
