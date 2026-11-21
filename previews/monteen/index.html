@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monteen · Restaurante mediterrânico no Largo Doutor Tito Fontes, Porto</title>
+<meta name="description" content="Monteen, restaurante de cozinha mediterrânica no Largo Doutor Tito Fontes 147, Porto. Jantares de quarta a domingo, das 19h00 às 22h00. Esplanada. Reserva recomendada.">
+<meta name="theme-color" content="#1f2a1d">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2a1d'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23d9a85b'%3EM%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:site_name" content="Monteen">
+<meta property="og:title" content="Monteen · Restaurante mediterrânico no Porto">
+<meta property="og:description" content="Jantares mediterrânicos no Largo Doutor Tito Fontes 147, Porto. Quarta a domingo, 19h00–22h00. Reserva recomendada.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.className+=' js';</script>
+<style>
+:root{--ink:#1f2a1d;--ink2:#2a3826;--cream:#f7f1e6;--sand:#ece0cb;--terra:#b4532f;--terra-d:#94411f;--gold:#d9a85b;--text:#2a2a26;--muted:#545248}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--text);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;line-height:1.15}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:.6rem 1rem;z-index:100}
+.skip:focus{left:8px;top:8px}
+
+/* Top: ribbon + header */
+.top{position:fixed;top:0;left:0;right:0;z-index:50}
+.ribbon{background:#0f140e;color:#d8d4c8;font-size:.72rem;text-align:center;padding:.4rem .8rem;letter-spacing:.03em}
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.6rem 1rem;padding:.9rem 5vw;transition:background .3s,padding .3s}
+.top.solid .bar{background:rgba(31,42,29,.96);padding:.6rem 5vw;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.logo{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;color:#fff;text-decoration:none;letter-spacing:.06em}
+nav{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:flex-end}
+nav a.l{color:#fff;text-decoration:none;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+nav a.l:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--terra);color:#fff;padding:.95rem 1.9rem;border-radius:100px;text-decoration:none;font-weight:600;font-size:.9rem;letter-spacing:.04em;border:0;cursor:pointer;font-family:inherit;transition:background .25s,transform .25s,box-shadow .25s}
+.btn:hover{background:var(--terra-d);transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.85)}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.btn.sm{padding:.6rem 1.15rem;font-size:.8rem}
+.btn.gold{background:var(--gold);color:#1d1d1a}
+.btn.gold:hover{background:#c8954a}
+#install{display:none}
+#install.show{display:inline-flex}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;padding:10rem 5vw 5.5rem;color:#fff;background:#1f2a1d url(img/hero.jpg?v=1) center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,18,11,.6) 0%,rgba(12,18,11,.45) 40%,rgba(12,18,11,.88) 100%)}
+.hero .in{position:relative;max-width:820px}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.25em;font-size:.76rem;font-weight:500;margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.3rem,7.5vw,5rem);margin-bottom:1.3rem}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p.lead{font-size:1.12rem;font-weight:300;max-width:580px;margin-bottom:2.2rem}
+.cta{display:flex;gap:.9rem;flex-wrap:wrap}
+.hero .meta{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;margin-top:2.4rem;font-size:.85rem;color:#e9e3d6;border-top:1px solid rgba(255,255,255,.2);padding-top:1.3rem}
+.hero .meta b{color:var(--gold);font-weight:600}
+
+/* Sections */
+section{padding:6.5rem 5vw}
+.wrap{max-width:1150px;margin:0 auto}
+h2{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:1.2rem}
+.sub{color:var(--terra);text-transform:uppercase;letter-spacing:.22em;font-size:.76rem;font-weight:600;margin-bottom:.8rem}
+.center{text-align:center}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:4.5rem;align-items:center}
+.about .ph{position:relative}
+.about img{border-radius:6px;width:100%;aspect-ratio:4/5;object-fit:cover;box-shadow:0 24px 50px rgba(0,0,0,.2)}
+.about .ph::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--terra);border-radius:6px;z-index:-1}
+.about p{margin-bottom:1rem;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.tags span{border:1px solid var(--terra);color:var(--terra-d);padding:.4rem 1rem;border-radius:100px;font-size:.8rem}
+.dark{background:var(--ink);color:#fff}
+.dark .sub{color:var(--gold)}
+.dark .intro{max-width:620px;color:#d7d4c9;font-weight:300}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem;margin-top:2.8rem}
+.card{background:var(--ink2);border-radius:8px;padding:2.1rem 1.9rem;transition:transform .3s,border-color .3s;border:1px solid rgba(255,255,255,.07)}
+.card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.card .n{font-family:'Playfair Display',serif;color:var(--gold);font-size:.95rem;opacity:.8}
+.card h3{font-size:1.4rem;color:#fff;margin:.4rem 0 .6rem}
+.card p{font-size:.95rem;color:#d2cfc4;font-weight:300}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:260px;gap:1rem;margin-top:2.6rem}
+.gallery figure{overflow:hidden;border-radius:6px;background:var(--sand)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.06)}
+.gallery .big{grid-row:span 2}
+.note{font-size:.8rem;color:var(--muted);margin-top:1rem}
+.menu{background:var(--sand)}
+.menu .box{background:var(--cream);padding:3rem;border-radius:8px;max-width:760px;margin:2rem auto 0;text-align:center;box-shadow:0 14px 40px rgba(0,0,0,.08)}
+.menu .box p{margin-bottom:1.6rem;color:var(--muted)}
+.info{display:grid;grid-template-columns:1fr 1.2fr;gap:3.5rem;align-items:start}
+table{width:100%;border-collapse:collapse;margin:1rem 0 1.8rem}
+td{padding:.7rem .4rem;border-bottom:1px solid rgba(0,0,0,.1)}
+td:last-child{text-align:right;font-weight:600}
+tr.today td{background:rgba(217,168,91,.18)}
+tr.today td:first-child::after{content:" · hoje";color:var(--terra-d);font-weight:600;font-size:.85em}
+.off{color:var(--terra-d)}
+.facts{list-style:none;margin-top:1.2rem}
+.facts li{padding:.3rem 0;color:var(--muted)}
+.facts li::before{content:"✦ ";color:var(--terra)}
+.addr{font-size:1.05rem}
+.map{width:100%;height:440px;border:0;border-radius:8px;box-shadow:0 14px 40px rgba(0,0,0,.15);background:var(--sand)}
+.maplinks{display:flex;flex-wrap:wrap;gap:1rem;margin-top:.9rem;font-size:.88rem}
+.maplinks a{color:var(--terra-d);font-weight:600}
+.reserve{position:relative;color:#fff;text-align:center;background:#1f2a1d url(img/table.jpg?v=1) center/cover no-repeat}
+.reserve::before{content:"";position:absolute;inset:0;background:rgba(24,33,22,.88)}
+.reserve .wrap{position:relative;max-width:680px}
+.reserve .sub{color:var(--gold)}
+.reserve p{margin:0 auto 2rem;font-weight:300;color:#e6e2d6}
+.reserve .cta{justify-content:center}
+.reserve .small{font-size:.85rem;color:#c9c5b9;margin-top:1.6rem;margin-bottom:0}
+footer{background:#121a11;color:#bdbcb0;padding:3.5rem 5vw 2.5rem;font-size:.85rem;text-align:center}
+footer .logo{display:inline-block;margin-bottom:.9rem}
+footer p{margin:.3rem 0}
+footer a{color:#e3dccb}
+footer .credits{margin-top:1.4rem;font-size:.74rem;color:#9a998e;max-width:760px;margin-left:auto;margin-right:auto}
+
+/* Sticky mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:.6rem;padding:.6rem .8rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(18,26,17,.97);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+.mbar a{flex:1;padding:.85rem .6rem;font-size:.85rem}
+
+/* Reveal — only hides when JS is running */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:860px){
+nav a.l{display:none}
+.about,.info{grid-template-columns:1fr;gap:2.5rem}
+.about .ph::after{display:none}
+.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:190px}
+.gallery .big{grid-row:span 1;grid-column:span 2;}
+section{padding:4.5rem 6vw}
+.menu .box{padding:2.2rem 1.4rem}
+.map{height:340px}
+.mbar{display:flex}
+}
+@media (min-width:861px){body{padding-bottom:0}}
+@media (max-width:400px){
+.logo{font-size:1.35rem}
+.bar{padding:.7rem 4vw}
+.hero{padding:9.5rem 6vw 4rem}
+.hero .cta .btn{width:100%}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#sobre">Saltar para o conteúdo</a>
+
+<div class="top" id="top-bar">
+  <div class="ribbon">Preview made for Monteen by Kinoverse - not live yet</div>
+  <header class="bar">
+    <a class="logo" href="#inicio" aria-label="Monteen, início">Monteen</a>
+    <nav aria-label="Principal">
+      <a class="l" href="#sobre">Sobre</a>
+      <a class="l" href="#cozinha">Cozinha</a>
+      <a class="l" href="#galeria">Galeria</a>
+      <a class="l" href="#horario">Horário</a>
+      <button id="install" class="btn sm gold" type="button">Instalar a app</button>
+      <a class="btn sm" href="#reservas">Reservar</a>
+    </nav>
+  </header>
+</div>
+
+<main id="inicio">
+<section class="hero" aria-label="Apresentação">
+  <div class="in">
+    <p class="eyebrow">Cozinha mediterrânica · Porto</p>
+    <h1>Jantares mediterrânicos no <em>Largo Doutor Tito Fontes</em>.</h1>
+    <p class="lead">O Monteen abre as portas ao jantar, de quarta a domingo, no número 147 do largo, com esplanada para as noites do Porto.</p>
+    <div class="cta">
+      <a class="btn" href="#reservas">Reservar mesa</a>
+      <a class="btn ghost" href="#horario">Horário e morada</a>
+    </div>
+    <div class="meta">
+      <span><b>Qua–Dom</b> 19h00–22h00</span>
+      <span><b>Seg–Ter</b> encerrado</span>
+      <span><b>Reserva</b> recomendada</span>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap about">
+    <div class="rv">
+      <p class="sub">O restaurante</p>
+      <h2>Monteen, no Largo Doutor Tito Fontes</h2>
+      <p>O Monteen é um restaurante de cozinha mediterrânica no Porto, no Largo Doutor Tito Fontes, 147. É uma casa de jantares: abre de quarta a domingo, a partir das 19h00.</p>
+      <p>Há esplanada para quem prefere jantar ao ar livre, e wi-fi para os clientes. Para garantir lugar, a reserva é recomendada.</p>
+      <div class="tags"><span>Cozinha mediterrânica</span><span>Esplanada</span><span>Wi-fi para clientes</span><span>Reserva recomendada</span></div>
+    </div>
+    <div class="rv ph"><img src="img/food2.jpg?v=1" alt="Mesa de jantar com pratos servidos (fotografia ilustrativa)" loading="lazy" width="960" height="731"></div>
+  </div>
+</section>
+
+<section id="cozinha" class="dark">
+  <div class="wrap">
+    <p class="sub">A experiência</p>
+    <h2 class="rv">Uma noite no Monteen</h2>
+    <p class="intro rv">O essencial, tal como está: cozinha do Mediterrâneo, jantar a partir das sete e uma mesa lá fora quando o tempo convida.</p>
+    <div class="cards">
+      <div class="card rv"><span class="n">01</span><h3>Cozinha mediterrânica</h3><p>Pratos de inspiração mediterrânica. A carta atual e os preços são indicados pelo restaurante a pedido.</p></div>
+      <div class="card rv"><span class="n">02</span><h3>Esplanada</h3><p>Lugares no exterior, no largo, para jantar ao ar livre.</p></div>
+      <div class="card rv"><span class="n">03</span><h3>Só ao jantar</h3><p>Serviço de quarta a domingo, das 19h00 às 22h00.</p></div>
+      <div class="card rv"><span class="n">04</span><h3>Reservas</h3><p>Recomendadas. Escreva-nos com o dia, a hora e o número de pessoas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="wrap">
+    <p class="sub">Galeria</p>
+    <h2 class="rv">À mesa</h2>
+    <div class="gallery rv">
+      <figure class="big"><img src="img/hero.jpg?v=1" alt="Mesa de restaurante posta para o jantar" loading="lazy"></figure>
+      <figure><img src="img/food1.jpg?v=1" alt="Prato servido num restaurante" loading="lazy"></figure>
+      <figure><img src="img/pasta.jpg?v=1" alt="Prato de massa" loading="lazy"></figure>
+      <figure><img src="img/meat.jpg?v=1" alt="Carne temperada com sal grosso" loading="lazy"></figure>
+      <figure><img src="img/table.jpg?v=1" alt="Mesa preparada com louça e copos" loading="lazy"></figure>
+    </div>
+    <p class="note">Fotografias ilustrativas — em breve, imagens do próprio Monteen.</p>
+  </div>
+</section>
+
+<section class="menu" id="carta">
+  <div class="wrap">
+    <p class="sub center">Carta</p>
+    <h2 class="center rv">Carta e preços</h2>
+    <div class="box rv">
+      <p>A carta e os preços do Monteen estão disponíveis a pedido. Peça-nos a carta atual por email ou pergunte ao fazer a sua reserva.</p>
+      <a class="btn" href="mailto:monteen.porto@gmail.com?subject=Pedido%20de%20carta">Pedir a carta por email</a>
+    </div>
+  </div>
+</section>
+
+<section id="horario">
+  <div class="wrap info">
+    <div class="rv">
+      <p class="sub">Horário e morada</p>
+      <h2>Venha jantar</h2>
+      <table aria-label="Horário de abertura">
+        <tr data-d="1"><td>Segunda</td><td class="off">Encerrado</td></tr>
+        <tr data-d="2"><td>Terça</td><td class="off">Encerrado</td></tr>
+        <tr data-d="3"><td>Quarta</td><td>19:00 – 22:00</td></tr>
+        <tr data-d="4"><td>Quinta</td><td>19:00 – 22:00</td></tr>
+        <tr data-d="5"><td>Sexta</td><td>19:00 – 22:00</td></tr>
+        <tr data-d="6"><td>Sábado</td><td>19:00 – 22:00</td></tr>
+        <tr data-d="0"><td>Domingo</td><td>19:00 – 22:00</td></tr>
+      </table>
+      <p class="addr"><strong>Largo Doutor Tito Fontes, 147</strong><br>4000-060 Porto, Portugal</p>
+      <p style="margin-top:.9rem">Email: <a href="mailto:monteen.porto@gmail.com">monteen.porto@gmail.com</a><br>Telefone: por confirmar</p>
+      <ul class="facts">
+        <li>Esplanada</li><li>Wi-fi para clientes</li><li>Fumadores apenas no exterior</li><li>Acesso para cadeira de rodas: limitado</li>
+      </ul>
+    </div>
+    <div class="rv">
+      <iframe class="map" title="Mapa: Monteen, Largo Doutor Tito Fontes 147, Porto" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-8.6113%2C41.1514%2C-8.6053%2C41.1548&amp;layer=mapnik&amp;marker=41.1531244%2C-8.6083542"></iframe>
+      <div class="maplinks">
+        <a href="https://www.openstreetmap.org/node/4689659295" target="_blank" rel="noopener">Abrir mapa maior</a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=41.1531244,-8.6083542" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reservas" class="reserve">
+  <div class="wrap">
+    <p class="sub">Reservas</p>
+    <h2 class="rv">Reserve a sua mesa</h2>
+    <p>A reserva é recomendada. Diga-nos o dia, a hora e o número de pessoas — e se prefere a esplanada.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:monteen.porto@gmail.com?subject=Reserva%20de%20mesa&amp;body=Dia%3A%0AHora%3A%0AN%C3%BAmero%20de%20pessoas%3A%0AEsplanada%20ou%20interior%3A%0ANome%3A">Reservar por email</a>
+      <a class="btn ghost" href="#horario">Ver horário</a>
+    </div>
+    <p class="small">Aberto de quarta a domingo, das 19h00 às 22h00 · Largo Doutor Tito Fontes, 147, Porto</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <a class="logo" href="#inicio">Monteen</a>
+  <p>Restaurante mediterrânico · Largo Doutor Tito Fontes, 147 · 4000-060 Porto</p>
+  <p><a href="mailto:monteen.porto@gmail.com">monteen.porto@gmail.com</a> · Qua–Dom 19h00–22h00</p>
+  <p class="credits">Fotografias ilustrativas de domínio público (CC0), via rawpixel e StockSnap — Jay Wennington, Daria Nepriakhina, WDnet Studio, Janko Ferlic, Markus Spiske. Não são fotografias do restaurante. Mapa e dados: © colaboradores do OpenStreetMap (ODbL).</p>
+  <p class="credits" style="margin-top:.4rem">Preview made for Monteen by Kinoverse - not live yet</p>
+</footer>
+
+<div class="mbar" aria-label="Ações rápidas">
+  <a class="btn" href="mailto:monteen.porto@gmail.com?subject=Reserva%20de%20mesa">Reservar mesa</a>
+  <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.1531244,-8.6083542" target="_blank" rel="noopener">Como chegar</a>
+</div>
+
+<script>
+(function(){
+  var tb=document.getElementById('top-bar');
+  function onS(){tb.classList.toggle('solid',window.scrollY>40)}
+  addEventListener('scroll',onS,{passive:true});onS();
+
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('on')})},4000);
+  }else{els.forEach(function(el){el.classList.add('on')})}
+
+  try{
+    var d=new Intl.DateTimeFormat('en-US',{timeZone:'Europe/Lisbon',weekday:'short'}).format(new Date());
+    var map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+    var r=document.querySelector('tr[data-d="'+map[d]+'"]');if(r)r.className='today';
+  }catch(e){}
+
+  var dp,ib=document.getElementById('install');
+  addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;ib.classList.add('show')});
+  ib.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;ib.classList.remove('show')})}});
+  addEventListener('appinstalled',function(){ib.classList.remove('show')});
+  if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations&&0}
+})();
+</script>
+</body>
+</html>
