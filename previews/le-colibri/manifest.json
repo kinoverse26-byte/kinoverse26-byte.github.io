@@ -1,0 +1,20 @@
+{
+  "name": "Le Colibri - Restaurant Geneva",
+  "short_name": "Le Colibri",
+  "description": "Restaurant at 68 Rue de Carouge, Geneva. Call or book a table.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1b2a24",
+  "theme_color": "#1b2a24",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
