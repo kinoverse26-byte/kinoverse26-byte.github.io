@@ -1,0 +1,20 @@
+{
+  "name": "Hummus Bar Limassol",
+  "short_name": "Hummus Bar",
+  "description": "Hummus Bar, 23 Gladstonos, Limassol. Open Tuesday to Sunday 10:00-23:00.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6efe2",
+  "theme_color": "#8a4b1f",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
