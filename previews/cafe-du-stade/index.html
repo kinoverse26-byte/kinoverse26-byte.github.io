@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Café du Stade · Café-restaurant at 40 Route de Veyrier, Carouge (Geneva)</title>
+<meta name="description" content="Café du Stade, café-restaurant at 40 Route de Veyrier, 1227 Carouge, Geneva. Open Monday to Friday from 06:00 to midnight and weekends from 11:00 to 02:00, with 40 seats outdoors. Call +41 22 301 18 11.">
+<meta name="theme-color" content="#6e1c27">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Café du Stade · 40 Route de Veyrier, Carouge">
+<meta property="og:description" content="Café-restaurant in Carouge, Geneva. Open from 06:00 on weekdays and until 02:00 at weekends, with 40 seats outdoors.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#6e1c27;--wine2:#8d2735;--ink:#1c1715;--cream:#f6efe4;--paper:#fffaf3;--brass:#c9a35e;--brassd:#7d5d22;--mut:#5f5650;--line:#e3d6c2;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:1.02rem;padding-bottom:calc(62px + env(safe-area-inset-bottom));-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.1;letter-spacing:-.01em}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.ribbon{background:var(--ink);color:#e6dccd;font-size:.75rem;text-align:center;padding:7px 12px;letter-spacing:.03em}
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(246,239,228,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:12px 5%}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.35rem;color:var(--wine);text-decoration:none;white-space:nowrap;margin-right:auto}
+.menu{display:flex;gap:26px;list-style:none;font-size:.92rem;font-weight:500}
+.menu a{text-decoration:none;padding:4px 0;border-bottom:1px solid transparent}
+.menu a:hover{border-color:var(--wine);color:var(--wine)}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--wine);color:#fff;padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.98rem;border:1px solid var(--wine);cursor:pointer;transition:background .25s,transform .25s,color .25s;font-family:inherit}
+.btn:hover{background:var(--wine2);transform:translateY(-2px)}
+.btn.sm{padding:9px 16px;font-size:.85rem}
+.btn.line{background:transparent;color:var(--wine)}
+.btn.line:hover{background:var(--wine);color:#fff}
+.btn.ghost{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.75);color:#fff}
+.btn.ghost:hover{background:#fff;color:var(--ink)}
+.btn.light{background:#fff;color:var(--wine);border-color:#fff}
+.btn.light:hover{background:var(--cream)}
+#inst{display:none}
+@media(max-width:860px){.menu{order:3;width:100%;overflow-x:auto;gap:20px;font-size:.88rem;padding-bottom:2px;scrollbar-width:none}.menu::-webkit-scrollbar{display:none}.menu li{flex:none}}
+/* hero */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#2a1a17}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:drift 18s ease-out forwards}
+@keyframes drift{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,10,9,.35) 0%,rgba(18,10,9,.45) 45%,rgba(18,10,9,.88) 100%)}
+.hero .in{position:relative;z-index:1;max-width:1180px;width:100%;margin:auto;padding:120px 5% 70px}
+.kick{display:inline-block;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-size:.76rem;font-weight:600}
+.hero h1{font-size:clamp(2.3rem,7.5vw,5rem);margin:14px 0 18px;max-width:14ch}
+.hero p{font-size:clamp(1.02rem,2.4vw,1.2rem);max-width:36rem;color:#f1e8db;margin-bottom:30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-size:.88rem;color:#efe5d6;background:rgba(0,0,0,.35);padding:7px 14px;border-radius:999px}
+.dot{width:9px;height:9px;border-radius:50%;background:#9c9c9c}
+.dot.on{background:#5fd38a;box-shadow:0 0 0 4px rgba(95,211,138,.25)}
+/* sections */
+section{padding:96px 5%}
+.wrap{max-width:1180px;margin:auto}
+.eyebrow{display:block;color:var(--brassd);letter-spacing:.22em;text-transform:uppercase;font-size:.76rem;font-weight:600;margin-bottom:12px}
+h2{font-size:clamp(1.9rem,4.4vw,3rem);color:var(--wine);margin-bottom:18px}
+.lead{font-size:1.1rem;color:var(--mut);max-width:40rem}
+@media(max-width:700px){section{padding:68px 6%}}
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+.about p+p{margin-top:14px}
+.about figure{position:relative}
+.about figure img{width:100%;height:480px;object-fit:cover;border-radius:var(--r);box-shadow:0 30px 60px -20px rgba(40,20,15,.35)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.fact{border-top:2px solid var(--wine);padding-top:12px}
+.fact b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.7rem;color:var(--wine);line-height:1.1}
+.fact span{font-size:.85rem;color:var(--mut)}
+@media(max-width:860px){.about{grid-template-columns:1fr;gap:36px}.about figure img{height:300px}}
+@media(max-width:400px){.facts{gap:10px}.fact b{font-size:1.35rem}}
+/* offer */
+.paper{background:var(--paper)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;margin-top:42px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);transition:transform .35s,box-shadow .35s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 44px -18px rgba(40,20,15,.28)}
+.card img{width:100%;height:210px;object-fit:cover}
+.card .tx{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:1.35rem;margin-bottom:8px}
+.card p{color:var(--mut);font-size:.96rem;flex:1}
+.card small{display:block;margin-top:16px;color:var(--wine);font-weight:600;font-size:.86rem}
+/* terrace band */
+.band{position:relative;color:#fff;padding:0;overflow:hidden;background:#2a1a17}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,14,12,.88),rgba(28,14,12,.45));z-index:1}
+.band .in{position:relative;z-index:2;max-width:1180px;margin:auto;padding:110px 5%}
+.band h2{color:#fff;max-width:16ch}
+.band p{max-width:34rem;color:#f1e8db;margin-bottom:26px}
+.band .kick{margin-bottom:12px}
+/* gallery */
+.dark{background:var(--ink);color:#efe6d8}
+.dark h2{color:#fff}
+.dark .eyebrow{color:var(--brass)}
+.note{color:#bfb3a3;font-size:.9rem}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px;margin-top:34px}
+.gal figure{overflow:hidden;border-radius:14px;background:#2b2421}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal .big{grid-column:span 2;grid-row:span 2}
+.gal .wide{grid-column:span 2}
+@media(max-width:760px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:10px}.gal .big{grid-column:span 2;grid-row:span 2}.gal .wide{grid-column:span 2}}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1.15fr;gap:50px;margin-top:30px;align-items:start}
+@media(max-width:860px){.visit{grid-template-columns:1fr;gap:34px}}
+.hours{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row:last-of-type{border-bottom:0}
+.row.today{color:var(--wine);font-weight:600}
+.row b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.addr{margin-top:22px;font-style:normal;line-height:1.8}
+.addr a{color:var(--wine);font-weight:600;text-decoration-thickness:1px;text-underline-offset:3px}
+.small{color:var(--mut);font-size:.86rem;margin-top:14px}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#e9e1d4}
+.map iframe{display:block;width:100%;height:420px;border:0}
+.map a{display:block;padding:12px 16px;font-size:.88rem;background:#fff;color:var(--wine);font-weight:600;text-decoration:none}
+@media(max-width:700px){.map iframe{height:320px}}
+/* contact */
+.contact{background:var(--wine);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact p{max-width:36rem;margin:0 auto 28px;color:#f3e4e1}
+.contact .cta{justify-content:center}
+.contact .mail{margin-top:22px;font-size:.92rem;color:#f3e4e1}
+.contact .mail a{color:#fff}
+footer{background:#120e0d;color:#b3a898;padding:44px 6%;font-size:.86rem;text-align:center;line-height:1.8}
+footer a{color:var(--brass)}
+footer .fn{font-family:Fraunces,Georgia,serif;font-size:1.25rem;color:#fff;margin-bottom:6px}
+/* sticky call bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;background:var(--wine);padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -8px 24px rgba(0,0,0,.18)}
+.sticky a{flex:1;text-align:center;color:#fff;padding:17px 8px;text-decoration:none;font-weight:600;font-size:.98rem}
+.sticky a+a{border-left:1px solid rgba(255,255,255,.25)}
+@media(min-width:900px){.sticky{display:none}body{padding-bottom:0}}
+/* reveal: only hides when JS is running */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.hero img{animation:none;transform:none}html{scroll-behavior:auto}}
+</style>
+<script>document.documentElement.classList.add('js');setTimeout(function(){document.querySelectorAll('.rv').forEach(function(e){e.classList.add('in')})},3500);</script>
+</head>
+<body>
+<div class="ribbon">Preview made for Café du Stade by Kinoverse – not live yet</div>
+
+<header class="top">
+<div class="bar">
+<a class="logo" href="#top">Café du Stade</a>
+<ul class="menu">
+<li><a href="#about">About</a></li>
+<li><a href="#offer">Café &amp; bar</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#visit">Hours &amp; map</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="acts">
+<a class="btn sm" href="tel:+41223011811" aria-label="Call Café du Stade">Call</a>
+<button class="btn sm line" id="inst" type="button">Install the app</button>
+</div>
+</div>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="Welcome" style="padding:0">
+<img src="img/hero.jpg?v=1" alt="Laid tables in a restaurant dining room (illustrative photo)" fetchpriority="high">
+<div class="in">
+<span class="kick">40 Route de Veyrier · Carouge, Geneva</span>
+<h1>Carouge’s café on Route de Veyrier</h1>
+<p>From the first coffee at 6 in the morning to late nights at the weekend, with 40 seats outside. Café du Stade is open every day of the week.</p>
+<div class="cta">
+<a class="btn" href="tel:+41223011811">Call to book a table</a>
+<a class="btn ghost" href="#visit">Hours &amp; directions</a>
+</div>
+<div class="status" id="status" aria-live="polite"><span class="dot" id="dot"></span><span id="stxt">Mon–Fri 06:00–00:00 · Sat–Sun 11:00–02:00</span></div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap about">
+<div class="rv">
+<span class="eyebrow">Welcome</span>
+<h2>A café-restaurant for every hour of the day</h2>
+<p>Café du Stade is a café-restaurant at 40 Route de Veyrier in Carouge, Geneva. On weekdays the doors open at six in the morning and stay open until midnight. At the weekend, the day starts at eleven and runs until two in the morning.</p>
+<p>Come by for an early coffee, lunch or a late evening with friends. When the weather is good, the terrace has seats for 40 guests.</p>
+<div class="facts">
+<div class="fact"><b>06:00</b><span>opening, Mon–Fri</span></div>
+<div class="fact"><b>02:00</b><span>closing, Sat–Sun</span></div>
+<div class="fact"><b>40</b><span>seats outdoors</span></div>
+</div>
+</div>
+<figure class="rv"><img src="img/interior.jpg?v=1" alt="Interior of a café-restaurant (illustrative photo)" loading="lazy"></figure>
+</div>
+</section>
+
+<section id="offer" class="paper">
+<div class="wrap">
+<span class="eyebrow rv">What we offer</span>
+<h2 class="rv">Coffee, a table and a terrace</h2>
+<p class="lead rv">One address for the whole day, from the morning rush to the last round.</p>
+<div class="cards">
+<article class="card rv"><img src="img/window.jpg?v=1" alt="Café table by a window (illustrative photo)" loading="lazy"><div class="tx"><h3>Mornings</h3><p>Open from 06:00, Monday to Friday. Have your first coffee before work or school.</p><small>Menu &amp; prices: on request</small></div></article>
+<article class="card rv"><img src="img/bar.jpg?v=1" alt="Restaurant bar counter (illustrative photo)" loading="lazy"><div class="tx"><h3>Restaurant &amp; bar</h3><p>Join us at the table or at the bar. We are open until midnight on weekdays and until 02:00 on Saturday and Sunday.</p><small>Menu &amp; prices: on request</small></div></article>
+<article class="card rv"><img src="img/terrace.jpg?v=1" alt="Outdoor café seating (illustrative photo)" loading="lazy"><div class="tx"><h3>The terrace</h3><p>40 outdoor seats for sunny lunches and long summer evenings in Carouge.</p><small>Reservations: by phone</small></div></article>
+</div>
+</div>
+</section>
+
+<section class="band" aria-label="Terrace">
+<img src="img/terrace.jpg?v=1" alt="" loading="lazy">
+<div class="in rv">
+<span class="kick">Outdoors</span>
+<h2>40 seats in the open air on Route de Veyrier</h2>
+<p>When the sun is out over Geneva, take a seat on the terrace. Call ahead if you are coming as a group.</p>
+<a class="btn light" href="tel:+41223011811">+41 22 301 18 11</a>
+</div>
+</section>
+
+<section class="dark" id="gallery">
+<div class="wrap">
+<span class="eyebrow rv">Atmosphere</span>
+<h2 class="rv">The mood we love</h2>
+<p class="note rv">These are illustrative photos. Café du Stade’s own pictures will replace them on the live site.</p>
+<div class="gal rv">
+<figure class="big"><img src="img/hero.jpg?v=1" alt="Laid restaurant tables (illustrative photo)" loading="lazy"></figure>
+<figure><img src="img/window.jpg?v=1" alt="Table next to a café window (illustrative photo)" loading="lazy"></figure>
+<figure><img src="img/bar.jpg?v=1" alt="Bar counter in a restaurant (illustrative photo)" loading="lazy"></figure>
+<figure class="wide"><img src="img/interior.jpg?v=1" alt="Café-restaurant interior (illustrative photo)" loading="lazy"></figure>
+</div>
+</div>
+</section>
+
+<section id="visit">
+<div class="wrap">
+<span class="eyebrow rv">Visit us</span>
+<h2 class="rv">Opening hours &amp; location</h2>
+<div class="visit">
+<div class="hours rv">
+<div class="row" data-d="1,2,3,4,5"><span>Monday – Friday</span><b>06:00 – 00:00</b></div>
+<div class="row" data-d="6,0"><span>Saturday – Sunday</span><b>11:00 – 02:00</b></div>
+<address class="addr"><strong>Café du Stade</strong><br>40 Route de Veyrier<br>1227 Carouge, Geneva, Switzerland<br>
+<a href="tel:+41223011811">+41 22 301 18 11</a></address>
+<p class="small">These are the hours listed publicly and are still to be confirmed with the owner. Please call before a special visit or on public holidays.</p>
+</div>
+<div class="map rv">
+<iframe title="Map showing Café du Stade at 40 Route de Veyrier, Carouge" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=6.1418%2C46.1822%2C6.1538%2C46.1872&amp;layer=mapnik&amp;marker=46.1847154%2C6.1478380"></iframe>
+<a href="https://www.google.com/maps/dir/?api=1&amp;destination=46.1847154,6.1478380" target="_blank" rel="noopener">Get directions →</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap rv">
+<span class="eyebrow" style="color:#f0d9a8">Book a table</span>
+<h2>See you at Café du Stade</h2>
+<p>Call us to book a table or ask about the menu. You can also send a message on Facebook.</p>
+<div class="cta">
+<a class="btn light" href="tel:+41223011811">Call +41 22 301 18 11</a>
+<a class="btn ghost" href="https://www.facebook.com/caferestaurantdustadecarouge" target="_blank" rel="noopener">Message on Facebook</a>
+</div>
+<p class="mail">Or email us: <a href="mailto:Christinamarques2017@gmail.com">Christinamarques2017@gmail.com</a></p>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="fn">Café du Stade</div>
+40 Route de Veyrier · 1227 Carouge, Geneva · <a href="tel:+41223011811">+41 22 301 18 11</a><br>
+Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors · Photos: illustrative CC0 images (StockSnap, rawpixel) that need no attribution<br>
+Preview made for Café du Stade by Kinoverse – not live yet
+</footer>
+
+<nav class="sticky" aria-label="Quick actions">
+<a href="tel:+41223011811">Call</a>
+<a href="https://www.google.com/maps/dir/?api=1&amp;destination=46.1847154,6.1478380" target="_blank" rel="noopener">Directions</a>
+</nav>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e)});
+  } else els.forEach(function(e){e.classList.add('in')});
+
+  // Open-now indicator (Geneva time)
+  try{
+    var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Zurich',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+    var g=function(t){return (p.find(function(x){return x.type===t})||{}).value};
+    var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday')),h=parseInt(g('hour'),10);
+    var open=(d>=1&&d<=5&&h>=6)||((d===6||d===0)&&h>=11)||((d===0||d===1)&&h<2);
+    document.getElementById('dot').classList.toggle('on',open);
+    document.getElementById('stxt').textContent=open?'Open now (listed hours) · call +41 22 301 18 11':'Closed right now (listed hours) · see opening times below';
+    document.querySelectorAll('.row[data-d]').forEach(function(r){if(r.getAttribute('data-d').split(',').indexOf(String(d))>-1)r.classList.add('today')});
+  }catch(e){}
+
+  // Install button (shows only where the browser supports it, e.g. Android)
+  var dp,b=document.getElementById('inst');
+  addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display='none'})}});
+  addEventListener('appinstalled',function(){b.style.display='none'});
+  if('serviceWorker' in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(function(){})}
+})();
+</script>
+</body>
+</html>
