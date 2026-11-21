@@ -1,0 +1,19 @@
+{
+  "name": "Entropia - Restaurante Asiático, Porto",
+  "short_name": "Entropia",
+  "description": "Restaurante asiático na Rua dos Mártires da Liberdade, Porto. Opções veganas e sem lactose.",
+  "lang": "pt",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14110f",
+  "theme_color": "#b3262d",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
