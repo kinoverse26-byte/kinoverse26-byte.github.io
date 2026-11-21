@@ -223,7 +223,7 @@ footer .credits{font-size:12.5px;color:#9d938f}
       </div>
     </div>
     <figure class="rv">
-      <img src="img/gallery1.jpg?v=2" alt="Interior de cafenea-restaurant (fotografie de prezentare)" loading="lazy">
+      <img src="img/gallery1.jpg?v=2" alt="Interior de cafenea-restaurant (fotografie de prezentare)">
     </figure>
   </div>
 </section>
@@ -247,11 +247,11 @@ footer .credits{font-size:12.5px;color:#9d938f}
     <span class="eyebrow rv">Atmosferă</span>
     <h2 class="rv">Galerie</h2>
     <div class="gallery rv">
-      <a href="img/gallery2.jpg?v=2"><img src="img/gallery2.jpg?v=2" alt="Bar de restaurant (fotografie de prezentare)" loading="lazy"></a>
-      <a href="img/gallery3.jpg?v=2"><img src="img/gallery3.jpg?v=2" alt="Bar de restaurant, alt unghi (fotografie de prezentare)" loading="lazy"></a>
-      <a href="img/gallery4.jpg?v=2"><img src="img/gallery4.jpg?v=2" alt="Interior de restaurant (fotografie de prezentare)" loading="lazy"></a>
-      <a href="img/gallery5.jpg?v=2"><img src="img/gallery5.jpg?v=2" alt="Restaurant (fotografie de prezentare)" loading="lazy"></a>
-      <a href="img/gallery1.jpg?v=2"><img src="img/gallery1.jpg?v=2" alt="Interior de cafenea-restaurant (fotografie de prezentare)" loading="lazy"></a>
+      <a href="img/gallery2.jpg?v=2"><img src="img/gallery2.jpg?v=2" alt="Bar de restaurant (fotografie de prezentare)"></a>
+      <a href="img/gallery3.jpg?v=2"><img src="img/gallery3.jpg?v=2" alt="Bar de restaurant, alt unghi (fotografie de prezentare)"></a>
+      <a href="img/gallery4.jpg?v=2"><img src="img/gallery4.jpg?v=2" alt="Interior de restaurant (fotografie de prezentare)"></a>
+      <a href="img/gallery5.jpg?v=2"><img src="img/gallery5.jpg?v=2" alt="Restaurant (fotografie de prezentare)"></a>
+      <a href="img/gallery1.jpg?v=2"><img src="img/gallery1.jpg?v=2" alt="Interior de cafenea-restaurant (fotografie de prezentare)"></a>
     </div>
     <p class="note rv">Fotografii de atmosferă pentru previzualizare – vor fi înlocuite cu imaginile Via Restaurant.</p>
   </div>
@@ -314,7 +314,7 @@ footer .credits{font-size:12.5px;color:#9d938f}
         <p style="margin-top:24px"><a class="btn wine" href="https://www.google.com/maps/dir/?api=1&amp;destination=Strada+Inocentiu+Micu+Klein+6,+Cluj-Napoca" target="_blank" rel="noopener">Indicații de drum</a></p>
       </div>
       <div class="map rv">
-        <iframe title="Hartă: Via Restaurant, Strada Inocențiu Micu Klein 6, Cluj-Napoca" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Strada+Inocentiu+Micu+Klein+6,+Cluj-Napoca,+Romania&amp;output=embed"></iframe>
+        <iframe title="Hartă: Via Restaurant, Strada Inocențiu Micu Klein 6, Cluj-Napoca" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Strada+Inocentiu+Micu+Klein+6,+Cluj-Napoca,+Romania&amp;output=embed"></iframe>
       </div>
     </div>
   </div>
@@ -349,7 +349,7 @@ footer .credits{font-size:12.5px;color:#9d938f}
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Fotografie mărită">
   <button type="button" id="lbx" aria-label="Închide">×</button>
-  <img id="lbi" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  
 </div>
 
 <script>
@@ -376,14 +376,14 @@ footer .credits{font-size:12.5px;color:#9d938f}
   });
 
   // lightbox
-  var lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+  var lb=document.getElementById('lb'),lbi=document.createElement('img');lbi.id='lbi';
   document.querySelectorAll('.gallery a').forEach(function(a){
     a.addEventListener('click',function(e){
       e.preventDefault();var im=a.querySelector('img');
-      lbi.src=a.getAttribute('href');lbi.alt=im.alt;lb.classList.add('open');document.getElementById('lbx').focus();
+      lbi.src=a.getAttribute('href');lbi.alt=im.alt;lb.appendChild(lbi);lb.classList.add('open');document.getElementById('lbx').focus();
     });
   });
-  function close(){lb.classList.remove('open');lbi.src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='}
+  function close(){lb.classList.remove('open');if(lbi.parentNode)lb.removeChild(lbi)}
   document.getElementById('lbx').addEventListener('click',close);
   lb.addEventListener('click',function(e){if(e.target===lb)close()});
   addEventListener('keydown',function(e){if(e.key==='Escape')close()});
