@@ -1,0 +1,19 @@
+{
+  "name": "Casa Mia",
+  "short_name": "Casa Mia",
+  "description": "Restaurant à Bruxelles - Casa Mia",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1410",
+  "theme_color": "#b3361f",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
