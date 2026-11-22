@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>צלילי האש · Tzlilei HaEsh | Restaurant at 100 Jabotinsky, Bnei Brak</title>
+<meta name="description" content="צלילי האש (Tzlilei HaEsh, 'Sounds of the Fire') is a restaurant at 100 Ze'ev Jabotinsky Street, Bnei Brak. Call or WhatsApp +972 50 600 9797 to book a table or ask about the menu.">
+<meta name="theme-color" content="#15100c">
+
+<link rel="icon" href="img/icon.svg?v=1" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon.svg?v=1">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="צלילי האש · Tzlilei HaEsh, 100 Jabotinsky, Bnei Brak">
+<meta property="og:description" content="A restaurant on Jabotinsky Street, Bnei Brak. Call or WhatsApp +972 50 600 9797 to book.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="he_IL">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=Heebo:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#15100c;--bg2:#1d1611;--card:#241b15;--line:#3a2c22;
+  --ember:#e2581e;--ember-d:#c4461a;--gold:#f0b24a;
+  --text:#f6eee6;--muted:#c3b3a3;--wa:#1d8f4e;
+  --r:18px;--pad:clamp(64px,10vw,120px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.12;letter-spacing:-.01em}
+.he{font-family:'Heebo',sans-serif}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* ribbon */
+.ribbon{background:#000;color:#d9cbbd;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+
+/* header – wraps on small phones so every button stays visible */
+.top{position:sticky;top:0;z-index:50;background:rgba(21,16,12,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 5vw}
+.logo{display:flex;flex-direction:column;line-height:1.1}
+.logo .he{font-weight:800;font-size:22px;color:var(--gold)}
+.logo .en{font-size:12px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin-top:3px}
+.menu{display:none;gap:26px;list-style:none;font-size:14px;font-weight:500}
+.menu a{color:#e8dccf;transition:color .2s}
+.menu a:hover{color:var(--gold)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--ember-d);color:#fff;padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px;border:0;cursor:pointer;font-family:inherit;transition:transform .25s,box-shadow .25s,background .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(226,88,30,.35);background:var(--ember)}
+.btn.ghost{background:transparent;border:1.5px solid var(--gold);color:var(--gold)}
+.btn.ghost:hover{background:rgba(240,178,74,.1);box-shadow:none}
+.btn.wa{background:var(--wa)}
+.btn.wa:hover{background:#21a159;box-shadow:0 12px 30px rgba(29,143,78,.3)}
+.btn.sm{padding:9px 16px;font-size:14px}
+#install{display:none}
+
+/* hero – full bleed */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;padding:0 5vw clamp(56px,10vh,110px);isolation:isolate;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(21,16,12,.35) 0%,rgba(21,16,12,.55) 45%,rgba(21,16,12,.96) 100%),linear-gradient(90deg,rgba(21,16,12,.7),rgba(21,16,12,0) 70%)}
+.hero-in{max-width:1200px;width:100%;margin:0 auto}
+.eyebrow{color:var(--gold);letter-spacing:.24em;text-transform:uppercase;font-size:12px;font-weight:600;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,7.2vw,84px);max-width:13ch;margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:500}
+.hero p.lead{color:#eadfd3;font-size:clamp(17px,2vw,20px);max-width:540px;margin-bottom:34px}
+.hero .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+
+/* sections */
+section{padding:var(--pad) 5vw}
+.wrap{max-width:1200px;margin:auto}
+h2{font-size:clamp(30px,4.6vw,50px);margin-bottom:16px}
+.sub{color:var(--muted);max-width:640px;margin-bottom:48px;font-size:17px}
+.alt{background:var(--bg2)}
+
+.about{display:grid;gap:48px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.about-img::after{content:"";position:absolute;inset:auto -14px -14px auto;width:60%;height:60%;border:1.5px solid var(--ember);border-radius:var(--r);z-index:-1}
+.about-img{isolation:isolate}
+.about p+p{margin-top:16px}
+.about .name-note{margin-top:28px;padding:20px 22px;border-left:3px solid var(--ember);background:var(--card);border-radius:0 12px 12px 0;color:#e8dccf}
+.about .name-note .he{color:var(--gold);font-weight:800;font-size:20px}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);padding:30px 28px;border-radius:var(--r);border:1px solid var(--line);transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--ember)}
+.card .num{font-family:'Fraunces',serif;color:var(--ember);font-size:15px;letter-spacing:.1em;margin-bottom:14px}
+.card h3{font-size:23px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:15px}
+.card .tag{display:inline-block;margin-top:18px;color:var(--gold);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery figure{overflow:hidden;border-radius:14px;background:var(--card)}
+.gallery img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.05)}
+.note{color:var(--muted);font-size:13px;margin-top:18px}
+
+.info{display:grid;gap:40px}
+.info ul{list-style:none}
+.info li{padding:18px 0;border-bottom:1px solid var(--line)}
+.info li b{display:block;color:var(--gold);font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
+.info li a{border-bottom:1px solid rgba(240,178,74,.4)}
+.info li a:hover{color:var(--gold)}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:360px}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block;filter:grayscale(.35) contrast(1.05)}
+
+.cta{text-align:center;background:radial-gradient(ellipse at 50% 0%,#4a1f0c 0%,#15100c 70%)}
+.cta .sub{margin:0 auto 32px}
+.cta .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+footer{padding:44px 5vw 110px;text-align:center;color:var(--muted);font-size:13px;background:#0e0a08;border-top:1px solid var(--line)}
+footer .he{color:var(--gold);font-weight:800;font-size:20px;display:block;margin-bottom:6px}
+footer a{color:var(--gold)}
+footer p+p{margin-top:8px}
+
+/* sticky mobile call bar */
+.sticky{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;background:#0e0a08;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+.sticky a{flex:1;text-align:center;padding:15px 8px;font-weight:600;font-size:15px;color:#fff}
+.sticky a.call{background:var(--ember-d)}
+.sticky a.whats{background:var(--wa)}
+
+/* reveal – content stays visible if JS fails */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.hero>img{transform:none}}
+
+@media (min-width:700px){
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .gallery figure.wide{grid-column:span 2}
+  .gallery figure.wide img{aspect-ratio:2/1}
+}
+@media (min-width:900px){
+  .menu{display:flex}
+  .about{grid-template-columns:1fr 1fr;gap:72px}
+  .info{grid-template-columns:1fr 1.3fr}
+  .sticky{display:none}
+  footer{padding-bottom:44px}
+}
+@media (max-width:380px){
+  .logo .he{font-size:20px}
+  .btn.sm{padding:8px 13px;font-size:13.5px}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Preview made for <span lang="he" dir="rtl">צלילי האש</span> by Kinoverse – not live yet</div>
+
+<header class="top">
+  <div class="top-in">
+    <a class="logo" href="#top" aria-label="צלילי האש – home">
+      <span class="he" lang="he" dir="rtl">צלילי האש</span>
+      <span class="en">Tzlilei HaEsh · Bnei Brak</span>
+    </a>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <div class="actions">
+      <a class="btn sm" href="tel:+972506009797">📞 Call</a>
+      <a class="btn sm wa" href="https://wa.me/972506009797" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="btn sm ghost" id="install" type="button">Install the app</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="Welcome">
+  <img src="img/hero.jpg?v=1" alt="Glowing coals in a barbecue" fetchpriority="high">
+  <div class="hero-in">
+    <p class="eyebrow">100 Jabotinsky Street · Bnei Brak</p>
+    <h1>Listen to the fire on <em>Jabotinsky</em></h1>
+    <p class="lead"><span lang="he" dir="rtl">צלילי האש</span> – “the sounds of the fire” – is our restaurant at number 100, Ze'ev Jabotinsky Street. Call or WhatsApp us to book a table.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+972506009797">Call to book</a>
+      <a class="btn wa" href="https://wa.me/972506009797" target="_blank" rel="noopener">Message on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="reveal">
+      <p class="eyebrow">About us</p>
+      <h2>A restaurant named after the sound of fire</h2>
+      <p class="sub" style="margin-bottom:0">You'll find us on Ze'ev Jabotinsky Street in Bnei Brak, at number 100 – one of the city's main roads, a short ride from central Tel Aviv.</p>
+      <p style="color:var(--muted)">The best way to know what's cooking today, and to save your table, is simply to call us or send a WhatsApp message. We'll be glad to tell you about the menu.</p>
+      <div class="name-note">
+        <span class="he" lang="he" dir="rtl">צלילי האש</span><br>
+        Tzlilei HaEsh – literally “Sounds of the Fire”.
+      </div>
+    </div>
+    <div class="about-img reveal">
+      <img src="img/g5.jpg?v=1" alt="Skewers cooking on a barbecue grill" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Menu &amp; services</p>
+    <h2>Ask us what's on the fire</h2>
+    <p class="sub">Our full menu and prices are given on request – a quick call or WhatsApp message is all it takes.</p>
+    <div class="cards">
+      <div class="card reveal"><p class="num">01</p><h3>The menu</h3><p>Dishes and today's specials – ask us by phone or WhatsApp.</p><span class="tag">On request</span></div>
+      <div class="card reveal"><p class="num">02</p><h3>Table bookings</h3><p>Coming with family or friends? Call ahead and we'll tell you what's available.</p><span class="tag">Call to book</span></div>
+      <div class="card reveal"><p class="num">03</p><h3>Takeaway</h3><p>Ask us whether your order can be prepared to take home.</p><span class="tag">To confirm</span></div>
+      <div class="card reveal"><p class="num">04</p><h3>Groups &amp; events</h3><p>Planning a meal for a larger group? Get in touch to talk it through.</p><span class="tag">On request</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <p class="eyebrow">Gallery</p>
+    <h2>The glow of the grill</h2>
+    <p class="sub">A first look at the mood of fire and smoke.</p>
+    <div class="gallery reveal">
+      <figure class="wide"><img src="img/g3.jpg?v=1" alt="Food cooking on a barbecue grill" loading="lazy"></figure>
+      <figure><img src="img/g4.jpg?v=1" alt="Peppers on a barbecue grill" loading="lazy"></figure>
+      <figure><img src="img/g2.jpg?v=1" alt="Food on a barbecue" loading="lazy"></figure>
+      <figure><img src="img/g1.jpg?v=1" alt="Sausages cooking on a barbecue" loading="lazy"></figure>
+      <figure><img src="img/hero.jpg?v=1" alt="Close-up of burning barbecue coals" loading="lazy"></figure>
+    </div>
+    <p class="note">Illustrative photos – the restaurant's own photos will take their place.</p>
+  </div>
+</section>
+
+<section id="visit" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Hours &amp; location</p>
+    <h2>Find us at 100 Jabotinsky</h2>
+    <div class="info" style="margin-top:36px">
+      <ul class="reveal">
+        <li><b>Address</b>100 Ze'ev Jabotinsky St, Bnei Brak, Israel<br><span lang="he" dir="rtl" style="color:var(--muted)">זאב ז'בוטינסקי 100, בני ברק</span></li>
+        <li><b>Opening hours</b>To confirm – please call before your visit</li>
+        <li><b>Phone / WhatsApp</b><a href="tel:+972506009797">+972 50 600 9797</a></li>
+        <li><b>Facebook</b><a href="https://www.facebook.com/soundfire770/" target="_blank" rel="noopener">facebook.com/soundfire770</a></li>
+        <li><b>Directions</b><a href="https://www.openstreetmap.org/node/5997818140" target="_blank" rel="noopener">Open in OpenStreetMap</a></li>
+      </ul>
+      <div class="map reveal">
+        <iframe title="Map: 100 Ze'ev Jabotinsky Street, Bnei Brak" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=100+Ze%27ev+Jabotinsky+St,+Bnei+Brak,+Israel&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <div class="wrap reveal">
+    <p class="eyebrow">Contact</p>
+    <h2>Hungry? Call us and we'll light the way.</h2>
+    <p class="sub">Book a table or ask about the menu – by phone or WhatsApp.</p>
+    <div class="row">
+      <a class="btn" href="tel:+972506009797">Call +972 50 600 9797</a>
+      <a class="btn wa" href="https://wa.me/972506009797" target="_blank" rel="noopener">WhatsApp us</a>
+      <a class="btn ghost" href="https://www.facebook.com/soundfire770/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span class="he" lang="he" dir="rtl">צלילי האש</span>
+  <p>100 Ze'ev Jabotinsky St, Bnei Brak · <a href="tel:+972506009797">+972 50 600 9797</a> · <a href="https://www.facebook.com/soundfire770/" target="_blank" rel="noopener">Facebook</a></p>
+  <p>Photos: CC0 / public-domain stock images via StockSnap (Pawel Kadysz, The Digital Marketing Collaboration, Creative Vix, Pavan Trikutam, Daria Shevtsova) and Rawpixel – no attribution required.</p>
+  <p>Preview made by Kinoverse – not live yet.</p>
+</footer>
+
+<nav class="sticky" aria-label="Quick contact">
+  <a class="call" href="tel:+972506009797">📞 Call</a>
+  <a class="whats" href="https://wa.me/972506009797" target="_blank" rel="noopener">WhatsApp</a>
+</nav>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el);});
+    // safety net: never leave content hidden
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},4000);
+  }
+  // install button – only shown where the browser offers it (Android/Chrome)
+  var dp=null,ib=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;ib.style.display='inline-flex';});
+  ib.addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.finally(function(){dp=null;ib.style.display='none';});});
+  window.addEventListener('appinstalled',function(){ib.style.display='none';});
+  if('serviceWorker' in navigator && location.protocol==='https:'){
+    navigator.serviceWorker.register('sw.js').catch(function(){});
+  }
+})();
+</script>
+</body>
+</html>
