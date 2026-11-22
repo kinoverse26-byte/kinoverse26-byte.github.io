@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La Trattoria · Restaurant italien à Moka, Maurice</title>
+<meta name="description" content="La Trattoria, restaurant italien à Moka (Maurice) avec terrasse. Déjeuner du lundi au samedi, dîner le vendredi et le samedi. Réservation par téléphone au +230 432 0893.">
+<meta name="theme-color" content="#7a1f1f">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237a1f1f'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23f3e2bf' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="La Trattoria · Restaurant italien à Moka, Maurice">
+<meta property="og:description" content="Cuisine italienne et terrasse à Moka. Déjeuner du lundi au samedi, dîner le vendredi et le samedi. Réservation : +230 432 0893.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#7a1f1f;--red-d:#5c1515;--deep:#22100e;--deep2:#311915;
+  --cream:#faf5ec;--sand:#f1e6d2;--gold:#d2ad66;--olive:#4f5a34;--ink:#2a2220;--muted:#6b5d57;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:16px;padding-bottom:64px}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+.ribbon{background:var(--deep);color:#efe1c6;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+
+/* Header: wraps on small phones so every button stays visible */
+.top{position:sticky;top:0;z-index:40;background:rgba(250,245,236,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid #e8dcc5}
+.top .bar{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 5vw}
+.logo{font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:600;color:var(--red);text-decoration:none;line-height:1;white-space:nowrap}
+.links{display:none;gap:28px;font-size:14px;font-weight:500}
+.links a{text-decoration:none;color:var(--ink)}
+.links a:hover{color:var(--red)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;border:0;cursor:pointer;font-family:inherit;transition:background .25s,transform .25s,color .25s;white-space:nowrap}
+.btn:hover{background:var(--red-d);transform:translateY(-2px)}
+.btn.sm{padding:10px 18px;font-size:14px}
+.btn.gold{background:var(--gold);color:var(--deep)}
+.btn.gold:hover{background:#e2c182}
+.btn.line{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.8)}
+.btn.line:hover{background:#fff;color:var(--red)}
+.btn.dark{background:var(--deep)}
+.btn svg{width:18px;height:18px;flex:none}
+#inst{display:none}
+
+/* Hero */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;color:#fff;background:#2a1411 url(img/hero.jpg?v=1) center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,9,7,.25) 0%,rgba(25,9,7,.55) 45%,rgba(25,9,7,.92) 100%)}
+.hero .in{position:relative;max-width:1180px;width:100%;margin:auto;padding:120px 5vw 70px}
+.kicker{display:inline-block;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-size:12px;font-weight:700}
+.hero h1{font-size:clamp(42px,8.5vw,92px);margin:16px 0 20px;max-width:13ch}
+.hero h1 em{font-style:italic;color:#f3dcaa;font-weight:500}
+.hero p{font-size:clamp(16px,2.2vw,19px);max-width:560px;color:#f4ebdd;margin-bottom:30px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-size:14px;color:#efe3cf;background:rgba(0,0,0,.3);padding:8px 14px;border-radius:999px}
+.status i{width:9px;height:9px;border-radius:50%;background:#bbb;display:inline-block}
+.status.open i{background:#6fcf7f;box-shadow:0 0 0 4px rgba(111,207,127,.25)}
+.status.closed i{background:#e0897b}
+
+/* Sections */
+section{padding:80px 6vw}
+.wrap{max-width:1120px;margin:auto}
+.eyebrow{color:var(--red);text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:700}
+h2{font-size:clamp(34px,5.5vw,54px);margin:12px 0 20px}
+.lead{font-size:18px;color:var(--muted);max-width:620px}
+p+p{margin-top:14px}
+
+.split{display:grid;gap:40px;align-items:center}
+.photo{border-radius:var(--r);overflow:hidden;box-shadow:0 24px 60px rgba(60,20,10,.22)}
+.photo img{width:100%;height:340px;object-fit:cover}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+.fact{background:#fff;border:1px solid #eadfcb;border-radius:14px;padding:16px 18px}
+.fact b{display:block;font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--red);line-height:1.1}
+.fact span{font-size:13px;color:var(--muted)}
+
+.dark{background:var(--deep);color:#f1e6d3}
+.dark .eyebrow{color:var(--gold)}
+.dark .lead{color:#d6c7ae}
+.cards{display:grid;gap:18px;margin-top:40px}
+.card{background:var(--deep2);border:1px solid #4a2a23;border-radius:var(--r);padding:30px 28px;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.card .n{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold);font-size:18px}
+.card h3{font-size:30px;margin:6px 0 10px;color:#fff}
+.card p{color:#dccdb5;font-size:15px}
+.card .p{margin-top:18px;font-size:13px;color:var(--gold);letter-spacing:.04em}
+.note{margin-top:28px;font-size:14px;color:#cbb99c}
+
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:36px}
+.gallery figure{border-radius:14px;overflow:hidden;background:var(--sand)}
+.gallery img{width:100%;height:100%;min-height:170px;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery .big{grid-column:span 2}
+.gallery .big img{height:260px}
+.small{font-size:12px;color:var(--muted);margin-top:14px}
+
+.hours{background:var(--sand)}
+.box{background:#fff;padding:30px 24px;border-radius:var(--r);box-shadow:0 14px 44px rgba(60,20,10,.09)}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{padding:13px 0;border-bottom:1px solid #ece1cd;font-size:15px;text-align:left;vertical-align:top}
+th{font-weight:600}
+td{text-align:right;color:var(--ink)}
+tr.today th,tr.today td{color:var(--red)}
+.map{border-radius:var(--r);overflow:hidden;box-shadow:0 14px 44px rgba(60,20,10,.12);background:#e7dcc6}
+.map iframe{display:block;width:100%;height:360px;border:0}
+.maplinks{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;margin-top:12px}
+.maplinks a{color:var(--red);font-weight:600}
+
+.contact{text-align:center}
+.contact .wrap{max-width:760px}
+.contact .cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:30px 0 22px}
+.contact address{font-style:normal;color:var(--muted);font-size:15px}
+.contact .mail{word-break:break-all}
+
+footer{background:var(--deep);color:#cdbda3;padding:50px 6vw 40px;font-size:14px;text-align:center}
+footer .logo{color:var(--gold);font-size:30px;display:inline-block;margin-bottom:10px}
+footer a{color:#efe1c6}
+footer .fine{margin-top:18px;font-size:12px;color:#a8977c;line-height:1.6}
+
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;box-shadow:0 -6px 24px rgba(0,0,0,.25);padding-bottom:env(safe-area-inset-bottom);background:var(--deep)}
+.callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 6px;color:#fff;text-decoration:none;font-weight:700;font-size:15px;background:var(--red)}
+.callbar a:nth-child(2){background:var(--deep2)}
+.callbar a:nth-child(3){background:var(--olive)}
+.callbar svg{width:18px;height:18px}
+
+/* Reveal: only hides content when JS is running */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media(min-width:720px){
+  .gallery{grid-template-columns:repeat(3,1fr);gap:14px}
+  .gallery .big{grid-column:span 2;grid-row:span 2}
+  .gallery .big img{height:100%}
+  .gallery img{min-height:220px}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .facts{grid-template-columns:repeat(4,1fr)}
+}
+@media(min-width:900px){
+  body{padding-bottom:0}
+  .callbar{display:none}
+  .links{display:flex}
+  section{padding:110px 5vw}
+  .split{grid-template-columns:1.05fr 1fr;gap:70px}
+  .photo img{height:520px}
+  .box{padding:40px}
+  .map iframe{height:100%;min-height:440px}
+  .hours .split{align-items:stretch}
+}
+</style>
+</head>
+<body id="top">
+<script>document.documentElement.classList.add('js')</script>
+
+<div class="ribbon">Aperçu réalisé pour La Trattoria par Kinoverse – pas encore en ligne</div>
+
+<header class="top">
+  <div class="bar">
+    <a class="logo" href="#top">La Trattoria</a>
+    <nav class="links" aria-label="Navigation principale">
+      <a href="#maison">La maison</a><a href="#carte">La carte</a><a href="#galerie">Galerie</a><a href="#horaires">Horaires</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="actions">
+      <button class="btn sm gold" id="inst" type="button">Installer l'app</button>
+      <a class="btn sm" href="tel:+2304320893">Appeler</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="hero" role="banner">
+  <div class="in">
+    <span class="kicker">Ristorante italiano · Moka, Maurice</span>
+    <h1>Les pâtes d'une vraie trattoria, <em>à Moka</em></h1>
+    <p>Cuisine italienne, en salle ou en terrasse. Le midi du lundi au samedi, et le soir le vendredi et le samedi. Réservez votre table d'un simple appel.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+2304320893"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Réserver une table</a>
+      <a class="btn line" href="#carte">Découvrir la carte</a>
+    </div>
+    <div class="status" id="status" aria-live="polite"><i></i><span>Déjeuner du lundi au samedi · dîner ven. &amp; sam.</span></div>
+  </div>
+</div>
+
+<section id="maison">
+  <div class="wrap split">
+    <div class="rv">
+      <div class="eyebrow">La maison</div>
+      <h2>Une table italienne, au cœur de Moka</h2>
+      <p class="lead">La Trattoria, c'est l'esprit des trattorias d'Italie : une cuisine simple, généreuse et conviviale, où les pâtes ont la place d'honneur.</p>
+      <p>Un déjeuner entre collègues en semaine, un dîner en famille ou entre amis le vendredi et le samedi soir : installez-vous en salle ou profitez de la terrasse. Pour être sûr d'avoir votre table, appelez-nous.</p>
+      <div class="facts">
+        <div class="fact"><b>Italienne</b><span>Notre cuisine</span></div>
+        <div class="fact"><b>Terrasse</b><span>Places en extérieur</span></div>
+        <div class="fact"><b>Lun – Sam</b><span>Service du midi</span></div>
+        <div class="fact"><b>Ven &amp; Sam</b><span>Service du soir</span></div>
+      </div>
+    </div>
+    <figure class="photo rv"><img src="img/pasta4.jpg?v=1" alt="Bol de pâtes au ragù" loading="lazy" width="1024" height="683"></figure>
+  </div>
+</section>
+
+<section class="dark" id="carte">
+  <div class="wrap">
+    <div class="eyebrow">La carte</div>
+    <h2>Les classiques de l'Italie</h2>
+    <p class="lead">Une carte tournée vers les grands classiques italiens. Le détail des plats du moment vous est donné par téléphone.</p>
+    <div class="cards">
+      <article class="card rv"><span class="n">Primi</span><h3>Pasta</h3><p>Le cœur de la maison : des pâtes préparées à l'italienne, avec leurs sauces.</p><div class="p">Plats et prix sur demande</div></article>
+      <article class="card rv"><span class="n">Secondi</span><h3>Viandes &amp; poissons</h3><p>Des plats de la tradition italienne pour poursuivre le repas.</p><div class="p">Plats et prix sur demande</div></article>
+      <article class="card rv"><span class="n">Dolci</span><h3>Desserts</h3><p>Une touche sucrée pour terminer, comme en Italie.</p><div class="p">Plats et prix sur demande</div></article>
+    </div>
+    <p class="note">La carte et les prix sont à confirmer avec le restaurant : <a href="tel:+2304320893" style="color:var(--gold);font-weight:600">+230 432 0893</a>.</p>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <div class="eyebrow">Galerie</div>
+    <h2>Un avant-goût</h2>
+    <div class="gallery">
+      <figure class="big rv"><img src="img/pasta2.jpg?v=1" alt="Assiette de pâtes aux fruits de mer" loading="lazy" width="1024" height="683"></figure>
+      <figure class="rv"><img src="img/pasta3.jpg?v=1" alt="Tortellini frais" loading="lazy" width="683" height="1024"></figure>
+      <figure class="rv"><img src="img/pasta1.jpg?v=1" alt="Assiette de spaghetti" loading="lazy" width="960" height="639"></figure>
+      <figure class="rv"><img src="img/pasta5.jpg?v=1" alt="Photo d'illustration de cuisine italienne" loading="lazy" width="768" height="1024"></figure>
+      <figure class="rv"><img src="img/hero.jpg?v=1" alt="Pâtes à la sauce à la viande" loading="lazy" width="2048" height="1536"></figure>
+    </div>
+    <p class="small">Photos d'illustration, en attendant celles du restaurant.</p>
+  </div>
+</section>
+
+<section class="hours" id="horaires">
+  <div class="wrap split">
+    <div class="box rv">
+      <div class="eyebrow">Horaires</div>
+      <h2>Quand venir</h2>
+      <table>
+        <tbody>
+        <tr data-d="1"><th scope="row">Lundi</th><td>12h00 – 15h00</td></tr>
+        <tr data-d="2"><th scope="row">Mardi</th><td>12h00 – 15h00</td></tr>
+        <tr data-d="3"><th scope="row">Mercredi</th><td>12h00 – 15h00</td></tr>
+        <tr data-d="4"><th scope="row">Jeudi</th><td>12h00 – 15h00</td></tr>
+        <tr data-d="5"><th scope="row">Vendredi</th><td>12h00 – 15h00<br>19h30 – 22h30</td></tr>
+        <tr data-d="6"><th scope="row">Samedi</th><td>12h00 – 15h00<br>19h30 – 22h00</td></tr>
+        <tr data-d="0"><th scope="row">Dimanche</th><td>Fermé (à confirmer)</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Horaires à confirmer par téléphone, notamment les jours fériés. Terrasse disponible.</p>
+    </div>
+    <div class="rv" style="display:flex;flex-direction:column">
+      <div class="map" style="flex:1">
+        <iframe title="Plan d'accès à La Trattoria, Moka" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=57.4995%2C-20.2300%2C57.5135%2C-20.2200&amp;layer=mapnik&amp;marker=-20.2250429%2C57.5065415"></iframe>
+      </div>
+      <div class="maplinks">
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=-20.2250429,57.5065415" target="_blank" rel="noopener">Itinéraire</a>
+        <a href="https://www.openstreetmap.org/node/6112361785" target="_blank" rel="noopener">Voir sur OpenStreetMap</a>
+        <span style="color:var(--muted)">© contributeurs OpenStreetMap</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap rv">
+    <div class="eyebrow">Réservation</div>
+    <h2>Réservez votre table</h2>
+    <p class="lead" style="margin:auto">Un appel suffit pour réserver le midi ou le soir. Pour un groupe ou une question, écrivez-nous.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+2304320893">+230 432 0893</a>
+      <a class="btn dark" href="mailto:latrattoria-moka@intnet.mu">Écrire un e-mail</a>
+    </div>
+    <address>La Trattoria · Moka 80813, Maurice<br><span class="mail">latrattoria-moka@intnet.mu</span><br><span class="small">Adresse précise à confirmer</span></address>
+  </div>
+</section>
+</main>
+
+<footer>
+  <a class="logo" href="#top">La Trattoria</a>
+  <p>Restaurant italien · Moka, Maurice</p>
+  <p><a href="tel:+2304320893">+230 432 0893</a> · <a href="mailto:latrattoria-moka@intnet.mu">latrattoria-moka@intnet.mu</a></p>
+  <p class="fine">Photos d'illustration libres de droits (CC0, domaine public). Carte © contributeurs OpenStreetMap.<br>Aperçu réalisé pour La Trattoria par Kinoverse – pas encore en ligne.</p>
+</footer>
+
+<nav class="callbar" aria-label="Contact rapide">
+  <a href="tel:+2304320893"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Appeler</a>
+  <a href="mailto:latrattoria-moka@intnet.mu">E-mail</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=-20.2250429,57.5065415" target="_blank" rel="noopener">Itinéraire</a>
+</nav>
+
+<script>
+(function(){
+  // Reveal animation (content stays visible without JS or IntersectionObserver)
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('on')})},4000);
+  }else{els.forEach(function(el){el.classList.add('on')})}
+
+  // Open / closed indicator, Mauritius time (UTC+4), from the listed hours
+  var H={1:[[720,900]],2:[[720,900]],3:[[720,900]],4:[[720,900]],5:[[720,900],[1170,1350]],6:[[720,900],[1170,1320]],0:[]};
+  var now=new Date(Date.now()+(new Date().getTimezoneOffset()+240)*60000);
+  var d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+  var row=document.querySelector('tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+  var open=H[d].some(function(s){return m>=s[0]&&m<s[1]});
+  var st=document.getElementById('status');
+  if(st){st.classList.add(open?'open':'closed');st.querySelector('span').textContent=open?'Ouvert en ce moment · réservez par téléphone':'Fermé en ce moment · réservez par téléphone';}
+
+  // Install the app (Android / supported browsers only)
+  var dp,b=document.getElementById('inst');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.style.display='inline-flex'});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp=null;b.style.display='none'}});
+  window.addEventListener('appinstalled',function(){b.style.display='none'});
+  if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
+})();
+</script>
+</body>
+</html>
