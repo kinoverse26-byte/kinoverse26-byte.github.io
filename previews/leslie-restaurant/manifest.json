@@ -1,0 +1,19 @@
+{
+  "name": "Leslie Restaurant - Flic en Flac",
+  "short_name": "Leslie",
+  "description": "Restaurant régional, chinois et fruits de mer à Flic en Flac, Maurice.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14110f",
+  "theme_color": "#9b2c1f",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
