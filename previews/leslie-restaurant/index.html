@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Leslie Restaurant · Royal Road, Flic en Flac, Île Maurice</title>
+<meta name="description" content="Leslie Restaurant, Royal Road à Flic en Flac (Île Maurice) : cuisine régionale, chinoise et fruits de mer. Réservations par téléphone au +230 453 8172.">
+<meta name="theme-color" content="#6e1c1c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="img/icon.svg?v=1" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon.svg?v=1">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Leslie Restaurant · Flic en Flac, Île Maurice">
+<meta property="og:description" content="Cuisine régionale, chinoise et fruits de mer sur la Royal Road de Flic en Flac. Réservations au +230 453 8172.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lacquer:#6e1c1c;--lacquer-d:#4f1212;--gold:#d2ab55;--gold-l:#ecd49a;
+  --ink:#1c1916;--muted:#5d554b;--cream:#fbf6ee;--sand:#f3e9d8;--sea:#0d4250;--sea-d:#082e38;
+  --radius:18px;--shadow:0 22px 50px -20px rgba(28,25,22,.35);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:1rem;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.08;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--ink);padding:10px 16px;z-index:100}
+.skip:focus{left:10px;top:10px}
+
+/* ribbon */
+.ribbon{background:var(--ink);color:var(--gold-l);font-size:.75rem;letter-spacing:.03em;text-align:center;padding:7px 12px;line-height:1.4}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(28,14,12,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);color:#fff;border-bottom:1px solid rgba(210,171,85,.25)}
+.bar{max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 5vw}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.45rem;font-weight:700;text-decoration:none;letter-spacing:.02em;white-space:nowrap;color:#fff}
+nav{display:none;gap:26px}
+nav a{text-decoration:none;font-size:.9rem;font-weight:500;color:#eadfcc;transition:color .2s}
+nav a:hover{color:var(--gold)}
+.hbtns{display:flex;flex-wrap:wrap;gap:8px}
+.hbtn{display:inline-flex;align-items:center;gap:6px;font:600 .85rem Inter,sans-serif;padding:9px 15px;border-radius:40px;text-decoration:none;cursor:pointer;border:1.5px solid var(--gold);white-space:nowrap}
+.hbtn.call-h{background:var(--gold);color:var(--ink)}
+.hbtn.inst{background:transparent;color:var(--gold-l)}
+.hbtn svg{width:15px;height:15px;flex:none}
+@media(min-width:960px){nav{display:flex}}
+[hidden]{display:none!important}
+
+/* hero */
+.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04);animation:drift 18s ease-out forwards}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,8,8,.35) 0%,rgba(20,8,8,.15) 35%,rgba(20,8,8,.86) 100%),linear-gradient(90deg,rgba(20,8,8,.6),rgba(20,8,8,0) 70%)}
+@keyframes drift{to{transform:scale(1)}}
+.hero .in{width:100%;max-width:1200px;margin:auto;padding:120px 5vw 72px}
+.kicker{display:inline-flex;align-items:center;gap:10px;color:var(--gold-l);letter-spacing:.22em;text-transform:uppercase;font-size:.74rem;font-weight:600;margin-bottom:18px}
+.kicker::before{content:"";width:34px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(2.5rem,7.4vw,5.2rem);max-width:15ch;margin-bottom:20px;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.hero h1 em{font-style:italic;color:var(--gold-l);font-weight:500}
+.hero p.lead{font-size:clamp(1.02rem,2.2vw,1.18rem);max-width:540px;margin-bottom:32px;color:#f2e9da}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--gold);color:var(--ink);padding:15px 28px;border-radius:50px;font-weight:600;text-decoration:none;border:1.5px solid var(--gold);cursor:pointer;font-size:1rem;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px -8px rgba(0,0,0,.45);background:var(--gold-l)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.75)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn svg{width:18px;height:18px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:38px;font-size:.86rem;color:#e6dac5}
+.facts span{display:inline-flex;align-items:center;gap:8px}
+.facts span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+/* sections */
+section{padding:clamp(72px,11vw,120px) 5vw}
+.wrap{max-width:1150px;margin:auto}
+.eyebrow{display:block;color:var(--lacquer);letter-spacing:.22em;text-transform:uppercase;font-weight:600;font-size:.74rem;margin-bottom:12px}
+.title{text-align:center;margin:0 auto clamp(40px,6vw,60px);max-width:640px}
+.title h2,.about h2{font-size:clamp(2.1rem,5vw,3.3rem)}
+.title p{color:var(--muted);margin-top:14px}
+
+/* about */
+.about{display:grid;gap:clamp(36px,6vw,70px);align-items:center}
+.about figure{position:relative}
+.about figure img{border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:var(--shadow)}
+.about figure::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid var(--gold);border-radius:var(--radius);z-index:-1}
+.about p{margin-top:18px;color:#3a342d;font-size:1.04rem}
+.about .sig{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.about .sig div{background:var(--sand);border-radius:14px;padding:16px 12px;text-align:center;font-size:.82rem;color:var(--muted)}
+.about .sig strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.3rem;color:var(--lacquer);line-height:1.2}
+@media(min-width:820px){.about{grid-template-columns:.9fr 1.1fr}}
+
+/* cuisine */
+.cuisine{background:#fff}
+.cards{display:grid;gap:26px}
+@media(min-width:700px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--cream);border-radius:var(--radius);overflow:hidden;border:1px solid #efe4d1;transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .ph{overflow:hidden;aspect-ratio:4/3}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover img{transform:scale(1.05)}
+.card .tx{padding:24px 24px 28px}
+.card .num{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:1rem;font-weight:600;letter-spacing:.1em}
+.card h3{font-size:1.65rem;margin:4px 0 8px}
+.card p{color:var(--muted);font-size:.96rem}
+.note{text-align:center;margin-top:40px;color:var(--muted);font-size:.95rem}
+.note a{color:var(--lacquer);font-weight:600}
+
+/* gallery */
+.dark{background:var(--sea-d);color:#fff;background-image:radial-gradient(circle at 15% 0%,rgba(13,66,80,.9),transparent 60%)}
+.dark .eyebrow{color:var(--gold)}
+.dark .title p{color:#c8d6d8}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery figure{overflow:hidden;border-radius:14px;aspect-ratio:1/1;background:#0a3843}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.gallery figure:hover img{transform:scale(1.06)}
+@media(min-width:820px){
+  .gallery{grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:16px}
+  .gallery figure{aspect-ratio:auto}
+  .gallery .tall{grid-row:span 2}
+  .gallery .wide{grid-column:span 2}
+}
+.credit-note{text-align:center;font-size:.8rem;color:#9fb5b9;margin-top:22px}
+
+/* infos */
+.info{display:grid;gap:32px}
+@media(min-width:860px){.info{grid-template-columns:1fr 1.35fr;gap:48px}}
+.panel{background:#fff;border-radius:var(--radius);padding:clamp(26px,4vw,40px);border:1px solid #efe4d1}
+.row{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f0e6d6}
+.row:last-child{border-bottom:0}
+.row .ic{flex:none;width:40px;height:40px;border-radius:50%;background:var(--sand);display:grid;place-items:center;color:var(--lacquer)}
+.row .ic svg{width:18px;height:18px}
+.row h3{font-family:Inter,sans-serif;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:2px}
+.row p,.row a{font-size:1.02rem;color:var(--ink);word-break:break-word}
+.row a{font-weight:600;text-decoration-color:var(--gold);text-underline-offset:3px}
+.map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:360px;display:flex;flex-direction:column;background:#e8e1d4}
+.map iframe{flex:1;width:100%;min-height:360px;border:0}
+.map a{display:block;text-align:center;padding:14px;background:var(--ink);color:var(--gold-l);font-weight:600;text-decoration:none;font-size:.92rem}
+
+/* contact */
+.contact{background:var(--lacquer);color:#fff;text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:auto -10% -60% -10%;height:120%;background:radial-gradient(ellipse at center,rgba(210,171,85,.22),transparent 60%);pointer-events:none}
+.contact .wrap{position:relative}
+.contact .eyebrow{color:var(--gold-l)}
+.contact h2{font-size:clamp(2.2rem,5.5vw,3.6rem)}
+.contact p{max-width:560px;margin:16px auto 30px;color:#f3e3dc}
+.contact .ctas{justify-content:center}
+.contact .small{font-size:.88rem;margin-top:28px;color:#e8cfc6}
+.contact .small a{color:#fff;font-weight:600}
+
+footer{background:#14110f;color:#b9ad97;font-size:.84rem;padding:44px 5vw;text-align:center}
+footer .logo{display:inline-block;margin-bottom:10px;font-size:1.6rem}
+footer p{margin-top:6px;max-width:760px;margin-left:auto;margin-right:auto}
+footer a{color:var(--gold-l)}
+
+/* sticky call bar */
+.callbar{position:fixed;bottom:0;left:0;right:0;z-index:40;display:flex;gap:8px;padding:10px 10px calc(10px + env(safe-area-inset-bottom));background:rgba(20,14,12,.96);border-top:1px solid rgba(210,171,85,.3)}
+.callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 8px;border-radius:40px;font-weight:600;text-decoration:none;font-size:.95rem}
+.callbar .c1{background:var(--gold);color:var(--ink)}
+.callbar .c2{background:#fff;color:var(--ink)}
+.callbar svg{width:17px;height:17px}
+@media(min-width:960px){.callbar{display:none}body{padding-bottom:0}}
+
+/* reveal: only hides if JS is running */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .hero img.bg{animation:none;transform:none}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#apropos">Aller au contenu</a>
+<div class="ribbon">Aperçu réalisé pour Leslie Restaurant par Kinoverse – pas encore en ligne</div>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">Leslie Restaurant</a>
+    <nav aria-label="Navigation principale">
+      <a href="#apropos">À propos</a><a href="#cuisine">Cuisine</a><a href="#galerie">Galerie</a><a href="#infos">Infos &amp; accès</a><a href="#contact">Réserver</a>
+    </nav>
+    <div class="hbtns">
+      <a class="hbtn call-h" href="tel:+2304538172" aria-label="Appeler Leslie Restaurant au +230 453 8172">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Appeler</a>
+      <button class="hbtn inst" id="inst" type="button" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>Installer l’app</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <img class="bg" src="img/hero.jpg?v=1" alt="Homard et fruits de mer dressés sur une assiette" fetchpriority="high">
+  <div class="in">
+    <div class="kicker">Royal Road · Flic en Flac · Île Maurice</div>
+    <h1>Sur la Royal Road de Flic en Flac, <em>la mer et la Chine</em> à la même table</h1>
+    <p class="lead">Leslie Restaurant sert une cuisine régionale, des spécialités chinoises et des fruits de mer, sur la côte ouest de l’île Maurice. Un appel suffit pour réserver.</p>
+    <div class="ctas">
+      <a class="btn" href="tel:+2304538172">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+        Réserver : +230 453 8172</a>
+      <a class="btn ghost" href="#cuisine">Découvrir la cuisine</a>
+    </div>
+    <div class="facts"><span>Cuisine régionale</span><span>Spécialités chinoises</span><span>Fruits de mer</span></div>
+  </div>
+</div>
+
+<section id="apropos">
+  <div class="wrap about">
+    <figure class="rv"><img src="img/table.jpg?v=1" alt="Table dressée dans un restaurant" loading="lazy"></figure>
+    <div class="rv">
+      <span class="eyebrow">Bienvenue chez Leslie</span>
+      <h2>Une adresse de la côte ouest, sur la Royal Road</h2>
+      <p>Leslie Restaurant vous accueille sur la Royal Road, à Flic en Flac, sur la côte ouest de l’île Maurice. Sa carte réunit trois univers : la cuisine régionale de l’île, les spécialités chinoises et les fruits de mer.</p>
+      <p>Déjeuner en famille, dîner entre amis ou repas après une journée sur la côte : appelez le restaurant pour réserver votre table et connaître la carte du moment.</p>
+      <div class="sig">
+        <div><strong>Régionale</strong>cuisine de l’île</div>
+        <div><strong>Chinoise</strong>spécialités</div>
+        <div><strong>Mer</strong>fruits de mer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cuisine" class="cuisine">
+  <div class="wrap">
+    <div class="title rv">
+      <span class="eyebrow">La carte</span>
+      <h2>Trois cuisines, une même table</h2>
+      <p>Le détail des plats et les prix sont communiqués sur demande par le restaurant.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <div class="ph"><img src="img/seafood.jpg?v=1" alt="Assiette de fruits de mer" loading="lazy"></div>
+        <div class="tx"><span class="num">01</span><h3>Fruits de mer</h3><p>La mer à l’honneur : demandez au restaurant les poissons et fruits de mer proposés.</p></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/noodles.jpg?v=1" alt="Nouilles en cours de cuisson" loading="lazy"></div>
+        <div class="tx"><span class="num">02</span><h3>Cuisine chinoise</h3><p>Les spécialités chinoises, une des cuisines phares de l’île Maurice, à découvrir sur place.</p></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/platter.jpg?v=1" alt="Plateau de mets variés à partager" loading="lazy"></div>
+        <div class="tx"><span class="num">03</span><h3>Cuisine régionale</h3><p>Les saveurs de l’île, pour un repas qui a le goût de Maurice.</p></div>
+      </article>
+    </div>
+    <p class="note rv">Carte et prix : sur demande au <a href="tel:+2304538172">+230 453 8172</a></p>
+  </div>
+</section>
+
+<section id="galerie" class="dark">
+  <div class="wrap">
+    <div class="title rv">
+      <span class="eyebrow">Galerie</span>
+      <h2>L’esprit de la table</h2>
+      <p>Fruits de mer, wok et plats à partager.</p>
+    </div>
+    <div class="gallery rv">
+      <figure class="tall"><img src="img/lobster.jpg?v=1" alt="Homard cuisiné" loading="lazy"></figure>
+      <figure class="wide"><img src="img/hero.jpg?v=1" alt="Homard et fruits de mer dressés sur une assiette" loading="lazy"></figure>
+      <figure><img src="img/rolls.jpg?v=1" alt="Rouleaux frais" loading="lazy"></figure>
+      <figure><img src="img/noodles.jpg?v=1" alt="Nouilles en cours de cuisson" loading="lazy"></figure>
+      <figure class="wide"><img src="img/platter.jpg?v=1" alt="Plateau de mets variés" loading="lazy"></figure>
+      <figure><img src="img/seafood.jpg?v=1" alt="Assiette de fruits de mer" loading="lazy"></figure>
+    </div>
+    <p class="credit-note">Photos d’illustration – elles ne représentent pas forcément les plats du restaurant.</p>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="wrap">
+    <div class="title rv">
+      <span class="eyebrow">Infos pratiques</span>
+      <h2>Horaires &amp; accès</h2>
+    </div>
+    <div class="info">
+      <div class="panel rv">
+        <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><h3>Adresse</h3><p>Royal Road, Flic en Flac<br>Île Maurice</p></div></div>
+        <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><h3>Horaires</h3><p>À confirmer – appelez le restaurant avant votre venue</p></div></div>
+        <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></span>
+          <div><h3>Téléphone</h3><p><a href="tel:+2304538172">+230 453 8172</a></p></div></div>
+        <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <div><h3>E-mail</h3><p><a href="mailto:ahteeyet@gmail.com">ahteeyet@gmail.com</a></p></div></div>
+        <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg></span>
+          <div><h3>Fax</h3><p>+230 238 4346</p></div></div>
+      </div>
+      <div class="map rv">
+        <iframe loading="lazy" title="Carte : Leslie Restaurant, Royal Road, Flic en Flac" src="https://www.openstreetmap.org/export/embed.html?bbox=57.3660%2C-20.2795%2C57.3760%2C-20.2717&amp;layer=mapnik&amp;marker=-20.2756128%2C57.3710926"></iframe>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=-20.2756128,57.3710926" target="_blank" rel="noopener">Obtenir l’itinéraire →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap rv">
+    <span class="eyebrow">Réservation</span>
+    <h2>Réservez votre table à Flic en Flac</h2>
+    <p>Pour réserver, connaître la carte ou les horaires du jour, le plus simple est d’appeler le restaurant.</p>
+    <div class="ctas">
+      <a class="btn" href="tel:+2304538172">Appeler le +230 453 8172</a>
+      <a class="btn ghost" href="mailto:ahteeyet@gmail.com">Écrire un e-mail</a>
+    </div>
+    <p class="small">Royal Road, Flic en Flac, Île Maurice · <a href="https://www.google.com/maps/dir/?api=1&amp;destination=-20.2756128,57.3710926" target="_blank" rel="noopener">Itinéraire</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <a class="logo" href="#top">Leslie Restaurant</a>
+  <p>Royal Road, Flic en Flac, Île Maurice · <a href="tel:+2304538172">+230 453 8172</a></p>
+  <p>Carte : © contributeurs <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>. Photos d’illustration sous licence CC0 (StockSnap : Julien Sister, Tim Sullivan, Tim Savage, Sweet Ice Cream Photography) – elles ne montrent pas forcément les plats du restaurant.</p>
+  <p>Aperçu réalisé pour Leslie Restaurant par Kinoverse – pas encore en ligne.</p>
+</footer>
+
+<div class="callbar">
+  <a class="c1" href="tel:+2304538172"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Appeler</a>
+  <a class="c2" href="https://www.google.com/maps/dir/?api=1&amp;destination=-20.2756128,57.3710926" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Itinéraire</a>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  if('IntersectionObserver' in window){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}});
+    },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+    setTimeout(function(){document.querySelectorAll('.rv').forEach(function(el){el.classList.add('on');});},4000);
+  }
+  var dp=null,b=document.getElementById('inst');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.hidden=false;});
+  b.addEventListener('click',function(){if(dp){dp.prompt();dp.userChoice.finally(function(){dp=null;b.hidden=true;});}});
+  window.addEventListener('appinstalled',function(){b.hidden=true;});
+})();
+</script>
+</body>
+</html>
