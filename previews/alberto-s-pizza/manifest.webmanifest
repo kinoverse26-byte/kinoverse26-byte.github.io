@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "Alberto's Pizza - Mabolo",
+  "short_name": "Alberto's Pizza",
+  "description": "Contact and location information for Alberto's Pizza in Mabolo, Cebu.",
+  "lang": "en-PH",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff8ee",
+  "theme_color": "#9e2822",
+  "icons": [
+    {
+      "src": "./img/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
