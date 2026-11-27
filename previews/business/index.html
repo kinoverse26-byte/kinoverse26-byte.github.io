@@ -3,277 +3,310 @@
 <head>
 <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>צלילי האש · Tzlilei HaEsh | Restaurant at 100 Jabotinsky, Bnei Brak</title>
-<meta name="description" content="צלילי האש (Tzlilei HaEsh, 'Sounds of the Fire') is a restaurant at 100 Ze'ev Jabotinsky Street, Bnei Brak. Call or WhatsApp +972 50 600 9797 to book a table or ask about the menu.">
-<meta name="theme-color" content="#15100c">
-
-<link rel="icon" href="img/icon.svg?v=1" type="image/svg+xml">
-<link rel="apple-touch-icon" href="img/icon.svg?v=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ταβέρνα Το Ρέμα · Greek taverna at 2 Pasalidi, Thessaloniki</title>
+<meta name="description" content="Ταβέρνα Το Ρέμα is a Greek taverna at 2 Πασαλίδη, Thessaloniki. Call +30 2310 901286 to book a table or to ask about today's dishes and opening hours.">
+<meta name="theme-color" content="#7a2e1d">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
 <meta property="og:type" content="restaurant">
-<meta property="og:title" content="צלילי האש · Tzlilei HaEsh, 100 Jabotinsky, Bnei Brak">
-<meta property="og:description" content="A restaurant on Jabotinsky Street, Bnei Brak. Call or WhatsApp +972 50 600 9797 to book.">
-<meta property="og:image" content="img/hero.jpg?v=1">
-<meta property="og:locale" content="en_US">
-<meta property="og:locale:alternate" content="he_IL">
+<meta property="og:title" content="Ταβέρνα Το Ρέμα · Greek taverna in Thessaloniki">
+<meta property="og:description" content="A Greek taverna at 2 Πασαλίδη, Thessaloniki. Call +30 2310 901286 to book your table.">
+<meta property="og:image" content="img/salad.jpg?v=2">
+<meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=Heebo:wght@500;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#15100c;--bg2:#1d1611;--card:#241b15;--line:#3a2c22;
-  --ember:#e2581e;--ember-d:#c4461a;--gold:#f0b24a;
-  --text:#f6eee6;--muted:#c3b3a3;--wa:#1d8f4e;
-  --r:18px;--pad:clamp(64px,10vw,120px);
+  --wine:#7a2e1d;--wine-dark:#5a1f12;--olive:#3f4d27;--olive-soft:#e7e9d8;
+  --cream:#faf5ea;--sand:#f1e7d2;--ink:#241a14;--muted:#5e5046;--gold:#d8b25a;
+  --radius:18px;--shadow:0 18px 44px rgba(36,26,20,.14);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;font-size:1rem;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.12;letter-spacing:-.01em}
-.he{font-family:'Heebo',sans-serif}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.12;letter-spacing:-.01em}
+.wrap{width:min(1160px,100%);margin:0 auto}
+.eyebrow{display:inline-block;letter-spacing:.24em;text-transform:uppercase;font-size:.74rem;font-weight:600;color:var(--wine);margin-bottom:14px}
+section{padding:88px 6vw}
+section h2{font-size:clamp(1.9rem,4.6vw,3rem);margin-bottom:18px;color:var(--ink)}
+.lead{max-width:640px;color:var(--muted);font-size:1.06rem}
+.center{text-align:center}.center .lead{margin:0 auto}
 
-/* ribbon */
-.ribbon{background:#000;color:#d9cbbd;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+/* ribbon + header */
+.ribbon{background:var(--ink);color:#efe3c8;font-size:.75rem;text-align:center;padding:7px 12px;letter-spacing:.03em}
+.top{position:sticky;top:0;z-index:50;background:rgba(250,245,234,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #e6dcc4}
+.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 5vw}
+.logo{font-family:Fraunces,Georgia,serif;font-size:1.3rem;font-weight:700;color:var(--wine);text-decoration:none;line-height:1.1}
+.logo small{display:block;font:500 .62rem Inter,sans-serif;letter-spacing:.26em;color:var(--olive);text-transform:uppercase;margin-top:3px}
+.menu-links{display:flex;gap:24px;list-style:none;font-size:.92rem;font-weight:500}
+.menu-links a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;transition:.2s}
+.menu-links a:hover{border-color:var(--wine);color:var(--wine)}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.hbtn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:40px;font-size:.88rem;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-family:inherit;white-space:nowrap}
+.hbtn.call{background:var(--wine);color:#fff}
+.hbtn.call:hover{background:var(--wine-dark)}
+#install{display:none;background:var(--gold);color:var(--ink)}
+#install.show{display:inline-flex}
 
-/* header – wraps on small phones so every button stays visible */
-.top{position:sticky;top:0;z-index:50;background:rgba(21,16,12,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top-in{max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 5vw}
-.logo{display:flex;flex-direction:column;line-height:1.1}
-.logo .he{font-weight:800;font-size:22px;color:var(--gold)}
-.logo .en{font-size:12px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin-top:3px}
-.menu{display:none;gap:26px;list-style:none;font-size:14px;font-weight:500}
-.menu a{color:#e8dccf;transition:color .2s}
-.menu a:hover{color:var(--gold)}
-.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--ember-d);color:#fff;padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px;border:0;cursor:pointer;font-family:inherit;transition:transform .25s,box-shadow .25s,background .25s;white-space:nowrap}
-.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(226,88,30,.35);background:var(--ember)}
-.btn.ghost{background:transparent;border:1.5px solid var(--gold);color:var(--gold)}
-.btn.ghost:hover{background:rgba(240,178,74,.1);box-shadow:none}
-.btn.wa{background:var(--wa)}
-.btn.wa:hover{background:#21a159;box-shadow:0 12px 30px rgba(29,143,78,.3)}
-.btn.sm{padding:9px 16px;font-size:14px}
-#install{display:none}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--wine);color:#fff;padding:15px 28px;border-radius:40px;text-decoration:none;font-weight:600;font-size:1rem;transition:transform .25s,box-shadow .25s,background .25s;min-height:48px}
+.btn:hover{background:var(--wine-dark);transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.22)}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.85)}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.btn.olive{background:var(--olive)}
+.btn.olive:hover{background:#2f3a1c}
+.btn.line{background:transparent;color:var(--wine);border:1.5px solid var(--wine)}
+.btn.line:hover{background:var(--wine);color:#fff}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
 
-/* hero – full bleed */
-.hero{position:relative;min-height:88vh;min-height:88svh;display:flex;align-items:flex-end;padding:0 5vw clamp(56px,10vh,110px);isolation:isolate;overflow:hidden}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04)}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(21,16,12,.35) 0%,rgba(21,16,12,.55) 45%,rgba(21,16,12,.96) 100%),linear-gradient(90deg,rgba(21,16,12,.7),rgba(21,16,12,0) 70%)}
-.hero-in{max-width:1200px;width:100%;margin:0 auto}
-.eyebrow{color:var(--gold);letter-spacing:.24em;text-transform:uppercase;font-size:12px;font-weight:600;margin-bottom:18px}
-.hero h1{font-size:clamp(38px,7.2vw,84px);max-width:13ch;margin-bottom:22px}
+/* hero */
+.hero{position:relative;min-height:min(92vh,820px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.04)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(28,12,6,.25) 0%,rgba(28,12,6,.55) 45%,rgba(28,12,6,.9) 100%)}
+.hero .wrap{padding:120px 6vw 76px}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(2.3rem,7.4vw,5.2rem);max-width:15ch}
 .hero h1 em{font-style:italic;color:var(--gold);font-weight:500}
-.hero p.lead{color:#eadfd3;font-size:clamp(17px,2vw,20px);max-width:540px;margin-bottom:34px}
-.hero .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.hero p{max-width:540px;margin:22px 0 32px;font-size:1.12rem;color:#f4ece0}
+.hero .note{margin-top:26px;font-size:.82rem;color:#e2d6c2;letter-spacing:.02em}
 
-/* sections */
-section{padding:var(--pad) 5vw}
-.wrap{max-width:1200px;margin:auto}
-h2{font-size:clamp(30px,4.6vw,50px);margin-bottom:16px}
-.sub{color:var(--muted);max-width:640px;margin-bottom:48px;font-size:17px}
-.alt{background:var(--bg2)}
+/* about */
+.about .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.about p+p{margin-top:14px}
+.about p{color:var(--muted)}
+.about figure{position:relative}
+.about figure img{width:100%;height:500px;object-fit:cover;border-radius:220px 220px var(--radius) var(--radius);box-shadow:var(--shadow)}
+.about figure::before{content:"";position:absolute;inset:22px -22px -22px 22px;border:1.5px solid var(--gold);border-radius:220px 220px var(--radius) var(--radius);z-index:-1}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.facts div{background:var(--sand);border-radius:14px;padding:16px}
+.facts b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.05rem;color:var(--wine)}
+.facts span{font-size:.86rem;color:var(--muted)}
 
-.about{display:grid;gap:48px;align-items:center}
-.about-img{position:relative}
-.about-img img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:0 30px 60px rgba(0,0,0,.5)}
-.about-img::after{content:"";position:absolute;inset:auto -14px -14px auto;width:60%;height:60%;border:1.5px solid var(--ember);border-radius:var(--r);z-index:-1}
-.about-img{isolation:isolate}
-.about p+p{margin-top:16px}
-.about .name-note{margin-top:28px;padding:20px 22px;border-left:3px solid var(--ember);background:var(--card);border-radius:0 12px 12px 0;color:#e8dccf}
-.about .name-note .he{color:var(--gold);font-weight:800;font-size:20px}
+/* flavours */
+.flavours{background:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:48px;text-align:left}
+.card{background:var(--cream);border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.05);transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card img{width:100%;height:210px;object-fit:cover}
+.card div{padding:22px}
+.card h3{font-size:1.28rem;color:var(--olive);margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;margin-top:12px;font-size:.76rem;color:var(--wine);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.menu-note{margin-top:40px;color:var(--muted);font-size:.95rem}
+.menu-note a{color:var(--wine);font-weight:600}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.card{background:var(--card);padding:30px 28px;border-radius:var(--r);border:1px solid var(--line);transition:transform .3s,border-color .3s}
-.card:hover{transform:translateY(-6px);border-color:var(--ember)}
-.card .num{font-family:'Fraunces',serif;color:var(--ember);font-size:15px;letter-spacing:.1em;margin-bottom:14px}
-.card h3{font-size:23px;margin-bottom:10px}
-.card p{color:var(--muted);font-size:15px}
-.card .tag{display:inline-block;margin-top:18px;color:var(--gold);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
-
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.gallery figure{overflow:hidden;border-radius:14px;background:var(--card)}
-.gallery img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .6s}
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:200px;gap:12px;margin-top:44px}
+.gallery figure{overflow:hidden;border-radius:14px}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
 .gallery figure:hover img{transform:scale(1.05)}
-.note{color:var(--muted);font-size:13px;margin-top:18px}
+.g1{grid-column:span 4;grid-row:span 2}.g2{grid-column:span 2;grid-row:span 1}.g3{grid-column:span 2}
+.g4{grid-column:span 3}.g5{grid-column:span 3}
+.gallery-note{margin-top:16px;font-size:.82rem;color:var(--muted)}
 
-.info{display:grid;gap:40px}
-.info ul{list-style:none}
-.info li{padding:18px 0;border-bottom:1px solid var(--line)}
-.info li b{display:block;color:var(--gold);font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
-.info li a{border-bottom:1px solid rgba(240,178,74,.4)}
-.info li a:hover{color:var(--gold)}
-.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:360px}
-.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block;filter:grayscale(.35) contrast(1.05)}
+/* visit */
+.visit{background:var(--olive);color:#fff}
+.visit h2{color:#fff}
+.visit .eyebrow{color:var(--gold)}
+.visit-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:44px;margin-top:34px;align-items:stretch}
+.info{list-style:none;display:grid;gap:20px}
+.info li{padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.16)}
+.info b{display:block;color:var(--gold);font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}
+.info a{color:#fff;text-underline-offset:3px}
+.info .greek{color:#d9dcc6;font-size:.92rem}
+.map{border-radius:var(--radius);overflow:hidden;min-height:380px;background:#2f3a1c}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+.visit .btns{margin-top:26px}
 
-.cta{text-align:center;background:radial-gradient(ellipse at 50% 0%,#4a1f0c 0%,#15100c 70%)}
-.cta .sub{margin:0 auto 32px}
-.cta .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+/* contact */
+.contact .box{background:var(--sand);border-radius:28px;padding:64px 6vw;text-align:center;position:relative;overflow:hidden}
+.contact .box::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;border:1.5px solid rgba(122,46,29,.18);top:-170px;right:-120px}
+.contact .btns{justify-content:center;margin-top:30px}
+.contact .small{margin-top:22px;font-size:.88rem;color:var(--muted)}
 
-footer{padding:44px 5vw 110px;text-align:center;color:var(--muted);font-size:13px;background:#0e0a08;border-top:1px solid var(--line)}
-footer .he{color:var(--gold);font-weight:800;font-size:20px;display:block;margin-bottom:6px}
+/* footer */
+footer{background:var(--ink);color:#cfc3ac;padding:52px 6vw 120px;font-size:.86rem}
+footer .wrap{display:grid;gap:12px;text-align:center}
+footer strong{font-family:Fraunces,Georgia,serif;font-size:1.25rem;color:#fff;font-weight:700}
 footer a{color:var(--gold)}
-footer p+p{margin-top:8px}
+footer .credits{font-size:.78rem;color:#a99c86}
 
-/* sticky mobile call bar */
-.sticky{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;background:#0e0a08;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
-.sticky a{flex:1;text-align:center;padding:15px 8px;font-weight:600;font-size:15px;color:#fff}
-.sticky a.call{background:var(--ember-d)}
-.sticky a.whats{background:var(--wa)}
+/* sticky mobile bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:8px;padding:10px 10px calc(10px + env(safe-area-inset-bottom));background:rgba(36,26,20,.97)}
+.sticky a{flex:1;text-align:center;padding:13px 6px;border-radius:30px;background:var(--wine);color:#fff;text-decoration:none;font-weight:600;font-size:.92rem}
+.sticky a.s2{background:var(--olive)}
+.sticky a.s3{background:#f1e7d2;color:var(--ink)}
 
-/* reveal – content stays visible if JS fails */
-.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+/* reveal: only hides when JS is running */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
 .js .reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.hero>img{transform:none}}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.hero img{transform:none}}
 
-@media (min-width:700px){
-  .gallery{grid-template-columns:repeat(3,1fr)}
-  .gallery figure.wide{grid-column:span 2}
-  .gallery figure.wide img{aspect-ratio:2/1}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+@media (max-width:900px){
+  .menu-links{display:none}
+  .about .wrap,.visit-grid{grid-template-columns:1fr;gap:40px}
+  .about figure img{height:360px}
+  .about figure::before{inset:14px -10px -14px 14px}
+  section{padding:68px 6vw}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+  .g1{grid-column:span 2;grid-row:span 2}.g2,.g3,.g4,.g5{grid-column:span 1;grid-row:span 1}
+  .sticky{display:flex}
 }
-@media (min-width:900px){
-  .menu{display:flex}
-  .about{grid-template-columns:1fr 1fr;gap:72px}
-  .info{grid-template-columns:1fr 1.3fr}
-  .sticky{display:none}
-  footer{padding-bottom:44px}
-}
-@media (max-width:380px){
-  .logo .he{font-size:20px}
-  .btn.sm{padding:8px 13px;font-size:13.5px}
+@media (max-width:480px){
+  .top .wrap{padding:10px 4vw}
+  .logo{font-size:1.12rem}
+  .hbtn{padding:8px 13px;font-size:.84rem}
+  .facts{grid-template-columns:1fr}
+  .hero .wrap{padding:96px 6vw 60px}
+  .btns .btn{flex:1 1 100%}
+  .contact .box{padding:48px 6vw}
 }
 </style>
 </head>
 <body>
-<div class="ribbon">Preview made for <span lang="he" dir="rtl">צלילי האש</span> by Kinoverse – not live yet</div>
+<div class="ribbon">Preview made for Ταβέρνα Το Ρέμα by Kinoverse - not live yet</div>
 
 <header class="top">
-  <div class="top-in">
-    <a class="logo" href="#top" aria-label="צלילי האש – home">
-      <span class="he" lang="he" dir="rtl">צלילי האש</span>
-      <span class="en">Tzlilei HaEsh · Bnei Brak</span>
-    </a>
-    <ul class="menu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#menu">Menu</a></li>
+  <div class="wrap">
+    <a class="logo" href="#top">Ταβέρνα Το Ρέμα<small>Thessaloniki</small></a>
+    <ul class="menu-links">
+      <li><a href="#about">The taverna</a></li>
+      <li><a href="#flavours">Flavours</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Book</a></li>
     </ul>
     <div class="actions">
-      <a class="btn sm" href="tel:+972506009797">📞 Call</a>
-      <a class="btn sm wa" href="https://wa.me/972506009797" target="_blank" rel="noopener">WhatsApp</a>
-      <button class="btn sm ghost" id="install" type="button">Install the app</button>
+      <a class="hbtn call" href="tel:+302310901286" aria-label="Call Ταβέρνα Το Ρέμα">&#9742; Call</a>
+      <button class="hbtn" id="install" type="button">Install the app</button>
     </div>
   </div>
 </header>
 
 <main id="top">
-<section class="hero" aria-label="Welcome">
-  <img src="img/hero.jpg?v=1" alt="Glowing coals in a barbecue" fetchpriority="high">
-  <div class="hero-in">
-    <p class="eyebrow">100 Jabotinsky Street · Bnei Brak</p>
-    <h1>Listen to the fire on <em>Jabotinsky</em></h1>
-    <p class="lead"><span lang="he" dir="rtl">צלילי האש</span> – “the sounds of the fire” – is our restaurant at number 100, Ze'ev Jabotinsky Street. Call or WhatsApp us to book a table.</p>
-    <div class="cta-row">
-      <a class="btn" href="tel:+972506009797">Call to book</a>
-      <a class="btn wa" href="https://wa.me/972506009797" target="_blank" rel="noopener">Message on WhatsApp</a>
+<section class="hero" aria-label="Welcome" style="padding:0">
+  <img src="img/salad.jpg?v=2" alt="A Greek salad with feta cheese" fetchpriority="high">
+  <div class="wrap">
+    <span class="eyebrow">Greek taverna · 2 Πασαλίδη · Thessaloniki</span>
+    <h1>Your table on <em>Pasalidi Street</em>, Thessaloniki.</h1>
+    <p>Ταβέρνα Το Ρέμα - Greek food to share with family and friends. One call and your table is waiting.</p>
+    <div class="btns">
+      <a class="btn" href="tel:+302310901286">Call to book · 2310 901286</a>
+      <a class="btn ghost" href="#visit">How to find us</a>
     </div>
+    <p class="note">Opening hours and today's dishes: just ask us by phone.</p>
   </div>
 </section>
 
-<section id="about">
-  <div class="wrap about">
+<section id="about" class="about">
+  <div class="wrap">
     <div class="reveal">
-      <p class="eyebrow">About us</p>
-      <h2>A restaurant named after the sound of fire</h2>
-      <p class="sub" style="margin-bottom:0">You'll find us on Ze'ev Jabotinsky Street in Bnei Brak, at number 100 – one of the city's main roads, a short ride from central Tel Aviv.</p>
-      <p style="color:var(--muted)">The best way to know what's cooking today, and to save your table, is simply to call us or send a WhatsApp message. We'll be glad to tell you about the menu.</p>
-      <div class="name-note">
-        <span class="he" lang="he" dir="rtl">צלילי האש</span><br>
-        Tzlilei HaEsh – literally “Sounds of the Fire”.
+      <span class="eyebrow">The taverna</span>
+      <h2>A Greek taverna at 2 Πασαλίδη</h2>
+      <p>Ταβέρνα Το Ρέμα welcomes you at 2 Πασαλίδη in Thessaloniki. A taverna is made for long meals and shared plates - a table in the middle, dishes passed from hand to hand, and time to talk.</p>
+      <p>Want to know what is cooking today, or planning a table for a group? Give us a call and we will tell you everything.</p>
+      <div class="facts">
+        <div><b>Where</b><span>2 Πασαλίδη, Thessaloniki</span></div>
+        <div><b>Booking</b><span>By phone</span></div>
+        <div><b>Hours</b><span>Call to confirm</span></div>
       </div>
     </div>
-    <div class="about-img reveal">
-      <img src="img/g5.jpg?v=1" alt="Skewers cooking on a barbecue grill" loading="lazy">
-    </div>
+    <figure class="reveal">
+      <img src="img/table.jpg?v=2" alt="Food on a table" loading="lazy">
+    </figure>
   </div>
 </section>
 
-<section id="menu" class="alt">
+<section id="flavours" class="flavours center">
   <div class="wrap">
-    <p class="eyebrow">Menu &amp; services</p>
-    <h2>Ask us what's on the fire</h2>
-    <p class="sub">Our full menu and prices are given on request – a quick call or WhatsApp message is all it takes.</p>
+    <span class="eyebrow">The flavours</span>
+    <h2>Made for the middle of the table</h2>
+    <p class="lead">Fresh salads, seasonal vegetables and plates to share. The full menu and prices are given on request by phone.</p>
     <div class="cards">
-      <div class="card reveal"><p class="num">01</p><h3>The menu</h3><p>Dishes and today's specials – ask us by phone or WhatsApp.</p><span class="tag">On request</span></div>
-      <div class="card reveal"><p class="num">02</p><h3>Table bookings</h3><p>Coming with family or friends? Call ahead and we'll tell you what's available.</p><span class="tag">Call to book</span></div>
-      <div class="card reveal"><p class="num">03</p><h3>Takeaway</h3><p>Ask us whether your order can be prepared to take home.</p><span class="tag">To confirm</span></div>
-      <div class="card reveal"><p class="num">04</p><h3>Groups &amp; events</h3><p>Planning a meal for a larger group? Get in touch to talk it through.</p><span class="tag">On request</span></div>
+      <article class="card reveal"><img src="img/salad.jpg?v=2" alt="Greek salad with feta" loading="lazy"><div><h3>Salads</h3><p>Fresh, simple and generous - the classic start to a taverna meal.</p><span class="tag">Ask for today's choice</span></div></article>
+      <article class="card reveal"><img src="img/tomato.jpg?v=2" alt="Tomato salad with fresh cheese" loading="lazy"><div><h3>Fresh plates</h3><p>Ripe tomatoes, cheese and good oil, ready to share.</p><span class="tag">Prices on request</span></div></article>
+      <article class="card reveal"><img src="img/vegetables.jpg?v=2" alt="Fresh vegetables" loading="lazy"><div><h3>Seasonal vegetables</h3><p>What the season brings, prepared for the table.</p><span class="tag">Prices on request</span></div></article>
+      <article class="card reveal"><img src="img/bowl.jpg?v=2" alt="A bowl of fresh salad" loading="lazy"><div><h3>To share</h3><p>Small plates for the whole table to pass around.</p><span class="tag">Prices on request</span></div></article>
     </div>
+    <p class="menu-note">Allergies or a group booking? <a href="tel:+302310901286">Call +30 2310 901286</a> and we will help.</p>
   </div>
 </section>
 
-<section id="gallery">
+<section id="gallery" class="center">
   <div class="wrap">
-    <p class="eyebrow">Gallery</p>
-    <h2>The glow of the grill</h2>
-    <p class="sub">A first look at the mood of fire and smoke.</p>
+    <span class="eyebrow">Gallery</span>
+    <h2>A taste of the table</h2>
     <div class="gallery reveal">
-      <figure class="wide"><img src="img/g3.jpg?v=1" alt="Food cooking on a barbecue grill" loading="lazy"></figure>
-      <figure><img src="img/g4.jpg?v=1" alt="Peppers on a barbecue grill" loading="lazy"></figure>
-      <figure><img src="img/g2.jpg?v=1" alt="Food on a barbecue" loading="lazy"></figure>
-      <figure><img src="img/g1.jpg?v=1" alt="Sausages cooking on a barbecue" loading="lazy"></figure>
-      <figure><img src="img/hero.jpg?v=1" alt="Close-up of burning barbecue coals" loading="lazy"></figure>
+      <figure class="g1"><img src="img/salad.jpg?v=2" alt="Greek salad with feta cheese" loading="lazy"></figure>
+      <figure class="g2"><img src="img/tomato.jpg?v=2" alt="Tomato salad" loading="lazy"></figure>
+      <figure class="g3"><img src="img/bowl.jpg?v=2" alt="Salad bowl" loading="lazy"></figure>
+      <figure class="g4"><img src="img/vegetables.jpg?v=2" alt="Fresh vegetables" loading="lazy"></figure>
+      <figure class="g5"><img src="img/table.jpg?v=2" alt="Food on a table" loading="lazy"></figure>
     </div>
-    <p class="note">Illustrative photos – the restaurant's own photos will take their place.</p>
+    <p class="gallery-note">Illustrative photos. Photos of the taverna itself coming soon.</p>
   </div>
 </section>
 
-<section id="visit" class="alt">
+<section id="visit" class="visit">
   <div class="wrap">
-    <p class="eyebrow">Hours &amp; location</p>
-    <h2>Find us at 100 Jabotinsky</h2>
-    <div class="info" style="margin-top:36px">
-      <ul class="reveal">
-        <li><b>Address</b>100 Ze'ev Jabotinsky St, Bnei Brak, Israel<br><span lang="he" dir="rtl" style="color:var(--muted)">זאב ז'בוטינסקי 100, בני ברק</span></li>
-        <li><b>Opening hours</b>To confirm – please call before your visit</li>
-        <li><b>Phone / WhatsApp</b><a href="tel:+972506009797">+972 50 600 9797</a></li>
-        <li><b>Facebook</b><a href="https://www.facebook.com/soundfire770/" target="_blank" rel="noopener">facebook.com/soundfire770</a></li>
-        <li><b>Directions</b><a href="https://www.openstreetmap.org/node/5997818140" target="_blank" rel="noopener">Open in OpenStreetMap</a></li>
-      </ul>
+    <span class="eyebrow">Visit us</span>
+    <h2>Find us on Pasalidi Street</h2>
+    <div class="visit-grid">
+      <div class="reveal">
+        <ul class="info">
+          <li><b>Address</b>2 Pasalidi, Thessaloniki, Greece<br><span class="greek">Πασαλίδη 2, Θεσσαλονίκη</span></li>
+          <li><b>Phone</b><a href="tel:+302310901286">+30 2310 901286</a></li>
+          <li><b>Opening hours</b>To confirm - please call before you come</li>
+          <li><b>Facebook</b><a href="https://www.facebook.com/TavernaToRema" target="_blank" rel="noopener">facebook.com/TavernaToRema</a></li>
+        </ul>
+        <div class="btns">
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&query=%CE%A0%CE%B1%CF%83%CE%B1%CE%BB%CE%AF%CE%B4%CE%B7%202%2C%20%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
       <div class="map reveal">
-        <iframe title="Map: 100 Ze'ev Jabotinsky Street, Bnei Brak" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=100+Ze%27ev+Jabotinsky+St,+Bnei+Brak,+Israel&output=embed"></iframe>
+        <iframe title="Map showing 2 Πασαλίδη, Thessaloniki" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%CE%A0%CE%B1%CF%83%CE%B1%CE%BB%CE%AF%CE%B4%CE%B7%202%2C%20%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7&output=embed"></iframe>
       </div>
     </div>
   </div>
 </section>
 
-<section id="contact" class="cta">
-  <div class="wrap reveal">
-    <p class="eyebrow">Contact</p>
-    <h2>Hungry? Call us and we'll light the way.</h2>
-    <p class="sub">Book a table or ask about the menu – by phone or WhatsApp.</p>
-    <div class="row">
-      <a class="btn" href="tel:+972506009797">Call +972 50 600 9797</a>
-      <a class="btn wa" href="https://wa.me/972506009797" target="_blank" rel="noopener">WhatsApp us</a>
-      <a class="btn ghost" href="https://www.facebook.com/soundfire770/" target="_blank" rel="noopener">Facebook</a>
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="box reveal">
+      <span class="eyebrow">Reservations</span>
+      <h2>Book your table at Το Ρέμα</h2>
+      <p class="lead" style="margin:0 auto">The quickest way is a phone call. Tell us the day, the time and how many you are - we look forward to welcoming you.</p>
+      <div class="btns">
+        <a class="btn" href="tel:+302310901286">Call +30 2310 901286</a>
+        <a class="btn line" href="https://m.me/TavernaToRema" target="_blank" rel="noopener">Message us on Facebook</a>
+      </div>
+      <p class="small">Opening hours and menu given on request.</p>
     </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <span class="he" lang="he" dir="rtl">צלילי האש</span>
-  <p>100 Ze'ev Jabotinsky St, Bnei Brak · <a href="tel:+972506009797">+972 50 600 9797</a> · <a href="https://www.facebook.com/soundfire770/" target="_blank" rel="noopener">Facebook</a></p>
-  <p>Photos: CC0 / public-domain stock images via StockSnap (Pawel Kadysz, The Digital Marketing Collaboration, Creative Vix, Pavan Trikutam, Daria Shevtsova) and Rawpixel – no attribution required.</p>
-  <p>Preview made by Kinoverse – not live yet.</p>
+  <div class="wrap">
+    <strong>Ταβέρνα Το Ρέμα</strong>
+    <p>2 Πασαλίδη, Thessaloniki, Greece · <a href="tel:+302310901286">+30 2310 901286</a> · <a href="https://www.facebook.com/TavernaToRema" target="_blank" rel="noopener">Facebook</a></p>
+    <p class="credits">Photos are illustrative: rawpixel (CC0 public domain).</p>
+    <p class="credits">Preview made for Ταβέρνα Το Ρέμα by Kinoverse - not live yet.</p>
+  </div>
 </footer>
 
 <nav class="sticky" aria-label="Quick contact">
-  <a class="call" href="tel:+972506009797">📞 Call</a>
-  <a class="whats" href="https://wa.me/972506009797" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="tel:+302310901286">Call</a>
+  <a class="s2" href="https://www.google.com/maps/search/?api=1&query=%CE%A0%CE%B1%CF%83%CE%B1%CE%BB%CE%AF%CE%B4%CE%B7%202%2C%20%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7" target="_blank" rel="noopener">Directions</a>
+  <a class="s3" href="https://m.me/TavernaToRema" target="_blank" rel="noopener">Message</a>
 </nav>
 
 <script>
@@ -283,20 +316,16 @@ footer p+p{margin-top:8px}
   if('IntersectionObserver' in window){
     root.classList.add('js');
     var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+      entries.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});
     },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
     els.forEach(function(el){io.observe(el);});
-    // safety net: never leave content hidden
     setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},4000);
   }
-  // install button – only shown where the browser offers it (Android/Chrome)
-  var dp=null,ib=document.getElementById('install');
-  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;ib.style.display='inline-flex';});
-  ib.addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.finally(function(){dp=null;ib.style.display='none';});});
-  window.addEventListener('appinstalled',function(){ib.style.display='none';});
-  if('serviceWorker' in navigator && location.protocol==='https:'){
-    navigator.serviceWorker.register('sw.js').catch(function(){});
-  }
+  var dp=null,b=document.getElementById('install');
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;b.classList.add('show');});
+  b.addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.finally(function(){dp=null;b.classList.remove('show');});});
+  window.addEventListener('appinstalled',function(){b.classList.remove('show');});
+  if('serviceWorker' in navigator && location.protocol==='https:'){navigator.serviceWorker.register('sw.js').catch(function(){});}
 })();
 </script>
 </body>
