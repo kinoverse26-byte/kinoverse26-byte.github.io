@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant Rod",
+  "short_name": "Rod",
+  "description": "Restaurant Rod, Calea Turzii 160, Cluj-Napoca",
+  "lang": "ro",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1a1412",
+  "theme_color": "#1a1412",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
