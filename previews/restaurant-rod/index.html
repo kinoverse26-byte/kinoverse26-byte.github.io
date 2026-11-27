@@ -1,0 +1,305 @@
+﻿<!doctype html>
+<html lang="ro">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Restaurant Rod · Calea Turzii 160, Cluj-Napoca</title>
+<meta name="description" content="Restaurant Rod, Calea Turzii 160, 400491 Cluj-Napoca. Bucătărie internațională. Rezervări prin e-mail: restaurant.rod@gmail.com.">
+<meta name="theme-color" content="#5a1520">
+<link rel="manifest" href="manifest.json">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Restaurant Rod · Calea Turzii 160, Cluj-Napoca">
+<meta property="og:description" content="Bucătărie internațională pe Calea Turzii 160, Cluj-Napoca. Rezervări prin e-mail.">
+<meta property="og:image" content="img/hero.jpg?v=1">
+<meta property="og:locale" content="ro_RO">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#7a1f2b;--wine2:#4e1119;--gold:#d2ad73;--cream:#faf6f0;--sand:#efe6da;--ink:#1d1715;--mute:#5f5550}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;line-height:1.12}
+img{max-width:100%;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* header + ribbon */
+.top{position:fixed;top:0;left:0;right:0;z-index:40;transition:background .35s,box-shadow .35s}
+.ribbon{background:#111;color:#e4e4e4;font-size:12px;text-align:center;padding:6px 12px;letter-spacing:.02em}
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 16px;padding:14px 5vw}
+.top.solid{background:rgba(250,246,240,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 2px 24px rgba(0,0,0,.08)}
+.logo{font-family:'Playfair Display',Georgia,serif;font-size:1.45rem;color:#fff;text-decoration:none;letter-spacing:.03em;white-space:nowrap}
+.top.solid .logo{color:var(--wine)}
+nav{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center}
+nav a.lk{font-size:.9rem;text-decoration:none;color:#fff;font-weight:500}
+.top.solid nav a.lk{color:var(--ink)}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#1d1715;padding:14px 28px;border-radius:40px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font:600 1rem Inter,system-ui,sans-serif;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.22)}
+.btn.sm{padding:9px 18px;font-size:.88rem}
+.btn.line{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.85)}
+.btn.wine{background:var(--wine);color:#fff}
+#install{display:none}
+
+/* hero */
+.hero{min-height:100vh;min-height:100svh;background:linear-gradient(180deg,rgba(18,6,8,.62),rgba(18,6,8,.45) 40%,rgba(18,6,8,.78)),url(img/hero.jpg?v=1) center/cover;display:flex;align-items:flex-end;color:#fff;padding:170px 5vw 90px}
+.hero .in{max-width:780px}
+.eyebrow{color:var(--gold);letter-spacing:.24em;text-transform:uppercase;font-size:.78rem;margin-bottom:18px;font-weight:600}
+.hero h1{font-size:clamp(2.4rem,7vw,5rem);margin-bottom:22px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p.sub{font-size:1.12rem;font-weight:300;max-width:560px;margin-bottom:34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.25);font-size:.88rem;color:#eee}
+.facts b{color:var(--gold);font-weight:600;margin-right:6px}
+
+section{padding:104px 5vw}
+.wrap{max-width:1150px;margin:0 auto}
+h2{font-size:clamp(2rem,4.5vw,3.1rem);color:var(--wine);margin-bottom:18px}
+.lead{color:var(--mute);max-width:640px;margin-bottom:48px;font-size:1.05rem}
+.ey-w{color:var(--wine)}
+
+/* about */
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.about p{color:var(--mute);margin-bottom:16px}
+.about .pic{position:relative}
+.about .pic img{border-radius:6px;aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 34px 70px -24px rgba(0,0,0,.4)}
+.about .pic::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:1px solid var(--gold);border-radius:6px;z-index:-1}
+.about .btn{margin-top:14px}
+
+/* cuisine */
+.dark{background:var(--wine2);color:#fff}
+.dark h2{color:var(--gold)}
+.dark .lead{color:#ecdfd7}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(210,173,115,.32);border-radius:10px;padding:32px 28px;transition:transform .3s,background .3s}
+.card:hover{transform:translateY(-6px);background:rgba(255,255,255,.1)}
+.card .n{font-family:'Playfair Display',serif;color:var(--gold);font-size:.95rem;opacity:.9}
+.card h3{font-size:1.4rem;color:#fff;margin:8px 0 10px}
+.card p{font-size:.95rem;color:#eadfd8}
+.card small{display:block;margin-top:16px;color:var(--gold);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:14px}
+.gallery figure{overflow:hidden;border-radius:6px;background:#ddd}
+.gallery figure.big{grid-column:span 2;grid-row:span 2}
+.gallery figure.wide{grid-column:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.gallery figure:hover img{transform:scale(1.06)}
+.note{font-size:.82rem;color:var(--mute);margin-top:16px}
+
+/* visit */
+.info{display:grid;grid-template-columns:1fr 1.25fr;gap:48px;margin-top:40px}
+.info dl{display:grid;gap:24px;align-content:start}
+.info dt{font-size:.74rem;text-transform:uppercase;letter-spacing:.18em;color:var(--wine);font-weight:600;margin-bottom:2px}
+.info dd{font-size:1.05rem}
+.info dd span{color:var(--mute);font-size:.92rem}
+.map{border-radius:8px;overflow:hidden;min-height:400px;box-shadow:0 20px 50px -25px rgba(0,0,0,.35)}
+.map iframe{width:100%;height:100%;min-height:400px;border:0;display:block}
+.maplink{margin-top:14px;font-size:.88rem}
+.maplink a{color:var(--wine);font-weight:600}
+
+/* contact */
+.contact{background:var(--sand);text-align:center}
+.contact .lead{margin-left:auto;margin-right:auto}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;max-width:860px;margin:0 auto 44px;text-align:left}
+.step{background:#fff;border-radius:10px;padding:24px}
+.step b{font-family:'Playfair Display',serif;color:var(--wine);font-size:1.6rem;display:block;line-height:1;margin-bottom:8px}
+.step p{font-size:.94rem;color:var(--mute)}
+.contact .cta{justify-content:center}
+
+footer{background:#140a0c;color:#bcaea6;padding:52px 5vw 48px;font-size:.85rem;text-align:center;line-height:1.8}
+footer .logo{color:var(--gold);display:inline-block;margin-bottom:12px;font-size:1.6rem}
+footer a{color:#e7d7c4}
+footer small{display:block;margin-top:18px;color:#9d8f88}
+
+.sticky{display:none}
+
+/* reveal: only hidden when JS is running */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.gallery img,.btn,.card{transition:none}}
+
+@media(max-width:860px){
+nav a.lk{display:none}
+.about,.info{grid-template-columns:1fr}
+.about{gap:48px}
+.about .pic{order:-1;margin:0 18px 0 18px}
+.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px;gap:10px}
+.gallery figure.big{grid-column:span 2;grid-row:span 2}
+.gallery figure.wide{grid-column:span 2}
+section{padding:76px 6vw}
+.hero{padding:160px 6vw 70px}
+body{padding-bottom:58px}
+.sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:50;padding-bottom:env(safe-area-inset-bottom);background:var(--wine);box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+.sticky a{flex:1;text-align:center;color:#fff;text-decoration:none;padding:17px 8px;font-weight:600;font-size:.95rem}
+.sticky a+a{background:var(--gold);color:#1d1715}
+}
+@media(max-width:400px){
+.bar{padding:12px 4vw}
+.logo{font-size:1.25rem}
+.btn.sm{padding:8px 14px;font-size:.84rem}
+.ribbon{font-size:11px}
+.hero h1{font-size:2.25rem}
+}
+</style>
+</head>
+<body><div id="kv-ribbon" style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#000c;color:#fff;font:12px/1.4 system-ui,sans-serif;text-align:center;padding:4px 8px;letter-spacing:.02em">Preview made for Restaurant Rod by Kinoverse - not live yet</div>
+
+<div class="top" id="hd">
+  <div class="ribbon">Previzualizare realizată pentru Restaurant Rod de Kinoverse – încă nepublicat</div>
+  <div class="bar">
+    <a class="logo" href="#top">Restaurant Rod</a>
+    <nav aria-label="Navigare principală">
+      <a class="lk" href="#despre">Despre noi</a>
+      <a class="lk" href="#bucatarie">Bucătărie</a>
+      <a class="lk" href="#galerie">Galerie</a>
+      <a class="lk" href="#vizita">Program &amp; hartă</a>
+      <div class="acts">
+        <button class="btn sm" id="install" type="button">Instalează aplicația</button>
+        <a class="btn sm" href="#contact">Rezervă</a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<main>
+<header class="hero" id="top">
+  <div class="in">
+    <p class="eyebrow">Cluj-Napoca · Calea Turzii 160</p>
+    <h1>Pe Calea Turzii 160, <em>bucătăria lumii</em> la masa ta din Cluj.</h1>
+    <p class="sub">Restaurant Rod servește bucătărie internațională, în sudul Clujului. Scrie-ne și îți pregătim masa.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:restaurant.rod@gmail.com?subject=Rezervare%20Restaurant%20Rod">Rezervă prin e-mail</a>
+      <a class="btn line" href="https://www.google.com/maps/dir/?api=1&amp;destination=46.7511332,23.5940003" target="_blank" rel="noopener">Cum ajungi</a>
+    </div>
+    <div class="facts">
+      <span><b>Adresă</b>Calea Turzii 160, 400491</span>
+      <span><b>Bucătărie</b>Internațională</span>
+      <span><b>Program</b>De confirmat</span>
+    </div>
+  </div>
+</header>
+
+<section id="despre">
+  <div class="wrap about">
+    <div class="reveal">
+      <p class="eyebrow ey-w">Despre noi</p>
+      <h2>Bun venit la Restaurant Rod</h2>
+      <p>Restaurant Rod te așteaptă pe Calea Turzii, la numărul 160, în Cluj-Napoca, cu o bucătărie internațională — pentru un prânz liniștit, o cină în doi sau o masă cu prietenii și familia.</p>
+      <p>Pentru rezervări, întrebări despre meniu sau evenimente, ne poți scrie oricând la <a href="mailto:restaurant.rod@gmail.com">restaurant.rod@gmail.com</a>.</p>
+      <a class="btn wine" href="#vizita">Vezi cum ajungi</a>
+    </div>
+    <div class="pic reveal">
+      <img src="img/interior1.jpg?v=1" alt="Interior modern de restaurant (imagine ilustrativă)" loading="lazy" width="1024" height="683">
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="bucatarie">
+  <div class="wrap">
+    <p class="eyebrow">Bucătărie</p>
+    <h2 class="reveal">Gusturi din lumea întreagă</h2>
+    <p class="lead reveal">Restaurant Rod propune bucătărie internațională. Meniul complet și prețurile se confirmă direct cu restaurantul — întreabă-ne prin e-mail.</p>
+    <div class="cards">
+      <div class="card reveal"><span class="n">01</span><h3>Feluri principale</h3><p>Preparate din bucătăria internațională, pentru prânz și cină.</p><small>Meniu &amp; prețuri la cerere</small></div>
+      <div class="card reveal"><span class="n">02</span><h3>Aperitive</h3><p>Pentru început sau pentru împărțit la masă.</p><small>Meniu &amp; prețuri la cerere</small></div>
+      <div class="card reveal"><span class="n">03</span><h3>Deserturi</h3><p>Un final dulce pentru o masă reușită.</p><small>Meniu &amp; prețuri la cerere</small></div>
+      <div class="card reveal"><span class="n">04</span><h3>Băuturi</h3><p>Ofertă de băuturi de confirmat cu restaurantul.</p><small>Meniu &amp; prețuri la cerere</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <p class="eyebrow ey-w">Galerie</p>
+    <h2 class="reveal">Atmosfera unei mese bune</h2>
+    <div class="gallery">
+      <figure class="big reveal"><img src="img/hero.jpg?v=1" alt="Sală de restaurant elegantă (imagine ilustrativă)" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/cafe.jpg?v=1" alt="Interior de cafenea-restaurant (imagine ilustrativă)" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/bar.jpg?v=1" alt="Zonă de bar într-un restaurant (imagine ilustrativă)" loading="lazy"></figure>
+      <figure class="wide reveal"><img src="img/bar2.jpg?v=1" alt="Bar de restaurant (imagine ilustrativă)" loading="lazy"></figure>
+      <figure class="wide reveal"><img src="img/place.jpg?v=1" alt="Interior de restaurant (imagine ilustrativă)" loading="lazy"></figure>
+      <figure class="wide reveal"><img src="img/interior1.jpg?v=1" alt="Mese într-un restaurant modern (imagine ilustrativă)" loading="lazy"></figure>
+    </div>
+    <p class="note">Imagini ilustrative — vor fi înlocuite cu fotografiile restaurantului.</p>
+  </div>
+</section>
+
+<section id="vizita" style="background:#fff">
+  <div class="wrap">
+    <p class="eyebrow ey-w">Vizitează-ne</p>
+    <h2 class="reveal">Program &amp; locație</h2>
+    <div class="info">
+      <dl class="reveal">
+        <div><dt>Adresă</dt><dd>Calea Turzii 160<br>400491 Cluj-Napoca, România</dd></div>
+        <div><dt>Program</dt><dd>De confirmat<br><span>Scrie-ne înainte de vizită pentru orele de deschidere.</span></dd></div>
+        <div><dt>Telefon</dt><dd>De confirmat</dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:restaurant.rod@gmail.com">restaurant.rod@gmail.com</a></dd></div>
+        <div><dt>Bucătărie</dt><dd>Internațională</dd></div>
+      </dl>
+      <div class="reveal">
+        <div class="map">
+          <iframe title="Harta: Restaurant Rod, Calea Turzii 160, Cluj-Napoca" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=23.5900%2C46.7490%2C23.5980%2C46.7532&amp;layer=mapnik&amp;marker=46.7511332%2C23.5940003"></iframe>
+        </div>
+        <p class="maplink"><a href="https://www.openstreetmap.org/?mlat=46.7511332&amp;mlon=23.5940003#map=17/46.7511332/23.5940003" target="_blank" rel="noopener">Deschide harta mare</a> · <a href="https://www.google.com/maps/dir/?api=1&amp;destination=46.7511332,23.5940003" target="_blank" rel="noopener">Indicații de drum</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow ey-w">Rezervări</p>
+    <h2 class="reveal">Rezervă o masă</h2>
+    <p class="lead reveal">Trimite-ne un e-mail și revenim cu confirmarea.</p>
+    <div class="steps">
+      <div class="step reveal"><b>1</b><p>Spune-ne data și ora dorite.</p></div>
+      <div class="step reveal"><b>2</b><p>Câte persoane veniți și orice preferință.</p></div>
+      <div class="step reveal"><b>3</b><p>Primești confirmarea pe e-mail.</p></div>
+    </div>
+    <div class="cta">
+      <a class="btn wine" href="mailto:restaurant.rod@gmail.com?subject=Rezervare%20Restaurant%20Rod&amp;body=Bun%C4%83%20ziua%2C%0A%0AA%C8%99%20dori%20o%20rezervare%3A%0AData%3A%20%0AOra%3A%20%0ANum%C4%83r%20de%20persoane%3A%20%0ANume%3A%20%0A%0AMul%C8%9Bumesc!">Trimite o cerere de rezervare</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <a class="logo" href="#top">Restaurant Rod</a><br>
+  Calea Turzii 160, 400491 Cluj-Napoca, România<br>
+  <a href="mailto:restaurant.rod@gmail.com">restaurant.rod@gmail.com</a>
+  <small>Fotografii ilustrative cu licență CC0 (Rawpixel, StockSnap). Hartă © contribuitorii OpenStreetMap.<br>Previzualizare realizată pentru Restaurant Rod de Kinoverse – încă nepublicat.</small>
+</footer>
+
+<div class="sticky" aria-label="Acțiuni rapide">
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=46.7511332,23.5940003" target="_blank" rel="noopener">Navigare</a>
+  <a href="mailto:restaurant.rod@gmail.com?subject=Rezervare%20Restaurant%20Rod">Rezervă</a>
+</div>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  var hd=document.getElementById('hd');
+  function onScroll(){hd.classList.toggle('solid',window.scrollY>40)}
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},4000);
+  }
+
+  var dp,ib=document.getElementById('install');
+  addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;ib.style.display='inline-flex'});
+  ib.addEventListener('click',function(){if(dp){dp.prompt();dp=null;ib.style.display='none'}});
+  addEventListener('appinstalled',function(){ib.style.display='none'});
+})();
+</script>
+</body>
+</html>
