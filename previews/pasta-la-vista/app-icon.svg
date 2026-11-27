@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Pasta la Vista</title>
+  <rect width="512" height="512" rx="112" fill="#243e35"/>
+  <rect x="40" y="40" width="432" height="432" rx="84" fill="none" stroke="#efb68e" stroke-width="3"/>
+  <text x="256" y="299" text-anchor="middle" font-family="Georgia,serif" font-size="160" letter-spacing="-10" fill="#f7f3e9">PL</text>
+  <path d="M175 345 Q256 380 337 345" fill="none" stroke="#efb68e" stroke-width="9" stroke-linecap="round"/>
+</svg>
